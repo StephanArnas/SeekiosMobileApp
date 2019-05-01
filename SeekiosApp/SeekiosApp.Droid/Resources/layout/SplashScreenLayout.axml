@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<!--IMAGE DE FOND-->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/loginbackground"
+        android:id="@+id/splash_backgroundActivity" />
+<!--LOGO-->
+    <XamSvg.SvgImageView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        local:svg="@drawable/logoseekios"
+        android:layout_marginTop="40dp"
+        android:id="@+id/splash_logoSeekios"
+        android:layout_gravity="top"
+        android:layout_centerHorizontal="true" />
+<!--IMAGE DE CHARGEMENT-->
+    <ProgressBar
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:indeterminate="true"
+        android:paddingTop="15dp"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/splash_loaderImg"
+        android:layout_centerInParent="true" />
+</RelativeLayout>

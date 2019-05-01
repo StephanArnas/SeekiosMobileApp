@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true">
+<!--IMAGE DE FOND-->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:id="@+id/login_backgroundActivity" />
+<!--IMAGE DE CHARGEMENT-->
+    <ProgressBar
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:indeterminate="true"
+        android:layout_marginBottom="@dimen/marginS"
+        android:indeterminateOnly="true"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        android:id="@+id/login_loaderImg" />
+<!--LOGO-->
+    <XamSvg.SvgImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="@dimen/layoutMarginL"
+        android:layout_marginRight="@dimen/layoutMarginR"
+        local:svg="@drawable/logoseekios"
+        android:id="@+id/login_logoSeekios" />
+<!--Content layout-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@id/login_logoSeekios"
+        android:layout_centerVertical="true"
+        android:layout_centerInParent="true"
+        android:gravity="center_vertical"
+        android:layout_marginTop="-50dp">
+    <!--date of official launch-->
+    <!-- LAYOUT D'INFORMATION -->
+        <include
+            layout="@layout/AppInformationLayout" />
+    <!-- ===== LOGIN ================================================ -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerInParent="true"
+            android:id="@+id/login_layout"
+            android:visibility="visible">
+        <!--CHAMP DE SAISIE EMAIL-->
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/heightTopLogin"
+                android:hint="@string/login_emailAdress"
+                android:inputType="textEmailAddress"
+                style="@style/LoginEditText"
+                android:id="@+id/login_email" />
+        <!--CHAMP DE SAISIE MOT DE PASSE-->
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/heightTopLogin"
+                android:layout_marginTop="@dimen/marginTopLogin"
+                android:hint="@string/login_password"
+                android:inputType="textPassword"
+                android:ellipsize="start"
+                style="@style/LoginEditText"
+                android:id="@+id/login_password" />
+        <!--BOUTON CONNEXION-->
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/heightTopLogin"
+                style="@style/LoginButton"
+                android:text="@string/login_connect"
+                android:id="@+id/login_connect" />
+        <!--FACEBOOK CONNEXION-->
+        <!--<com.facebook.login.widget.LoginButton
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/heightTopLogin"
+                style="@style/ExternalConnectionButton"
+                android:layout_gravity="center_horizontal|bottom"
+                android:id="@+id/login_connectFacebook"
+                android:visibility="gone" />-->
+        </LinearLayout>
+    <!-- ===== CREATE ACCOUNT ======================================= -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_alignParentTop="true"
+            android:id="@+id/createAccount_layout">
+        <!--PRENOM-->
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/heightTopLogin"
+                android:layout_marginBottom="@dimen/marginBottomLogin"
+                android:hint="@string/createAccount_firstName"
+                android:ellipsize="start"
+                android:inputType="textCapSentences"
+                android:paddingLeft="10dp"
+                style="@style/LoginEditText"
+                android:id="@+id/createAccount_firstName" />
+        <!--NOM-->
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/heightTopLogin"
+                android:layout_marginBottom="@dimen/marginBottomLogin"
+                android:hint="@string/createAccount_lastName"
+                android:inputType="textCapSentences"
+                android:paddingLeft="10dp"
+                style="@style/LoginEditText"
+                android:id="@+id/createAccount_lastName" />
+        <!--EMAIL-->
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/heightTopLogin"
+                android:layout_marginBottom="@dimen/marginBottomLogin"
+                android:hint="@string/createAccount_emailAdress"
+                android:inputType="textEmailAddress"
+                android:ellipsize="start"
+                android:paddingLeft="10dp"
+                style="@style/LoginEditText"
+                android:id="@+id/createAccount_emailAdress" />
+        <!--PASSWORD-->
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/heightTopLogin"
+                android:layout_marginBottom="@dimen/marginBottomLogin"
+                android:hint="@string/createAccount_password"
+                android:inputType="textPassword"
+                android:ellipsize="start"
+                android:paddingLeft="10dp"
+                style="@style/LoginEditText"
+                android:id="@+id/createAccount_password" />
+        <!--CONFIRMED PASSWORD-->
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/heightTopLogin"
+                android:hint="@string/createAccount_confirmedPassword"
+                android:inputType="textPassword"
+                android:ellipsize="start"
+                android:layout_marginBottom="@dimen/marginTopLogin"
+                android:paddingLeft="10dp"
+                style="@style/LoginEditText"
+                android:id="@+id/createAccount_confirmedPassword" />
+        <!--BOUTON CREER UN COMPTE-->
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/heightTopLogin"
+                style="@style/LoginButton"
+                android:layout_marginTop="0dp"
+                android:text="@string/createAccount_createAccountButton"
+                android:id="@+id/createAccount_createAccountButton" />
+        </LinearLayout>
+    <!--LAYOUT FORGET PASSWORD-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerInParent="true"
+            android:id="@+id/forgetPassword_layout">
+        <!--CHAMP DE SAISIE EMAIL-->
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/heightTopLogin"
+                android:hint="@string/login_emailAdress"
+                android:inputType="textEmailAddress"
+                style="@style/LoginEditText"
+                android:id="@+id/forgetPassword_emailAdress" />
+        <!--BOUTON CONFIRMER EMAIL-->
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                style="@style/LoginButton"
+                android:textAllCaps="true"
+                android:layout_gravity="center_horizontal|bottom"
+                android:text="@string/login_forgetPasswordButton"
+                android:id="@+id/forgetPassword_button" />
+        </LinearLayout>
+    </LinearLayout>
+<!--LAYOUT DES BOUTONS MOT DE PASSE OUBLIE ET CREATE ACCOUNT
+android:layout_height="@dimen/heightTopLogin"-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginBottom="@dimen/marginS"
+        style="@style/ExternalConnectionButton"
+        android:clickable="true"
+        android:layout_alignParentBottom="true">
+    <!-- BOUTON WHAT IS SEEKIOS -->
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_centerInParent="true"
+            android:clickable="true"
+            android:id="@+id/login_whatIsSeekiosLayout">
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:gravity="center"
+                android:text="@string/login_whatIsSeekios"
+                android:textColor="@android:color/white"
+                android:textSize="20dp"
+                android:id="@+id/login_whatIsSeekios"
+                android:layout_gravity="center" />
+        </LinearLayout>
+    <!--BOUTON DE CRÉATION DE COMPTE-->
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_alignParentLeft="true"
+            android:clickable="true"
+            android:id="@+id/login_createAccountLayout"
+            android:layout_alignParentBottom="true">
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_alignParentLeft="true"
+                android:text="@string/login_createAccount"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/textSiz"
+                android:id="@+id/login_createAccount" />
+        </LinearLayout>
+    <!--BOUTON MOT DE PASSE PERDU-->
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_alignParentRight="true"
+            android:clickable="true"
+            android:id="@+id/login_forgetPasswordLayout"
+            android:layout_alignParentBottom="true">
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_gravity="bottom"
+                android:textColor="@android:color/white"
+                android:text="@string/login_forgetPassword"
+                android:textSize="@dimen/textSiz"
+                android:id="@+id/login_forgetPassword" />
+        </LinearLayout>
+    <!--RETURN BUTTON-->
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_alignParentLeft="true"
+            android:clickable="true"
+            android:id="@+id/login_returnButton"
+            android:layout_alignParentBottom="true">
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_alignParentLeft="true"
+                android:clickable="false"
+                android:text="@string/login_returnButton"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/textSiz" />
+        </LinearLayout>
+    </RelativeLayout>
+<!-- LAYOUT DE CHARGEMENT -->
+    <include
+        layout="@layout/LoadingTemplate" />
+</RelativeLayout>

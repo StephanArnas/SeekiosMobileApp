@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/seekios_root">
+    <GridLayout
+        android:rowCount="3"
+        android:columnCount="2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <!-- EMPTY LIST -->
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:layout_rowSpan="3"
+            android:layout_columnSpan="2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="100"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginBottom="70dp"
+            android:id="@+id/alert_emptyField">
+            <XamSvg.SvgImageView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="30dp"
+                android:layout_gravity="center"
+                android:clickable="true"
+                local:colorMapping="555555=cccccc"
+                local:svg="@drawable/alert"
+                android:id="@+id/listAlert_alertImgActionClick" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/listAlert_emptyList"
+                android:textColor="?attr/textColorSubTitle"
+                android:textSize="18dp"
+                android:layout_gravity="center"
+                android:gravity="center" />
+        </LinearLayout>
+    <!-- NOTIFICATION PUSH (ON/OFF) -->
+    <!--<Switch
+            android:layout_row="0"
+            android:layout_column="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:layout_gravity="right"
+            android:checked="true"
+            android:textOn="YES"
+            android:textOff="NO"
+            android:id="@+id/listAlerts_notificationPush" />-->
+    <!-- TITRE (SEEKIOS CONNECTÉS) -->
+        <TextView
+            android:layout_row="0"
+            android:layout_column="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="5dp"
+            android:textColor="#999999"
+            android:id="@+id/listAlerts_title" />
+    <!-- NOMBRE DE SEEKIOS CONNECTÉS -->
+        <TextView
+            android:layout_row="1"
+            android:layout_column="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="5dp"
+            android:textColor="#cccbcb"
+            android:id="@+id/listAlerts_seekiosNumber" />
+    <!-- LISTVIEW DES ALERTS -->
+        <ListView
+            android:layout_row="2"
+            android:layout_column="0"
+            android:layout_columnSpan="2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_marginBottom="60dp"
+            android:divider="?attr/layoutSeparator"
+            android:dividerHeight="1dp"
+            android:scrollbars="vertical"
+            android:id="@+id/listAlerts_alertsSeekiosList" />
+    <!-- BOUTON D'AJOUT D'ALERTE -->
+    <!--<com.refractored.fab.FloatingActionButton
+        android:layout_row="2"
+        android:layout_column="0"
+        android:layout_columnSpan="2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:src="@drawable/ic_action_add"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        local:fab_colorNormal="@color/primary"
+        local:fab_colorPressed="@color/colorPrimaryPressed"
+        local:fab_colorRipple="@color/primaryDark"
+        android:id="@+id/listAlert_floatingActionButton" />-->
+    <!--android:layout_marginBottom="60dp"-->
+    <!--android:layout_marginRight="10dp"-->
+    </GridLayout>
+</RelativeLayout>

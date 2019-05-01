@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="10dp"
+    android:id="@+id/root_layout">
+<!-- TOP LAYOUT -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:id="@+id/listSeekiosRow_topLayout">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginLeft="50dp"
+            android:paddingTop="10dp"
+            android:paddingRight="5dp"
+            android:paddingLeft="35dp"
+            android:layout_centerVertical="true"
+            android:background="?attr/layoutBackground">
+        <!--NOM DU SEEKIOS-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:layout_marginRight="100dp"
+                style="@style/Title"
+                android:id="@+id/seekiosRow_seekiosName" />
+        <!--DERNIERE POSITION-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="80dp"
+                android:layout_below="@id/seekiosRow_seekiosName"
+                android:textSize="@dimen/smallTextSize"
+                android:text="@string/listSeekios_lastPositionNone"
+                android:id="@+id/seekiosRow_lastPosition" />
+        <!--LOGO MODE-->
+            <XamSvg.SvgImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="80dp"
+                local:colorMapping="dddddd=555555"
+                android:id="@+id/seekiosRow_modeLogo" />
+          <!--LOGO BATTERIE-->
+          <RelativeLayout
+              android:layout_width="10dp"
+              android:layout_height="20dp"
+              android:layout_alignParentRight="true"
+              android:layout_marginRight="45dp"
+              android:id="@+id/listSeekiosRow_logoBatteryLayout">
+            <XamSvg.SvgImageView
+                android:layout_width="10dp"
+                android:layout_height="20dp"
+                android:layout_alignParentBottom="true"
+                local:svg="@drawable/battery"
+                android:id="@+id/seekiosRow_batteryLogo" />
+            <RelativeLayout
+                android:layout_width="10dp"
+                android:layout_height="0dp"
+                android:layout_alignParentBottom="true"
+                android:clipChildren="false"
+                android:id="@+id/seekiosRow_batteryProgressLayout">
+              <XamSvg.SvgImageView
+                  android:layout_width="10dp"
+                  android:layout_height="20dp"
+                  android:layout_alignParentBottom="true"
+                  android:clipToPadding="false"
+                  local:svg="@drawable/battery"
+                  android:id="@+id/seekiosRow_batteryLogoProgress" />
+            </RelativeLayout>
+          </RelativeLayout>
+          <!--% BATTERIE-->
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="10dp"
+              android:layout_marginRight="40dp"
+              android:layout_alignParentRight="true"
+              android:layout_below="@id/listSeekiosRow_logoBatteryLayout"
+              android:textSize="@dimen/smallTextSize"
+              android:textColor="?attr/textColorLink"
+              android:text="100%"
+              android:id="@+id/seekiosRow_battery" />
+          <!--LOGO SIGNAL-->
+          <RelativeLayout
+              android:layout_width="20dp"
+              android:layout_height="20dp"
+              android:layout_marginRight="0dp"
+              android:layout_alignParentRight="true"
+              android:layout_centerHorizontal="true"
+              android:id="@+id/listSeekiosRow_logoSignalLayout">
+            <XamSvg.SvgImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentLeft="true"
+                local:svg="@drawable/signal"
+                android:id="@+id/seekiosRow_signalLogo" />
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="20dp"
+                android:layout_alignParentBottom="true"
+                android:clipChildren="false"
+                android:id="@+id/seekiosRow_signalProgressLayout">
+              <XamSvg.SvgImageView
+                  android:layout_width="20dp"
+                  android:layout_height="20dp"
+                  android:scaleType="fitStart"
+                  android:layout_alignParentLeft="true"
+                  android:clipToPadding="false"
+                  local:svg="@drawable/signal"
+                  android:id="@+id/seekiosRow_signalLogoProgress" />
+            </RelativeLayout>
+          </RelativeLayout>
+          <!--% SIGNAL-->
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="10dp"
+              android:layout_marginRight="2dp"
+              android:layout_alignParentRight="true"
+              android:layout_below="@id/listSeekiosRow_logoSignalLayout"
+              android:textSize="@dimen/smallTextSize"
+              android:textColor="?attr/textColorLink"
+              android:text="100%"
+              android:id="@+id/seekiosRow_signal" />
+        </RelativeLayout>
+    <!--IMG SEEKIOS-->
+        <SeekiosApp.Droid.CustomComponents.RoundedImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center_vertical|left"
+            android:src="@drawable/Icon"
+            android:id="@+id/seekiosRow_seekiosImage" />
+    </RelativeLayout>
+</RelativeLayout>

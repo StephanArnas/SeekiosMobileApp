@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="25 -25 150 150" style="enable-background:new 25 -25 150 150;" xml:space="preserve">
+<circle fill="#62da73" cx="100.4" cy="49.5" r="24.4"/>
+<path fill="#62da73" d="M100.1,123.9c-40.8,0-73.9-33.2-73.9-73.9S59.3-24,100.1-24S174,9.2,174,49.9C173.9,90.7,140.7,123.9,100.1,123.9z M100.1-23c-40.3,0-73,32.7-73,73c0,40.2,32.8,73,73,73s73-32.8,73-73C172.9,9.7,140.2-23,100.1-23z"/>
+<circle opacity="0.2" fill="#62da73" enable-background="new" cx="100.1" cy="49.9" r="73.5"/>
+</svg>

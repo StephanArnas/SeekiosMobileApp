@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+              android:padding="15dp">
+  <android.widget.EditText
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="15dp"
+      android:maxLength="200"
+      android:singleLine="true"
+      android:textSize="16dp"
+      android:textColor="?attr/textColorContent"
+      android:hint="Nom du contact"
+      android:textColorHint="?attr/textColorHint"
+      android:id="@+id/addRecipient_contact" />
+  <android.widget.EditText
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="15dp"
+      android:layout_marginBottom="15dp"
+      android:inputType="text|textEmailAddress"
+      android:maxLength="50"
+      android:textSize="16dp"
+      android:textColor="?attr/textColorContent"
+      android:hint="Adresse email"
+      android:textColorHint="?attr/textColorHint"
+      android:id="@+id/addRecipient_email" />
+</LinearLayout>

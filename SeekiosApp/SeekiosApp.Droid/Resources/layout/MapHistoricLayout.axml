@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<!-- MAP ET COMPOSANTS -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <!-- MAP -->
+        <SeekiosApp.Droid.CustomComponents.MapWrapperLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:animateLayoutChanges="true"
+            android:id="@+id/mapBase_layout">
+            <fragment
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                class="com.google.android.gms.maps.MapFragment"
+                android:id="@+id/mapBase_map" />
+        </SeekiosApp.Droid.CustomComponents.MapWrapperLayout>
+    <!-- ACTION BAR -->
+        <include
+            layout="@layout/ActionBarTemplate" />
+    <!-- REFRESH ACTION INFO-->
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginTop="65dp"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentTop="true"
+            android:text="En cours..."
+            android:textSize="16dp"
+            android:textColor="#ffffff"
+            android:background="@drawable/buttonrounded"
+            android:visibility="gone"
+            android:id="@+id/mapBase_inProgress" />
+    <!-- CHANGE TYPE SATELITE OR NORMAL -->
+        <XamSvg.SvgImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/toolbarLayout"
+            android:layout_marginRight="11dp"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="right"
+            android:clickable="true"
+            android:layout_alignParentRight="true"
+            local:svg="@drawable/satellite"
+            local:colorMappingSelected="88B3B3B3=36da3e"
+            android:id="@+id/mapBase_changeType" />
+    <!-- CENTER ON POSITION -->
+        <XamSvg.SvgImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="11dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/mapBase_changeType"
+            android:layout_gravity="right"
+            android:clickable="true"
+            android:layout_alignParentRight="true"
+            local:svg="@drawable/modezonefocusseekios"
+            local:colorMappingSelected="88B3B3B3=62db72"
+            android:id="@+id/mapBase_showSeekios" />
+    </RelativeLayout>
+<!-- BOTTOM LAYOUT -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_alignParentBottom="true"
+        android:clickable="true"
+        android:background="@drawable/BottomLayoutBackgroundWhite"
+        android:id="@+id/map_bottomLayout"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp">
+    <!--IMAGE DE CHARGEMENT-->
+        <ProgressBar
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:indeterminate="true"
+            android:layout_centerHorizontal="true"
+            android:visibility="invisible"
+            android:id="@+id/loading_progressbar" />
+    <!-- UPPER DATE -->
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_marginRight="40dp"
+            android:clickable="true"
+            android:text="au 01/02/2016"
+            android:textSize="14dp"
+            android:textColor="#666666"
+            android:id="@+id/upperdate"
+            android:layout_alignParentRight="true" />
+    <!-- LOWER DATE -->
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:clickable="true"
+            android:text="Du 30/10/2016"
+            android:textSize="14dp"
+            android:textColor="#666666"
+            android:id="@+id/lowerdate" />
+    <!-- SEEK BAR -->
+        <SeekBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:progress="20"
+            android:id="@+id/historic_seekbar"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="35dp"
+            android:layout_centerVertical="true"
+            android:paddingTop="5dp" />
+    <!-- CURRENT POSITION -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="35dp"
+            android:text="Position n°278 sur 576"
+            android:textSize="14dp"
+            android:textColor="#999999"
+            android:id="@+id/historic_currentPosition"
+            android:layout_centerHorizontal="true" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="5dp"
+            android:text="Aucune position"
+            android:textSize="14dp"
+            android:textColor="#999999"
+            android:visibility="gone"
+            android:id="@+id/historic_noPosition" />
+    <!-- NEXT POSITION -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:text="&gt;"
+            android:textSize="50dp"
+            android:textColor="#666666"
+            android:id="@+id/historic_nextPosition"
+            android:gravity="center_vertical"
+            android:padding="4dp"
+            android:background="@android:color/transparent" />
+    <!-- PREVIOUS POSITION -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="&lt;"
+            android:textSize="50dp"
+            android:textColor="#666666"
+            android:id="@+id/historic_previousPosition"
+            android:gravity="center_vertical"
+            android:padding="4dp"
+            android:background="@android:color/transparent" />
+    </RelativeLayout>
+<!-- LAYOUT DE CHARGEMENT -->
+    <include
+        layout="@layout/LoadingTemplate" />
+</RelativeLayout>

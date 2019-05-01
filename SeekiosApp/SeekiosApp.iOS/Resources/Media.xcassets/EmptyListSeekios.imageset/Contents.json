@@ -1,0 +1,46 @@
+{
+  "images": [
+    {
+      "scale": "1x",
+      "idiom": "iphone",
+      "filename": "EmptyListSeekios.png"
+    },
+    {
+      "scale": "2x",
+      "idiom": "iphone",
+      "filename": "EmptyListSeekios@2x.png"
+    },
+    {
+      "scale": "3x",
+      "idiom": "iphone",
+      "filename": "EmptyListSeekios@3x.png"
+    },
+    {
+      "idiom": "iphone",
+      "filename": "EmptyListSeekios.pdf"
+    },
+    {
+      "idiom": "ipad",
+      "filename": "EmptyListSeekios.pdf"
+    },
+    {
+      "scale": "1x",
+      "idiom": "ipad"
+    },
+    {
+      "scale": "2x",
+      "idiom": "ipad"
+    },
+    {
+      "scale": "3x",
+      "idiom": "ipad"
+    }
+  ],
+  "properties": {
+    "template-rendering-intent": ""
+  },
+  "info": {
+    "version": 1,
+    "author": ""
+  }
+}

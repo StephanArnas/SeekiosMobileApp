@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+    <XamSvg.SvgImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        local:svg="@drawable/sos"
+        android:id="@+id/transactionHistoric_historicImgActionClick"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="20dp" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_weight="2">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Aucune infomation"
+            android:textColor="@color/primary"
+            android:textSize="17dp"
+            android:id="@+id/transactionHistoric_title" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Seekios Chat"
+            android:textColor="@color/textColorContent"
+            android:textSize="15dp"
+            android:id="@+id/transactionHistoric_subtitle"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Le 05/11/2016 à 14h56"
+            android:textColor="@color/textColorContent"
+            android:textSize="15dp"
+            android:id="@+id/transactionHistoric_date"
+            android:textStyle="italic" />
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-1"
+        android:textColor="@color/textColorContent"
+        android:textSize="18dp"
+        android:id="@+id/transactionHistoric_creditAmount"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_weight="1" />
+</LinearLayout>

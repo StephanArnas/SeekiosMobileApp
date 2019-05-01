@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="seekiosapp.droid" android:installLocation="auto" android:versionName="1.01.0609.1655" android:versionCode="96">
+	<uses-sdk android:minSdkVersion="21" />
+	<uses-permission android:name="android.permission.READ_CONTACTS" />
+	<!--<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>-->
+	<application android:label="Seekios" android:largeHeap="true" android:name="android.support.multidex.MultiDexApplication" android:hardwareAccelerated="true" android:icon="@drawable/Icon">
+		<!--Google api key : AIzaSyCxFjVP9cDLJAweHWdhMYSu4YX5UEez178-->
+		<meta-data android:name="com.google.android.geo.API_KEY" android:value="AIzaSyAzGZb0cyZwbc0o46s-y4r26hy28NchDKs" />
+		<meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" />
+		<meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_app_id" />
+		<meta-data android:name="com.onesignal.NotificationOpened.DEFAULT" android:value="DISABLE" />
+		<meta-data android:name="net.hockeyapp.android.appIdentifier" android:value="07d00a23e09147d6980fd86f4b695da7" />
+		<meta-data android:name="com.onesignal.NotificationAccentColor.DEFAULT" android:value="FF3EB74F" />
+		<!-- OneSignal Permissions - Notification Handler -->
+		<receiver android:name="com.onesignal.GcmBroadcastReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+			<intent-filter>
+				<action android:name="com.google.android.c2dm.intent.RECEIVE" />
+				<category android:name="seekiosapp.droid" />
+			</intent-filter>
+		</receiver>
+		<!--<receiver android:name="com.google.android.gms.gcm.GcmReceiver" android:exported="true" android:permission="com.google.android.c2dm.permission.SEND">
+			<intent-filter>
+				<action android:name="com.google.android.c2dm.intent.RECEIVE" />
+				<action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+				<category android:name="seekiosapp.droid" />
+			</intent-filter>
+		</receiver>-->
+		<!--<receiver android:name="seekiosapp.droid.services.PowerOnBroadcastReceiver">
+			<intent-filter>
+				<action android:name="android.intent.action.BOOT_COMPLETED" />
+				<action android:name="android.intent.action.QUICKBOOT_POWERON" />
+			</intent-filter>
+		</receiver>-->
+		<activity android:name="com.google.android.gms.ads.AdActivity" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:theme="@android:style/Theme.Translucent" />
+		<activity android:name="com.google.android.gms.ads.purchase.InAppPurchaseActivity" android:theme="@style/Theme.IAPTheme" />
+		<activity android:name="net.hockeyapp.android.UpdateActivity" />
+		<!--Pour AdColony-->
+		<!--<activity android:name="com.jirbo.adcolony.AdColonyOverlay" android:configChanges="keyboardHidden|orientation|screenSize" android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />
+		<activity android:name="com.jirbo.adcolony.AdColonyFullscreen" android:configChanges="keyboardHidden|orientation|screenSize" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" />
+		<activity android:name="com.jirbo.adcolony.AdColonyBrowser" android:configChanges="keyboardHidden|orientation|screenSize" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" />-->
+	</application>
+	<!-- OneSignal Permissions - Notification Handler -->
+	<permission android:name="seekiosapp.droid.permission.C2D_MESSAGE" android:protectionLevel="signature" />
+	<!-- Google Maps for Android v2 requires OpenGL ES v2 -->
+	<uses-feature android:glEsVersion="0x00020000" android:required="true" />
+	<!-- Allow the application to access Google web-based services. -->
+	<!-- Permission to receive remote notifications from Google Play Services -->
+	<!--<permission android:name="seekiosapp.droid.permission.MAPS_RECEIVE" android:protectionLevel="signature" />-->
+	<!-- These are optional, but recommended. They will allow Maps to use the My Location provider. -->
+	<!--<uses-permission android:name="android.permission.ACCESS_COURSE_LOCATION" />
+  <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+  <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" />
+  <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />-->
+	<!--Permissions pour le GCM-->
+	<!--Pour le bluetooth-->
+	<!--<uses-permission android:name="android.permission.BLUETOOTH" />
+	<uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />-->
+	<!--Service-->
+	<!--<service android:name="seekiosapp.droid.services.GCMMessageManagerService"></service>-->
+	<service android:name="seekiosapp.droid.services.CloseGestureService"></service>
+	<!--<service
+   android:name="seekiosapp.droid.services.OneSignalNotificationExtenderService"
+   android:exported="false">
+    <intent-filter>
+      <action android:name="com.onesignal.NotificationExtender" />
+    </intent-filter>
+  </service>-->
+	<!--<service android:name="seekiosapp.droid.services.FollowMeBackgroundService"></service>-->
+	<!--<service android:name="seekiosapp.droid.services.DontMoveBackgroundService"></service>-->
+	<!--Pour le broadcast-->
+	<!--<uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />-->
+	<!--<service android:name="seekiosapp.droid.services.OneSignalNotificationService"></service>-->
+</manifest>

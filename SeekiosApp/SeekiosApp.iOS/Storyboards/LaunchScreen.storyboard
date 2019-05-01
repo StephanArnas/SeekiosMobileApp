@@ -1,0 +1,167 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Llm-lL-Icb"/>
+                        <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LoginBackground" translatesAutoresizingMaskIntoConstraints="NO" id="17">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <variation key="heightClass=regular-widthClass=compact" image="LoginBackground"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LogoSeekios" translatesAutoresizingMaskIntoConstraints="NO" id="6">
+                                <rect key="frame" x="40" y="52" width="240" height="85.5"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="17" secondAttribute="centerX" id="18"/>
+                            <constraint firstItem="17" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="19"/>
+                            <constraint firstItem="17" firstAttribute="height" secondItem="Ze5-6b-2t3" secondAttribute="height" id="20"/>
+                            <constraint firstItem="17" firstAttribute="width" secondItem="Ze5-6b-2t3" secondAttribute="width" id="21"/>
+                            <constraint firstItem="17" firstAttribute="centerY" secondItem="6" secondAttribute="centerY" multiplier="3" id="25"/>
+                            <constraint firstItem="6" firstAttribute="centerX" secondItem="17" secondAttribute="centerX" id="26"/>
+                            <constraint firstItem="6" firstAttribute="height" secondItem="17" secondAttribute="height" multiplier="0.15" id="27"/>
+                            <constraint firstItem="6" firstAttribute="width" secondItem="17" secondAttribute="width" multiplier="0.75" id="28"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="53" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="LogoSeekios" width="300" height="98"/>
+        <image name="BackgroundButtonDarkGrey.png" width="1" height="1"/>
+        <image name="BackgroundButtonDarkRed.png" width="1" height="1"/>
+        <image name="BackgroundButtonDarkRedSelected.png" width="1" height="1"/>
+        <image name="BackgroundButtonGreen.png" width="1" height="1"/>
+        <image name="BackgroundButtonGreenSelected.png" width="1" height="1"/>
+        <image name="BackgroundButtonGrey.png" width="1" height="1"/>
+        <image name="Icon-60.png" width="60" height="60"/>
+        <image name="Icon-Small-40.png" width="40" height="40"/>
+        <image name="Icon-Small.png" width="29" height="29"/>
+        <image name="Icon.png" width="57" height="57"/>
+        <image name="About" width="200" height="200"/>
+        <image name="Add" width="22" height="22"/>
+        <image name="AddCircle" width="100" height="100"/>
+        <image name="AddContact" width="100" height="100"/>
+        <image name="AddLeftMenu" width="100" height="100"/>
+        <image name="Alarm" width="100" height="100"/>
+        <image name="AlarmAlert" width="100" height="100"/>
+        <image name="AlertSOS" width="100" height="100"/>
+        <image name="AlertSOSParam" width="360" height="203"/>
+        <image name="AlertUser" width="100" height="100"/>
+        <image name="Arrow" width="100" height="100"/>
+        <image name="BackgroundAbout" width="360" height="640"/>
+        <image name="CreditParameter" width="200" height="200"/>
+        <image name="DefaultSeekios" width="214" height="214"/>
+        <image name="DefaultUser" width="300" height="300"/>
+        <image name="Email" width="100" height="100"/>
+        <image name="EmptyAddContact" width="100" height="100"/>
+        <image name="EmptyAlertList" width="100" height="100"/>
+        <image name="EmptyListSeekios" width="300" height="300"/>
+        <image name="EnableShare" width="300" height="300"/>
+        <image name="Feedback" width="200" height="200"/>
+        <image name="FirstRefresh-1" width="100" height="100"/>
+        <image name="FirstRefresh-2" width="100" height="100"/>
+        <image name="FirstRefresh-3" width="100" height="100"/>
+        <image name="FocusOnZone" width="100" height="100"/>
+        <image name="FocusOnZoneSelected" width="100" height="100"/>
+        <image name="IconAddCredits" width="100" height="100"/>
+        <image name="IconCredit" width="100" height="100"/>
+        <image name="InProgress" width="100" height="100"/>
+        <image name="LoginBackground3" width="360" height="640"/>
+        <image name="LogoFacebook" width="100" height="100"/>
+        <image name="LogoInstagram" width="100" height="100"/>
+        <image name="LogoLinkedin" width="100" height="100"/>
+        <image name="LogoTwitter" width="100" height="100"/>
+        <image name="Logout" width="100" height="100"/>
+        <image name="MapDetail2" width="100" height="100"/>
+        <image name="MapFocusOnSeekios" width="100" height="100"/>
+        <image name="MapFocusOnSeekiosSelected" width="100" height="100"/>
+        <image name="MapPin" width="30" height="30"/>
+        <image name="MapPinLast" width="30" height="30"/>
+        <image name="MapPinRed" width="30" height="30"/>
+        <image name="MapTypePlan" width="100" height="100"/>
+        <image name="MapTypeSatellite" width="100" height="100"/>
+        <image name="MapZoomIn" width="100" height="100"/>
+        <image name="MapZoomOut" width="100" height="100"/>
+        <image name="MenuBar" width="22" height="22"/>
+        <image name="ModeDontMove" width="100" height="100"/>
+        <image name="ModeDontMoveAlert" width="100" height="100"/>
+        <image name="ModeDontMoveParam" width="360" height="200"/>
+        <image name="ModeTracking" width="100" height="100"/>
+        <image name="ModeTrackingParam" width="360" height="200"/>
+        <image name="ModeZone" width="100" height="100"/>
+        <image name="ModeZoneAlert" width="100" height="100"/>
+        <image name="ModeZoneParam" width="360" height="200"/>
+        <image name="MyConsumption" width="100" height="100"/>
+        <image name="NeedUpdate" width="300" height="300"/>
+        <image name="Next" width="100" height="100"/>
+        <image name="NoCredit" width="100" height="100"/>
+        <image name="Password" width="100" height="100"/>
+        <image name="PinModeDontMove" width="75" height="75"/>
+        <image name="PinModeDontMoveOrange" width="75" height="75"/>
+        <image name="PinModeDontMoveRed" width="75" height="75"/>
+        <image name="PinSeekiosGreen" width="75" height="75"/>
+        <image name="PinSeekiosOrange" width="75" height="75"/>
+        <image name="PinSeekiosRed" width="100" height="100"/>
+        <image name="RefreshSeekios" width="100" height="100"/>
+        <image name="SeekiosLed" width="100" height="100"/>
+        <image name="SeekiosLedGreen" width="100" height="100"/>
+        <image name="SeekiosLedOrange" width="100" height="100"/>
+        <image name="SeekiosLedRed" width="100" height="100"/>
+        <image name="SeekiosParameter" width="300" height="300"/>
+        <image name="Settings" width="100" height="100"/>
+        <image name="Trash" width="100" height="100"/>
+        <image name="TutoAddSeekios" width="300" height="300"/>
+        <image name="TutoCredits" width="300" height="300"/>
+        <image name="TutoIcon1" width="100" height="100"/>
+        <image name="TutoMode" width="300" height="300"/>
+        <image name="Tutorial" width="200" height="200"/>
+        <image name="Undo" width="100" height="100"/>
+        <image name="UndoSelected" width="100" height="100"/>
+        <image name="Arrow2" width="30" height="30"/>
+        <image name="Battery0" width="52" height="100"/>
+        <image name="Battery10" width="52" height="100"/>
+        <image name="Battery100" width="52" height="100"/>
+        <image name="Battery20" width="52" height="100"/>
+        <image name="Battery30" width="52" height="100"/>
+        <image name="Battery40" width="52" height="100"/>
+        <image name="Battery50" width="52" height="100"/>
+        <image name="Battery60" width="52" height="100"/>
+        <image name="Battery70" width="52" height="100"/>
+        <image name="Battery80" width="52" height="100"/>
+        <image name="Battery90" width="192" height="370"/>
+        <image name="CreditCost0" width="30" height="30"/>
+        <image name="CreditCost1" width="59" height="59"/>
+        <image name="CreditCost2" width="29" height="29"/>
+        <image name="CriticalBattery" width="100" height="100"/>
+        <image name="More" width="30" height="30"/>
+        <image name="MoreAlert" width="30" height="30"/>
+        <image name="PowerSaving" width="100" height="100"/>
+        <image name="PowerSavingSeekios" width="100" height="100"/>
+        <image name="PowerSavingTime" width="100" height="100"/>
+        <image name="RefreshSeekiosAlert" width="100" height="100"/>
+        <image name="AlertSOSAlert" width="100" height="100"/>
+        <image name="LoginBackground" width="360" height="640"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

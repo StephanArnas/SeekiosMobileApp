@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="-249 372.9 96 96" style="enable-background:new -249 372.9 96 96;" xml:space="preserve">
+<style type="text/css">
+	.st0{clip-path:url(#SVGID_2_);}
+	.st1{fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10;}
+	.st2{opacity:0.4;enable-background:new    ;}
+	.st3{clip-path:url(#SVGID_4_);fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10;}
+	.st4{clip-path:url(#SVGID_6_);fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10;}
+	.st5{clip-path:url(#SVGID_8_);fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10;}
+	.st6{clip-path:url(#SVGID_10_);fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10;}
+	.st7{clip-path:url(#SVGID_12_);fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10;}
+	.st8{clip-path:url(#SVGID_14_);fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10;}
+	.st9{clip-path:url(#SVGID_16_);fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10;}
+	.st10{clip-path:url(#SVGID_18_);fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10;}
+	.st11{clip-path:url(#SVGID_20_);fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10;}
+	.st12{clip-path:url(#SVGID_22_);fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10;}
+	.st13{clip-path:url(#SVGID_24_);fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10;}
+	.st14{clip-path:url(#SVGID_26_);fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10;}
+	.st15{clip-path:url(#SVGID_28_);fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10;}
+	.st16{clip-path:url(#SVGID_30_);}
+	.st17{display:none;}
+	.st18{fill:#62DA73;}
+	.st19{fill:none;stroke:#62DA73;stroke-width:1.9335;stroke-linecap:round;stroke-miterlimit:10;}
+</style>
+<symbol  id="material_x5F_system_x5F_icon_x5F_grid" viewBox="-24 -24 48 48">
+	<g>
+		<g>
+			<defs>
+				<polygon id="SVGID_1_" points="24,-24 -24,-24 -24,24 24,24 				"/>
+			</defs>
+			<clipPath id="SVGID_2_">
+				<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+			</clipPath>
+			<g class="st0">
+				<g>
+					<line class="st1" x1="-22" y1="-24" x2="-22" y2="24"/>
+					<line class="st1" x1="-20" y1="-24" x2="-20" y2="24"/>
+					<line class="st1" x1="-18" y1="-24" x2="-18" y2="24"/>
+					<line class="st1" x1="-16" y1="-24" x2="-16" y2="24"/>
+					<line class="st1" x1="-14" y1="-24" x2="-14" y2="24"/>
+					<line class="st1" x1="-12" y1="-24" x2="-12" y2="24"/>
+					<line class="st1" x1="-10" y1="-24" x2="-10" y2="24"/>
+					<line class="st1" x1="-8" y1="-24" x2="-8" y2="24"/>
+					<line class="st1" x1="-6" y1="-24" x2="-6" y2="24"/>
+					<line class="st1" x1="-4" y1="-24" x2="-4" y2="24"/>
+					<line class="st1" x1="-2" y1="-24" x2="-2" y2="24"/>
+					<line class="st1" x1="0" y1="-24" x2="0" y2="24"/>
+					<line class="st1" x1="2" y1="-24" x2="2" y2="24"/>
+					<line class="st1" x1="4" y1="-24" x2="4" y2="24"/>
+					<line class="st1" x1="6" y1="-24" x2="6" y2="24"/>
+					<line class="st1" x1="8" y1="-24" x2="8" y2="24"/>
+					<line class="st1" x1="10" y1="-24" x2="10" y2="24"/>
+					<line class="st1" x1="12" y1="-24" x2="12" y2="24"/>
+					<line class="st1" x1="14" y1="-24" x2="14" y2="24"/>
+					<line class="st1" x1="16" y1="-24" x2="16" y2="24"/>
+					<line class="st1" x1="18" y1="-24" x2="18" y2="24"/>
+					<line class="st1" x1="20" y1="-24" x2="20" y2="24"/>
+					<line class="st1" x1="22" y1="-24" x2="22" y2="24"/>
+				</g>
+				<g>
+					<line class="st1" x1="-24" y1="22" x2="24" y2="22"/>
+					<line class="st1" x1="-24" y1="20" x2="24" y2="20"/>
+					<line class="st1" x1="-24" y1="18" x2="24" y2="18"/>
+					<line class="st1" x1="-24" y1="16" x2="24" y2="16"/>
+					<line class="st1" x1="-24" y1="14" x2="24" y2="14"/>
+					<line class="st1" x1="-24" y1="12" x2="24" y2="12"/>
+					<line class="st1" x1="-24" y1="10" x2="24" y2="10"/>
+					<line class="st1" x1="-24" y1="8" x2="24" y2="8"/>
+					<line class="st1" x1="-24" y1="6" x2="24" y2="6"/>
+					<line class="st1" x1="-24" y1="4" x2="24" y2="4"/>
+					<line class="st1" x1="-24" y1="2" x2="24" y2="2"/>
+					<line class="st1" x1="-24" y1="0" x2="24" y2="0"/>
+					<line class="st1" x1="-24" y1="-2" x2="24" y2="-2"/>
+					<line class="st1" x1="-24" y1="-4" x2="24" y2="-4"/>
+					<line class="st1" x1="-24" y1="-6" x2="24" y2="-6"/>
+					<line class="st1" x1="-24" y1="-8" x2="24" y2="-8"/>
+					<line class="st1" x1="-24" y1="-10" x2="24" y2="-10"/>
+					<line class="st1" x1="-24" y1="-12" x2="24" y2="-12"/>
+					<line class="st1" x1="-24" y1="-14" x2="24" y2="-14"/>
+					<line class="st1" x1="-24" y1="-16" x2="24" y2="-16"/>
+					<line class="st1" x1="-24" y1="-18" x2="24" y2="-18"/>
+					<line class="st1" x1="-24" y1="-20" x2="24" y2="-20"/>
+					<line class="st1" x1="-24" y1="-22" x2="24" y2="-22"/>
+				</g>
+				<g>
+					<path id="XMLID_1_" d="M23.8,23.7v-47.5h-47.5v47.5H23.8 M24,24h-48v-48h48V24L24,24z"/>
+				</g>
+			</g>
+		</g>
+	</g>
+</symbol>
+<symbol  id="material_x5F_system_x5F_icon_x5F_keylines" viewBox="-24 -24 48 48">
+	<g class="st2">
+		<g>
+			<defs>
+				<polygon id="SVGID_3_" points="-24,-24 -24,24 24,24 24,-24 				"/>
+			</defs>
+			<clipPath id="SVGID_4_">
+				<use xlink:href="#SVGID_3_"  style="overflow:visible;"/>
+			</clipPath>
+			<line class="st3" x1="0" y1="24" x2="0" y2="-24"/>
+		</g>
+		<g>
+			<defs>
+				<polygon id="SVGID_5_" points="-24,-24 -24,24 24,24 24,-24 				"/>
+			</defs>
+			<clipPath id="SVGID_6_">
+				<use xlink:href="#SVGID_5_"  style="overflow:visible;"/>
+			</clipPath>
+			<line class="st4" x1="24" y1="0" x2="-24" y2="0"/>
+		</g>
+		<g>
+			<defs>
+				<polygon id="SVGID_7_" points="-24,-24 -24,24 24,24 24,-24 				"/>
+			</defs>
+			<clipPath id="SVGID_8_">
+				<use xlink:href="#SVGID_7_"  style="overflow:visible;"/>
+			</clipPath>
+			<line class="st5" x1="24" y1="8" x2="-24" y2="8"/>
+		</g>
+		<g>
+			<defs>
+				<polygon id="SVGID_9_" points="-24,-24 -24,24 24,24 24,-24 				"/>
+			</defs>
+			<clipPath id="SVGID_10_">
+				<use xlink:href="#SVGID_9_"  style="overflow:visible;"/>
+			</clipPath>
+			<line class="st6" x1="24" y1="-8" x2="-24" y2="-8"/>
+		</g>
+		<g>
+			<defs>
+				<polygon id="SVGID_11_" points="-24,-24 -24,24 24,24 24,-24 				"/>
+			</defs>
+			<clipPath id="SVGID_12_">
+				<use xlink:href="#SVGID_11_"  style="overflow:visible;"/>
+			</clipPath>
+			<line class="st7" x1="8" y1="-24" x2="8" y2="24"/>
+		</g>
+		<g>
+			<defs>
+				<polygon id="SVGID_13_" points="-24,-24 -24,24 24,24 24,-24 				"/>
+			</defs>
+			<clipPath id="SVGID_14_">
+				<use xlink:href="#SVGID_13_"  style="overflow:visible;"/>
+			</clipPath>
+			<line class="st8" x1="-8" y1="-24" x2="-8" y2="24"/>
+		</g>
+		<g>
+			<defs>
+				<polygon id="SVGID_15_" points="-24,-24 -24,24 24,24 24,-24 				"/>
+			</defs>
+			<clipPath id="SVGID_16_">
+				<use xlink:href="#SVGID_15_"  style="overflow:visible;"/>
+			</clipPath>
+			<line class="st9" x1="23.7" y1="23.7" x2="-23.8" y2="-23.8"/>
+		</g>
+		<g>
+			<defs>
+				<polygon id="SVGID_17_" points="-24,-24 -24,24 24,24 24,-24 				"/>
+			</defs>
+			<clipPath id="SVGID_18_">
+				<use xlink:href="#SVGID_17_"  style="overflow:visible;"/>
+			</clipPath>
+			<line class="st10" x1="-23.8" y1="23.7" x2="23.7" y2="-23.8"/>
+		</g>
+		<g>
+			<defs>
+				<polygon id="SVGID_19_" points="-24,-24 -24,24 24,24 24,-24 				"/>
+			</defs>
+			<clipPath id="SVGID_20_">
+				<use xlink:href="#SVGID_19_"  style="overflow:visible;"/>
+			</clipPath>
+			<path class="st11" d="M0,10c-5.5,0-10-4.5-10-10s4.5-10,10-10S10-5.5,10,0S5.5,10,0,10z"/>
+		</g>
+		<g>
+			<defs>
+				<polygon id="SVGID_21_" points="-24,-24 -24,24 24,24 24,-24 				"/>
+			</defs>
+			<clipPath id="SVGID_22_">
+				<use xlink:href="#SVGID_21_"  style="overflow:visible;"/>
+			</clipPath>
+			<path class="st12" d="M0,20c-11.1,0-20-8.9-20-20s8.9-20,20-20s20,8.9,20,20S11.1,20,0,20z"/>
+		</g>
+		<g>
+			<defs>
+				<polygon id="SVGID_23_" points="-24,-24 -24,24 24,24 24,-24 				"/>
+			</defs>
+			<clipPath id="SVGID_24_">
+				<use xlink:href="#SVGID_23_"  style="overflow:visible;"/>
+			</clipPath>
+			<path class="st13" d="M14,18h-28c-2.2,0-4-1.8-4-4v-28c0-2.2,1.8-4,4-4h28c2.2,0,4,1.8,4,4v28C18,16.2,16.2,18,14,18z"/>
+		</g>
+		<g>
+			<defs>
+				<polygon id="SVGID_25_" points="-24,-24 -24,24 24,24 24,-24 				"/>
+			</defs>
+			<clipPath id="SVGID_26_">
+				<use xlink:href="#SVGID_25_"  style="overflow:visible;"/>
+			</clipPath>
+			<path class="st14" d="M16,16h-32c-2.2,0-4-1.8-4-4v-24c0-2.2,1.8-4,4-4h32c2.2,0,4,1.8,4,4v24C20,14.2,18.2,16,16,16z"/>
+		</g>
+		<g>
+			<defs>
+				<polygon id="SVGID_27_" points="-24,-24 -24,24 24,24 24,-24 				"/>
+			</defs>
+			<clipPath id="SVGID_28_">
+				<use xlink:href="#SVGID_27_"  style="overflow:visible;"/>
+			</clipPath>
+			<path class="st15" d="M16-16v32c0,2.2-1.8,4-4,4h-24c-2.2,0-4-1.8-4-4v-32c0-2.2,1.8-4,4-4h24C14.2-20,16-18.2,16-16z"/>
+		</g>
+		<g>
+			<defs>
+				<polygon id="SVGID_29_" points="-24,-24 -24,24 24,24 24,-24 				"/>
+			</defs>
+			<clipPath id="SVGID_30_">
+				<use xlink:href="#SVGID_29_"  style="overflow:visible;"/>
+			</clipPath>
+			<g class="st16">
+				<path id="XMLID_2_" d="M23.8,23.7v-47.5h-47.5v47.5H23.8 M24,24h-48v-48h48V24L24,24z"/>
+			</g>
+		</g>
+	</g>
+</symbol>
+<g id="Calque_1_1_" class="st17">
+	
+		<use xlink:href="#material_x5F_system_x5F_icon_x5F_grid"  width="48" height="48" id="XMLID_92_" x="-24" y="-24" transform="matrix(2 0 0 -2 -200.9995 420.8902)" style="display:inline;overflow:visible;"/>
+	
+		<use xlink:href="#material_x5F_system_x5F_icon_x5F_keylines"  width="48" height="48" id="XMLID_91_" x="-24" y="-24" transform="matrix(2 0 0 -2 -200.9995 420.8902)" style="display:inline;overflow:visible;"/>
+</g>
+<g id="XMLID_1105_">
+	<path id="XMLID_21_" class="st18" d="M-201.6,383.9c20.3,0,36.7,16.5,36.7,36.7c0,20.2-16.4,36.8-36.7,36.8s-36.7-16.5-36.7-36.8
+		C-238.3,400.3-221.9,383.9-201.6,383.9 M-201.6,380c-22.4,0-40.6,18.2-40.6,40.6c0,22.4,18.2,40.6,40.6,40.6s40.6-18.1,40.6-40.6
+		S-179.2,380-201.6,380L-201.6,380z"/>
+</g>
+<path id="XMLID_1098_" class="st18" d="M-196,414.2c-0.4-2.1-1.1-4.3-5.8-4.3s-5.3,1.8-5.3,3.2c0,5.2,20.6,1.4,20.6,13.5
+	c0,9.6-9.3,11.3-14.4,11.3c-7.5,0-15.6-2.6-15.8-11.4h8.9c0,2.8,1.7,4.8,7.2,4.8c4.4,0,5.5-2.2,5.5-3.4c0-5.5-20.4-1.4-20.4-13.6
+	c0-4.8,3-11,13.3-11c6.4,0,14.1,1.6,14.8,10.9C-187.4,414.2-196,414.2-196,414.2z"/>
+<g id="XMLID_1096_">
+	<path id="XMLID_1097_" class="st19" d="M-219.9,397.3c-6.9,5.4-11.3,13.9-11.3,23.3s4.4,17.7,11.1,23.2"/>
+</g>
+<g id="XMLID_1093_">
+	<path id="XMLID_1094_" class="st19" d="M-172.2,416.3c-2.1-14.4-14.4-25.4-29.4-25.4c-3.8,0-7.4,0.7-10.7,2"/>
+</g>
+<g id="XMLID_1089_">
+	<path id="XMLID_1092_" class="st19" d="M-212.6,448.2c3.4,1.4,7.1,2.1,11,2.1c14.9,0,27.2-11,29.3-25.2"/>
+</g>
+</svg>

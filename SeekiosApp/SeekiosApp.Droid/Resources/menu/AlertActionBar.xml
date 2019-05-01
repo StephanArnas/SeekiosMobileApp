@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:local="http://schemas.android.com/apk/res-auto"
+      android:theme="@style/Theme.Normal">
+  <item android:id="@+id/menu_delete"
+      local:showAsAction="always"
+      android:icon="@drawable/ic_action_trash"
+      android:title="@string/actionBar_remove"/>
+  <item android:id="@+id/menu_save"
+      local:showAsAction="always"
+      android:icon="@drawable/ic_action_save"
+      android:title="@string/actionBar_save"/>
+  <item
+      android:id="@+id/menu_addToFavs"
+      android:showAsAction="never"
+      android:icon="@drawable/icon"
+      android:title="@string/actionBar_addToFavs" />
+  <item
+      android:id="@+id/menu_listOfFavs"
+      android:showAsAction="never"
+      android:title="@string/actionBar_listOfFavs" />
+</menu>

@@ -1,0 +1,46 @@
+{
+  "images": [
+    {
+      "scale": "1x",
+      "idiom": "iphone",
+      "filename": "LogoSeekios.png"
+    },
+    {
+      "scale": "2x",
+      "idiom": "iphone",
+      "filename": "LogoSeekios@2x.png"
+    },
+    {
+      "scale": "3x",
+      "idiom": "iphone",
+      "filename": "LogoSeekios@3x.png"
+    },
+    {
+      "idiom": "iphone",
+      "filename": "LogoSeekios.pdf"
+    },
+    {
+      "idiom": "ipad",
+      "filename": "LogoSeekios.pdf"
+    },
+    {
+      "scale": "1x",
+      "idiom": "ipad"
+    },
+    {
+      "scale": "2x",
+      "idiom": "ipad"
+    },
+    {
+      "scale": "3x",
+      "idiom": "ipad"
+    }
+  ],
+  "properties": {
+    "template-rendering-intent": ""
+  },
+  "info": {
+    "version": 1,
+    "author": ""
+  }
+}

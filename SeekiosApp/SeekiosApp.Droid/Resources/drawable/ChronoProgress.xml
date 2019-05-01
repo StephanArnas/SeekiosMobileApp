@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<RelativeLayout
+   xmlns:android="http://schemas.android.com/apk/res/android"
+   xmlns:local="http://schemas.android.com/apk/res-auto"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content">
+  <!-- Chrono -->
+  <XamSvg.SvgImageView
+      android:layout_width="80dp"
+      android:layout_height="80dp"
+      android:clickable="true"
+      local:svg="@drawable/chrono"
+      android:id="@+id/mapBase_trackingChrono" />
+  <ProgressBar
+      style="?android:attr/progressBarStyleHorizontal"
+      android:layout_width="57dp"
+      android:layout_height="57dp"
+      android:layout_marginTop="30dp"
+      android:indeterminate="false"
+      android:layout_centerInParent="true"
+      android:angle="0"
+      android:max="200"
+      android:rotation="-90"
+      android:progressDrawable="@drawable/FullCircleProgressBar"
+      android:id="@+id/mapBase_trackingProgress" />
+</RelativeLayout>

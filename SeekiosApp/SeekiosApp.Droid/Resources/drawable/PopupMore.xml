@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:background="@drawable/whiteroundedpopupbackground"
+    android:id="@+id/mainLayout">
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical">
+    <!-- MORE TITLE -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/map_popupMoreTitle"
+        android:textColor="@color/textColorPrimary"
+        android:textSize="20dp"
+        android:background="@color/primary"
+        android:gravity="center"
+        android:paddingTop="@dimen/marginM"
+        android:paddingBottom="@dimen/marginM" />
+    <!-- Address TITLE -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/marginS"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"
+        android:textSize="16dp"
+        android:textColor="@color/textColorContent"
+        android:id="@+id/more_address" />
+    <!-- Navigate To -->
+    <View style="@style/View" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:orientation="horizontal"
+        android:id="@+id/more_navigateTo">
+      <XamSvg.SvgImageView
+          android:layout_width="30dp"
+          android:layout_height="30dp"
+          android:layout_marginLeft="@dimen/marginS"
+          android:layout_gravity="center_vertical"
+          local:svg="@drawable/navigate"
+          android:layout_marginTop="@dimen/marginS"
+          android:layout_marginBottom="@dimen/marginS" />
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="@dimen/marginS"
+          android:layout_marginTop="@dimen/marginS"
+          android:layout_marginBottom="@dimen/marginS"
+          android:textSize="20dp"
+          android:textColor="@color/textColorContent"
+          android:text="@string/map_popupMoreNavigateTo" />
+    </LinearLayout>
+    <View style="@style/View" />
+    <!-- Share -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:orientation="horizontal"
+        android:id="@+id/more_share">
+      <XamSvg.SvgImageView
+          android:layout_width="30dp"
+          android:layout_height="30dp"
+          android:layout_marginLeft="@dimen/marginS"
+          android:layout_gravity="center_vertical"
+          local:svg="@drawable/share2"
+          android:layout_marginTop="@dimen/marginS"
+          android:layout_marginBottom="@dimen/marginS" />
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="@dimen/marginS"
+          android:layout_marginTop="@dimen/marginS"
+          android:layout_marginBottom="@dimen/marginS"
+          android:textSize="20dp"
+          android:textColor="@color/textColorContent"
+          android:text="@string/map_popupMoreShare"/>
+    </LinearLayout>
+    <View style="@style/View" />
+    <!-- Copy Adress -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:orientation="horizontal"
+        android:id="@+id/more_copyAdress">
+      <XamSvg.SvgImageView
+          android:layout_width="30dp"
+          android:layout_height="30dp"
+          android:layout_marginLeft="@dimen/marginS"
+          android:layout_gravity="center_vertical"
+          local:colorMapping="62da73=999999"
+          local:svg="@drawable/copy"
+          android:layout_marginTop="@dimen/marginS"
+          android:layout_marginBottom="@dimen/marginS" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/marginS"
+            android:layout_marginTop="@dimen/marginS"
+            android:layout_marginBottom="@dimen/marginS"
+            android:textSize="20dp"
+            android:textColor="@color/textColorContent"
+            android:text="@string/map_popupMoreCopy" />
+      </LinearLayout>
+    <View style="@style/View" />
+  </LinearLayout>
+</RelativeLayout>

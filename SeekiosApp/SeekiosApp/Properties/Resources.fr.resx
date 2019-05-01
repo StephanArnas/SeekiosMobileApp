@@ -1,0 +1,696 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AlertActivity_MissingContent_Content" xml:space="preserve">
+    <value>Vous devez définir un contenu d'alerte</value>
+  </data>
+  <data name="AlertActivity_MissingContent_Title" xml:space="preserve">
+    <value>Contenu vide</value>
+  </data>
+  <data name="AlertActivity_MissingTitle_Content" xml:space="preserve">
+    <value>Vous devez définir un objet d'email</value>
+  </data>
+  <data name="AlertActivity_MissingTitle_Title" xml:space="preserve">
+    <value>Objet email vide</value>
+  </data>
+  <data name="AlertActivity_MissingRecipientContent" xml:space="preserve">
+    <value>Vous devez définir au moins un destinataire</value>
+  </data>
+  <data name="AlertActivity_MissingRecipientTitle" xml:space="preserve">
+    <value>Destinataire manquant</value>
+  </data>
+  <data name="AuthenticationFailed" xml:space="preserve">
+    <value>L'adresse email et/ou le mot de passe ne sont pas corrects</value>
+  </data>
+  <data name="AuthenticationFailedTitle" xml:space="preserve">
+    <value>Echec de l'authentification</value>
+  </data>
+  <data name="BadPassword" xml:space="preserve">
+    <value>Le mot de passe que vous avez renseigné n'est pas le bon</value>
+  </data>
+  <data name="BadPasswordTitle" xml:space="preserve">
+    <value>Mauvais mot de passe</value>
+  </data>
+  <data name="ContentEmptySMS" xml:space="preserve">
+    <value>Le champ message SMS est vide, veuillez le remplir pour ajouter cette alerte en favoris</value>
+  </data>
+  <data name="ContentEmptyEmail" xml:space="preserve">
+    <value>Un des champs est vide, veuillez le remplir pour ajouter cette alerte en favoris</value>
+  </data>
+  <data name="FavoriteAlertAlreadyExist" xml:space="preserve">
+    <value>Vous ne pouvez ajouter ce favoris car il existe déjà dans la liste</value>
+  </data>
+  <data name="FavoriteAlertAlreadyExistTitle" xml:space="preserve">
+    <value>Alerte favorite déjà existante</value>
+  </data>
+  <data name="ParameterActivity_FieldEmpty" xml:space="preserve">
+    <value>L'un des champs est vide</value>
+  </data>
+  <data name="ParameterActivity_FieldEmptyTitle" xml:space="preserve">
+    <value>Champ(s) vide(s)</value>
+  </data>
+  <data name="PasswordDoesntMatch" xml:space="preserve">
+    <value>Les nouveaux mots de passes ne correspondent pas</value>
+  </data>
+  <data name="PasswordDoesntMatchTitle" xml:space="preserve">
+    <value>Mots de passe incorrects</value>
+  </data>
+  <data name="RefreshSeekiosFailed" xml:space="preserve">
+    <value>L'application ne parvient pas à contacter le seekios</value>
+  </data>
+  <data name="RefreshSeekiosFailedTitle" xml:space="preserve">
+    <value>Echec de la localisation du seekios</value>
+  </data>
+  <data name="UnexpectedError" xml:space="preserve">
+    <value>Une erreur HTTP est survenue. Réessayez et si le problème persiste, contactez le support technique seekios.</value>
+  </data>
+  <data name="UnexpectedErrorTitle" xml:space="preserve">
+    <value>La demande a échouée</value>
+  </data>
+  <data name="UpdateZoneFailed" xml:space="preserve">
+    <value>Impossible de mettre à jour la zone</value>
+  </data>
+  <data name="UpdateZoneFailedTitle" xml:space="preserve">
+    <value>Echec de la mise à jour</value>
+  </data>
+  <data name="UserNoRequestLeft" xml:space="preserve">
+    <value>Vous n'avez plus assez de crédits pour réaliser cette action</value>
+  </data>
+  <data name="UserNoRequestLeftTitle" xml:space="preserve">
+    <value>Plus de crédits</value>
+  </data>
+  <data name="WebError" xml:space="preserve">
+    <value>L'application ne parvient pas à accéder à internet</value>
+  </data>
+  <data name="WebErrorTitle" xml:space="preserve">
+    <value>Une erreur est survenue</value>
+  </data>
+  <data name="ModeZone_NotValidZoneDescription" xml:space="preserve">
+    <value>Des points de zone se recoupent. La zone doit rester verte.</value>
+  </data>
+  <data name="ModeZone_NotValidZoneTitle" xml:space="preserve">
+    <value>Zone invalide</value>
+  </data>
+  <data name="DeleteZoneFailed" xml:space="preserve">
+    <value>Impossible de supprimer la zone</value>
+  </data>
+  <data name="DeleteZoneFailedTitle" xml:space="preserve">
+    <value>Echec dans la supression de la zone</value>
+  </data>
+  <data name="ModeActivity" xml:space="preserve">
+    <value>Activity</value>
+  </data>
+  <data name="ModeBorder" xml:space="preserve">
+    <value>Border</value>
+  </data>
+  <data name="ModeDontMove" xml:space="preserve">
+    <value>Don't Move</value>
+  </data>
+  <data name="ModeFollowMe" xml:space="preserve">
+    <value>Follow Me</value>
+  </data>
+  <data name="ModeRoad" xml:space="preserve">
+    <value>Road</value>
+  </data>
+  <data name="ModeTracking" xml:space="preserve">
+    <value>Tracking</value>
+  </data>
+  <data name="ModeZone" xml:space="preserve">
+    <value>Zone</value>
+  </data>
+  <data name="ListSeekios_LastPositionNone" xml:space="preserve">
+    <value>Aucune localisation de disponible</value>
+  </data>
+  <data name="ListSeekios_LastPositionPlurial" xml:space="preserve">
+    <value>Localisé il y a {0}j à {1}</value>
+  </data>
+  <data name="ListSeekios_LastPositionToday" xml:space="preserve">
+    <value>Localisé aujourd'hui à {0}</value>
+  </data>
+  <data name="ListSeekios_LastPositionYesterday" xml:space="preserve">
+    <value>Localisé hier à {0}</value>
+  </data>
+  <data name="OneDayDateTime" xml:space="preserve">
+    <value>il y a {3} jours à {0:00}:{1:00}:{2:00}</value>
+  </data>
+  <data name="TodayDateTime" xml:space="preserve">
+    <value>aujourd'hui à {0:00}:{1:00}:{2:00}</value>
+  </data>
+  <data name="Tracking_noLocation" xml:space="preserve">
+    <value>Il n'y a pas de localisation à afficher</value>
+  </data>
+  <data name="YesterdayDateTime" xml:space="preserve">
+    <value>hier à {0:00}:{1:00}:{2:00}</value>
+  </data>
+  <data name="TimeoutError" xml:space="preserve">
+    <value>Une erreur de TimeOut est survenue. Cette erreur est souvent due à la mauvaise qualité réseau de l'appareil. Réessayez et si le problème persiste, contactez le support technique seekios.</value>
+  </data>
+  <data name="TimeoutErrorTitle" xml:space="preserve">
+    <value>La requête a échouée</value>
+  </data>
+  <data name="ForgetPassword_FieldEmpty" xml:space="preserve">
+    <value>Veuillez renseigner votre adresse email</value>
+  </data>
+  <data name="ForgetPassword_FieldEmptyTitle" xml:space="preserve">
+    <value>Champ vide !</value>
+  </data>
+  <data name="ForgetPassword" xml:space="preserve">
+    <value>Un nouveau mot de passe va être envoyé à votre adresse email</value>
+  </data>
+  <data name="ForgetPasswordTitle" xml:space="preserve">
+    <value>Confirmation du mot de passe accepté</value>
+  </data>
+  <data name="ForgetPassword_NoEmail" xml:space="preserve">
+    <value>Votre email ne correspond à aucune adresse existante</value>
+  </data>
+  <data name="ForgetPassword_NoEmailTitle" xml:space="preserve">
+    <value>Erreur de saisie</value>
+  </data>
+  <data name="Mode_unableToRestartModeDescr" xml:space="preserve">
+    <value>Impossible de réactiver le mode !</value>
+  </data>
+  <data name="Mode_unableToRestartModeTitle" xml:space="preserve">
+    <value>Erreur inattendue</value>
+  </data>
+  <data name="DeleteSharing" xml:space="preserve">
+    <value>Annulation du partage</value>
+  </data>
+  <data name="WebErrorButtonText" xml:space="preserve">
+    <value>Fermer</value>
+  </data>
+  <data name="ModeNotConfigured" xml:space="preserve">
+    <value>Le mode n'a pas été configuré !</value>
+  </data>
+  <data name="ModeNotConfiguredTitle" xml:space="preserve">
+    <value>Erreur lors de la configuration du mode</value>
+  </data>
+  <data name="CannotSaveMode" xml:space="preserve">
+    <value>Mode non enregistré</value>
+  </data>
+  <data name="AccountAlreadyExistsText" xml:space="preserve">
+    <value>Cet email existe déjà, il est possible que vous ayez déjà un compte.</value>
+  </data>
+  <data name="AccountAlreadyExistsTitle" xml:space="preserve">
+    <value>Compte existant</value>
+  </data>
+  <data name="FacebookConnectionFailedTitle" xml:space="preserve">
+    <value>Echec de la connexion avec Facebook</value>
+  </data>
+  <data name="CreateAccountFailedText" xml:space="preserve">
+    <value>La création du compte a échoué</value>
+  </data>
+  <data name="CreateAccountFailedTitle" xml:space="preserve">
+    <value>Une erreur est survenue, veuillez réessayer plus tard.</value>
+  </data>
+  <data name="MySeekios_DeleteSeekios_Content" xml:space="preserve">
+    <value>Une erreur est survenue lors de la suppression du seekios. Veuillez réessayer plus tard et si le problème persiste, contactez le support technique.</value>
+  </data>
+  <data name="MySeekios_DeleteSeekios_Title" xml:space="preserve">
+    <value>Suppression impossible</value>
+  </data>
+  <data name="MapRefreshEnded" xml:space="preserve">
+    <value>La position de votre Seekios a bien été récupérée</value>
+  </data>
+  <data name="MapRefreshFailed" xml:space="preserve">
+    <value>Nous n'avons pas pu récupérer la position de votre Seekios</value>
+  </data>
+  <data name="ListSeekios_LastPositionMoreThanOneYear" xml:space="preserve">
+    <value>Localisé il y a plus d'un an</value>
+  </data>
+  <data name="CreateAccountSuccessText" xml:space="preserve">
+    <value>Votre compte a bien été créé, un email de validation vous a été envoyé</value>
+  </data>
+  <data name="CreateAccountSuccessTitle" xml:space="preserve">
+    <value>Création de compte terminé</value>
+  </data>
+  <data name="UserNotValidateText" xml:space="preserve">
+    <value>Le compte lié à cet email n'a pas été validé. Connectez vous à votre boite mail et cliquez sur le lien de validation de compte.</value>
+  </data>
+  <data name="UserNotValidateTitle" xml:space="preserve">
+    <value>Compte non validé</value>
+  </data>
+  <data name="EmailDoesntExistsText" xml:space="preserve">
+    <value>Aucun compte Seekios n'est lié à l'adresse email que vous avez rentré.</value>
+  </data>
+  <data name="EmailDoesntExistsTitle" xml:space="preserve">
+    <value>Adresse email inconnu</value>
+  </data>
+  <data name="ResetPasswordRequestSentText" xml:space="preserve">
+    <value>Un email vous a été envoyé pour vous permettre de réinitialiser votre mot de passe.</value>
+  </data>
+  <data name="ResetPasswordRequestSentTitle" xml:space="preserve">
+    <value>Email envoyé</value>
+  </data>
+  <data name="PasswordTooShort" xml:space="preserve">
+    <value>Mot de passe trop court</value>
+  </data>
+  <data name="PasswordTooShortTitle" xml:space="preserve">
+    <value>Erreur de saisie</value>
+  </data>
+  <data name="AddedSinceAt" xml:space="preserve">
+    <value>Ajouté il y a {0}j à {1}</value>
+  </data>
+  <data name="AddedTodayAt" xml:space="preserve">
+    <value>Ajouté aujourd'hui à {0}</value>
+  </data>
+  <data name="AddedYesterdayAt" xml:space="preserve">
+    <value>Ajouté hier à {0}</value>
+  </data>
+  <data name="SOSAlertSinceAt" xml:space="preserve">
+    <value>Alerte SOS il y a {0}j à {1}</value>
+  </data>
+  <data name="SOSAlertTodayAt" xml:space="preserve">
+    <value>Alerte SOS à {0}</value>
+  </data>
+  <data name="SOSAlertYesterdayAt" xml:space="preserve">
+    <value>Alerte SOS hier à {0}</value>
+  </data>
+  <data name="AddSeekiosIMEIOrPinError" xml:space="preserve">
+    <value>Erreur d'IMEI ou de code PIN. Réessayez. Si le problème persiste, contactez le support</value>
+  </data>
+  <data name="AddSeekiosTitle" xml:space="preserve">
+    <value>Ajout d'un seekios</value>
+  </data>
+  <data name="Close" xml:space="preserve">
+    <value>Fermer</value>
+  </data>
+  <data name="SeekiosUnavailable" xml:space="preserve">
+    <value>Seekios indisponible</value>
+  </data>
+  <data name="CannotDeleteModeMessage" xml:space="preserve">
+    <value>Le mode n'a pas pu être supprimé</value>
+  </data>
+  <data name="CannotDeleteModeTitle" xml:space="preserve">
+    <value>Erreur de suppression</value>
+  </data>
+  <data name="CouldNotRegisterForNotifContent" xml:space="preserve">
+    <value>Nous n'avons pas réussi à enregistrer votre appareil pour recevoir les notifications</value>
+  </data>
+  <data name="CouldNotRegisterForNotifTitle" xml:space="preserve">
+    <value>Erreur d'enregistrement</value>
+  </data>
+  <data name="CouldNotUnRegisterForNotifContent" xml:space="preserve">
+    <value>Nous n'avons pas pu vous déconnecter du service de notifications</value>
+  </data>
+  <data name="CouldNotUnRegisterForNotifTitle" xml:space="preserve">
+    <value>Erreur lors de la déconnexion</value>
+  </data>
+  <data name="EmailEmptyContent" xml:space="preserve">
+    <value>Email vide</value>
+  </data>
+  <data name="EmailErrorTitle" xml:space="preserve">
+    <value>Erreur email</value>
+  </data>
+  <data name="EmailSyntaxErrorContent" xml:space="preserve">
+    <value>Erreur de syntaxe, vérifiez votre email</value>
+  </data>
+  <data name="EmptyFirstName" xml:space="preserve">
+    <value>Champ prénom vide</value>
+  </data>
+  <data name="EmptyLastName" xml:space="preserve">
+    <value>Champ nom vide</value>
+  </data>
+  <data name="EmptyPassword" xml:space="preserve">
+    <value>Mot de passe non renseigné</value>
+  </data>
+  <data name="InputError" xml:space="preserve">
+    <value>Erreur de saisie</value>
+  </data>
+  <data name="PasswordError" xml:space="preserve">
+    <value>Erreur de mot de passe</value>
+  </data>
+  <data name="UpdateUserError" xml:space="preserve">
+    <value>Erreur de mise à jour</value>
+  </data>
+  <data name="UpdateUserFailed" xml:space="preserve">
+    <value>Impossible de mettre à jour le profil</value>
+  </data>
+  <data name="EmailNotFound" xml:space="preserve">
+    <value>Email non trouvé, vérifiez votre email</value>
+  </data>
+  <data name="PasswordUpdated" xml:space="preserve">
+    <value>La mise à jour de votre mot de passe a réussi</value>
+  </data>
+  <data name="PasswordUpdateFailed" xml:space="preserve">
+    <value>La mise à jour a échoué</value>
+  </data>
+  <data name="PasswordUpdateTitle" xml:space="preserve">
+    <value>Mot de passe mis à jour</value>
+  </data>
+  <data name="UnauthorizedAccess" xml:space="preserve">
+    <value>Accès non autorisé, problème de token</value>
+  </data>
+  <data name="UnauthorizedAccessTitle" xml:space="preserve">
+    <value>Accès non autorisé</value>
+  </data>
+  <data name="AddSeekiosAlreadyUsed" xml:space="preserve">
+    <value>Ce seekios semble être déjà utilisé</value>
+  </data>
+  <data name="NoMoreCredits" xml:space="preserve">
+    <value>Vous n'avez plus assez de crédits</value>
+  </data>
+  <data name="SomethingWentWrong" xml:space="preserve">
+    <value>L'opération n'a pas pu être réalisée</value>
+  </data>
+  <data name="LocationsErrorTitle" xml:space="preserve">
+    <value>Erreur lors de la récupération des localisations</value>
+  </data>
+  <data name="LowerAndUpperDateErrorTitle" xml:space="preserve">
+    <value>Erreur lors de la récupération des dates</value>
+  </data>
+  <data name="LowerDateError" xml:space="preserve">
+    <value>Impossible de récupérer les dates</value>
+  </data>
+  <data name="UpperDateError" xml:space="preserve">
+    <value>Impossible de récupérer les dates</value>
+  </data>
+  <data name="AlertErrorTitle" xml:space="preserve">
+    <value>Erreur d'alerte</value>
+  </data>
+  <data name="DeleteModeSuccess" xml:space="preserve">
+    <value>Le dernier mode a été supprimé !</value>
+  </data>
+  <data name="DeleteModeSuccessTitle" xml:space="preserve">
+    <value>Suppression de mode</value>
+  </data>
+  <data name="InsertAlertErrorTitle" xml:space="preserve">
+    <value>Erreur lors de l'ajout de l'alerte</value>
+  </data>
+  <data name="WrongLanguage" xml:space="preserve">
+    <value>Problème rencontré lors du chargement du language choisi</value>
+  </data>
+  <data name="WrongLanguageTitle" xml:space="preserve">
+    <value>Erreur de langue</value>
+  </data>
+  <data name="BatteryUpdated" xml:space="preserve">
+    <value>La batterie du seekios a été mise à jour</value>
+  </data>
+  <data name="BatteryUpdateTitle" xml:space="preserve">
+    <value>Actualisation de batterie</value>
+  </data>
+  <data name="CannotSaveSOS" xml:space="preserve">
+    <value>Impossible d'enregistrer la configuration du SOS</value>
+  </data>
+  <data name="RecipientListNeeded" xml:space="preserve">
+    <value>Veuillez renseigner au moins un desitnataire</value>
+  </data>
+  <data name="AppNeedsUpdate" xml:space="preserve">
+    <value>Votre application doit être mise à jour</value>
+  </data>
+  <data name="AppNeedsUpdateTitle" xml:space="preserve">
+    <value>Erreur de version</value>
+  </data>
+  <data name="IMEIAndPinError" xml:space="preserve">
+    <value>Erreur de code IMEI et de code Pin</value>
+  </data>
+  <data name="IMEIError" xml:space="preserve">
+    <value>Erreur de code IMEI</value>
+  </data>
+  <data name="InsertSeekiosError" xml:space="preserve">
+    <value>Échec de l'ajout du seekios</value>
+  </data>
+  <data name="DeleteSeekiosSuccess" xml:space="preserve">
+    <value>Votre seekios a bien été supprimé de votre compte.</value>
+  </data>
+  <data name="DeleteSeekiosTitle" xml:space="preserve">
+    <value>Suppression du seekios</value>
+  </data>
+  <data name="OnDemandMessageFailedBody" xml:space="preserve">
+    <value>Le rafraîchissement de votre seekios {0} a échoué. Il est soit éteint, soit dans une zone non couverte par le réseau 2G.</value>
+  </data>
+  <data name="OnDemandMessageFailedTitle" xml:space="preserve">
+    <value>Aucune position trouvée</value>
+  </data>
+  <data name="OneDayDateTimeNoSeconds" xml:space="preserve">
+    <value>{3} jours à {0:00}:{1:00}</value>
+  </data>
+  <data name="TodayDateTimeNoSeconds" xml:space="preserve">
+    <value>Aujourd'hui à {0:00}:{1:00}</value>
+  </data>
+  <data name="YesterdayDateTimeNoSeconds" xml:space="preserve">
+    <value>Hier à {0:00}:{1:00}</value>
+  </data>
+  <data name="Every" xml:space="preserve">
+    <value>toutes les {0}</value>
+  </data>
+  <data name="NoInternetButton" xml:space="preserve">
+    <value>Fermer</value>
+  </data>
+  <data name="NoInternetMessage" xml:space="preserve">
+    <value>L'application à besoin d'être connecté à internet pour effectuer cette action.</value>
+  </data>
+  <data name="NoInternetTitle" xml:space="preserve">
+    <value>Pas d'internet</value>
+  </data>
+  <data name="CriticalBattery" xml:space="preserve">
+    <value>Batterie faible !</value>
+  </data>
+  <data name="NoVersionEmbedded" xml:space="preserve">
+    <value>Impossible de déterminer la version du firmware</value>
+  </data>
+  <data name="No" xml:space="preserve">
+    <value>Non</value>
+  </data>
+  <data name="RefreshRate" xml:space="preserve">
+    <value>Oui, toutes les {0}</value>
+  </data>
+  <data name="NoDataFromLocationByMode" xml:space="preserve">
+    <value>Nous n'avons pas réussi à récupérer vos anciennes positions. Quittez la carte puis revenez-y dessus. Si le problème persiste contactez nous à travers le feedback de l'application.</value>
+  </data>
+  <data name="NoDataFromLocationByModeButton" xml:space="preserve">
+    <value>Fermer</value>
+  </data>
+  <data name="NoInternetDeconnection" xml:space="preserve">
+    <value>Vous devez être connecté à internet pour vous déconnecter de l'application.</value>
+  </data>
+  <data name="NoInternetDeconnectionButton" xml:space="preserve">
+    <value>Fermer</value>
+  </data>
+  <data name="NoWebserviceDeconnection" xml:space="preserve">
+    <value>Un problème sur nos webservices est survenu. Contactez nous à travers le feedback de l'application si le problème persiste.</value>
+  </data>
+  <data name="NoWebserviceDeconnectionButton" xml:space="preserve">
+    <value>Fermer</value>
+  </data>
+  <data name="PowerSavingOn" xml:space="preserve">
+    <value>Vous ne pouvez pas effectuer cette action car votre seekios est en économie d'énergie.</value>
+  </data>
+  <data name="PowerSavingTuto" xml:space="preserve">
+    <value>Explication</value>
+  </data>
+  <data name="PowerSavingOnTitle" xml:space="preserve">
+    <value>Économie d'énergie activée</value>
+  </data>
+  <data name="DeleteModeContent" xml:space="preserve">
+    <value>Supprimer le mode en cours ?</value>
+  </data>
+  <data name="DeleteModeNo" xml:space="preserve">
+    <value>Non</value>
+  </data>
+  <data name="DeleteModePowerSavingOnContent" xml:space="preserve">
+    <value>Attention ! Votre seekios restera en économie d'énergie. Votre changement ne sera effectif qu'au prochain midi (12h).</value>
+  </data>
+  <data name="DeleteModeYes" xml:space="preserve">
+    <value>Oui</value>
+  </data>
+  <data name="ModeChangeTitle" xml:space="preserve">
+    <value>Changer de mode ?</value>
+  </data>
+  <data name="ModeChangePowerSaving" xml:space="preserve">
+    <value>Attention ! Le seekios est en économie d'énergie. Le mode sera actif au prochain midi : l'icône grisée deviendra verte lors de l'activation du mode.</value>
+  </data>
+  <data name="RelaodCreditMonthlyContent" xml:space="preserve">
+    <value>Chaque 16 du mois vous bénéficiez d'une recharge de 60 crédits par seekios :) Localisez bien.</value>
+  </data>
+  <data name="RelaodCreditMonthlyTitle" xml:space="preserve">
+    <value>Votre recharge de crédit est arrivée !</value>
+  </data>
+  <data name="NotificationErrorDescr" xml:space="preserve">
+    <value>Impossible d'utiliser les notifications. Attention, sans notifications l'application ne pourra pas fonctionner correctement !</value>
+  </data>
+  <data name="NotificationErrorTitle" xml:space="preserve">
+    <value>Notifications desactivées</value>
+  </data>
+  <data name="NotificationErrorButtonClose" xml:space="preserve">
+    <value>Fermer</value>
+  </data>
+  <data name="NotificationErrorButtonTuto" xml:space="preserve">
+    <value>Explication</value>
+  </data>
+  <data name="SignalRNotSubscribeContent" xml:space="preserve">
+    <value>L'application n'a pas réussi à se connecter à SignalR. Si le problème persiste, contactez l'équipe technique.</value>
+  </data>
+  <data name="SignalRNotSubscribeTitle" xml:space="preserve">
+    <value>Échec de la connection au système de temps réel</value>
+  </data>
+  <data name="NotificationMovedContent" xml:space="preserve">
+    <value>seekios: {0} déplacement reçu {1} !</value>
+  </data>
+  <data name="NotificationMovedTitle" xml:space="preserve">
+    <value>A bougé !</value>
+  </data>
+  <data name="NotificationOutOfZoneContent" xml:space="preserve">
+    <value>seekios: {0} sorti de la zone reçue {1} !</value>
+  </data>
+  <data name="NotificationOutOfZoneTitle" xml:space="preserve">
+    <value>Sortie de zone !</value>
+  </data>
+  <data name="NotificationCriticalBatteryContent" xml:space="preserve">
+    <value>seekios: {0}, batterie faible reçue {1}</value>
+  </data>
+  <data name="NotificationCriticalBatteryTitle" xml:space="preserve">
+    <value>Alerte batterie faible !</value>
+  </data>
+  <data name="NotificationPowerSavingContent" xml:space="preserve">
+    <value>seekios: {0}, désactivation reçue {1}</value>
+  </data>
+  <data name="NotificationPowerSavingTitle" xml:space="preserve">
+    <value>Économie d'énergie désactivé !</value>
+  </data>
+  <data name="NotificationSOSAlertContent" xml:space="preserve">
+    <value>seekios: {0}, alerte SOS reçue {1}</value>
+  </data>
+  <data name="NotificationSOSAlertTitle" xml:space="preserve">
+    <value>Alert SOS reçue !</value>
+  </data>
+  <data name="NotificationSOSPositionContent" xml:space="preserve">
+    <value>seekios: {0}, position SOS reçue {1}</value>
+  </data>
+  <data name="NotificationSOSPositionTitle" xml:space="preserve">
+    <value>Position SOS reçue !</value>
+  </data>
+  <data name="NotificationSettingErrorContent" xml:space="preserve">
+    <value>Le changement de vos préférences de notification a échoué. Veuillez réessayer et si le problème persiste, contactez le support technique.</value>
+  </data>
+  <data name="NotificationSettingErrorTitle" xml:space="preserve">
+    <value>Erreur serveur</value>
+  </data>
+  <data name="UpdateUserFailedContent" xml:space="preserve">
+    <value>Un problème est survenu lors de la mise à jour des informations de l'utilisateur.Veuillez réessayez et si le problème persiste, contactez le support technique.</value>
+  </data>
+  <data name="UpdateUserFailedTitle" xml:space="preserve">
+    <value>Echec de la requête</value>
+  </data>
+  <data name="LoadUserEnvironmentContent" xml:space="preserve">
+    <value>L'application n'a pas réussi à rafraîchir les données en arrière plan. Si le problème persiste, contactez l'équipe technique.</value>
+  </data>
+  <data name="LoadUserEnvironmentTitle" xml:space="preserve">
+    <value>Échec du rafraîchissement des données </value>
+  </data>
+</root>

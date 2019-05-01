@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<!-- CHOICE OF MODE TITLE-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Choix du mode"
+        android:textColor="@color/textColorPrimary"
+        android:textSize="20dp"
+        android:background="@color/primary"
+        android:gravity="center"
+        android:paddingTop="@dimen/marginM"
+        android:paddingBottom="@dimen/marginM"
+        android:id="@+id/title" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="140dp"
+        android:layout_below="@id/title"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/linearLayout">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_vertical"
+            android:weightSum="1">
+            <XamSvg.SvgImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                local:colorMapping="999999=62da73"
+                local:svg="@drawable/modezone"
+                android:id="@+id/previousMode" />
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/textColorContent"
+                android:text="Suivi de positions"
+                android:id="@+id/previousModeText"
+                android:layout_marginTop="10dp"
+                android:textSize="12dp"
+                android:gravity="center"
+                android:layout_gravity="center_horizontal" />
+        </LinearLayout>
+        <XamSvg.SvgImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            local:svg="@drawable/rightarrow"
+            android:id="@+id/arrow_image" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_vertical"
+            android:weightSum="1">
+            <XamSvg.SvgImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                local:svg="@drawable/modetracking"
+                local:colorMapping="999999=62da73"
+                android:id="@+id/nextMode" />
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/textColorContent"
+                android:id="@+id/nextModeText"
+                android:layout_marginTop="10dp"
+                android:textSize="12dp"
+                android:gravity="center"
+                android:text="Détection de mouvement"
+                android:layout_gravity="fill_horizontal" />
+        </LinearLayout>
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linearLayout"
+        android:textColor="@color/color_red"
+        android:text="Warning ! The seekios is in power saving so the mode will be active no later than the next noon. (The icon is gray, it will turn green when the mode will be active)"
+        android:id="@+id/changeModePopup_powerSaving"
+        android:layout_marginTop="10dp"
+        android:textSize="12dp"
+        android:gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:visibility="gone" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@id/linearLayout"
+        android:background="?attr/layoutSeparator" />
+</RelativeLayout>

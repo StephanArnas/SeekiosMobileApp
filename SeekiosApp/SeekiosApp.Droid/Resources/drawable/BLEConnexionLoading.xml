@@ -1,0 +1,207 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="gone"
+    android:clickable="true"
+    android:background="#CCFFFFFF"
+    android:id="@+id/BLEConnexionloadingPanel">
+  <GridLayout
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_centerInParent="true"
+       android:columnCount="2"
+       android:rowCount="5">
+    <!--Start BLE...-->
+    <ProgressBar
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_margin="@dimen/marginS"
+        android:indeterminate="true"
+        android:layout_column="0"
+        android:layout_row="0"
+        android:visibility="visible"
+        android:id="@+id/BLEConnexionLoading_startBLELoading" />
+    <XamSvg.SvgImageView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_margin="@dimen/marginS"
+        android:layout_column="0"
+        android:layout_row="0"
+        local:svg="@drawable/validate"
+        local:colorMapping="cccccc=36DA3E"
+        android:visibility="gone"
+        android:id="@+id/BLEConnexionLoading_startBLEOk" />
+    <XamSvg.SvgImageView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_margin="@dimen/marginS"
+        android:layout_column="0"
+        android:layout_row="0"
+        local:svg="@drawable/invalidate"
+        android:visibility="gone"
+        android:id="@+id/BLEConnexionLoading_startBLEPb" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:textColor="?attr/textColorLink"
+        android:textSize="@dimen/headerSize"
+        android:layout_column="1"
+        android:layout_row="0"
+        android:text="@string/BLEConnexionLoading_startBLEText" />
+    <!--Sending message to seekios...-->
+    <ProgressBar
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_margin="@dimen/marginS"
+        android:indeterminate="true"
+        android:layout_column="0"
+        android:layout_row="1"
+        android:visibility="invisible"
+        android:id="@+id/BLEConnexionLoading_sendMsgLoading" />
+    <XamSvg.SvgImageView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_margin="@dimen/marginS"
+        android:layout_column="0"
+        android:layout_row="1"
+        local:svg="@drawable/validate"
+        local:colorMapping="cccccc=36DA3E"
+        android:visibility="gone"
+        android:id="@+id/BLEConnexionLoading_sendMsgOk" />
+    <XamSvg.SvgImageView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_margin="@dimen/marginS"
+        android:layout_column="0"
+        android:layout_row="1"
+        local:svg="@drawable/invalidate"
+        android:visibility="gone"
+        android:id="@+id/BLEConnexionLoading_sendMsgPb" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:textColor="?attr/textColorLink"
+        android:textSize="@dimen/headerSize"
+        android:layout_column="1"
+        android:layout_row="1"
+        android:text="@string/BLEConnexionLoading_sendMsgText" />
+    <!--Looking for seekios...-->
+    <ProgressBar
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_margin="@dimen/marginS"
+        android:indeterminate="true"
+        android:layout_column="0"
+        android:layout_row="2"
+        android:visibility="invisible"
+        android:id="@+id/BLEConnexionLoading_lookForSeekiosLoading" />
+    <XamSvg.SvgImageView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_margin="@dimen/marginS"
+        android:layout_column="0"
+        android:layout_row="2"
+        local:svg="@drawable/validate"
+        local:colorMapping="cccccc=36DA3E"
+        android:visibility="gone"
+        android:id="@+id/BLEConnexionLoading_lookForSeekiosOk" />
+    <XamSvg.SvgImageView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_margin="@dimen/marginS"
+        android:layout_column="0"
+        android:layout_row="2"
+        local:svg="@drawable/invalidate"
+        android:visibility="gone"
+        android:id="@+id/BLEConnexionLoading_lookForSeekiosPb" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:textColor="?attr/textColorLink"
+        android:textSize="@dimen/headerSize"
+        android:layout_column="1"
+        android:layout_row="2"
+        android:text="@string/BLEConnexionLoading_lookForSeekiosText" />
+    <!--Connect with seekios...-->
+    <ProgressBar
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_margin="@dimen/marginS"
+        android:indeterminate="true"
+        android:layout_column="0"
+        android:layout_row="3"
+        android:visibility="invisible"
+        android:id="@+id/BLEConnexionLoading_connectWithSeekiosLoading" />
+    <XamSvg.SvgImageView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_margin="@dimen/marginS"
+        android:layout_column="0"
+        android:layout_row="3"
+        local:svg="@drawable/validate"
+        local:colorMapping="cccccc=36DA3E"
+        android:visibility="gone"
+        android:id="@+id/BLEConnexionLoading_connectWithSeekiosOk" />
+    <XamSvg.SvgImageView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_margin="@dimen/marginS"
+        android:layout_column="0"
+        android:layout_row="3"
+        local:svg="@drawable/invalidate"
+        android:visibility="gone"
+        android:id="@+id/BLEConnexionLoading_connectWithSeekiosPb" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:textColor="?attr/textColorLink"
+        android:textSize="@dimen/headerSize"
+        android:layout_column="1"
+        android:layout_row="3"
+        android:text="@string/BLEConnexionLoading_connectWithSeekiosText" />
+    <!--Seekios connected...-->
+    <ProgressBar
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_margin="@dimen/marginS"
+        android:indeterminate="true"
+        android:layout_column="0"
+        android:layout_row="4"
+        android:visibility="invisible"
+        android:id="@+id/BLEConnexionLoading_seekiosConnectedLoading" />
+    <XamSvg.SvgImageView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_margin="@dimen/marginS"
+        android:layout_column="0"
+        android:layout_row="4"
+        local:svg="@drawable/validate"
+        local:colorMapping="cccccc=36DA3E"
+        android:visibility="gone"
+        android:id="@+id/BLEConnexionLoading_seekiosConnectedOk" />
+    <XamSvg.SvgImageView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_margin="@dimen/marginS"
+        android:layout_column="0"
+        android:layout_row="4"
+        local:svg="@drawable/invalidate"
+        android:visibility="gone"
+        android:id="@+id/BLEConnexionLoading_seekiosConnectedPb" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:textColor="?attr/textColorLink"
+        android:textSize="@dimen/headerSize"
+        android:layout_column="1"
+        android:layout_row="4"
+        android:text="@string/BLEConnexionLoading_seekiosConnectedText" />
+  </GridLayout>
+</RelativeLayout>

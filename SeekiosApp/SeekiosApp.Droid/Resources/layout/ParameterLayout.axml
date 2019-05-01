@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+  <!-- LOADING LAYOUT -->
+  <include
+      layout="@layout/LoadingTemplate" />
+<!-- NAVIGATION BAR -->
+    <include
+        layout="@layout/ActionBarTemplate" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <!-- ===== USER PICTURES ==================================== -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp">
+            <!-- GREEN COLOR -->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:elevation="4dp"
+                    android:background="@color/primary"
+                    android:id="@+id/block_1" />
+            <!-- GRAY COLOR -->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:background="?attr/layoutBackgroundWhite"
+                    android:layout_below="@id/block_1"
+                    android:id="@+id/block_2">
+                <!-- BUTTON UPDATE THE PICTURE -->
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:padding="2dp"
+                        android:text="@string/addSeekios_modifyPicture"
+                        android:textSize="16dp"
+                        android:textColor="@color/primary"
+                        android:fontFamily="sans-serif-light"
+                        android:background="@drawable/ButtonRippleEffect"
+                        android:id="@+id/button_updatePicture" />
+                </RelativeLayout>
+            <!-- USER IMAGE  -->
+                <SeekiosApp.Droid.CustomComponents.RoundedImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_centerHorizontal="true"
+                    android:elevation="4dp"
+                    android:clickable="true"
+                    android:scaleType="centerInside"
+                    android:adjustViewBounds="true"
+                    local:svg="@drawable/seekios"
+                    android:id="@+id/parameter_imageUser" />
+            <!-- SEPARATOR LINE -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="?attr/layoutSeparator"
+                    android:layout_below="@id/block_2" />
+            </RelativeLayout>
+        <!-- ===== USER FIELDS ==================================== -->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp">
+            <!-- FIRST NAME -->
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:textColorHint="?attr/textColorHint"
+                    local:counterEnabled="true"
+                    local:counterMaxLength="20"
+                    local:counterTextAppearance="@style/counterText"
+                    local:counterOverflowTextAppearance="@style/counterOverride">
+                    <android.widget.EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:inputType="textCapSentences"
+                        android:maxLength="20"
+                        android:singleLine="true"
+                        android:textSize="18dp"
+                        android:textColor="?attr/textColorContent"
+                        android:hint="@string/parameter_FirstName"
+                        android:textColorHint="?attr/textColorHint"
+                        android:id="@+id/parameter_firstname" />
+                </android.support.design.widget.TextInputLayout>
+            <!-- LAST NAME -->
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="?attr/textColorHint"
+                    local:counterEnabled="true"
+                    local:counterMaxLength="20"
+                    local:counterTextAppearance="@style/counterText"
+                    local:counterOverflowTextAppearance="@style/counterOverride">
+                    <android.widget.EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:inputType="textCapSentences"
+                        android:maxLength="20"
+                        android:singleLine="true"
+                        android:textSize="18dp"
+                        android:textColor="?attr/textColorContent"
+                        android:hint="@string/parameter_LastName"
+                        android:textColorHint="?attr/textColorHint"
+                        android:id="@+id/parameter_lastname" />
+                </android.support.design.widget.TextInputLayout>
+            <!-- EMAIL -->
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="?attr/textColorHint"
+                    local:counterEnabled="true"
+                    local:counterMaxLength="50"
+                    local:counterTextAppearance="@style/counterText"
+                    local:counterOverflowTextAppearance="@style/counterOverride">
+                    <android.widget.EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:clickable="false"
+                        android:cursorVisible="false"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:inputType="textEmailAddress"
+                        android:maxLength="50"
+                        android:singleLine="true"
+                        android:textSize="18dp"
+                        android:textColor="?attr/textColorContent"
+                        android:hint="@string/parameter_emailAdress"
+                        android:textColorHint="?attr/textColorHint"
+                        android:id="@+id/parameter_emailAdress" />
+                </android.support.design.widget.TextInputLayout>
+            <!-- PHONE NUMBER -->
+            <!-- <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <SeekiosApp.Droid.CustomComponents.CountryCode.CountryCodePicker
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="4dp"
+                        android:layout_gravity="bottom"
+                        android:textSize="18dp"
+                        local:defaultNameCode="FR"
+                        android:id="@+id/countryCodePicker" />
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColorHint="?attr/textColorHint">
+                        <android.widget.EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:inputType="phone"
+                            android:singleLine="true"
+                            android:textSize="18dp"
+                            android:textColor="?attr/textColorContent"
+                            android:hint="@string/parameter_phonenumber"
+                            android:textColorHint="?attr/textColorHint"
+                            android:id="@+id/parameter_phonenumber" />
+                    </android.support.design.widget.TextInputLayout>
+                </LinearLayout>-->
+            <!-- BUTTON SAVE -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_gravity="right"
+                    android:gravity="center"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:text="@string/addseekios_save"
+                    android:textSize="18dp"
+                    android:textColor="#ffffff"
+                    android:background="@drawable/buttonrounded"
+                    android:id="@+id/parameter_save" />
+            </LinearLayout>
+        <!-- ===== BUTTON UPDATE PASSWORD ==================================== -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="15dp"
+                android:background="?attr/layoutSeparator" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:clickable="true"
+                android:background="@drawable/ButtonRippleEffect"
+                android:id="@+id/parameter_changePassword">
+                <XamSvg.SvgImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_centerVertical="true"
+                    local:colorMapping="62da73=666666"
+                    local:svg="@drawable/password" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="75dp"
+                    android:layout_centerVertical="true"
+                    android:text="@string/parameter_changePassword"
+                    android:textSize="18dp"
+                    android:textColor="?attr/textColorContent" />
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="?attr/layoutSeparator" />
+        <!-- ===== BUTTON ABOUT =================================== -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/ButtonRippleEffect"
+                android:clickable="true"
+                android:id="@+id/parameter_about">
+                <XamSvg.SvgImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_centerVertical="true"
+                    local:colorMapping="FFFFFF=666666"
+                    local:svg="@drawable/about" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="75dp"
+                    android:layout_centerVertical="true"
+                    android:text="@string/parameter_about"
+                    android:textSize="18dp"
+                    android:textColor="?attr/textColorContent" />
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="?attr/layoutSeparator" />
+        <!-- ===== BUTTON DECONNECTION =================================== -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/ButtonRippleEffect"
+                android:clickable="true"
+                android:id="@+id/parameter_deconnection">
+                <XamSvg.SvgImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_centerVertical="true"
+                    local:svg="@drawable/logout" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="75dp"
+                    android:layout_centerVertical="true"
+                    android:text="@string/parameter_deconnection"
+                    android:textSize="18dp"
+                    android:textColor="?attr/textColorContent" />
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginBottom="100dp"
+                android:background="?attr/layoutSeparator" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

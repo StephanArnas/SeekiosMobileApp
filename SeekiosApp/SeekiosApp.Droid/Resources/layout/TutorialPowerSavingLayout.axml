@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<!-- NAVIGATION BAR -->
+    <include
+        layout="@layout/ActionBarTemplate" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbarLayout">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp">
+        <!-- TITLE POWER SAVING -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/powerSaving_explanationTitle1"
+                android:textColor="@color/textColorContent"
+                android:textSize="17dp"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp" />
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+              <XamSvg.SvgImageView
+                  android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    local:svg="@drawable/powersaving" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/powerSaving_explanation1"
+                    android:textColor="@color/textColorContent"
+                    android:textSize="14dp"
+                    android:layout_marginLeft="10dp" />
+            </LinearLayout>
+        <!-- TITLE WORKING -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="@string/powerSaving_explanationTitle2"
+                android:textColor="@color/textColorContent"
+                android:textSize="17dp"
+                android:textStyle="bold" />
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+              <ImageView
+                  android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/powersavingseekios"
+                    android:scaleType="centerCrop"
+                    android:adjustViewBounds="true" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/powerSaving_explanation2"
+                    android:textColor="@color/textColorContent"
+                    android:textSize="14dp"
+                    android:layout_marginLeft="10dp" />
+            </LinearLayout>
+        <!-- TITLE WHAT DOES IT MEAN? -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="@string/powerSaving_explanationTitle3"
+                android:textColor="@color/textColorContent"
+                android:textSize="17dp"
+                android:textStyle="bold" />
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/powersavingtime"
+                    android:scaleType="centerCrop"
+                    android:adjustViewBounds="true" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/powerSaving_explanation3"
+                    android:textColor="@color/textColorContent"
+                    android:textSize="14dp"
+                    android:layout_marginLeft="10dp" />
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/powerSaving_explanation4"
+                android:textColor="@color/textColorContent"
+                android:textSize="14dp"
+                android:layout_marginTop="5dp" />
+        <!-- HOW TO REACTIVATE REAL TIME? -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="@string/powerSaving_explanationTitle4"
+                android:textColor="@color/textColorContent"
+                android:textSize="17dp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="60dp"
+                android:text="@string/powerSaving_explanation5"
+                android:textColor="@color/textColorContent"
+                android:textSize="14dp" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

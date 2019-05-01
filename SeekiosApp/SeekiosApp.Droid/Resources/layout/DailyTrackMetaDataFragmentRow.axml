@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:id="@+id/dailyTrackRow_timeLayout"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/marginXS">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/marginS"
+            android:text="COUCOU"
+            android:textSize="@dimen/timeTextSize"
+            android:textColor="@color/textColorTitle"
+            android:id="@+id/dailyTrackRow_time" />
+    </LinearLayout>
+    <XamSvg.SvgImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginRight="@dimen/marginXL"
+        android:layout_gravity="right"
+        android:layout_centerVertical="true"
+        local:svg="@drawable/delete"
+        android:layout_alignParentRight="true"
+        android:id="@+id/dailyTrackRow_deleteImage" />
+</RelativeLayout>

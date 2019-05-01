@@ -1,0 +1,68 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DeviceMotion.Plugin</name>
+    </assembly>
+    <members>
+        <member name="T:DeviceMotion.Plugin.CrossDeviceMotion">
+            <summary>
+            Cross platform DeviceMotion implemenations
+            </summary>
+        </member>
+        <member name="P:DeviceMotion.Plugin.CrossDeviceMotion.Current">
+            <summary>
+            Current settings to use
+            </summary>
+        </member>
+        <member name="T:DeviceMotion.Plugin.DeviceMotionImplementation">
+            <summary>
+            Implementation for Feature
+            </summary>
+        </member>
+        <member name="M:DeviceMotion.Plugin.DeviceMotionImplementation.#ctor">
+            <summary>
+            Initializes a new instance of the DeviceMotionImplementation class.
+            </summary>
+        </member>
+        <member name="E:DeviceMotion.Plugin.DeviceMotionImplementation.SensorValueChanged">
+            <summary>
+            Occurs when sensor value changed.
+            </summary>
+        </member>
+        <member name="M:DeviceMotion.Plugin.DeviceMotionImplementation.OnAccuracyChanged(Android.Hardware.Sensor,Android.Hardware.SensorStatus)">
+            <Docs>To be added.</Docs>
+            <summary>
+            Called when the accuracy of a sensor has changed.
+            </summary>
+            <para tool="javadoc-to-mdoc">Called when the accuracy of a sensor has changed.</para>
+            <param name="sensor">Sensor.</param>
+            <param name="accuracy">Accuracy.</param>
+        </member>
+        <member name="M:DeviceMotion.Plugin.DeviceMotionImplementation.OnSensorChanged(Android.Hardware.SensorEvent)">
+            <summary>
+            Raises the sensor changed event.
+            </summary>
+            <param name="e">E.</param>
+        </member>
+        <member name="M:DeviceMotion.Plugin.DeviceMotionImplementation.Start(DeviceMotion.Plugin.Abstractions.MotionSensorType,DeviceMotion.Plugin.Abstractions.MotionSensorDelay)">
+            <summary>
+            Start the specified sensorType and interval.
+            </summary>
+            <param name="sensorType">Sensor type.</param>
+            <param name="interval">Interval.</param>
+        </member>
+        <member name="M:DeviceMotion.Plugin.DeviceMotionImplementation.Stop(DeviceMotion.Plugin.Abstractions.MotionSensorType)">
+            <summary>
+            Stop the specified sensorType.
+            </summary>
+            <param name="sensorType">Sensor type.</param>
+        </member>
+        <member name="M:DeviceMotion.Plugin.DeviceMotionImplementation.IsActive(DeviceMotion.Plugin.Abstractions.MotionSensorType)">
+            <summary>
+            Determines whether this instance is active the specified sensorType.
+            </summary>
+            <returns><c>true</c> if this instance is active the specified sensorType; otherwise, <c>false</c>.</returns>
+            <param name="sensorType">Sensor type.</param>
+        </member>
+    </members>
+</doc>

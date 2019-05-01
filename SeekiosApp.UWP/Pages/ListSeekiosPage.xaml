@@ -1,0 +1,184 @@
+﻿<Page
+    x:Class="SeekiosApp.UWP.ListSeekiosPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:controls="using:Microsoft.Toolkit.Uwp.UI.Controls"
+    xmlns:models="using:SeekiosApp.Model.DTO"
+    xmlns:Maps="using:Windows.UI.Xaml.Controls.Maps"
+    xmlns:converters="using:SeekiosApp.UWP.Converters">
+    
+    <Page.Resources>
+        <converters:DateSeekiosConverter x:Key="DateSeekiosConverter"/>
+        <converters:ImageSeekiosConverter x:Key="ImageSeekiosConverter"/>
+        <DataTemplate x:Key="HamburgerMenuItem" x:DataType="controls:HamburgerMenuGlyphItem">
+            <Grid Width="240" Height="48">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="48" />
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+                <Image Source="{Binding Glyph}" 
+                    Stretch="UniformToFill" 
+                    Margin="10"/>
+                <TextBlock Grid.Column="1" 
+                    Text="{x:Bind Label}" 
+                    Foreground="{StaticResource ResourceKey=DarkGrayColor}" 
+                    FontSize="17" 
+                    VerticalAlignment="Center" 
+                    Margin="10,0,0,0"/>
+            </Grid>
+        </DataTemplate>
+        <DataTemplate x:Key="HamburgerMenuImageItem" x:DataType="controls:HamburgerMenuGlyphItem">
+            <Grid Width="240" Height="48">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="48" />
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+                <Image Source="{Binding Glyph}" 
+                    Stretch="UniformToFill" 
+                    Margin="10"/>
+                <TextBlock Grid.Column="1" 
+                    Text="{x:Bind Label}" 
+                    Foreground="{StaticResource ResourceKey=DarkGrayColor}" 
+                    FontSize="17" 
+                    VerticalAlignment="Center"
+                    Margin="10,0,0,0"/>
+            </Grid>
+        </DataTemplate>
+    </Page.Resources>
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Loaded="LayoutRoot_Loaded">
+        <controls:HamburgerMenu x:Name="HamburgerMenu"
+                                CompactPaneLength="{Binding CompactPaneLength.Value}"
+                                DisplayMode="CompactOverlay"
+                                Foreground="{StaticResource ResourceKey=DarkGrayColor}"
+                                HamburgerWidth="48"
+                                HamburgerHeight="{Binding HamburgerHeight.Value}"
+                                HamburgerVisibility="{Binding HamburgerVisibility.Value}"
+                                ItemTemplate="{StaticResource HamburgerMenuImageItem}"
+                                OpenPaneLength="250"
+                                OptionsItemTemplate="{StaticResource HamburgerMenuItem}"
+                                PaneBackground="{StaticResource ResourceKey=HamburgerMenuColor}"
+                                ItemClick="HamburgerMenu_ItemClick"
+                                OptionsItemClick="HamburgerMenu_ItemClick"
+                                IsPaneOpen="False">
+            <!--Items-->
+            <controls:HamburgerMenu.ItemsSource>
+                <controls:HamburgerMenuItemCollection>
+                    <controls:HamburgerMenuGlyphItem x:Uid="HamburgerMenu_Guide" Tag="Tutorial" Label="Guide d'utilisation" Glyph="/Assets/Icons/Tutorial.png"/>
+                    <controls:HamburgerMenuGlyphItem x:Uid="HamburgerMenu_Consommation" Tag="MyConsomation" Glyph="/Assets/Icons/MyConsomation.png"/>
+                    <controls:HamburgerMenuGlyphItem x:Uid="HamburgerMenu_AddSeekios" Tag="AddSeekios" Glyph="/Assets/Icons/AddLeftMenu.png"/>
+                    <controls:HamburgerMenuGlyphItem x:Uid="HamburgerMenu_MapAllSeekios" Tag="MapAllSeekios" Glyph="/Assets/Icons/Map.png"/>
+                    <controls:HamburgerMenuGlyphItem x:Uid="HamburgerMenu_Feedback" Tag="Feedback" Glyph="/Assets/Icons/Feedback.png"/>
+                </controls:HamburgerMenuItemCollection>
+            </controls:HamburgerMenu.ItemsSource>
+            <!--Options-->
+            <controls:HamburgerMenu.OptionsItemsSource>
+                <controls:HamburgerMenuItemCollection>
+                    <controls:HamburgerMenuGlyphItem x:Name="UserEmail_HamburgerMenu" Tag="ParameterUser" Glyph="/Assets/Icons/Settings.png"/>
+                    <controls:HamburgerMenuGlyphItem x:Uid="HamburgerMenu_About" Tag="About" Label="About" Glyph="/Assets/Icons/About.png"/>
+                </controls:HamburgerMenuItemCollection>
+            </controls:HamburgerMenu.OptionsItemsSource>
+            <!--Content-->
+            <controls:MasterDetailsView x:Name="ListSeekiosView"
+                    ItemsSource="{x:Bind LsSeekios}"
+                    BorderBrush="{StaticResource HamburgerMenuColor}"
+                    SelectionChanged="ListSeekiosView_SelectionChanged">
+                <controls:MasterDetailsView.ItemTemplate>
+                    <DataTemplate x:DataType="models:SeekiosDTO">
+                        <StackPanel Orientation="Horizontal" Margin="0,5">
+                            <Ellipse Width="70" Height="70">
+                                <Ellipse.Fill>
+                                    <ImageBrush ImageSource="{x:Bind SeekiosPicture, Mode=OneWay, Converter={StaticResource ImageSeekiosConverter}}" />
+                                </Ellipse.Fill>
+                            </Ellipse>
+                            <StackPanel Orientation="Vertical" Margin="20,0,0,0" >
+                                <TextBlock Style="{ThemeResource SubtitleTextBlockStyle}"
+                                    FontSize="20" 
+                                    Margin="0,12,0,0"
+                                   Text="{x:Bind SeekiosName}" />
+                                <TextBlock Foreground="Gray"
+                                    MaxLines="2"
+                                    Style="{ThemeResource BodyTextBlockStyle}"
+                                    FontSize="12" 
+                                    Text="{x:Bind Idseekios, Mode=OneWay, Converter={StaticResource DateSeekiosConverter}}" />
+                            </StackPanel>
+                        </StackPanel>
+                    </DataTemplate>
+                </controls:MasterDetailsView.ItemTemplate>
+                <controls:MasterDetailsView.DetailsTemplate>
+                    <DataTemplate>
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="auto" />
+                                <RowDefinition Height="*" />
+                                <RowDefinition Height="auto" />
+                            </Grid.RowDefinitions>
+                            <Maps:MapControl Grid.Row="1" 
+                                             Grid.RowSpan="3"
+                                             x:Name="Map" 
+                                             MapServiceToken="AXVuoYybjfRIMzovGE5w~eQQ-2zE46tedlsx6WT9alQ~ApBztQMevZGNYcv3Z-o6fS5eUg_3E0jsxKBHsKIFw_Jtof5rG_MnC_sFYaXRrCkX"
+                                             PanInteractionMode="Auto"
+                                             ZoomInteractionMode="GestureAndControl"
+                                             TiltInteractionMode="GestureAndControl"
+                                             RotateInteractionMode="GestureAndControl"/>
+                            <CommandBar Grid.Row="2">
+                                <CommandBar.ContentTemplate>
+                                    <DataTemplate>
+                                        <Grid>
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="Auto" />
+                                                <ColumnDefinition Width="Auto" />
+                                                <ColumnDefinition Width="Auto" />
+                                                <ColumnDefinition Width="Auto" />
+                                                <ColumnDefinition Width="Auto" />
+                                            </Grid.ColumnDefinitions>
+                                            <Image Grid.Column="0" x:Name="BatteryImage" Margin="10" Width="30" Height="30" Source="/Assets/Icons/Battery/Battery70.png" VerticalAlignment="Center" />
+                                            <TextBlock Grid.Column="2" x:Name="BatteryDate" Margin="5,0" FontSize="12" Foreground="{StaticResource DarkGrayColor}" Text="Il y a 3j à 17h30" VerticalAlignment="Center" />
+                                            <Button Grid.Column="3" x:Name="BatteryButton" x:Uid="Map_RefreshBattery" Margin="5,0" VerticalAlignment="Center" />
+                                            <ProgressRing Grid.Column="4" x:Name="BatteryLoading" Width="30" Height="30" Margin="10" VerticalAlignment="Center" IsActive="False" />
+                                        </Grid>
+                                    </DataTemplate>
+                                </CommandBar.ContentTemplate>
+                                <CommandBar.Background>
+                                    <SolidColorBrush Color="#ededed" Opacity="0.8" />
+                                </CommandBar.Background>
+                                <AppBarSeparator/>
+                                <AppBarButton Icon="Map" Label="Historique"/>
+                                <AppBarSeparator/>
+                                <AppBarButton Icon="RepeatAll" Label="Mode"/>
+                                <AppBarSeparator/>
+                                <AppBarButton Icon="Setting" Label="Paramètres" />
+                            </CommandBar>
+                        </Grid>
+                    </DataTemplate>
+                </controls:MasterDetailsView.DetailsTemplate>
+                <controls:MasterDetailsView.NoSelectionContent>
+                    <StackPanel HorizontalAlignment="Center"
+                                VerticalAlignment="Center">
+                        <Image Source="/Assets/Icons/EmptyListSeekios.png" Width="200" Height="200" Stretch="Uniform" />
+                        <TextBlock x:Uid="NoSelectionContentTemplate_SelectSeekios"
+                                Margin="0,12"
+                                FontSize="24"
+                                Foreground="{StaticResource ResourceKey=MediumLightGrayColor}"
+                                Text="Vous n'avez aucun seekios" />
+                    </StackPanel>
+                </controls:MasterDetailsView.NoSelectionContent>
+            </controls:MasterDetailsView>
+        </controls:HamburgerMenu>
+        <controls:Loading x:Name="LoadingControl" 
+                          HorizontalContentAlignment="Center" 
+                          VerticalContentAlignment="Center"
+                          Background="White" 
+                          Opacity="0.7"
+                          Visibility="Visible">
+            <ProgressRing Width="60" 
+                          Height="60" 
+                          Margin="0,0,0,0" 
+                          HorizontalAlignment="Center" 
+                          VerticalAlignment="Center" 
+                          IsActive="True" />
+        </controls:Loading>
+    </Grid>
+</Page>

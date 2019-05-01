@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/modeZone_vertical">
+    <!--- MAP LAYOUT -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/modeZone_map">
+        <!-- MAP -->
+            <SeekiosApp.Droid.CustomComponents.MapWrapperLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:animateLayoutChanges="true"
+                android:id="@+id/mapBase_layout">
+                <fragment
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    class="com.google.android.gms.maps.MapFragment"
+                    android:id="@+id/mapBase_map" />
+            </SeekiosApp.Droid.CustomComponents.MapWrapperLayout>
+        <!-- ACTION BAR -->
+            <include
+                layout="@layout/ActionBarTemplate" />
+        <!--TEXTE EXPLICATIF-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/toolbarLayout"
+                android:background="#6D154b54"
+                android:text="@string/modeZone_tuto"
+                android:textSize="16dp"
+                android:textColor="@color/textColorWhite"
+                android:gravity="center_horizontal"
+                android:visibility="visible"
+                android:id="@+id/modeZone_tuto"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp" />
+        <!--<XamSvg.SvgImageView
+              android:layout_width="25dp"
+              android:layout_height="25dp"
+              android:layout_below="@+id/toolbarLayout"
+              android:layout_alignParentLeft="true"
+              android:layout_marginLeft="5dp"
+              android:layout_marginTop="10dp"
+              local:svg="@drawable/info" />-->
+        <!-- ON DEMAND INFORMATION LAYOUT -->
+            <include
+                layout="@layout/OnDemandRefreshInfoTemplate" />
+        <!-- BUTTON CTRL+Z -->
+            <XamSvg.SvgImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="11dp"
+                android:clickable="true"
+                android:layout_marginTop="135dp"
+                local:svg="@drawable/modezonegoback"
+                android:id="@+id/modeZone_undo" />
+        <!-- BUTTON EDIT ZONE -->
+            <XamSvg.SvgImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="11dp"
+                android:layout_gravity="left"
+                android:layout_below="@id/modeZone_undo"
+                android:layout_marginTop="@dimen/marginS"
+                android:clickable="true"
+                android:layout_alignParentLeft="true"
+                local:svg="@drawable/modezoneedit"
+                local:colorMappingSelected="88B3B3B3=36da3e"
+                android:id="@+id/modeZone_addPoint" />
+        <!-- CHANGE TYPE SATELITE OR NORMAL -->
+            <XamSvg.SvgImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_below="@id/modeZone_tuto"
+                android:layout_marginRight="11dp"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="right"
+                android:clickable="true"
+                android:layout_alignParentRight="true"
+                local:svg="@drawable/satellite"
+                local:colorMappingSelected="88B3B3B3=36da3e"
+                android:id="@+id/mapBase_changeType" />
+        <!-- BUTTON CENTER ON POSITION -->
+            <XamSvg.SvgImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="11dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/mapBase_changeType"
+                android:layout_gravity="right"
+                android:clickable="true"
+                android:layout_alignParentRight="true"
+                local:svg="@drawable/modezonefocusseekios"
+                local:colorMappingSelected="88B3B3B3=36da3e"
+                android:id="@+id/mapBase_showSeekios" />
+        <!-- BOUTON PLACE ME AT ZONE-->
+            <XamSvg.SvgImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_below="@id/mapBase_showSeekios"
+                android:layout_marginRight="11dp"
+                android:layout_marginTop="10dp"
+                android:layout_alignParentRight="true"
+                android:clickable="true"
+                local:svg="@drawable/modezonefocuszone"
+                local:colorMapping="88B3B3B3=0000FF"
+                android:id="@+id/modeZone_showZone" />
+        </RelativeLayout>
+    <!-- BOTTOM LAYOUT -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:background="#01000000">
+        <!-- Background du bottom menu (pour la couleur de fond) -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_alignParentBottom="true"
+                android:clickable="true"
+                android:background="@drawable/BottomLayoutBackgroundWhite"
+                android:id="@+id/mapZoneBottom_layout">
+            <!-- EMPTY ZONE (TEXT) -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="@dimen/mapBase_creditCircleOverflow"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/mapBase_creditCircleDiameter"
+                    android:layout_centerVertical="true"
+                    android:textSize="14dp"
+                    android:textColor="?attr/textColorTitle"
+                    android:text=""
+                    android:id="@+id/modeZone_instructions"
+                    android:layout_marginRight="100dp" />
+            </RelativeLayout>
+            <TextView
+                style="@style/ButtonNext"
+                android:id="@+id/modeZone_suivant"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:padding="10dp" />
+        </RelativeLayout>
+    </RelativeLayout>
+<!-- LOADING LAYOUT -->
+    <include
+        layout="@layout/LoadingTemplate" />
+</RelativeLayout>

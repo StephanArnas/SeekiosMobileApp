@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:local="http://schemas.android.com/apk/res-auto">
+  <!--<item android:id="@+id/menu_save_modeZone"
+      local:showAsAction="never"
+      android:icon="@drawable/ic_action_save"
+      android:title="@string/actionBar_save"/>-->
+  <item android:id="@+id/menu_info_modeZone"
+      local:showAsAction="always"
+      android:icon="@drawable/info"
+      android:title="@string/actionBar_info"
+      android:visibility="gone"/>
+  <!--<item
+    android:id="@+id/menu_addToFavs"
+    android:showAsAction="never"
+    android:title="@string/actionBar_addToFavs" />
+  <item
+      android:id="@+id/menu_listOfFavs"
+      android:showAsAction="never"
+      android:title="@string/actionBar_listOfFavs" />-->
+</menu>

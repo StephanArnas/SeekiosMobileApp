@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<!-- MAP ET COMPOSANTS -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <!-- MAP -->
+        <SeekiosApp.Droid.CustomComponents.MapWrapperLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:animateLayoutChanges="true"
+            android:id="@+id/mapBase_layout">
+            <fragment
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                class="com.google.android.gms.maps.MapFragment"
+                android:id="@+id/mapBase_map" />
+        </SeekiosApp.Droid.CustomComponents.MapWrapperLayout>
+    <!-- ACTION BAR -->
+        <include
+            layout="@layout/ActionBarTemplate" />
+    <!-- NO POSITIONS YET -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/toolbarLayout"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:background="#4D154b54"
+            android:text="@string/map_noPositionsYetMessage"
+            android:textSize="16dp"
+            android:textColor="@color/textColorWhite"
+            android:gravity="center_horizontal"
+            android:id="@+id/map_noPositionsNotif"
+            android:visibility="visible" />
+    <!-- REFRESH FIRST POSITION -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/toolbarLayout"
+            android:layout_marginTop="40dp"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="@string/map_noPositionsYetText"
+            android:textSize="16dp"
+            android:textColor="#000000"
+            android:id="@+id/mapBase_textRefreshFirst"
+            android:visibility="visible" />
+        <XamSvg.SvgImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="30dp"
+            android:layout_below="@id/mapBase_textRefreshFirst"
+            local:svg="@drawable/firstlocation1"
+            android:id="@+id/mapBase_firstLocationSvgImage"
+            android:layout_centerHorizontal="true" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/mapBase_firstLocationSvgImage"
+            android:layout_marginTop="20dp"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:background="@drawable/buttonrounded"
+            android:text="@string/map_noPosRefresh"
+            android:textSize="16dp"
+            android:textColor="#ffffff"
+            android:id="@+id/mapBase_buttonRefreshFirst"
+            android:visibility="visible"
+            android:padding="5dp"
+            android:elevation="4dp" />
+    <!-- REFRESH ACTION INFO-->
+        <include
+            layout="@layout/OnDemandRefreshInfoTemplate" />
+    <!-- CHANGE TYPE SATELITE OR NORMAL -->
+        <XamSvg.SvgImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/toolbarLayout"
+            android:layout_marginRight="11dp"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="right"
+            android:clickable="true"
+            android:layout_alignParentRight="true"
+            local:svg="@drawable/icon_switchsatellite_android"
+            local:colorMappingSelected="88B3B3B3=36da3e"
+            android:id="@+id/mapBase_changeType" />
+    <!-- CENTER ON POSITION -->
+        <XamSvg.SvgImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/mapBase_changeType"
+            android:layout_marginRight="11dp"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="right"
+            android:clickable="true"
+            android:layout_alignParentRight="true"
+            local:svg="@drawable/modezonefocusseekios"
+            local:colorMappingSelected="88B3B3B3=36da3e"
+            android:id="@+id/mapBase_showSeekios" />
+    <!-- BOUTON PLACE ME AT ZONE-->
+        <XamSvg.SvgImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/mapBase_showSeekios"
+            android:layout_marginRight="11dp"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentRight="true"
+            android:clickable="true"
+            local:svg="@drawable/modezonefocuszone"
+            local:colorMapping="88B3B3B3=0000FF"
+            android:visibility="gone"
+            android:id="@+id/modeZone_showZone" />
+    </RelativeLayout>
+<!-- Tracking timer -->
+    <ProgressBar
+        android:id="@+id/mapTracking_progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/toolbarLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="@dimen/marginS"
+        android:layout_marginTop="70dp"
+        android:max="500"
+        android:progress="450"
+        android:progressDrawable="@drawable/circleprogressbar2" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbarLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="23dp"
+        android:layout_marginTop="92dp"
+        android:text="01:30"
+        android:textColor="@color/textColorContent"
+        android:id="@+id/mapTracking_timerTrackingText"
+        android:textSize="13dp" />
+<!-- BOTTOM LAYOUT -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/map_bottomLayout"
+        android:background="#A9FFFFFF">
+    <!-- Top linear layout : arrow, mode, historic -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#66FFFFFF"
+            android:id="@+id/bottomLayout_top">
+        <!-- ARROW -->
+            <XamSvg.SvgImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="30dp"
+                android:id="@+id/mapBase_upArrow"
+                local:svg="@drawable/uparrow"
+                android:layout_gravity="center_vertical"
+                android:layout_centerVertical="true" />
+        <!-- MODE -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:id="@+id/bottomLayout_modeLayout"
+                android:layout_marginLeft="30dp"
+                android:layout_toRightOf="@id/mapBase_upArrow"
+                android:layout_centerVertical="true"
+                android:layout_centerInParent="true">
+                <XamSvg.SvgImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_vertical"
+                    local:svg="@drawable/modetracking"
+                    android:id="@+id/bottomLayout_modeImage" />
+                <XamSvg.SvgImageView
+                    android:layout_width="17dp"
+                    android:layout_height="17dp"
+                    android:layout_marginLeft="-16dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_gravity="center_vertical"
+                    local:svg="@drawable/powersaving"
+                    android:id="@+id/bottomLayout_powerSavingImage" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18dp"
+                    android:textColor="@color/textColorContent"
+                    android:text="Sortie de zone"
+                    android:id="@+id/bottomLayout_modeText"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:textStyle="bold"
+                    android:lines="2"
+                    android:layout_marginRight="100dp" />
+            </LinearLayout>
+        <!-- HISTORIC BUTTON -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:gravity="center"
+                android:background="@drawable/buttonrounded"
+                android:text="@string/historic_title"
+                android:textSize="16dp"
+                android:textColor="#ffffff"
+                android:id="@+id/mapBase_historicButton"
+                android:padding="5dp"
+                android:layout_gravity="center_vertical" />
+        </RelativeLayout>
+    <!-- Informative texts : activation time, (batterie estimation), etc-->
+        <RelativeLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:id="@+id/bottomLayout_firstTextLayout"
+            android:layout_below="@id/bottomLayout_top">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/map_firstTitle"
+                android:textSize="16dp"
+                android:textColor="#4c4c4c"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/bottomLayout_firstTextLeft" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3 jours"
+                android:textSize="16dp"
+                android:textColor="#4c4c4c"
+                android:layout_alignParentRight="true"
+                android:textStyle="bold"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/bottomLayout_firstTextRight" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:id="@+id/bottomLayout_secondTextLayout"
+            android:layout_below="@id/bottomLayout_firstTextLayout">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/map_secondTitle"
+                android:textSize="16dp"
+                android:textColor="#4c4c4c"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/bottomLayout_secondTextLeft" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="20"
+                android:textSize="16dp"
+                android:textColor="#4c4c4c"
+                android:layout_alignParentRight="true"
+                android:textStyle="bold"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/bottomLayout_secondTextRight" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:id="@+id/bottomLayout_thirdTextLayout"
+            android:layout_below="@id/bottomLayout_secondTextLayout">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/map_thirdTitleAlert"
+                android:textSize="16dp"
+                android:textColor="#4c4c4c"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/bottomLayout_thirdTextLeft" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="20"
+                android:textSize="16dp"
+                android:textColor="#4c4c4c"
+                android:layout_alignParentRight="true"
+                android:textStyle="bold"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/bottomLayout_thirdTextRight" />
+        </RelativeLayout>
+    <!-- Delete Mode Button -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/bottomLayout_thirdTextLayout"
+            android:gravity="center"
+            android:background="@drawable/buttonrounded3"
+            android:text="Désactiver le Tracking"
+            android:textSize="16dp"
+            android:textColor="#ffffff"
+            android:id="@+id/bottomLayout_buttonDeleteMode"
+            android:padding="5dp"
+            android:layout_margin="10dp" />
+    </RelativeLayout>
+<!-- LAYOUT DE CHARGEMENT -->
+    <include
+        layout="@layout/LoadingTemplate" />
+</RelativeLayout>

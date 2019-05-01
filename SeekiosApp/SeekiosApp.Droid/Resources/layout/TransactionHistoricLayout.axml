@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include
+        layout="@layout/ActionBarTemplate" />
+<!-- EMPTY LIST -->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center_vertical"
+        android:gravity="center"
+        android:clickable="true"
+        android:background="@drawable/emptylistellipsisselector"
+        android:id="@+id/transactionHistoric_emptyLayout">
+        <XamSvg.SvgImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/marginXS"
+            local:svg="@drawable/reloadcredit"
+            android:id="@+id/transactionHistoric_historicImgActionClick" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/transactionHistoricEmpty"
+            android:textColor="#bbbbbb"
+            android:textSize="18dp" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/transactionHistoricEmptyRefreshButton"
+            android:textColor="#ffffff"
+            android:textSize="15dp"
+            android:background="@color/primary"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/transactionEmptyRefreshButton" />
+    </LinearLayout>
+<!-- LISTE DES SEEKIOS -->
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbarLayout"
+        android:divider="?attr/layoutSeparator"
+        android:dividerHeight="2dp"
+        android:id="@+id/transactionHistoric_transactionList"
+        xmlns:tools="http://schemas.android.com/tools" />
+<!-- LAYOUT DE CHARGEMENT -->
+    <include
+        layout="@layout/LoadingTemplate" />
+</RelativeLayout>

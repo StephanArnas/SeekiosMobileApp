@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:background="?attr/layoutBackgroundPopup"
+    android:id="@+id/mainLayout">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_centerInParent="true"
+        android:background="@android:color/transparent">
+        <!--<Button
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="@string/alert_sms"
+            android:textColor="?attr/textColorLink"
+            android:background="@android:color/transparent"
+            android:id="@+id/alert_smsChoice" />-->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.155555dp"
+            android:background="?attr/layoutBackgroundDark" />
+      <Button
+          android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="@string/alert_email"
+            android:textColor="?attr/textColorLink"
+            android:background="@android:color/transparent"
+            android:id="@+id/alert_emailChoice" />
+        <!--<View
+            android:layout_width="match_parent"
+            android:layout_height="0.155555dp"
+            android:background="?attr/layoutSeparator" />-->
+      <!--<Button
+          android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="@string/alert_vocalCall"
+            android:textColor="?attr/textColorSubTitle"
+            android:background="@android:color/transparent"
+            android:id="@+id/alert_vocalCallChoice" />-->
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+  <dimen name="google_1x">8dp</dimen>
+
+  <!-- ===== Dimensions générales ================================================================= -->
+  
+  <!-- Taille des Texts -->
+  <dimen name="editTextSize">16dp</dimen>
+  <dimen name="textSize">15dp</dimen>
+  <dimen name="sectionBarLayoutTextSize">8dp</dimen>
+
+  <!-- Taille de l'edit Text, et des buttons -->
+  <dimen name="generalSize">30dp</dimen>
+
+  <dimen name="titleTextSize">18dp</dimen>
+  <dimen name="textSiz">16dp</dimen>
+  <dimen name="smallTextSize">10dp</dimen>
+  <dimen name="mediumTextSize">12dp</dimen>
+  <dimen name="Height">1dp</dimen>
+  <dimen name="timeTextSize">30dp</dimen>
+
+  <!-- Taille des section headers des ListView -->
+  <dimen name="headerSize">18dp</dimen>
+
+  <!--Marges-->
+  <dimen name="marginXS">5dp</dimen>
+  <dimen name="marginS">10dp</dimen>
+  <dimen name="marginM">15dp</dimen>
+  <dimen name="marginL">20dp</dimen>
+  <dimen name="marginXL">25dp</dimen>
+  <dimen name="marginXXL">30dp</dimen>
+  <dimen name="marginXXXL">40dp</dimen>
+
+  <dimen name="switchWidth">50dp</dimen>
+
+  <!-- ============================================================================================ -->
+
+  <!-- Margin du SmallButton -->
+  <dimen name="layoutMarginTop">30dp</dimen>
+  <dimen name="layoutMarginLeft">80dp</dimen>
+  <dimen name="layoutMarginRight">80dp</dimen>
+
+  <dimen name="layoutMarginL">40dp</dimen>
+  <dimen name="layoutMarginR">40dp</dimen>
+
+  <!-- Margin de la partie supérieur de l'app -->
+  <dimen name="marginTop">15dp</dimen>
+  <dimen name="listViewSubtitleMarginFive">5dp</dimen>
+  
+  <dimen name="marginTopLogin">15dp</dimen>
+  <dimen name="marginBottomLogin">15dp</dimen>
+  
+  <dimen name="heightTopLogin">35dp</dimen>
+
+  <dimen name="popupEditTextSize">14dp</dimen>
+
+  <!-- Subscription dim -->
+
+  <dimen name="dimen_15">15dp</dimen>
+  <dimen name="dimen_18">18dp</dimen>
+  <dimen name="dimen_10">10dp</dimen>
+  <dimen name="dimen_40">40dp</dimen>
+  <dimen name="dimen_7">7dp</dimen>
+  <dimen name="dimen_1">1dp</dimen>
+  <dimen name="dimen_3">3dp</dimen>
+  <dimen name="dimen_20">20dp</dimen>
+  <dimen name="dimen_22">24dp</dimen>
+  <dimen name="textsize_dimen_35">35dp</dimen>
+  <dimen name="textsize_dimen_25">25dp</dimen>
+  <dimen name="textsize_dimen_29">29dp</dimen>
+  
+  <!--MAP BASE - BOTOM LAYOUT-->
+  <dimen name="mapBase_bottomLayoutMarginRight">12dp</dimen>
+  <dimen name="mapBase_creditCircleDiameter">90dp</dimen>
+  <dimen name="mapBase_creditCircleOverflow">19dp</dimen>
+  <dimen name="mapBase_negativeCreditCircleOverflow">-19dp</dimen>
+  <dimen name="mapBase_creditCircleDiameterWantingOverflow">71dp</dimen>
+  <dimen name="mapBase_visibleBottomLayoutHeight">60dp</dimen>
+  <dimen name="mapBase_visibleBottomLayoutHeightWithOverflow">79dp</dimen>
+  <dimen name="mapBase_visibleBottomLayoutHeightWithOverflow">79dp</dimen>
+  <dimen name="mapBase_bottomLayoutLogoDiameter">38dp</dimen>
+  <dimen name="mapBase_bottomLayoutLogoDiameterWithMarginRight">50dp</dimen>
+
+</resources>

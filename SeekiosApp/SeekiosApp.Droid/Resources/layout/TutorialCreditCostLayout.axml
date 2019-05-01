@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<!-- NAVIGATION BAR -->
+    <include
+        layout="@layout/ActionBarTemplate" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbarLayout">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp">
+        <!-- TITLE POWER SAVING -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tutorialCost_consomation"
+                android:textColor="@color/textColorContent"
+                android:textSize="17dp"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp" />
+        <!-- POSITION GPS -->
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp">
+                <XamSvg.SvgImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    local:svg="@drawable/creditcost1" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/tutorialCost_item1"
+                    android:textColor="@color/textColorContent"
+                    android:textSize="14dp" />
+            </LinearLayout>
+        <!-- POSITION GSM -->
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp">
+                <XamSvg.SvgImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    local:svg="@drawable/creditcost0" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/tutorialCost_item2"
+                    android:textColor="@color/textColorContent"
+                    android:textSize="14dp" />
+            </LinearLayout>
+        <!-- SET UP A MODE -->
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp">
+                <XamSvg.SvgImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    local:svg="@drawable/creditcost2" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/tutorialCost_item3"
+                    android:textColor="@color/textColorContent"
+                    android:textSize="14dp" />
+            </LinearLayout>
+        <!-- DESACTIVATE A MODE -->
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp">
+                <XamSvg.SvgImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    local:svg="@drawable/creditcost0" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/tutorialCost_item4"
+                    android:textColor="@color/textColorContent"
+                    android:textSize="14dp" />
+            </LinearLayout>
+        <!-- RECEIVED A ALERT -->
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp">
+                <XamSvg.SvgImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    local:svg="@drawable/creditcost0" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/tutorialCost_item5"
+                    android:textColor="@color/textColorContent"
+                    android:textSize="14dp" />
+            </LinearLayout>
+        <!-- REFRESH BATTERY -->
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp">
+                <XamSvg.SvgImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    local:svg="@drawable/creditcost1" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/tutorialCost_item6"
+                    android:textColor="@color/textColorContent"
+                    android:textSize="14dp" />
+            </LinearLayout>
+        <!-- RECEPTION TRACKING POSITION -->
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp">
+                <XamSvg.SvgImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    local:svg="@drawable/creditcost1" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/tutorialCost_item7"
+                    android:textColor="@color/textColorContent"
+                    android:textSize="14dp" />
+            </LinearLayout>
+        <!-- SOS -->
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp">
+                <XamSvg.SvgImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    local:svg="@drawable/creditcost1" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/tutorialCost_item8"
+                    android:textColor="@color/textColorContent"
+                    android:textSize="14dp" />
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="40dp"
+                android:gravity="center"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:background="@drawable/buttonroundedblue"
+                android:text="@string/tutorialCost_button"
+                android:textSize="16dp"
+                android:textColor="#ffffff"
+                android:id="@+id/tutorialCost_moreButton" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

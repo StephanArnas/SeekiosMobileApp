@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="330dp"
+    android:layout_height="match_parent"
+    android:layout_gravity="start"
+    android:clickable="true">
+    <RelativeLayout
+        android:layout_width="330dp"
+        android:layout_height="160dp"
+        android:background="#ffffff"
+        android:id="@+id/leftMenu_top">
+        <RelativeLayout
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="15dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/EllipsisFillColor">
+            <SeekiosApp.Droid.CustomComponents.RoundedImageView
+                android:layout_width="76dp"
+                android:layout_height="76dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/Icon"
+                android:id="@+id/leftMenu_userImg" />
+        </RelativeLayout>
+        <XamSvg.SvgImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_gravity="right"
+            local:svg="@drawable/cogleft"
+            android:id="@+id/leftMenu_cog"
+            android:layout_alignParentRight="true" />
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="110dp"
+            android:layout_centerVertical="true">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Stephan Arnas"
+                android:textSize="20dp"
+                android:textColor="#666666"
+                android:id="@+id/leftMenu_fullname"
+                android:ellipsize="end"
+                android:singleLine="true" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="stef868@gmail.com"
+                android:textSize="16dp"
+                android:textColor="#aaaaaa"
+                android:id="@+id/leftMenu_email"
+                android:fontFamily="sans-serif-light"
+                android:singleLine="true"
+                android:ellipsize="end" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="110dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="18dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/leftMenu_credits"
+                android:textSize="16dp"
+                android:textColor="#999999"
+                android:fontFamily="sans-serif-light" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="124"
+                android:textSize="16dp"
+                android:textColor="#62da73"
+                android:id="@+id/leftMenu_creditUser"
+                android:layout_marginLeft="10dp" />
+        </LinearLayout>
+    </RelativeLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="330dp"
+        android:layout_height="match_parent"
+        android:background="#f1f1f1">
+    <!-- MY SEEKIOS ///////////////////////////////// -->
+    <!--<LinearLayout
+            android:layout_width="330dp"
+            android:layout_height="2dp"
+            android:background="#dddddd" />
+        <LinearLayout
+            android:layout_width="330dp"
+            android:layout_height="60dp"
+            android:gravity="center_vertical"
+            android:clickable="true"
+            android:background="@drawable/ButtonRippleEffect"
+            android:id="@+id/leftMenu_gridSeekios">
+            <XamSvg.SvgImageView
+                android:layout_gravity="center_vertical"
+                style="@style/LogoMenu"
+                local:svg="@drawable/seekiosled"
+                android:id="@+id/leftMenu_logoSeekios" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_gravity="center_vertical"
+                android:text="@string/MySeekios"
+                android:textSize="18dp"
+                android:textColor="#999999"
+                android:id="@+id/leftMenu_textSeekios" />
+        </LinearLayout>-->
+    <!-- ADD SEEKIOS //////////////////////////////// -->
+        <LinearLayout
+            android:layout_width="330dp"
+            android:layout_height="2dp"
+            android:background="#dddddd" />
+        <LinearLayout
+            android:layout_width="330dp"
+            android:layout_height="60dp"
+            android:clickable="true"
+            android:background="@drawable/ButtonRippleEffect"
+            android:id="@+id/leftMenu_gridAddSeekios">
+            <XamSvg.SvgImageView
+                android:layout_gravity="center_vertical"
+                style="@style/LogoMenu"
+                local:svg="@drawable/addleft"
+                android:id="@+id/leftMenu_addSeekios" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_gravity="center_vertical"
+                android:text="@string/Add_Seekios"
+                android:textSize="18dp"
+                android:textColor="#999999"
+                android:id="@+id/leftMenu_textAddSeekios" />
+        </LinearLayout>
+    <!-- MAP //////////////////////////////////////// -->
+    <!--<LinearLayout
+            android:layout_width="330dp"
+            android:layout_height="2dp"
+            android:background="#dddddd" />
+        <LinearLayout
+            android:layout_width="330dp"
+            android:layout_height="60dp"
+            android:clickable="true"
+            android:background="#eeeeee"
+            android:id="@+id/leftMenu_gridMapSeekios">
+            <XamSvg.SvgImageView
+                android:layout_gravity="center_vertical"
+                android:enabled="false"
+                style="@style/LogoMenu"
+                local:svg="@drawable/map"
+                local:colorMapping="999999=39b54a"
+                android:id="@+id/leftMenu_mapSeekios" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_gravity="center_vertical"
+                android:enabled="false"
+                android:text="@string/MapSeekios"
+                android:textSize="18dp"
+                android:textColor="#bbbbbb"
+                android:id="@+id/leftMenu_textMap" />
+        </LinearLayout>-->
+    <!-- ALERTES //////////////////////////////////// -->
+    <!--<LinearLayout
+            android:layout_width="330dp"
+            android:layout_height="2dp"
+            android:background="#dddddd" />
+        <LinearLayout
+            android:layout_width="330dp"
+            android:layout_height="60dp"
+            android:clickable="true"
+            android:background="#eeeeee"
+            android:id="@+id/leftMenu_gridAlerts">
+            <XamSvg.SvgImageView
+                android:layout_gravity="center_vertical"
+                style="@style/LogoMenu"
+                local:svg="@drawable/alert"
+                local:colorMapping="555555=62da73"
+                android:id="@+id/leftMenu_alerts" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_gravity="center_vertical"
+                android:text="@string/MyAlerts"
+                android:textSize="18dp"
+                android:textColor="#bbbbbb"
+                android:id="@+id/leftMenu_textAlerts" />
+        </LinearLayout>-->
+    <!-- SHARE ////////////////////////////////////// -->
+    <!--<LinearLayout
+            android:layout_width="330dp"
+            android:layout_height="2dp"
+            android:background="#dddddd" />
+        <LinearLayout
+            android:layout_width="330dp"
+            android:layout_height="60dp"
+            android:clickable="true"
+            android:background="#eeeeee"
+            android:id="@+id/leftMenu_gridCommunity">
+            <XamSvg.SvgImageView
+                android:layout_gravity="center_vertical"
+                style="@style/LogoMenu"
+                local:svg="@drawable/share2"
+                local:colorMapping="ffffff=5ec5c4"
+                android:id="@+id/leftMenu_community" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_gravity="center_vertical"
+                android:text="@string/Community"
+                android:textSize="18dp"
+                android:textColor="#bbbbbb"
+                android:id="@+id/leftMenu_textShare" />
+        </LinearLayout>-->
+    <!-- SETTING //////////////////////////////////// -->
+    <!--<LinearLayout
+            android:layout_width="330dp"
+            android:layout_height="2dp"
+            android:background="#dddddd" />-->
+    <!--<LinearLayout
+            android:layout_width="330dp"
+            android:layout_height="60dp"
+            android:clickable="true"
+            android:background="@drawable/ButtonRippleEffect"
+            android:id="@+id/leftMenu_gridParameter">
+            <XamSvg.SvgImageView
+                android:layout_gravity="center_vertical"
+                style="@style/LogoMenu"
+                local:svg="@drawable/parameter"
+                local:colorMapping="555555=009078"
+                android:id="@+id/leftMenu_parameter" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_gravity="center_vertical"
+                android:text="@string/Parametre"
+                android:textSize="18dp"
+                android:textColor="#999999"
+                android:id="@+id/leftMenu_textSettings" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="330dp"
+            android:layout_height="2dp"
+            android:background="#dddddd" />-->
+    <!--<LinearLayout
+            android:layout_width="330dp"
+            android:layout_height="60dp"
+            android:clickable="true"
+            android:background="@drawable/ButtonRippleEffect"
+            android:id="@+id/leftMenu_gridStore">
+            <XamSvg.SvgImageView
+                android:layout_gravity="center_vertical"
+                style="@style/LogoMenu"
+                local:svg="@drawable/reloadcredit"
+                local:colorMapping="555555=009078"
+                android:id="@+id/leftMenu_store" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_gravity="center_vertical"
+                android:text="@string/store"
+                android:textSize="18dp"
+                android:textColor="#999999"
+                android:id="@+id/leftMenu_store" />
+        </LinearLayout>-->
+        <LinearLayout
+            android:layout_width="330dp"
+            android:layout_height="2dp"
+            android:background="#dddddd" />
+        <LinearLayout
+            android:layout_width="330dp"
+            android:layout_height="60dp"
+            android:clickable="true"
+            android:background="@drawable/ButtonRippleEffect"
+            android:id="@+id/leftMenu_gridCredits">
+            <XamSvg.SvgImageView
+                android:layout_gravity="center_vertical"
+                style="@style/LogoMenu"
+                local:svg="@drawable/myconsumption"
+                android:id="@+id/leftMenu_credits" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_gravity="center_vertical"
+                android:text="@string/myConsumption"
+                android:textSize="18dp"
+                android:textColor="#999999"
+                android:id="@+id/leftMenu_credits" />
+        </LinearLayout>
+    <!-- cgu -->
+    <!--<LinearLayout
+            android:layout_width="330dp"
+            android:layout_height="2dp"
+            android:background="#dddddd" />
+        <LinearLayout
+            android:layout_width="330dp"
+            android:layout_height="60dp"
+            android:clickable="true"
+            android:background="@drawable/ButtonRippleEffect"
+            android:id="@+id/leftMenu_gridCGU">
+            <XamSvg.SvgImageView
+                android:layout_gravity="center_vertical"
+                style="@style/LogoMenu"
+                local:svg="@drawable/credit"
+                local:colorMapping="555555=009078"
+                android:id="@+id/leftMenu_cgu" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_gravity="center_vertical"
+                android:text="conditions (test)"
+                android:textSize="18dp"
+                android:textColor="#999999"
+                android:id="@+id/leftMenu_cgu" />
+        </LinearLayout>-->
+    <!-- USER GUIDE -->
+        <LinearLayout
+            android:layout_width="330dp"
+            android:layout_height="2dp"
+            android:background="#dddddd" />
+        <LinearLayout
+            android:layout_width="330dp"
+            android:layout_height="60dp"
+            android:clickable="true"
+            android:background="@drawable/ButtonRippleEffect"
+            android:id="@+id/leftMenu_gridGuide">
+            <XamSvg.SvgImageView
+                android:layout_gravity="center_vertical"
+                style="@style/LogoMenu"
+                local:svg="@drawable/help"
+                android:id="@+id/leftMenu_guide" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_gravity="center_vertical"
+                android:text="@string/parameter_guide"
+                android:textSize="18dp"
+                android:textColor="#999999"
+                android:id="@+id/leftMenu_guide" />
+        </LinearLayout>
+    <!-- HOCKEY APP FEEDBACK -->
+        <LinearLayout
+            android:layout_width="330dp"
+            android:layout_height="2dp"
+            android:background="#dddddd" />
+        <LinearLayout
+            android:layout_width="330dp"
+            android:layout_height="60dp"
+            android:clickable="true"
+            android:background="@drawable/ButtonRippleEffect"
+            android:id="@+id/leftMenu_gridFeedback">
+            <XamSvg.SvgImageView
+                android:layout_gravity="center_vertical"
+                style="@style/LogoMenu"
+                local:svg="@drawable/feedback"
+                android:id="@+id/leftMenu_store" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_gravity="center_vertical"
+                android:text="@string/parameter_feedback"
+                android:textSize="18dp"
+                android:textColor="#999999"
+                android:id="@+id/leftMenu_feedback" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

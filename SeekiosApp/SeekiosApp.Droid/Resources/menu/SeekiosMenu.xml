@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+  <item android:id="@+id/seekiosMenu_updateSeekios"
+        android:title="@string/seekiosMenu_updateSeekios" />
+  <item android:id="@+id/seekiosMenu_deleteSeekios"
+        android:title="@string/seekiosMenu_deleteSeekios" />
+</menu>

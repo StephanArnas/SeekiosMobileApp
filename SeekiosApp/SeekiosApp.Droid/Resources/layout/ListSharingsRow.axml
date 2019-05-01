@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/root_layout">
+<!-- IMAGE DU SEEKIOS-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/sharingRow_layout">
+        <SeekiosApp.Droid.CustomComponents.RoundedImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_gravity="center_vertical|left"
+            android:src="@drawable/Icon"
+            android:id="@+id/sharingRow_seekiosImage" />
+    <!-- LAYOUT DES TEXTES-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_toRightOf="@+id/sharingRow_seekiosImage"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:id="@+id/sharingRow_textLayout">
+        <!-- NOM DU SEEKIOS-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/Title"
+                android:textColor="@color/communityLightBlue"
+                android:id="@+id/sharingRow_seekiosName" />
+        <!-- DATE DE PARTAGE DU SEEKIOS -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/Subtitle"
+                android:layout_alignLeft="@+id/sharingRow_seekiosName"
+                android:layout_below="@+id/sharingRow_seekiosName"
+                android:id="@+id/sharingRow_shareText" />
+        </LinearLayout>
+    <!-- MAP BUTTON LAYOUT -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_toRightOf="@+id/sharingRow_textLayout"
+            android:layout_centerInParent="true"
+            android:clickable="true"
+            android:layout_marginRight="10dp"
+            android:id="@+id/sharingRow_mapLayout">
+        <!-- MAP IMAGE -->
+            <XamSvg.SvgImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center|right"
+                local:svg="@drawable/map"
+                local:colorMapping="555555=888888"
+                local:colorMappingSelected="555555=69bfa8"
+                android:id="@+id/listSharingsRow_map" />
+        <!-- MAP TEXT -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/seekiosRow_map"
+                android:textSize="@dimen/smallTextSize"
+                android:textColor="@drawable/CommunityTextColorSelector"
+                android:layout_gravity="right|center_horizontal"
+                android:layout_marginRight="3dp" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

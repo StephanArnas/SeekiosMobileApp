@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include
+        layout="@layout/ActionBarTemplate" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:gravity="center_vertical">
+    <!--LOGO-->
+        <XamSvg.SvgImageView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            local:svg="@drawable/developpementprogressing"
+            android:layout_centerInParent="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center_horizontal" />
+    <!--MESSAGE-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fonctionnalité en cours de développement"
+            android:layout_gravity="center"
+            android:layout_centerVertical="true"
+            android:textSize="20dp"
+            android:textColor="#999999"
+            android:id="@+id/textView2"
+            android:gravity="center" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Merci de votre patience :)"
+            android:layout_centerVertical="true"
+            android:textColor="#999999"
+            android:textSize="20dp"
+            android:id="@+id/textView3"
+            android:layout_gravity="center_horizontal" />
+    </LinearLayout>
+</LinearLayout>

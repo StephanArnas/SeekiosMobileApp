@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<!-- LAYOUT DE CHARGEMENT -->
+    <include
+        layout="@layout/LoadingTemplate" />
+<!-- NAVIGATION BAR -->
+    <include
+        layout="@layout/ActionBarTemplate" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <!-- ===== SEEKIOS PICTURES ==================================== -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp">
+            <!-- GREEN COLOR -->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:elevation="4dp"
+                    android:background="@color/primary"
+                    android:id="@+id/block_1" />
+            <!-- GRAY COLOR -->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:background="?attr/layoutBackgroundWhite"
+                    android:layout_below="@id/block_1"
+                    android:id="@+id/block_2">
+                <!-- BUTTON MODIFY THE PICTURE -->
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:padding="2dp"
+                        android:text="@string/addSeekios_modifyPicture"
+                        android:textSize="16dp"
+                        android:textColor="@color/primary"
+                        android:fontFamily="sans-serif-light"
+                        android:background="@drawable/ButtonRippleEffect"
+                        android:id="@+id/button_updatePicture" />
+                </RelativeLayout>
+            <!-- SEEKIOS PICTURE -->
+                <SeekiosApp.Droid.CustomComponents.RoundedImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_centerHorizontal="true"
+                    android:elevation="4dp"
+                    android:clickable="true"
+                    android:scaleType="centerInside"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/defaultseekios"
+                    android:id="@+id/addSeekios_imageSeekios" />
+            <!-- BUTTON SEEKIOS NEED AN UPDATE -->
+                <XamSvg.SvgImageView
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:layout_marginTop="110dp"
+                    android:elevation="4dp"
+                    android:scaleType="centerCrop"
+                    android:adjustViewBounds="true"
+                    android:visibility="invisible"
+                    local:svg="@drawable/versionapplicationupdatewithbackground"
+                    android:id="@+id/addSeekios_firmwareUpdate"
+                    android:layout_alignRight="@id/addSeekios_imageSeekios"
+                    android:layout_marginRight="-5dp" />
+            <!-- SEPARATOR LINE -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="?attr/layoutSeparator"
+                    android:layout_below="@id/block_2" />
+            </RelativeLayout>
+        <!-- ===== SEEKIOS FIELDS ====================================== -->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:id="@+id/seekiosFieldsLayout">
+            <!-- SEEKIOS NAME -->
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:textColorHint="?attr/textColorHint"
+                    local:counterEnabled="true"
+                    local:counterMaxLength="30"
+                    local:counterTextAppearance="@style/counterText"
+                    local:counterOverflowTextAppearance="@style/counterOverride">
+                    <android.widget.EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:maxLength="30"
+                        android:singleLine="true"
+                        android:textSize="18dp"
+                        android:textColor="?attr/textColorContent"
+                        android:hint="@string/addSeekios_seekiosName"
+                        android:textColorHint="?attr/textColorHint"
+                        android:id="@+id/seekiosname" />
+                </android.support.design.widget.TextInputLayout>
+            <!-- SEEKIOS IMEI -->
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-10dp"
+                    android:textColorHint="?attr/textColorHint"
+                    local:counterEnabled="true"
+                    local:counterMaxLength="15"
+                    local:counterTextAppearance="@style/counterText"
+                    local:counterOverflowTextAppearance="@style/counterOverride">
+                    <android.widget.EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:inputType="number"
+                        android:maxLength="15"
+                        android:singleLine="true"
+                        android:textSize="18dp"
+                        android:textColor="?attr/textColorContent"
+                        android:hint="@string/addSeekios_seekiosImei"
+                        android:textColorHint="?attr/textColorHint"
+                        android:id="@+id/seekios_imei" />
+                </android.support.design.widget.TextInputLayout>
+            <!-- SEEKIOS PIN / VERSION EMBEDDED -->
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-10dp"
+                    android:textColorHint="?attr/textColorHint"
+                    local:counterEnabled="true"
+                    local:counterMaxLength="4"
+                    local:counterTextAppearance="@style/counterText"
+                    local:counterOverflowTextAppearance="@style/counterOverride"
+                    android:id="@+id/seekios_pinLayout">
+                    <android.widget.EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:inputType="number"
+                        android:maxLength="4"
+                        android:singleLine="true"
+                        android:textSize="18dp"
+                        android:textColor="?attr/textColorContent"
+                        android:hint="@string/addSeekios_seekiosPin"
+                        android:textColorHint="?attr/textColorHint"
+                        android:id="@+id/seekios_pin" />
+                </android.support.design.widget.TextInputLayout>
+            <!-- BUTTON SAVE -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="30dp"
+                    android:enabled="false"
+                    android:text="@string/addseekios_save"
+                    android:textSize="16dp"
+                    android:textColor="#ffffff"
+                    android:background="@drawable/buttonrounded"
+                    android:id="@+id/save"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp" />
+            <!-- DELETE SEEKIOS / BUY A SEEKIOS LAYOUT -->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="40dp">
+                <!-- Delete seekios -->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/buttonrounded3"
+                        android:text="@string/detailSeekios_deleteSeekiosButton"
+                        android:textSize="16dp"
+                        android:textColor="#ffffff"
+                        android:id="@+id/addSeekios_deleteSeekiosButton"
+                        android:gravity="center"
+                        android:layout_centerHorizontal="true"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp" />
+                <!-- Buy a seekios -->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/buttonroundedblue"
+                        android:text="@string/detailSeekios_buyASeekiosButton"
+                        android:textSize="16dp"
+                        android:textColor="#ffffff"
+                        android:id="@+id/addSeekios_buyASeekiosButton"
+                        android:gravity="center"
+                        android:layout_centerHorizontal="true"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp"
+                        android:visibility="gone" />
+                </RelativeLayout>
+            <!-- END OF DELETE SEEKIOS LAYOUT -->
+            </LinearLayout>
+        <!-- ===== NOTIFICATION SETTING ================================ -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="40dp"
+                android:layout_below="@id/seekiosFieldsLayout">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/layout1">
+                    <Switch
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:checked="true"
+                        android:id="@+id/notificationNewLocationTracking_switch" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toLeftOf="@id/notificationNewLocationTracking_switch"
+                        android:text="@string/addSeekios_notificationNewLocationTracking"
+                        android:textSize="15dp"
+                        android:textColor="@color/textColorContent"
+                        android:id="@+id/notificationNewLocationTracking_textView" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/layout1"
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/layout2">
+                    <Switch
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:checked="true"
+                        android:id="@+id/notificationNewLocationOutOfZone_switch" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toLeftOf="@id/notificationNewLocationOutOfZone_switch"
+                        android:text="@string/addSeekios_notificationNewLocationOutOfZone"
+                        android:textSize="15dp"
+                        android:textColor="@color/textColorContent"
+                        android:id="@+id/notificationNewLocationOutOfZone_textView" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/layout2"
+                    android:layout_marginTop="20dp">
+                    <Switch
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:checked="true"
+                        android:id="@+id/notificationNewLocationMoved_switch" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toLeftOf="@id/notificationNewLocationMoved_switch"
+                        android:text="@string/addSeekios_notificationNewLocationMoved"
+                        android:textSize="15dp"
+                        android:textColor="@color/textColorContent"
+                        android:id="@+id/notificationNewLocationMoved_textView" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

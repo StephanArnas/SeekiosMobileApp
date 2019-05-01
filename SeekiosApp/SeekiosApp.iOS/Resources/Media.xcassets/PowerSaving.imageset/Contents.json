@@ -1,0 +1,46 @@
+{
+  "images": [
+    {
+      "scale": "1x",
+      "idiom": "iphone",
+      "filename": "PowerSaving.png"
+    },
+    {
+      "scale": "2x",
+      "idiom": "iphone",
+      "filename": "PowerSaving@2x.png"
+    },
+    {
+      "scale": "3x",
+      "idiom": "iphone",
+      "filename": "PowerSaving@3x.png"
+    },
+    {
+      "idiom": "iphone",
+      "filename": "PowerSaving.pdf"
+    },
+    {
+      "idiom": "ipad",
+      "filename": "PowerSaving.pdf"
+    },
+    {
+      "scale": "1x",
+      "idiom": "ipad"
+    },
+    {
+      "scale": "2x",
+      "idiom": "ipad"
+    },
+    {
+      "scale": "3x",
+      "idiom": "ipad"
+    }
+  ],
+  "properties": {
+    "template-rendering-intent": ""
+  },
+  "info": {
+    "version": 1,
+    "author": ""
+  }
+}

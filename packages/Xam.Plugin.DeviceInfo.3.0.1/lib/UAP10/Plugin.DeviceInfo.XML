@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Plugin.DeviceInfo</name>
+    </assembly>
+    <members>
+        <member name="T:Plugin.DeviceInfo.CrossDeviceInfo">
+            <summary>
+            Cross platform DeviceInfo implemenations
+            </summary>
+        </member>
+        <member name="P:Plugin.DeviceInfo.CrossDeviceInfo.IsSupported">
+            <summary>
+            Gets if the plugin is supported on the current platform.
+            </summary>
+        </member>
+        <member name="P:Plugin.DeviceInfo.CrossDeviceInfo.Current">
+            <summary>
+            Current plugin implementation to use
+            </summary>
+        </member>
+        <member name="T:Plugin.DeviceInfo.DeviceInfoImplementation">
+            <summary>
+            Implementation for DeviceInfo
+            </summary>
+        </member>
+        <member name="M:Plugin.DeviceInfo.DeviceInfoImplementation.GenerateAppId(System.Boolean,System.String,System.String)">
+            <inheritdoc/>
+        </member>
+        <member name="P:Plugin.DeviceInfo.DeviceInfoImplementation.Id">
+            <inheritdoc/>
+        </member>
+        <member name="P:Plugin.DeviceInfo.DeviceInfoImplementation.Model">
+            <inheritdoc/>
+        </member>
+        <member name="P:Plugin.DeviceInfo.DeviceInfoImplementation.Version">
+            <inheritdoc/>
+        </member>
+        <member name="P:Plugin.DeviceInfo.DeviceInfoImplementation.Platform">
+            <inheritdoc/>
+        </member>
+        <member name="P:Plugin.DeviceInfo.DeviceInfoImplementation.VersionNumber">
+            <inheritdoc/>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<!-- Manipulation des localisations -->
+    <GridLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/mapBase_creditCircleDiameter"
+        android:layout_marginRight="@dimen/mapBase_bottomLayoutMarginRight"
+        android:layout_marginTop="@dimen/mapBase_creditCircleOverflow"
+        android:gravity="center_vertical"
+        android:layout_alignParentTop="true"
+        android:rowCount="2"
+        android:visibility="visible"
+        android:id="@+id/inTime_bottomGridView">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:gravity="bottom"
+            android:textColor="?attr/textColorTitle"
+            android:textSize="@dimen/smallTextSize"
+            android:text="10:02:54 15/02/16"
+            android:id="@+id/inTime_trackingFirstDate" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:layout_gravity="right"
+            android:gravity="bottom"
+            android:textColor="?attr/textColorTitle"
+            android:textSize="@dimen/smallTextSize"
+            android:text="18:02:54 15/02/16"
+            android:id="@+id/inTime_trackingLastDate" />
+        <SeekBar
+            android:layout_gravity="center"
+            android:layout_row="1"
+            android:layout_column="0"
+            style="@style/SeekiosSeekBar"
+            android:id="@+id/inTime_trackingMarkerSelection" />
+    </GridLayout>
+<!-- Texte "pas de localisations" -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/mapBase_visibleBottomLayoutHeight"
+        android:layout_marginLeft="@dimen/mapBase_creditCircleDiameter"
+        android:layout_marginTop="@dimen/mapBase_creditCircleOverflow"
+        android:gravity="center_vertical"
+        android:visibility="gone"
+        android:text="@string/inTime_noLocation"
+        android:textColor="?attr/textColorTitle"
+        android:textSize="@dimen/textSize"
+        android:id="@+id/inTime_noLocation" />
+<!-- Texte "tracking explanation" -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/mapBase_visibleBottomLayoutHeight"
+        android:layout_marginLeft="@dimen/mapBase_creditCircleDiameter"
+        android:layout_marginTop="@dimen/mapBase_creditCircleOverflow"
+        android:gravity="center_vertical"
+        android:visibility="gone"
+        android:text="@string/modeDefinition_inTimeDescr"
+        android:textColor="?attr/textColorTitle"
+        android:textSize="@dimen/textSize"
+        android:id="@+id/inTime_trackingDesc" />
+<!--MODE EDITION-->
+    <LinearLayout
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="@dimen/mapBase_creditCircleDiameter"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/marginM"
+        android:layout_marginRight="@dimen/marginM"
+        android:orientation="vertical"
+        android:id="@+id/inTime_onEdition">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="?attr/textColorTitle"
+            android:textSize="@dimen/titleTextSize"
+            android:text="@string/modeInTime_trackingTitle" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="?attr/textColorTitle"
+            android:textSize="@dimen/smallTextSize"
+            android:text="@string/modeInTime_trackingDescr" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="@dimen/marginXS">
+            <com.refractored.fab.FloatingActionButton
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_margin="@dimen/marginXS"
+                android:src="@drawable/ic_action_add"
+                local:fab_colorNormal="@color/primary"
+                local:fab_colorPressed="@color/colorPrimaryPressed"
+                local:fab_colorRipple="@color/primaryDark"
+                android:id="@+id/modeinTime_floatingActionButton"
+                android:layout_gravity="center_vertical" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/smallTextSize"
+                android:textColor="@color/color_red"
+                android:layout_marginLeft="@dimen/marginS"
+                android:layout_gravity="center_vertical"
+                android:id="@+id/modeinTime_infoList" />
+        </LinearLayout>
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/modeinTime_floatingActionButton"
+            android:divider="?attr/layoutSeparator"
+            android:dividerHeight="1dp"
+            android:id="@+id/modeinTime_listview" />
+    </LinearLayout>
+<!--MODE MAP-->
+    <LinearLayout
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="@dimen/mapBase_creditCircleDiameter"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/marginM"
+        android:layout_marginRight="@dimen/marginM"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:id="@+id/modeinTime_onMap">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:textColor="?attr/textColorTitle"
+            android:textSize="@dimen/titleTextSize"
+            android:text="@string/metaData_stats" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:textColor="?attr/textColorTitle"
+            android:textSize="@dimen/textSiz"
+            android:id="@+id/modeinTime_activateSince" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:textColor="?attr/textColorTitle"
+            android:textSize="@dimen/textSiz"
+            android:id="@+id/modeinTime_countOfLoc" />
+    </LinearLayout>
+</RelativeLayout>

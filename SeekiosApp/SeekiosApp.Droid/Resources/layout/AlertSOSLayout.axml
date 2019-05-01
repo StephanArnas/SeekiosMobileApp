@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/root">
+<!-- NAVIGATION BAR -->
+    <include
+        layout="@layout/ActionBarTemplate" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scroll">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/scrollEmbedded_layout">
+        <!-- DESCRIPTION -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:text="@string/alertSOS_configureText"
+                android:textSize="16dp"
+                android:textColor="@color/textColorContent"
+                android:layout_marginTop="15dp"
+                android:textStyle="bold" />
+        <!-- TUTO ALERT SOS -->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:paddingBottom="15dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:text="@string/alertSOS_threeInfo"
+                    android:textSize="14dp"
+                    android:textColor="#999999" />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/marginS"
+                    android:layout_marginLeft="@dimen/marginS"
+                    android:layout_marginTop="15dp"
+                    android:scaleType="centerCrop"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/alertsosparam"
+                    android:id="@+id/trackingConfiguration_image" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:text="@string/alertSOS_ledsInfo"
+                    android:textSize="14dp"
+                    android:textColor="#999999" />
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:text="@string/alertSOS_alertByEmail"
+                android:textSize="16dp"
+                android:textColor="@color/textColorContent"
+                android:layout_marginTop="20dp"
+                android:textStyle="bold" />
+        <!-- ALERT TITLE -->
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:textColorHint="?attr/textColorHint">
+                <android.widget.EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:singleLine="true"
+                    android:textSize="18dp"
+                    android:textColor="?attr/textColorContent"
+                    android:hint="@string/alert_alertTitle"
+                    android:textColorHint="?attr/textColorHint"
+                    android:id="@+id/alert_title" />
+            </android.support.design.widget.TextInputLayout>
+        <!-- ALERT RECIPIENTS -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="5dp"
+                android:text="@string/alert_alertRecipient"
+                android:textSize="12dp"
+                android:textColor="?attr/textColorHint" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:paddingLeft="15dp"
+                android:background="#f1f1f1">
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentTop="true"
+                    android:fillViewport="false"
+                    android:measureAllChildren="true"
+                    android:scrollbars="none">
+                    <SeekiosApp.Droid.CustomComponents.ContactLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/alert_recipient" />
+                </HorizontalScrollView>
+            </RelativeLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:gravity="right"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="15dp">
+            <!-- BUTTON ADD RECIPIENT FROM POPUP  -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:padding="@dimen/marginXS"
+                    android:text="@string/alert_buttonAddContactFromPopup"
+                    android:textColor="#ffffff"
+                    android:textSize="16dp"
+                    android:background="@drawable/buttonrounded"
+                    android:id="@+id/alert_addRecipientFromPopup"
+                    android:layout_marginRight="15dp"
+                    android:gravity="center" />
+            <!-- BUTTON ADD RECIPIENT FROM PHONEBOOKS -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:padding="@dimen/marginXS"
+                    android:text="@string/alert_buttonAddContactFromBook"
+                    android:textColor="#ffffff"
+                    android:textSize="16dp"
+                    android:background="@drawable/buttonrounded"
+                    android:id="@+id/alert_addRecipientFromPhonebooks"
+                    android:gravity="center" />
+            </LinearLayout>
+        <!-- ALERT ALERT BODY -->
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:textColorHint="?attr/textColorHint"
+                local:counterEnabled="true"
+                local:counterMaxLength="1000"
+                local:counterTextAppearance="@style/counterText"
+                local:counterOverflowTextAppearance="@style/counterOverride">
+                <android.widget.EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="top"
+                    android:lines="10"
+                    android:maxLength="1000"
+                    android:inputType="textMultiLine"
+                    android:textSize="18dp"
+                    android:textColor="?attr/textColorContent"
+                    android:hint="@string/alert_alertBody"
+                    android:textColorHint="?attr/textColorHint"
+                    android:id="@+id/alert_alertBody" />
+            </android.support.design.widget.TextInputLayout>
+        <!-- BUTTON SAVE -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/buttonrounded"
+                android:text="@string/alert_save"
+                android:textColor="#ffffff"
+                android:textSize="16dp"
+                android:layout_gravity="right"
+                android:id="@+id/alert_save"
+                android:layout_marginBottom="100dp"
+                android:padding="5dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center" />
+        </LinearLayout>
+    </ScrollView>
+<!-- LAYOUT DE CHARGEMENT -->
+    <include
+        layout="@layout/LoadingTemplate" />
+</LinearLayout>

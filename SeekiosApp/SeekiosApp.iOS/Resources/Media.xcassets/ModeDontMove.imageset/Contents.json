@@ -1,0 +1,46 @@
+{
+  "images": [
+    {
+      "scale": "1x",
+      "idiom": "iphone",
+      "filename": "ModeDontMove.png"
+    },
+    {
+      "scale": "2x",
+      "idiom": "iphone",
+      "filename": "ModeDontMove@2x.png"
+    },
+    {
+      "scale": "3x",
+      "idiom": "iphone",
+      "filename": "ModeDontMove@3x.png"
+    },
+    {
+      "idiom": "iphone",
+      "filename": "ModeDontMove.pdf"
+    },
+    {
+      "idiom": "ipad",
+      "filename": "ModeDontMove.pdf"
+    },
+    {
+      "scale": "1x",
+      "idiom": "ipad"
+    },
+    {
+      "scale": "2x",
+      "idiom": "ipad"
+    },
+    {
+      "scale": "3x",
+      "idiom": "ipad"
+    }
+  ],
+  "properties": {
+    "template-rendering-intent": ""
+  },
+  "info": {
+    "version": 1,
+    "author": ""
+  }
+}

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:background="?attr/layoutBackgroundPopup"
+    android:id="@+id/listAlertsRow_alertFavorite">
+<!-- IMAGE DESIGNANT LE SEEKIOS -->
+    <RelativeLayout
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:layout_gravity="center"
+        android:layout_centerVertical="true"
+        android:id="@+id/listAlertsRow_alertTypeEllipsis">
+        <XamSvg.SvgImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="left|center"
+            android:layout_centerInParent="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            local:svg="@drawable/alertesms"
+            android:id="@+id/alerts_seekiosImg" />
+    </RelativeLayout>
+<!-- OBJET DE L EMAIL -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="40dp"
+        android:layout_gravity="fill"
+        android:textColor="?attr/textColorContent"
+        android:id="@+id/alertsFavorite_emailObject" />
+<!-- CONTENU DU MESSAGE D'ALERTE -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="40dp"
+        android:layout_gravity="fill"
+        android:textColor="?attr/textColorLink"
+        android:id="@+id/alerts_alertContains" />
+    <XamSvg.SvgImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="10dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="right|center_vertical"
+        android:clickable="true"
+        local:svg="@drawable/delete"
+        android:id="@+id/alerts_alertDelete" />
+</RelativeLayout>

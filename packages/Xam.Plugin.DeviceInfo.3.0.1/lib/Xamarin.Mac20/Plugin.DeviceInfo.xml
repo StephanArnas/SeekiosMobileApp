@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Plugin.DeviceInfo</name>
+    </assembly>
+    <members>
+        <member name="T:Plugin.DeviceInfo.CrossDeviceInfo">
+            <summary>
+            Cross platform DeviceInfo implemenations
+            </summary>
+        </member>
+        <member name="P:Plugin.DeviceInfo.CrossDeviceInfo.IsSupported">
+            <summary>
+            Gets if the plugin is supported on the current platform.
+            </summary>
+        </member>
+        <member name="P:Plugin.DeviceInfo.CrossDeviceInfo.Current">
+            <summary>
+            Current plugin implementation to use
+            </summary>
+        </member>
+        <member name="T:Plugin.DeviceInfo.DeviceInfoImplementation">
+            <summary>
+            Implementation for DeviceInfo
+            </summary>
+        </member>
+        <member name="M:Plugin.DeviceInfo.DeviceInfoImplementation.#ctor">
+            <summary>
+            Default Constructor
+            </summary>
+        </member>
+        <member name="M:Plugin.DeviceInfo.DeviceInfoImplementation.GenerateAppId(System.Boolean,System.String,System.String)">
+            <inheritdoc/>
+        </member>
+        <member name="P:Plugin.DeviceInfo.DeviceInfoImplementation.Id">
+            <summary>
+            Returns the unique identifier of the device if supported
+            </summary>
+        </member>
+        <member name="P:Plugin.DeviceInfo.DeviceInfoImplementation.Model">
+            <summary>
+            Returns the model of the device
+            </summary>
+        </member>
+        <member name="P:Plugin.DeviceInfo.DeviceInfoImplementation.Version">
+            <summary>
+            Returns the version number as a string
+            </summary>
+        </member>
+        <member name="P:Plugin.DeviceInfo.DeviceInfoImplementation.VersionNumber">
+            <inheritdoc/>
+        </member>
+        <member name="P:Plugin.DeviceInfo.DeviceInfoImplementation.Platform">
+            <summary>
+            Returns platform of device
+            </summary>
+        </member>
+        <member name="P:Plugin.DeviceInfo.DeviceInfoImplementation.Idiom">
+            <summary>
+            Returns the idiom type of the device
+            </summary>
+        </member>
+    </members>
+</doc>

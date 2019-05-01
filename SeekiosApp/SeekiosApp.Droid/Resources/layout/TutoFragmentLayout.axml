@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/primary"
+        android:elevation="6dp"
+        android:id="@+id/tutoTopLayout">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/marginM">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tutoAddSeekiosTitle"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:id="@+id/tutoTitle"
+                android:textColor="#ffffff" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tutoPageNumber"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:id="@+id/tutoSlideNumber"
+                android:textColor="#ffffff"
+                android:layout_marginLeft="@dimen/marginS" />
+        </LinearLayout>
+        <ImageView
+            android:layout_height="280dp"
+            android:layout_width="200dp"
+            android:src="@drawable/tuto_useseekios_first_image"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/marginM"
+            android:scaleType="fitCenter"
+            android:id="@+id/tutoImageView" />
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tutoTopLayout"
+        android:text="@string/tutoAddSeekiosFirstContent"
+        android:textSize="16dp"
+        android:textColor="#333333"
+        android:layout_marginBottom="60dp"
+        android:gravity="center"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:id="@+id/tutoContent" />
+</RelativeLayout>

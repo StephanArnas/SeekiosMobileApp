@@ -1,0 +1,810 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+  <string name="app_name">SeekiosApp.Droid</string>
+
+  <string name="internetConnectionLost">No internet connection</string>
+  <string name="crash_data_sent">A bug report has been sent</string>
+
+  <!-- ===== LOGIN =========================================================== -->
+
+  <string name="facebook_app_id">173099599767673</string>
+
+  <string name="login_emailAdress">Email address</string>
+  <string name="login_password">Password</string>
+  <string name="login_forgetPassword">Forgot password?</string>
+  <string name="login_connect">Login</string>
+  <string name="login_connectFacebook">Login with Facebook</string>
+  <string name="login_createAccount">Create an account</string>
+  <string name="login_whatIsSeekios">Whats a seekios ?</string>
+  <string name="login_returnButton">Back</string>
+  <string name="login_password_error">The password must contain at least 8 characters</string>
+  <string name="login_password_weak">Password protection {0} (remember to use uppercase)</string>
+  <string name="login_password_medium">Password protection {0} (remember to use special characters)</string>
+  <string name="login_password_strong">Password Protection {0}</string>
+  <string name="login_weak">weak</string>
+  <string name="login_medium">medium</string>
+  <string name="login_strong">strong</string>
+  
+  <!-- ===== CREATE ACCOUNT =================================================== -->
+
+  <string name="createAccount_emailAdress">Email address</string>
+  <string name="createAccount_lastName">Last name</string>
+  <string name="createAccount_firstName">First name</string>
+  <string name="createAccount_password">Password</string>
+  <string name="createAccount_confirmedPassword">Confirm password</string>
+  <string name="createAccount_Info">Information needed to create an account</string>
+  <string name="createAccount_errorEmail">Invalid Email</string>
+  <string name="createAccount_errorPasswordNoCorresponding">The passwords do not match</string>
+  <string name="createAccount_actionBarTitle">Creating an Account</string>
+  <string name="createAccount_createAccountButton">Create account</string>
+
+  <!-- ===== FORGOTTEN PASSWORD =================================================== -->
+
+  <string name="login_forgetPasswordButton">Confirm your email address</string>
+  <string name="errorEmail">Invalid Email</string>
+
+  <!-- ===== LIST SEEKIOS ========================================================= -->
+
+  <string name="listSeekios_title">seekios</string>
+  <string name="listSeekios_emptyList">No seekios registered</string>
+
+  <string name="seekiosRow_map">map</string>
+  <string name="seekiosRow_alert">alerts</string>
+  <string name="seekiosRow_shareText">shares</string>
+  <string name="listSeekios_headertitle">seekios shared with me</string>
+
+  <string name="seekiosMenu_updateSeekios">Edit seekios</string>
+  <string name="seekiosMenu_deleteSeekios">Delete the seekios</string>
+
+  <string name="listSeekios_lastPositionNone">No position available</string>
+  <string name="listSeekios_refreshPosition">Refresh in progress </string>
+
+  <string name="listSeekios_modeZone">Zone</string>
+  <string name="listSeekios_modeTracking">Tracking</string>
+  <string name="listSeekios_modeDontMove">Don\'t Move</string>
+  <string name="listSeekios_alertByNotif">Notif</string>
+  <string name="listSeekios_synchr">In progress ...</string>
+  <string name="listSeekios_nextNoon">Activation in {0}</string>
+
+  <!-- ===== PAGE ADD SEEKIOS ========================================= -->
+
+  <string name="addseekios_addSeekios">Add a seekios</string>
+  <string name="addseekios_updateSeekios">Edit a seekios</string>
+  <string name="addSeekios_takePicture">Camera</string>
+  <string name="addSeekios_gallery">Image Gallery</string>
+  <string name="addSeekios_modifyPicture">Edit photo</string>
+  <string name="addSeekios_clearImage">Delete</string>
+  <string name="addSeekios_powerSaving">Power saving</string>
+  <string name="addSeekios_lowBattery">Low battery alert</string>
+  <string name="addSeekios_alertSos">SOS Alert</string>
+  <string name="addSeekios_addPicture">Add a picture</string>
+  <string name="addSeekios_seekiosName">seekios name</string>
+  <string name="addSeekios_seekiosImei">IMEI number</string>
+  <string name="addSeekios_seekiosPin">Pin Code</string>
+  <string name="addseekios_save">Save</string>
+  <string name="addseekios_imeiLoading">Verification ...</string>
+  <string name="addseekios_icorrectPinOrIMEI">IMEI number or PIN code is incorrect</string>
+  <string name="addseekios_IMEIAlreadyAdded">The seekios has already been added</string>
+  <string name="addSeekios_versionEmbedded">Firmware version</string>
+  <string name="addSeekios_versionEmbeddedUpdate">(Update available: {0})</string>
+  <string name="addSeekios_notificationNewLocationTracking">Notification when a new position in mode Tracking is comming</string>
+  <string name="addSeekios_notificationNewLocationOutOfZone">Notification when a new position in mode Zone is comming</string>
+  <string name="addSeekios_notificationNewLocationMoved">Notification when a new position in mode Don\'t Move is comming</string>
+
+  <!-- ===== PAGE ALERT SOS =========================================== -->
+
+  <string name="alertSOS_pagetitle">SOS Alert</string>
+  <string name="alertSOS_popupTitle">Add a contact</string>
+  <string name="alertSOS_popupPositive">ADD</string>
+  <string name="alertSOS_popupNegative">CANCEL</string>
+  <string name="alertSOS_popupEmptyField">Empty fields</string>
+  <string name="alertSOS_popupEmail">Invalid Email</string>
+  <string name="alertSOS_configureText">How does the SOS alert work ?</string>
+  <string name="alertSOS_threeInfo">Press the seekios button 3 times to send the alert.\n\n\nThe message is sent when the lights blink three times at the same time.</string>
+  <string name="alertSOS_ledsInfo">You receive a notification and an email with the seekios position when the alert is triggered.</string>
+  <string name="alertSOS_cannotSaveTitle">The subject of the alert (email) is empty</string>
+  <string name="alertSOS_cannotSaveContent">The message is empty</string>
+  <string name="alertSOS_cannotSaveContact">Please specify at least one recipient</string>
+  <string name="alertSOS_alertByEmail">Alert somebody by email</string>
+
+  <!-- ===== LEFT MENU ================================================ -->
+
+  <string name="open_drawer">Open the menu</string>
+  <string name="close_drawer">Close the menu</string>
+
+  <!-- UNIT -->
+  <string name="unit_square">m²</string>
+
+  <!-- MENU -->
+  <string name="leftMenu_credits">My credits :</string>
+  <!--<string name="MySeekios">My seekios</string>-->
+  <string name="Add_Seekios">Add a seekios</string>
+  <!--<string name="MapSeekios">Map of seekios</string>-->
+  <!--<string name="MyAlerts">My alerts</string>-->
+  <!--<string name="Community">Communauté</string>-->
+  <string name="Parametre">Settings</string>
+  <string name="store">Shop</string>
+  <string name="credits">My credits</string>
+  <string name="myConsumption">My consumption</string>
+  <string name="parameter_guide">User Guide</string>
+
+  <!-- ===== USER PARAMETER =========================================== -->
+
+  <string name="parameter_popupPhoneCountry">Choose a country</string>
+  <string name="parameter_popupPhoneNoResult">No results</string>
+  <string name="parameter_popupPhoneSearch">Search ...</string>
+
+  <string name="parameter_actionBarTitle">Settings</string>
+  <string name="parameter_Info">General information</string>
+  <string name="parameter_FirstName">First name</string>
+  <string name="parameter_LastName">Last name</string>
+  <string name="parameter_phonenumber">Phone number</string>
+  <string name="parameter_emailAdress">Email address</string>
+
+  <string name="parameter_emptyField">Empty field</string>
+  <string name="parameter_emailInvalid">Invalid email</string>
+  <string name="parameter_phonelInvalid">Invalid phone number</string>
+
+  <string name="parameter_changePassword">Change my password</string>
+  <string name="parameter_feedback">Feedback</string>
+  <string name="parameter_buyCredits">Reload credits</string>
+  <string name="parameter_themeLight">Light Theme</string>
+  <string name="parameter_about">About</string>
+  <string name="parameter_deconnection">Logout</string>
+  <string name="parameter_savePopup">Confirm</string>
+  <string name="parameter_cancelPopup">Cancel</string>
+  <string name="password">Old Password</string>
+  <string name="changePassword">New password</string>
+  <string name="confirmedPassWord">Confirm password</string>
+  <string name="Validate">Confirm modification</string>
+  <string name="parameter_passwordUpdated">Paswword changed!</string>
+  
+  <!-- ===== MODE CHOICE =========================================== -->
+
+  <string name="modeDefinition_delete">Disable mode {0}</string>
+
+  <string name="modeDefinition_dontmove">Don\'t Move</string>
+  <string name="modeDefinition_modeDontMoveDescr">Be alerted if your seekios moves</string>
+
+  <string name="modeDefinition_tracking">Tracking</string>
+  <string name="modeDefinition_trackingDescr">Track your seekios movements</string>
+
+  <string name="modeDefinition_zone">Zone</string>
+  <string name="modeDefinition_modeZoneDescr">Be alerted if your seekios goes out of the zone</string>
+
+  <!-- ===== MODE DONT MOVE ======================================== -->
+  
+  <string name="mode_credit">Credits</string>
+
+  <string name="modeDontMove_titlePage">Don\'t Move {0}</string>
+  <string name="modeDontMove_trackingAfterMoveDescr2">As soon as the seekios detects a movement, it will refresh its position every {0}</string>
+  <string name="modeDontMove_activer">Enable</string>
+  <string name="modeDontMove_trackingAfterMoveTitle">Enable Tracking</string>
+  <string name="modeDontMove_trackingAfterMoveDescr">When the seekios moves, this option will commence a tracking to follow it</string>
+  <string name="modeDontMove_moveAlert">Since its activation, the seekios has moved {0} times</string>
+  <string name="modeDontMove_restartModeTitle">Restart mode</string>
+  <string name="modeDontMove_restartModeDescr">Restart the Don\'t Move mode to be alerted when your seekios moves again. Be careful, this costs 1 credit</string>
+  <string name="modeDontMove_restartModeButtonText">Restart mode</string>
+  <string name="modeDontMove_trackingRefreshTimeStat">A tracking with a refresh rate of {0} will be activated when the seekios moves</string>
+  <string name="modeDontMove_seekiosMoved">Your seekios has moved</string>
+  <string name="modeDontMove_trackingAfterMove">Enable tracking when my seekios moves</string>
+
+  <string name="modeDMConfiguration_explanation">If your seekios moves, it updates its position at the cost of one credit for each position sent</string>
+  <string name="modeDMConfiguration_title">Tracking after alert</string>
+  <string name="modeDMConfiguration_paramTitle">Follow your seekios when it starts moving</string>
+
+  <!-- ===== MODE ZONE ============================================ -->
+
+  <string name="modeZone_titlePage">Zone {0}</string>
+  <string name="modeZone_trackingAfterOutDescr">If the seekios leaves the zone, it will refresh its position every {0}</string>
+  <string name="modeZone_addAreaFavorisTitle">Add area to favorite</string>
+  <string name="modeZone_points">Points</string>
+  <string name="modeZone_surface">Surface</string>
+  <string name="modeZone_toast_AddedArea">Your zone « {0} » has just been added as a favorite</string>
+  <string name="modeZone_seekiosOutOfZone">Your seekios went ouf of zone</string>
+  <string name="modeZone_refreshTime">Get a position every</string>
+  <string name="modeZone_suivant">Next</string>
+  <string name="modeZone_precedent">Previous</string>
+  <string name="modeZone_terminer">Finish</string>
+  <string name="modeZone_tuto">Click on the map to add points</string>
+  <string name="modeZone_tutoReturnToEditMode">Click on the pencil to add points</string>
+  <string name="modeZone_tutoAtLeast3Points">At least 3 points required</string>
+  <string name="modeZone_tutoAdviceMovePoints">Tip - to move a point: long press</string>
+  <string name="modeZone_tutoMax10Points">You cannot add more than 10 points</string>
+  <string name="modeZone_trackingAfterZone">Enable Tracking after out of zone</string>
+  <string name="addFavoriteArea_areaName">Zone name</string>
+  <string name="modeZone_onlyOneSending">Only the first out of zone detection is sent.</string>
+  <string name="modeZone_oldSeekiosPositionTitle">Warning</string>
+  <string name="modeZone_oldSeekiosPositionMessage">The last known position of the seekios is more than one hour old.\If the seekios is outside of the zone you drew, you will be alerted immediately.</string>
+  <string name="modeZone_seekiosNotInZoneTitle">Warning</string>
+  <string name="modeZone_seekiosNotInZoneMessage">The last known position of the seekios is already outside of the zone you drew. You may receive a notification immediately</string>
+  <string name="modeZone_cancel">Cancel</string>
+  <string name="modeZone_continue">Next</string>
+
+  <string name="mode_refreshRateText">Get a position every</string>
+  <string name="modeZone_functionningTitle">Functionning</string>
+  <string name="modeZone_functionningContent">An email is sent when the alert is triggered through your seekios.</string>
+  <string name="modeZone_alertEmailTitle">Alert your family or a friend by email</string>
+  <string name="modeZone_createAlert">Create</string>
+  <string name="modeZone_pass">Skip</string>
+
+  <string name="modeZoneConfigurationTitle">Functionning</string>
+  <string name="modeZoneConfiguration_explanation">When your seekios leaves the zone configured, it updates its position at the cost of one credit for each position sent.</string>
+  <string name="modeZoneConfiguration_paramTitle">Track your seekios when it leaves the zone</string>
+  <string name="modeZone_refreshEvery">Update the position every</string>
+  <string name="modeZoneConfiguration_endText">Activate (2 credits)</string>
+  
+  <!-- ===== MODE FOLLOW ME ======================================= -->
+
+  <!--<string name="modeFollowMe_titlePage">{0} - Mode Follow Me</string>
+  <string name="modeFollowMe_explanations">Le téléphone va se connecter en bluetooth avec le seekios. Il vous alertera s\'il perd cette connexion</string>
+  <string name="modeFollowMe_trackingAfterConnectionLossTitle">Activer le tracking</string>
+  <string name="modeFollowMe_trackingAfterConnectionLossDescr">Lorsque la connection avec le seekios sera perdue, cette option permettra de lancer un tracking pour le suivre</string>
+  <string name="modeFollowMe_restartModeTitle">Relancer le mode</string>
+  <string name="modeFollowMe_restartModeDescr">relancez le mode follow me pour être alerté lorsqu\'il s\'éloignera à nouveau. Attention, ceci vous coutera un crédit</string>
+  <string name="modeFollowMe_connectionLossAlert">Depuis son activation, le seekios s\'est éloigné {0} fois</string>
+  <string name="modeFollowMe_trackingRefreshTimeStat">Un tracking avec un taux de rafraichissement de {0} est configuré lorsque le seekios s\'éloignera</string>
+  <string name="modeFollowMe_connectWithSeekiosTitle">Connexion avec le seekios</string>
+  <string name="modeFollowMe_connectWithSeekiosDescr">Pour paramétrer ce mode, il faut d\'abord vous connecter en bluetooth avec le seekios. Cette action vous coutera un crédit mais la sauvegarde sera gratuite.</string>
+  <string name="modeFollowMe_connectWithSeekiosButtonText">Connexion bluetooth</string>
+  <string name="modeFollowMe_seekiosUnreachable">Le seekios n\'est pas accessible</string>
+  <string name="modeFollowMe_lookingForSeekios">Recherche du seekios...</string>
+  <string name="modeFollowMe_connexionLost">Connexion avec le seekios perdue</string>
+  <string name="modeFollowMe_connected">Connecté avec le seekios</string>
+  <string name="modeFollowMe_seekiosDisconnected">Le seekios s\'est trop éloigné</string>
+  <string name="modeFollowMe_seekiosReachable">Le seekios est à portée</string>
+  <string name="serviceFollowMe_notificationTitle">Follow Me Activé</string>
+  <string name="serviceFollowMe_notificationContent">Votre seekios {0} est toujours à portée</string>
+
+  <string name="BLEConnexionLoading_startBLEText">Activation du bluetooth...</string>
+  <string name="BLEConnexionLoading_sendMsgText">Envoi du message au seekios...</string>
+  <string name="BLEConnexionLoading_lookForSeekiosText">Recherche du seekios...</string>
+  <string name="BLEConnexionLoading_connectWithSeekiosText">Connection au seekios...</string>
+  <string name="BLEConnexionLoading_seekiosConnectedText">Seekios connecté</string>-->
+
+  <!-- ===== MODE TRACKING ========================================== -->
+
+  <string name="modeTracking_titlePage">{0} - Tracking Mode</string>
+  <string name="addFavoriteArea_errorZone">You did not define a zone!</string>
+
+  <string name="tracking_infoTitle">Be careful</string>
+  <string name="tracking_information">A tracking consumes 1 credit when a position is refreshed</string>
+  
+  <!--PopUp Button-->
+  <string name="popup_add">Add</string>
+  <string name="popup_confirmed">Confirm</string>
+  <string name="popup_cancelled">Cancel</string>
+  <string name="popup_confirmedChoiceTitle">Confirm your choice</string>
+
+  <!--Action Bar-->
+  <string name="actionBar_info">Information</string>
+  <string name="actionBar_save">Save</string>
+  <string name="actionBar_remove">Delete</string>
+  <string name="actionBar_addToFavs">Add to favorites</string>
+  <string name="actionBar_listOfFavs">Favorites list</string>
+  <string name="actionBar_sinceToday">Locations since 24h</string>
+  <string name="actionBar_sinceYesterday">Locations since 48h</string>
+  <string name="actionBar_sinceLastWeek">Locations since 1 week</string>
+  <string name="actionBar_sinceLastMonth">Locations since 1 month</string>
+
+  <!-- ===== PAGE LIST ALERT ====================================== -->
+
+  <string name="listAlert_actionBarTitle">List of alerts</string>
+  <string name="listAlert_actionBarTitleAlert">Alerts of {0}</string>
+  <string name="listAlert_subTitle1">Seekios connected</string>
+  <string name="listAlert_notifPush">Push notification enabled</string>
+  <string name="listAlert_notifPushExplanation">You will be alerted by a notification on your phone</string>
+  <string name="listAlert_seekiosConnectedSingular">You have {0} seekios connected</string>
+  <string name="listAlert_seekiosConnectedPlural">You have {0} seekios connected</string>
+  <string name="listAlert_seekiosNumber">You have {0} seekios connected</string>
+  <string name="listAlert_emptyList">No email alert configured</string>
+
+  <!-- ===== PAGE ALERT =========================================== -->
+
+  <string name="alert_title">Email alert</string>
+  <string name="alert_alertTitle">Subject of the alert (email)</string>
+  <string name="alert_alertRecipient">Recipients</string>
+  <string name="alert_alertBody">Message</string>
+
+  <string name="alert_emailObject">Email subject</string>
+  <string name="alert_recipient">Contact</string>
+  <string name="alert_sms_titleHint">Alert title</string>
+  <string name="alert_contactEmpty">Choose a contact</string>
+  <string name="alert_noEmailFound">No email</string>
+  <string name="alert_noFailedContact">Unable to choose this contact</string>
+    <string name="alert_buttonAddContactFromPopup">Enter an email</string>
+  <string name="alert_buttonAddContactFromBook">Repertoire</string>
+
+  <string name="alert_email">Email</string>
+  <string name="alert_vocalCall">Vocal Message</string>
+  <string name="alert_sms">SMS</string>
+  <string name="alertsMenu_updateSeekios">Edit alert</string>
+  <string name="alertsMenu_deleteSeekios">Delete the alert</string>
+  <string name="alert_moreThanThreeRecipients">You cannot add more than 3 recipients</string>
+  <string name="alert_delete">Delete</string>
+  <string name="alert_save">Save</string>
+
+  <!-- ===== PAGE RELOAD CREDIT =================================== -->
+
+  <string name="reloadCredit_title">Reload credits</string>
+  <string name="reloadCredit_Tab1">Pack</string>
+  <string name="reloadCredit_Tab2">Automatic Renewal</string>
+
+  <!-- ===== PAGE Abonnement =================================== -->
+
+  <string name="subscription_btnpremium">Subscription of 4.90 € per month</string>
+  <string name="unsubscription">             Unsubscribe          </string>
+
+  <!-- ===== PAGE LIST FRIENDS ==================================== -->
+
+  <string name="listFriend_noSeekiosShared">No shared seekios</string>
+  <string name="listFriend_singleSeekiosShared">seekios shared</string>
+  <string name="listFriend_multipleSeekiosShared">seekios shared</string>
+  <string name="listFriend_emptyList">Yo got no friends... Add some friends!</string>
+  <string name="listFriend_friendsNbrSingular">You have {0} friend</string>
+  <string name="listFriend_friendsNbrPlural">You have {0} friends</string>
+  <string name="listFriend_actionBarTitle">Community</string>
+  <string name="listFriendMenu_deleteFriendship">End friendship</string>
+
+  <!-- ===== PAGE ADD FRIENDS ==================================== -->
+
+  <string name="addFriend_title">Add friends</string>
+  <string name="addFriend_nameRadioButton">By name</string>
+  <string name="addFriend_emailRadioButton">By email</string>
+  <string name="addFriend_phoneRadioButton">By phone</string>
+  <string name="addFriend_emptySearch">No user searched</string>
+  <string name="addFriend_requestNotSent">Unable to send a friend request</string>
+  <string name="addFriend_requestSent">Your request has been sent</string>
+  <string name="addFriend_pendingRequest">Pending</string>
+  <string name="addFriend_alreadyFriend">Already friends</string>
+  <string name="addFriend_sendRequest">Add</string>
+  <string name="addFriend_searchNoResult">No user found</string>
+
+  <!-- ===== PAGE COMMUNITY ====================================== -->
+
+  <string name="community_TabListFriendsTitle">Friends list</string>
+  <string name="community_TabRequestsTitle">Friends request</string>
+
+  <!-- ===== FRAGMENT REQUEST ==================================== -->
+
+  <string name="tabRequest_emptyList">No invitation</string>
+  <string name="tabRequest_ownFriendshipRequest">You asked {0} to be your friend</string>
+  <string name="tabRequest_otherFriendshipRequest">{0} wants to add you as a friend</string>
+
+  <!-- ===== CARTE DES SEEKIOS =================================== -->
+
+  <string name="mapAllSeekios_titlePage">Map of all seekios</string>
+
+  <!-- ===== PAGE DES PARTAGES =================================== -->
+
+  <string name="tabListOwnSharings_title">My shares</string>
+  <string name="tabListOtherSharings_title">Shared with me</string>
+  <string name="listSharing_shareDateOnPeriod">seekios shared from {0} to {1}</string>
+  <string name="listSharing_shareDateUnlimited">seekios shared unlimited from {0}</string>
+  <string name="listSharings_deleteSharing">Delete sharing</string>
+  <string name="listSharing_confirmDelete">Remove share ?</string>
+  <string name="listSharings_numberOfSeekiosShared">You are currently sharing {0} seekios with {1}</string>
+
+  <!--======== PAGE ABOUT =====================-->
+
+  <string name="seekios_weblink">
+    <u>seekios.com</u>
+  </string>
+  <string name="seekios_link">
+    <u>privacy policy</u>
+  </string>
+
+  <!-- ===== PAGE SUBSCRIPTION  =================================== -->
+
+  <string name="subscription">Why would I subscribe ?</string>
+  <string name="subscription_desc">Unlimited communication\nTracking unlimited\n1 year of storage of your data</string>
+  <string name="subscription_premium">Access to 4 seekios Premium</string>
+  <string name="subscription_freemium">Access 1 seekios freemium</string>
+  <string name="monthly_subscription">No Subscription</string>
+  <string name="noSeekios">You do not have any seekios</string>
+
+  <!-- ===== TAB OF MY SHARES ================================ -->
+
+  <string name="tabListOwnSharings_emptyList">You do not share any of your seekios</string>
+  <string name="tabListOtherSharings_emptyList">No friend shares from seekios with you</string>
+
+  <!-- ===== PAGE ADD SAHRES =========================== -->
+
+  <string name="shareSeekios_friendSectionTitle">Which friend to share with?</string>
+  <string name="shareSeekios_seekiosSectionTitle">Which seekios do I share?</string>
+  <string name="shareSeekios_title">Sharing</string>
+  <string name="shareSeekios_sharingDeleted">Your seekios is no longer shared</string>
+  <string name="shareSeekios_sharingCannotBeDeleted">Sharing could not be deleted</string>
+  <string name="shareSeekios_confirmChoice">Delete</string>
+  <string name="shareSeekios_cancelChoice">Undo</string>
+  <string name="shareSeekios_deleteCancelled">Delete canceled</string>
+  <string name="shareSeekios_listFriendEmpty">You did not chose a friend to share your seekios with</string>
+  <string name="shareSeekios_addFriend">Add</string>
+  <string name="shareSeekios_listSeekiosEmpty">You did not select a seekios to share</string>
+  <string name="shareSeekios_shareNotValid">Sharing failed</string>
+
+  <!-- ===== GCM MESSAGES NOTIFICATION PUSH ====================== -->
+
+  <string name="gcmMessage_friendshipRequestTitle">Invitation</string>
+  <string name="gcmMessage_friendshipRequestContent">User {0} {1} wants to add you to his friend list</string>
+  <string name="gcmMessage_connexionLostTitle">seekios {0} is away !</string>
+  <string name="gcmMessage_connexionLostContent">seekios {0} is no longer within your reach.</string>
+
+  <!-- ===== PAGE MODE DAILY TRACK =============================== -->
+
+  <!--<string name="modeDailyTrack_pageTitle">Mode DailyTrack</string>
+  <string name="modeDailyTrack_trackingTitle">Horaires</string>
+  <string name="modeDailyTrack_trackingDescr">Ce mode rafraîchit la position du seekios à une ou des heure(s) définie(s) dans la journée.</string>
+  <string name="dailyTrack_noLocation">Aucune localisation à afficher</string>
+  <string name="dailyTrack_cannotAddTimer">Nombre de timer programmable atteint\nUn timer programmable pour un compte Freemium\nQuatre pour un compte Premium</string>
+  <string name="dailyTrack_timeStats">Localisation du seekios tous les jours à {0}</string>-->
+
+  <!-- ===== PAGE MODE IN TIME =================================== -->
+
+  <!--<string name="modeInTime_pageTitle">Mode InTime</string>
+  <string name="modeInTime_trackingTitle">Horaires</string>
+  <string name="modeInTime_trackingDescr">Ce mode rafraîchit la position du seekios à des horaires définis selon les jours de la semaine.</string>
+  <string name="inTime_noLocation">Aucune localisation à afficher</string>
+  <string name="inTime_cannotAddTimer">Nombre d\'horaires limites définissables atteint\nTrois horaires maximum pour chaque jour de la semaine</string>
+  <string name="inTime_timerAlreadyExist">Cet horaire est déjà défini</string>
+  <string name="inTime_timerAlreadyExist_title">Impossible d\'ajouter l\'horaire</string>
+  <string name="inTime_mondayLetter">L</string>
+  <string name="inTime_tuesdayLetter">M</string>
+  <string name="inTime_wednesdayLetter">Me</string>
+  <string name="inTime_thursdayLetter">J</string>
+  <string name="inTime_fridayLetter">V</string>
+  <string name="inTime_saturdayLetter">S</string>
+  <string name="inTime_sundayLetter">D</string>-->
+
+  <!-- ===== SPLASH SCREEN ========================================= -->
+
+  <string name="dontMoveBackgroundService_notificationTitle">Don\'t Move - Proximity Check</string>
+  <string name="dontMoveBackgroundService_notificationContent">This service checks if your phone is within range of your seekios for the Don\'t Move mode</string>
+
+  <!-- ===== DETAIL SEEKIOS ======================================== -->
+
+  <string name="detailSeekios_pageTitle">Details</string>
+  <string name="detailSeekios_popupSelectModeTitle">Mode selection</string>
+
+  <string name="detailSeekios_zone">Zone</string>
+  <string name="detailSeekios_dontMove">Don\'t Move</string>
+  <string name="detailSeekios_tracking">Tracking</string>
+  <string name="detailSeekios_syncCloud">In Progress...</string>
+  <string name="detailSeekios_sos">SOS</string>
+  <string name="detailSeekios_sosLoc">SOS Alert sent</string>
+
+  <string name="detailSeekios_lastLocation">Last update {0} at {1}</string>
+  <string name="detailSeekios_yesterday">yesterday</string>
+  <string name="detailSeekios_fewDays">{0} days ago</string>
+  <string name="detailSeekios_noLastLocation">No last location</string>
+
+  <string name="detailSeekios_alertSeekiosText">{0} email</string>
+  <string name="detailSeekios_alertSeekiosNotifText">Notif</string>
+
+  <string name="detailSeekios_creditsTitle">Credits</string>
+  <string name="detailSeekios_freeCredits">including {0} offered</string>
+  <string name="detailSeekios_freeCreditsReloadDate">Next refill on {0}</string>
+
+  <string name="detailSeekios_mapTitle">map</string>
+  <string name="detailSeekios_modeTitle">modes</string>
+  <string name="detailSeekios_shareTitle">share</string>
+  <string name="detailSeekios_parameterTitle">settings</string>
+  <string name="detailSeekios_sosTitle">SOS alert</string>
+
+  <string name="detailSeekios_refreshBatteryTitleText">Battery</string>
+  <string name="detailSeekios_refreshBatteryText">Refresh (1 credit)</string>
+  <string name="detailSeekios_batteryPercentage">{0}% battery life {1}</string>
+  <string name="detailSeekios_noBatteryData">No data available</string>
+  <string name="detailSeekios_monthlyCreditInfoText">Your next refill on {0}, in {1} day(s)</string>
+
+  <string name="detailSeekios_deleteSeekiosButton">Delete</string>
+  <string name="detailSeekios_buyASeekiosButton">Buy a seekios</string>
+
+  <string name="detailSeekios_modeInformationText">{0} enabled from {1} day(s)</string>
+  <string name="detailSeekios_alertInformationText">Mobile notification, {0} email alert</string>
+  <string name="detailSeekios_onlyNotif">Mobile notification</string>
+  <string name="detailSeekios_noAlertOnMode">No alerts in this mode</string>
+
+  <string name="detailSeekios_shareText">{0} share(s)</string>
+  <string name="detailSeekios_noSharing">No Sharing</string>
+  <string name="detailSeekios_modeBeingConfigured">Mode setup in progress...</string>
+  <string name="detailSeekios_batteryRefreshing">In progress...</string>
+
+  <string name="detailSeekios_deletePopupTitle">Delete the seekios {0}?</string>
+  <string name="detailSeekios_deletePopupContent">You will be able to add this seekios again later.</string>
+  <string name="detailSeekios_deletePopupButtonDelete">Delete</string>
+  <string name="detailSeekios_deletePopupButtonClose">Close</string>
+  <string name="detailSeekios_deletePopupButtonCancel">Undo</string>
+  <string name="detailSeekios_historicPopupButton">Historic</string>
+
+  <string name="detailSeekios_alertPopupTitle">Received SOS Alert</string>
+  <string name="detailSeekios_alertPopupContent">Your seekios has sent an SOS alert!</string>
+  <string name="detailSeekios_alertPopupButton">Seen</string>
+  <string name="detailSeekios_alertPopupError">The alert could not be saved as seen</string>
+
+  <string name="detailSeekios_powerSavingRefreshDisabledPopupContent">Refreshing the battery while in power saving is disabled</string>
+
+  <!-- ===== MAP =================================================== -->
+
+  <string name="map_title">Map</string>
+  <string name="map_credits">Credits</string>
+  <string name="map_refreshTitle">Refresh in progress...</string>
+  <string name="map_TextStep3">Step 3/3, retrieving the seekios position</string>
+  <string name="map_refreshFailedTitle">Failed to refresh</string>
+  <string name="map_refreshFailedSubTitle">We could not retrieve the position of your seekios\n\n1. Your seekios might no longer have a battery\n2. Your seekios could no longer be covered by the network</string>
+  <string name="map_refreshFailedExplanation">1. Your seekios might no longer have battery\n2. Your seekios may no longer be covered by the network</string>
+  <string name="map_closePopup">Close</string>
+  <string name="map_refreshEndedTitle">Refresh succeeded</string>
+  <string name="map_refreshEndedContent">The position of your seekios has been found</string>
+  <string name="map_refreshTitleForRemoteSeekios">seekios {0}</string>
+  <string name="map_noPositionsYetMessage">Your seekios has not sent positions yet</string>
+  <string name="map_noPositionsYetText">Update your seekios position for the first time!\nIn order to get a more precise position, place your seekios outside.\n\n\nVerify that your seekios is turned on !</string>
+  <string name="firstRefreshInProgress">\n\n\n\nBe sure your seekios is turned on !</string>
+  <string name="firstRefreshFailed">Impossible to locate your seekios :(\n\Your seekios might be either turned off or it is not covered by the network. Please also check that your phone is connected to the Internet</string>
+  <string name="retry">Retry</string>
+  <string name="locating">Looking for ...</string>
+  <string name="map_noGoogleMaps">Please enable / update Google Services</string>
+  <string name="map_noPosRefresh">Locate !</string>
+
+  <string name="map_No">No</string>
+
+  <string name="map_firstTitle">Active since</string>
+  <string name="map_firstTitleAlert">Alert received since</string>
+  <string name="map_secondTitle">Tracking if alert</string>
+  <string name="map_thirdTitleAlert">Number of position(s)</string>
+
+  <string name="map_deleteButton">Delete this mode</string>
+  <string name="map_powerSavingRefreshDisabledToastContent">Position refreshment is disabled while the seekios is in power saving</string>
+
+  <string name="map_popupMoreTitle">More</string>
+  <string name="map_popupMoreNavigateTo">Navigate to</string>
+  <string name="map_popupMoreShare">Share</string>
+  <string name="map_popupMoreCopy">Copy address</string>
+  <string name="map_popupMoreClose">Close</string>
+
+  <!-- ===== HISTORIC ============================================== -->
+
+  <string name="historic_title">Historic</string>
+  <string name="historic_fromDate">From {0}</string>
+  <string name="historic_toDate">to {0}</string>
+  <string name="historic_currentPosition">Position {0} out of {1}</string>
+  <string name="historic_noCurrentPosition">No position in the historic</string>
+
+  <!-- ===== Tracking Configuration ================================ -->
+
+  <string name="trackingConfigurationTitle">Functionning</string>
+  <string name="trackingConfiguration_title">Tracking</string>
+  <string name="trackingConfiguration_explanation">
+    Receive the position of your seekios at regular intervals in order to track your seekios movements. Each position costs 1 credit
+  </string>
+  <string name="trackingConfiguration_paramTitle">Parameters</string>
+  <string name="trackingConfiguration_paramText">Receive a position every</string>
+  <string name="trackingConfiguration_endText">Activate (2 credits)</string>
+  <string-array name="refreshRate_array">
+    <item>1 min</item>
+    <item>2 min</item>
+    <item>3 min</item>
+    <item>4 min</item>
+    <item>5 min</item>
+    <item>10 min</item>
+    <item>15 min</item>
+    <item>30 min</item>
+    <item>1 h</item>
+    <item>2 h</item>
+    <item>3 h</item>
+    <item>4 h</item>
+    <item>5 h</item>
+    <item>6 h</item>
+    <item>12 h</item>
+    <item>24 h</item>
+  </string-array>
+
+  <!-- ===== PAGE NEED UPDATE =========================================== -->
+
+  <string name="needUpdate_title">An update is required</string>
+  <string name="needUpdate_openPlaystore">Upgrade</string>
+  <string name="needUpdate_popupTitle">Update</string>
+  <string name="needUpdate_popupContent">Open the playstore and upgrade seekios</string>
+
+  <!-- ===== POPUP POWER SAVING =========================================== -->
+
+  <string name="powerSaving_title">Power Saving</string>
+  <string name="powerSaving_explanation">By turning off the GSM module, the poser saving mode makes it possible to improve the autonomy of the seekios.</string>
+  <string name="powerSaving_paramTitle">Enable Power Saving Mode</string>
+  <string name="powerSavingInfoTitle">Power Saving</string>
+
+  <string name="powerSaving_explanationTitle1">Power Saving</string>
+  <string name="powerSaving_explanationTitle2">Working</string>
+  <string name="powerSaving_explanationTitle3">What does that mean ?</string>
+  <string name="powerSaving_explanationTitle4">How do I reactivate real time ?</string>
+  <string name="powerSaving_explanation1">The power saving functionality allows you to extend the autonomy of the seekios. (Available on the seekios version 1.007)</string>
+  <string name="powerSaving_explanation2">Once the mode is on, the Seekios will switch off its GSM module. It will no longer be possible to communicate in real time with it.</string>
+  <string name="powerSaving_explanation3">The seekios will only wake up once a day, at noon and to check if a new instruction is available.</string>
+  <string name="powerSaving_explanation4">If the seekios is in power saving and I want to setup a new mode, it will only be effective at « next noon ».</string>
+  <string name="powerSaving_explanation5">
+    Real time reactivates under three conditions :\n
+    1) - The mode is removed from the mode via my application (effective at the next noon)\n
+    2) - The seekios is switched off and switched on by using the button\n
+    3) - The seekios transmit an alert (SOS included)
+  </string>
+  
+  <!-- ===== FIRMWARE UPDATE POPUP ======================================== -->
+
+  <string name="firmwareUpdatePopupTitle">Seekios firmware update</string>
+  <string name="firmwareUpdatePopupPositiveButtonText">OK</string>
+  <string name="firmwareUpdatePopupInfo">Pour mettre à jour le seekios, téléchargez le logiciel de mise à jour sur notre site, et suivez les instructions</string>
+  <string name="firmwareUpdatePopupInfo">To update your seekios\' firmware, download the update software one our website, then follow the instructions</string>
+  <string name="firmwareUpdatePopupLink">https://seekios.com/Home/UserManual</string>
+
+  <!-- ===== FREE CREDIT POPUP =========================================== -->
+
+  <string name="freeCreditPopup_title">Credits Offered</string>
+  <string name="freeCreditPopup_creditsAmount">{0}/{1}</string>
+  <string name="freeCreditPopup_nextRefillInfo">Next automatic refill on {0}</string>
+  <string name="freeCreditPopup_nextRefillGapInfo">Next automatic refill on</string>
+
+  <!-- ===== GENERAL CREDIT POPUP ======================================== -->
+  
+  <string name="generalCreditPopup_title">Credits</string>
+  <string name="generalCreditPopup_premiumCreditsRefill">Next refill on {0}</string>
+  <string name="generalCreditPopup_description">Blabla voir Renaud\nDescriptif du renouvellement automatique.</string>
+  <string name="generalCreditPopup_buy">Buy credits</string>
+
+  <!-- ===== CGU POPUP =================================================== -->
+
+  <string name="popupcgu_title">Terms of Service</string>
+  <string name="popupcgu_text">By clicking on "I agree", you acknowledge that you are aware of the terms of use of the seekios application and that you accept it.</string>
+  <string name="popupcgu_linkwebcgutext">Read Terms of Use</string>
+  <string name="popupcgu_buttonAgree">I accept</string>
+  <string name="popupcgu_buttonDontAgree">I do not accept</string>
+
+  <!-- ===== PACK PAGE =================================================== -->
+
+  <string name="packCredits">Credits</string>
+  <string name="packInfo">Credits can be accumulated and can be used without a time limit.</string>
+  <string name="packPremiumInfo">Get 10% more credits each month with automatic renewal</string>
+  <string name="packBuyButtonTitle">Buy</string>
+  <string name="packCancelButtonTitle">Cancel</string>
+  <string name="packErrorProductAlreadyPurchased">[packErrorProductAlreadyPurchased]</string>
+  <string name="packOnPurchaseValidated">[packOnPurchaseValidated]</string>
+  <string name="packOnCreditPackLoaded">[packOnCreditPackLoaded]</string>
+  <string name="packOnItemIsAlreadyOwmed">You have already purchased this pack {0}</string>
+  <string name="packOnUserCanceledTitle">Cancel</string>
+  <string name="packOnUserCanceledMessage">Your purchase has been canceled</string>
+  <string name="packOnDeveloperError">The version you are using is a developpement version and is not compatible with the in app purchase system.</string>
+  <string name="packOnItemUnavailable">The product you have requested is not currently available.</string>
+  <string name="packOnBillingUnavailable">We are not able to start a transaction. Your device is not properly configured. Please enable and update applications [Google services] and [Google Play]. Please also be sure to sign in with a Google Account on your device.</string>
+  <string name="packOnError">An unknown error occurred.</string>
+  <string name="packOnPurchaseFailedValidation">We could not verify your purchase. Please try again.</string>
+  <string name="packOnPurchaseConsumed">Thank you, we took your purchase into account. Your credits will be added very soon.</string>
+  <string name="packOnPurchaseConsumedError">Your payment has been validated but an error has occurred while sending credits. Please re-select the pack, credits should be added to your account.</string>
+  <string name="packOnGetProductsError">We\'re sorry, we could not connect to the store.</string>
+  <string name="packOnInvalidOwnedItemsBundleReturned">We\'re sorry, the product data is corrupt.</string>
+  <string name="packOnProductPurchasedError">We\'re sorry, your purchase could not be completed.</string>
+  <string name="packOnErrorTitle">An error occurred</string>
+  <string name="packOnSuccessTitle">Seekios thanks you for your purchase</string>
+  <string name="packOnPlayStoreUnavailable">[Google Play Store] and [Google Services] applications need permissions to work.</string>
+  <string name="packNoGooglePlayServices">Google Play Services is not installed on your smartphone and the application needs it to run</string>
+  <string name="packErrorOnWebservices">An error has occurred in our webservices code {0}. Please contact the seekios support in the feedback of the app.</string>
+
+  <!-- ===== TRANSACTION HISTORIC PAGE =================================== -->
+
+  <string name="transactionHistoricEmpty">No transactions</string>
+  <string name="transactionHistoricTitle">Historic</string>
+  <string name="transactionHistoric_date">{0}th at {1}</string>
+  <string name="transactionHistoric_monthlyCredits">Monthly credits</string>
+  <string name="transactionHistoric_tracking">Tracking</string>
+  <string name="transactionHistoric_zoneTracking">Zone (with Tracking)</string>
+  <string name="transactionHistoric_zone">Zone</string>
+  <string name="transactionHistoric_dontmove">Don\'t Move</string>
+  <string name="transactionHistoric_dontMoveTracking">Don\'t Move (with Tracking)</string>
+  <string name="transactionHistoric_refreshPosition">Refresh position</string>
+  <string name="transactionHistoric_refreshBattery">Refresh battery</string>
+  <string name="transactionHistoric_sos">SOS Alert</string>
+  <string name="transactionHistoric_activeNewMode">Enable a mode</string>
+  <string name="transaction_epicPack">Epic Pack</string>
+  <string name="transaction_adventurePack">Adventure Pack</string>
+  <string name="transaction_explorationPack">Exploration Pack</string>
+  <string name="transaction_observationPack">Observation Pack</string>
+  <string name="transaction_discoveryPack">Discovery Pack</string>
+  <string name="transaction_instantPack">Instant Purchase</string>
+  <string name="transaction_subscriptionPack">Automatic Renewal</string>
+  <string name="transactionHistoric_deletedSeekios">seekios deleted</string>
+  <string name="transactionHistoricEmptyRefreshButton">Refresh</string>
+
+  <!-- ===== MAP ACTIVITY =================================== -->
+  
+  <string name="mapPopupDeleteMode_title">Delete mode</string>
+  <string name="mapPopupDeleteMode_message">Delete the current mode of the seekios ?</string>
+  <string name="mapPopupDeleteMode_validate">Remove</string>
+
+  <!-- ===== CHANGE MODE CONFIRMATION =================================== -->
+  
+  <string name="popup_configModeTitle">Change mode ?</string>
+  <string name="popup_configModeCancel">No</string>
+  <string name="popup_configModeAccept">Yes</string>
+
+  <!-- ===== CREDITS PAGE =================================== -->
+  <string name="creditsLayout_title">My credits</string>
+  <string name="creditsLayout_total">Total credits:</string>
+  <string name="creditsLayout_offeredAmount">including {0} offered credits remaining</string>
+  <string name="creditsLayout_offeredRefill">Next automatic renewal on {0}</string>
+  <string name="creditsLayout_offeredRefillError">We were not able to determine the next filling date</string>
+  <string name="creditsLayout_historic">View my conso</string>
+  <string name="creditsLayout_refill">Reload my credits</string>
+  <string name="creditsLayout_useInfo">Credits are consumed according to the requested action:</string>
+  <string name="creditsLayout_refreshPos">- Refreshing position</string>
+  <string name="creditsLayout_configMode">- Setting up a mode</string>
+  <string name="creditsLayout_deleteMode">- Disabling a mode</string>
+  <string name="creditsLayout_alert">- Receiving an alert</string>
+  <string name="creditsLayout_refreshBattery">- Refreshing Battery</string>
+  <string name="creditsLayout_tracking">- Receiving a tracking position</string>
+  <string name="creditsLayout_SOS">- SOS (alert and position)</string>
+  <string name="creditsLayout_whyCredits">Why do we use credits ?</string>
+
+  <!-- ====== MARQUEUR ====== -->
+  
+  <string name="customMarker_refreshTxt">Refresh</string>
+  <string name="customMarker_MoreTxt">More</string>
+  <string name="error_serverNotResponding">We\'re sorry, there seems to be a problem with the server [code {0}]</string>
+
+  <!-- ===== TUTO FRAGMENTS =================================== -->
+  
+  <string name="tutoPageNumber">{0}/2</string>
+  <string name="tutoAddSeekiosTitle">Add my seekios</string>
+  <string name="tutoAddSeekiosFirstContent">(1) Click on the button \"+\" at the bottom right of the homepage\n\n(2) Or directly from the menu</string>
+  <string name="tutoAddSeekiosSecondContent">Name your seekios\n\n(1) Enter the IMEI number on the back of your seekios\n\n(2) As well as the PIN code</string>
+  
+  <string name="tutoStartSeekiosTitle">Turn on my seekios</string>
+  <string name="tutoStartSeekiosFirstContent">Press the seekios button until the 3 lights of the seekios light up (about 3 seconds).</string>
+  <string name="tutoStartSeekiosSecondContent">To check if your seekios is turned on, press the button once.\nOne of the three lights flashes indicating the remaining battery level.</string>
+
+  <string name="tutoFirstLocationTitle">My First Location</string>
+  <string name="tutoFirstLocationFirstContent">(1) Access your seekios by tapping its location on the Home screen\n\n(2) Tap the map icon to get to the position Of your seekios</string>
+  <string name="tutoFirstLocationSecondContent">Then click the button \"Refresh position \" in the center of your screen and wait for the position to appear.\n\nThe location of your seekios may take a few minutes.</string>
+  
+  <string name="tuto_nextButton">Next</string>
+  <string name="tuto_validateButton">I understood</string>
+  <string name="tuto_startButton">Let\'s go!</string>
+  
+  <string name="tuto_lastContent">Find more tips in the menu : \"User guide\"</string>
+  <string name="tuto_welcome">Welcome to the application</string>
+  <string name="tuto_discover">Learn how to initialize your seekios</string>
+  <string name="tuto_steps">Step 1 :\nAdd my seekios\n\nEtape 2 :\nTurn on my seekios\n\nEtape 3 :\nMy 1st location</string>
+
+  <string name="popupSpendCreditsTitle">Are you sure?</string>
+  <string name="popupSpendCreditsText">You are about to spend {0} credits for {1} on your seekios</string>
+  <string name="popupSpendCredits_zone">activate a Zone</string>
+  <string name="popupSpendCredits_dontmove">enable Don\'t Move</string>
+  <string name="popupSpendCredits_tracking">activate Tracking</string>
+  <string name="popupSpendCredits_ondemand">retrieve a position on demand</string>
+  <string name="popupSpendCredits_refreshbattery">refresh the battery level</string>
+  <string name="popupSpendCredits_newAmmount">Your new credit balance will be {0}</string>
+  <string name="doNotActivate">Do not activate</string>
+  <string name="activate">Activate</string>
+  
+  <!-- ===== TUTORIAL COST ==================================== -->
+  <string name="tutorialCost_title">Credits cost</string>
+
+  <string name="tutorialCost_consomation">The consumption of credits is based on the action requested :</string>
+  <string name="tutorialCost_item1">Refresh position (GPS)</string>
+  <string name="tutorialCost_item2">Refresh position (GSM)</string>
+  <string name="tutorialCost_item3">Setup a mode</string>
+  <string name="tutorialCost_item4">Deactivating a mode</string>
+  <string name="tutorialCost_item5">Receiving an alert</string>
+  <string name="tutorialCost_item6">Refresh the battery</string>
+  <string name="tutorialCost_item7">Receiving a tracking position</string>
+  <string name="tutorialCost_item8">SOS (alert and receipt)</string>
+  <string name="tutorialCost_button">More explanation on credits</string>
+
+  <!-- ===== LIST TUTORIAL ==================================== -->
+  <string name="listTutorial_title">Help</string>
+
+  <string name="listTutorial_item1">General Help</string>
+  <string name="listTutorial_item2">The seekios LEDs</string>
+  <string name="listTutorial_item3">Power Saving</string>
+  <string name="listTutorial_item4">Cost of credits</string>
+  <string name="listTutorial_item5">Online help</string>
+  
+</resources>

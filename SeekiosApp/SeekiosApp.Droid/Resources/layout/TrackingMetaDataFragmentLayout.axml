@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<!-- Manipulation des localisations -->
+    <GridLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/mapBase_creditCircleDiameter"
+        android:layout_marginRight="@dimen/mapBase_bottomLayoutMarginRight"
+        android:layout_marginTop="@dimen/mapBase_creditCircleOverflow"
+        android:gravity="center_vertical"
+        android:layout_alignParentTop="true"
+        android:rowCount="2"
+        android:visibility="visible"
+        android:id="@+id/modeTracking_bottomGridView">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:gravity="bottom"
+            android:textColor="?attr/textColorTitle"
+            android:textSize="@dimen/smallTextSize"
+            android:text="10:02:54 15/02/16"
+            android:id="@+id/modeTracking_trackingFirstDate" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:layout_gravity="right"
+            android:gravity="bottom"
+            android:textColor="?attr/textColorTitle"
+            android:textSize="@dimen/smallTextSize"
+            android:text="18:02:54 15/02/16"
+            android:id="@+id/modeTracking_trackingLastDate" />
+        <SeekBar
+            android:layout_gravity="center"
+            android:layout_row="1"
+            android:layout_column="0"
+            style="@style/SeekiosSeekBar"
+            android:id="@+id/modeTracking_trackingMarkerSelection" />
+    </GridLayout>
+<!-- Texte "pas de localisations" -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/mapBase_visibleBottomLayoutHeight"
+        android:layout_marginLeft="@dimen/mapBase_creditCircleDiameter"
+        android:layout_marginTop="@dimen/mapBase_creditCircleOverflow"
+        android:gravity="center_vertical"
+        android:visibility="gone"
+        android:text="@string/modeTracking_noLocation"
+        android:textColor="?attr/textColorTitle"
+        android:textSize="@dimen/textSize"
+        android:id="@+id/modeTracking_noLocation" />
+<!-- Texte "tracking explanation" -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/mapBase_visibleBottomLayoutHeight"
+        android:layout_marginLeft="@dimen/mapBase_creditCircleDiameter"
+        android:layout_marginTop="@dimen/mapBase_creditCircleOverflow"
+        android:gravity="center_vertical"
+        android:visibility="gone"
+        android:text="@string/modeDefinition_trackingDescr"
+        android:textColor="?attr/textColorTitle"
+        android:textSize="@dimen/textSize"
+        android:id="@+id/modeTracking_trackingDesc" />
+<!--MODE EDITION-->
+    <LinearLayout
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="@dimen/mapBase_creditCircleDiameter"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/marginM"
+        android:layout_marginRight="@dimen/marginM"
+        android:orientation="vertical"
+        android:id="@+id/modeTracking_onEdition">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="?attr/textColorTitle"
+            android:textSize="@dimen/titleTextSize"
+            android:text="@string/modeTracking_refreshTimeTitle" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="?attr/textColorTitle"
+            android:textSize="@dimen/smallTextSize"
+            android:text="@string/modeTracking_refreshTimeDescr" />
+        <Spinner
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:textColor="?attr/textColorTitle"
+            android:popupBackground="?attr/layoutBackground"
+            android:prompt="@string/modeTracking_refreshTimeTitle"
+            android:textSize="16dp"
+            android:id="@+id/modeTracking_refreshTimeSpinner" />
+    </LinearLayout>
+<!--MODE MAP-->
+    <LinearLayout
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="@dimen/mapBase_creditCircleDiameter"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/marginM"
+        android:layout_marginRight="@dimen/marginM"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:id="@+id/modeTracking_onMap">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:textColor="?attr/textColorTitle"
+            android:textSize="@dimen/titleTextSize"
+            android:text="@string/metaData_stats" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:textColor="?attr/textColorTitle"
+            android:textSize="@dimen/textSiz"
+            android:id="@+id/modeTracking_activateSince" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:textColor="?attr/textColorTitle"
+            android:textSize="@dimen/textSiz"
+            android:id="@+id/modeTracking_countOfLoc" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:textColor="?attr/textColorTitle"
+            android:textSize="@dimen/textSiz"
+            android:id="@+id/modeTracking_refreshTimeStat" />
+    </LinearLayout>
+</RelativeLayout>

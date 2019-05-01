@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <GridLayout
+        android:rowCount="1"
+        android:columnCount="1"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:id="@+id/seekios_root">
+    <!-- EMPTY LIST -->
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="100"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_margin="10dp"
+            android:layout_marginBottom="50dp"
+            android:id="@+id/listSharing_emptyLayout">
+            <XamSvg.SvgImageView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="30dp"
+                android:layout_gravity="center"
+                local:colorMapping="555555=cccccc"
+                local:svg="@drawable/addfriend"
+                android:id="@+id/listSharing_alertImgActionClick" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="?attr/textColorSubTitle"
+                android:textSize="18dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:id="@+id/listSharing_emptyListTextView" />
+        </LinearLayout>
+    <!-- LISTVIEW DES ALERTS -->
+        <ListView
+            android:layout_row="0"
+            android:layout_column="0"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="50dp"
+            android:scrollbars="vertical"
+            android:id="@+id/listSharing_listView" />
+    <!-- BOUTON D'AJOUT D'ALERTE -->
+        <com.refractored.fab.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:layout_gravity="bottom|right"
+            android:layout_marginBottom="20dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/ic_action_add"
+            local:fab_colorNormal="@color/communityBlue"
+            local:fab_colorPressed="@color/communityDarkBlue"
+            local:fab_colorRipple="@color/communityLightBlue"
+            android:id="@+id/listSharing_floatingActionButton" />
+    </GridLayout>
+</LinearLayout>

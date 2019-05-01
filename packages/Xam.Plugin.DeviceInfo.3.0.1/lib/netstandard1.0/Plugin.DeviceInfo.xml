@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Plugin.DeviceInfo</name>
+    </assembly>
+    <members>
+        <member name="T:Plugin.DeviceInfo.CrossDeviceInfo">
+            <summary>
+            Cross platform DeviceInfo implemenations
+            </summary>
+        </member>
+        <member name="P:Plugin.DeviceInfo.CrossDeviceInfo.IsSupported">
+            <summary>
+            Gets if the plugin is supported on the current platform.
+            </summary>
+        </member>
+        <member name="P:Plugin.DeviceInfo.CrossDeviceInfo.Current">
+            <summary>
+            Current plugin implementation to use
+            </summary>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<shape
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval">
+
+  <stroke
+      android:color="@color/textColorTitle"
+      android:thickness="1dp"/>
+
+  <size
+      android:width="8dp"
+       android:height="8dp"/>
+</shape>

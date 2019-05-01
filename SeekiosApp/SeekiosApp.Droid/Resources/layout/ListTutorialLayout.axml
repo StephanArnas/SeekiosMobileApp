@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+  <!-- NAVIGATION BAR -->
+  <include
+      layout="@layout/ActionBarTemplate" />
+  <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbarLayout">
+    <!-- LISTVIEW DES ALERTS -->
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="?attr/layoutSeparator"
+        android:dividerHeight="1dp"
+        android:scrollbars="vertical"
+        android:id="@+id/listTutorial_listView" />
+  </RelativeLayout>
+</RelativeLayout>

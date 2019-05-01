@@ -1,0 +1,423 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>XLabs.Cryptography</name>
+    </assembly>
+    <members>
+        <member name="T:XLabs.Cryptography.MD5">
+            <summary>
+            Summary description for MD5.
+            </summary>
+        </member>
+        <member name="F:XLabs.Cryptography.MD5.S11">
+            <summary>
+            The S11
+            </summary>
+        </member>
+        <member name="F:XLabs.Cryptography.MD5.S12">
+            <summary>
+            The S12
+            </summary>
+        </member>
+        <member name="F:XLabs.Cryptography.MD5.S13">
+            <summary>
+            The S13
+            </summary>
+        </member>
+        <member name="F:XLabs.Cryptography.MD5.S14">
+            <summary>
+            The S14
+            </summary>
+        </member>
+        <member name="F:XLabs.Cryptography.MD5.S21">
+            <summary>
+            The S21
+            </summary>
+        </member>
+        <member name="F:XLabs.Cryptography.MD5.S22">
+            <summary>
+            The S22
+            </summary>
+        </member>
+        <member name="F:XLabs.Cryptography.MD5.S23">
+            <summary>
+            The S23
+            </summary>
+        </member>
+        <member name="F:XLabs.Cryptography.MD5.S24">
+            <summary>
+            The S24
+            </summary>
+        </member>
+        <member name="F:XLabs.Cryptography.MD5.S31">
+            <summary>
+            The S31
+            </summary>
+        </member>
+        <member name="F:XLabs.Cryptography.MD5.S32">
+            <summary>
+            The S32
+            </summary>
+        </member>
+        <member name="F:XLabs.Cryptography.MD5.S33">
+            <summary>
+            The S33
+            </summary>
+        </member>
+        <member name="F:XLabs.Cryptography.MD5.S34">
+            <summary>
+            The S34
+            </summary>
+        </member>
+        <member name="F:XLabs.Cryptography.MD5.S41">
+            <summary>
+            The S41
+            </summary>
+        </member>
+        <member name="F:XLabs.Cryptography.MD5.S42">
+            <summary>
+            The S42
+            </summary>
+        </member>
+        <member name="F:XLabs.Cryptography.MD5.S43">
+            <summary>
+            The S43
+            </summary>
+        </member>
+        <member name="F:XLabs.Cryptography.MD5.S44">
+            <summary>
+            The S44
+            </summary>
+        </member>
+        <member name="M:XLabs.Cryptography.MD5.Create(System.String)">
+            <summary>
+            Creates the specified hash name.
+            </summary>
+            <param name="hashName">Name of the hash.</param>
+            <returns>MD5.</returns>
+            <exception cref="T:System.NotSupportedException"></exception>
+        </member>
+        <member name="M:XLabs.Cryptography.MD5.GetMd5String(System.String)">
+            <summary>
+            Gets the MD5 string.
+            </summary>
+            <param name="source">The source.</param>
+            <returns>System.String.</returns>
+        </member>
+        <member name="M:XLabs.Cryptography.MD5.Create">
+            <summary>
+            Creates this instance.
+            </summary>
+            <returns>MD5.</returns>
+        </member>
+        <member name="F:XLabs.Cryptography.MD5.Padding">
+            <summary>
+            The padding
+            </summary>
+        </member>
+        <member name="M:XLabs.Cryptography.MD5.F(System.UInt32,System.UInt32,System.UInt32)">
+            <summary>
+            fs the specified x.
+            </summary>
+            <param name="x">The x.</param>
+            <param name="y">The y.</param>
+            <param name="z">The z.</param>
+            <returns>System.UInt32.</returns>
+        </member>
+        <member name="M:XLabs.Cryptography.MD5.G(System.UInt32,System.UInt32,System.UInt32)">
+            <summary>
+            gs the specified x.
+            </summary>
+            <param name="x">The x.</param>
+            <param name="y">The y.</param>
+            <param name="z">The z.</param>
+            <returns>System.UInt32.</returns>
+        </member>
+        <member name="M:XLabs.Cryptography.MD5.H(System.UInt32,System.UInt32,System.UInt32)">
+            <summary>
+            hes the specified x.
+            </summary>
+            <param name="x">The x.</param>
+            <param name="y">The y.</param>
+            <param name="z">The z.</param>
+            <returns>System.UInt32.</returns>
+        </member>
+        <member name="M:XLabs.Cryptography.MD5.I(System.UInt32,System.UInt32,System.UInt32)">
+            <summary>
+            is the specified x.
+            </summary>
+            <param name="x">The x.</param>
+            <param name="y">The y.</param>
+            <param name="z">The z.</param>
+            <returns>System.UInt32.</returns>
+        </member>
+        <member name="M:XLabs.Cryptography.MD5.ROTATE_LEFT(System.UInt32,System.Byte)">
+            <summary>
+            rotates x left n bits.
+            </summary>
+            <param name="x">The x.</param>
+            <param name="n">The n.</param>
+            <returns>System.UInt32.</returns>
+        </member>
+        <member name="M:XLabs.Cryptography.MD5.FF(System.UInt32@,System.UInt32,System.UInt32,System.UInt32,System.UInt32,System.Byte,System.UInt32)">
+            <summary>
+            Ffs the specified a.
+            </summary>
+            <param name="a">a.</param>
+            <param name="b">The b.</param>
+            <param name="c">The c.</param>
+            <param name="d">The d.</param>
+            <param name="x">The x.</param>
+            <param name="s">The s.</param>
+            <param name="ac">The ac.</param>
+            FF, GG, HH, and II transformations
+            for rounds 1, 2, 3, and 4.
+            Rotation is separate from addition to prevent recomputation.
+        </member>
+        <member name="M:XLabs.Cryptography.MD5.GG(System.UInt32@,System.UInt32,System.UInt32,System.UInt32,System.UInt32,System.Byte,System.UInt32)">
+            <summary>
+            Ggs the specified a.
+            </summary>
+            <param name="a">a.</param>
+            <param name="b">The b.</param>
+            <param name="c">The c.</param>
+            <param name="d">The d.</param>
+            <param name="x">The x.</param>
+            <param name="s">The s.</param>
+            <param name="ac">The ac.</param>
+        </member>
+        <member name="M:XLabs.Cryptography.MD5.HH(System.UInt32@,System.UInt32,System.UInt32,System.UInt32,System.UInt32,System.Byte,System.UInt32)">
+            <summary>
+            Hhes the specified a.
+            </summary>
+            <param name="a">a.</param>
+            <param name="b">The b.</param>
+            <param name="c">The c.</param>
+            <param name="d">The d.</param>
+            <param name="x">The x.</param>
+            <param name="s">The s.</param>
+            <param name="ac">The ac.</param>
+        </member>
+        <member name="M:XLabs.Cryptography.MD5.II(System.UInt32@,System.UInt32,System.UInt32,System.UInt32,System.UInt32,System.Byte,System.UInt32)">
+            <summary>
+            Iis the specified a.
+            </summary>
+            <param name="a">a.</param>
+            <param name="b">The b.</param>
+            <param name="c">The c.</param>
+            <param name="d">The d.</param>
+            <param name="x">The x.</param>
+            <param name="s">The s.</param>
+            <param name="ac">The ac.</param>
+        </member>
+        <member name="F:XLabs.Cryptography.MD5.state">
+            <summary>
+            state (ABCD)
+            </summary>
+        </member>
+        <member name="F:XLabs.Cryptography.MD5.count">
+            <summary>
+            number of bits, modulo 2^64 (lsb first)
+            </summary>
+        </member>
+        <member name="F:XLabs.Cryptography.MD5.buffer">
+            <summary>
+            input buffer
+            </summary>
+        </member>
+        <member name="M:XLabs.Cryptography.MD5.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:XLabs.Cryptography.MD5"/> class.
+            </summary>
+        </member>
+        <member name="M:XLabs.Cryptography.MD5.Initialize">
+            <summary>
+            MD5 initialization. Begins an MD5 operation, writing a new context.
+            </summary>
+            <remarks>The RFC named it "MD5Init"</remarks>
+        </member>
+        <member name="M:XLabs.Cryptography.MD5.HashCore(System.Byte[],System.Int32,System.Int32)">
+            <summary>
+            MD5 block update operation. Continues an MD5 message-digest
+            operation, processing another message block, and updating the
+            context.
+            </summary>
+            <param name="input">The input.</param>
+            <param name="offset">The offset.</param>
+            <param name="count">The count.</param>
+            <remarks>The RFC Named it MD5Update</remarks>
+        </member>
+        <member name="M:XLabs.Cryptography.MD5.HashFinal">
+            <summary>
+            MD5 finalization. Ends an MD5 message-digest operation, writing the
+            the message digest and zeroizing the context.
+            </summary>
+            <returns>message digest</returns>
+            <remarks>The RFC named it MD5Final</remarks>
+        </member>
+        <member name="M:XLabs.Cryptography.MD5.Transform(System.Byte[],System.Int32)">
+            <summary>
+            MD5 basic transformation. Transforms state based on 64 bytes block.
+            </summary>
+            <param name="block">The block.</param>
+            <param name="offset">The offset.</param>
+        </member>
+        <member name="M:XLabs.Cryptography.MD5.Encode(System.Byte[],System.Int32,System.UInt32[],System.Int32,System.Int32)">
+            <summary>
+            Encodes input (uint) into output (byte). Assumes len is
+            multiple of 4.
+            </summary>
+            <param name="output">The output.</param>
+            <param name="outputOffset">The output offset.</param>
+            <param name="input">The input.</param>
+            <param name="inputOffset">The input offset.</param>
+            <param name="count">The count.</param>
+        </member>
+        <member name="M:XLabs.Cryptography.MD5.Decode(System.UInt32[],System.Int32,System.Byte[],System.Int32,System.Int32)">
+            <summary>
+            Decodes input (byte) into output (uint). Assumes len is
+            a multiple of 4.
+            </summary>
+            <param name="output">The output.</param>
+            <param name="outputOffset">The output offset.</param>
+            <param name="input">The input.</param>
+            <param name="inputOffset">The input offset.</param>
+            <param name="count">The count.</param>
+        </member>
+        <member name="F:XLabs.Cryptography.MD5.HashValue">
+            <summary>
+            The hash value
+            </summary>
+        </member>
+        <member name="F:XLabs.Cryptography.MD5.State">
+            <summary>
+            The state
+            </summary>
+        </member>
+        <member name="F:XLabs.Cryptography.MD5.HashSizeValue">
+            <summary>
+            The hash size value
+            </summary>
+        </member>
+        <member name="M:XLabs.Cryptography.MD5.Clear">
+            <summary>
+            Clears this instance.
+            </summary>
+        </member>
+        <member name="M:XLabs.Cryptography.MD5.ComputeHash(System.Byte[])">
+            <summary>
+            Computes the hash.
+            </summary>
+            <param name="buffer">The buffer.</param>
+            <returns>System.Byte[].</returns>
+        </member>
+        <member name="M:XLabs.Cryptography.MD5.ComputeHash(System.Byte[],System.Int32,System.Int32)">
+            <summary>
+            Computes the hash.
+            </summary>
+            <param name="buffer">The buffer.</param>
+            <param name="offset">The offset.</param>
+            <param name="count">The count.</param>
+            <returns>System.Byte[].</returns>
+        </member>
+        <member name="M:XLabs.Cryptography.MD5.ComputeHash(System.IO.Stream)">
+            <summary>
+            Computes the hash.
+            </summary>
+            <param name="inputStream">The input stream.</param>
+            <returns>System.Byte[].</returns>
+        </member>
+        <member name="M:XLabs.Cryptography.MD5.TransformBlock(System.Byte[],System.Int32,System.Int32,System.Byte[],System.Int32)">
+            <summary>
+            Transforms the block.
+            </summary>
+            <param name="inputBuffer">The input buffer.</param>
+            <param name="inputOffset">The input offset.</param>
+            <param name="inputCount">The input count.</param>
+            <param name="outputBuffer">The output buffer.</param>
+            <param name="outputOffset">The output offset.</param>
+            <returns>System.Int32.</returns>
+            <exception cref="T:System.ArgumentNullException">inputBuffer</exception>
+            <exception cref="T:System.ArgumentOutOfRangeException">
+            inputOffset
+            or
+            inputOffset
+            </exception>
+            <exception cref="T:System.ArgumentException">inputCount</exception>
+        </member>
+        <member name="M:XLabs.Cryptography.MD5.TransformFinalBlock(System.Byte[],System.Int32,System.Int32)">
+            <summary>
+            Transforms the final block.
+            </summary>
+            <param name="inputBuffer">The input buffer.</param>
+            <param name="inputOffset">The input offset.</param>
+            <param name="inputCount">The input count.</param>
+            <returns>System.Byte[].</returns>
+            <exception cref="T:System.ArgumentNullException">inputBuffer</exception>
+            <exception cref="T:System.ArgumentOutOfRangeException">
+            inputOffset
+            or
+            inputOffset
+            </exception>
+            <exception cref="T:System.ArgumentException">inputCount</exception>
+        </member>
+        <member name="M:XLabs.Cryptography.MD5.Dispose(System.Boolean)">
+            <summary>
+            Releases unmanaged and - optionally - managed resources.
+            </summary>
+            <param name="disposing"><c>true</c> to release both managed and unmanaged resources; <c>false</c> to release only unmanaged resources.</param>
+        </member>
+        <member name="M:XLabs.Cryptography.MD5.Dispose">
+            <summary>
+            Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.
+            </summary>
+        </member>
+        <member name="P:XLabs.Cryptography.MD5.CanReuseTransform">
+            <summary>
+            Gets a value indicating whether this instance can reuse transform.
+            </summary>
+            <value><c>true</c> if this instance can reuse transform; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="P:XLabs.Cryptography.MD5.CanTransformMultipleBlocks">
+            <summary>
+            Gets a value indicating whether this instance can transform multiple blocks.
+            </summary>
+            <value><c>true</c> if this instance can transform multiple blocks; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="P:XLabs.Cryptography.MD5.Hash">
+            <summary>
+            Gets the hash.
+            </summary>
+            <value>The hash.</value>
+            <exception cref="T:System.InvalidOperationException"></exception>
+        </member>
+        <member name="P:XLabs.Cryptography.MD5.HashSize">
+            <summary>
+            Gets the size of the hash.
+            </summary>
+            <value>The size of the hash.</value>
+        </member>
+        <member name="P:XLabs.Cryptography.MD5.InputBlockSize">
+            <summary>
+            Gets the size of the input block.
+            </summary>
+            <value>The size of the input block.</value>
+        </member>
+        <member name="P:XLabs.Cryptography.MD5.OutputBlockSize">
+            <summary>
+            Gets the size of the output block.
+            </summary>
+            <value>The size of the output block.</value>
+        </member>
+        <member name="T:XLabs.Cryptography.MD5CryptoServiceProvider">
+            <summary>
+            Class MD5CryptoServiceProvider.
+            </summary>
+        </member>
+        <member name="M:XLabs.Cryptography.MD5CryptoServiceProvider.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:XLabs.Cryptography.MD5CryptoServiceProvider"/> class.
+            </summary>
+        </member>
+    </members>
+</doc>

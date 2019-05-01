@@ -1,0 +1,47 @@
+{
+  "images": [
+    {
+      "scale": "1x",
+      "idiom": "iphone",
+      "filename": "MapZoomOut.png"
+    },
+    {
+      "scale": "2x",
+      "idiom": "iphone",
+      "filename": "MapZoomOut@2x.png"
+    },
+    {
+      "scale": "3x",
+      "idiom": "iphone",
+      "filename": "MapZoomOut@3x.png"
+    },
+    {
+      "idiom": "iphone"
+    },
+    {
+      "idiom": "ipad"
+    },
+    {
+      "scale": "1x",
+      "idiom": "ipad",
+      "filename": "MapZoomOut.png"
+    },
+    {
+      "scale": "2x",
+      "idiom": "ipad",
+      "filename": "MapZoomOut@2x.png"
+    },
+    {
+      "scale": "3x",
+      "idiom": "ipad",
+      "filename": "MapZoomOut@3x.png"
+    }
+  ],
+  "properties": {
+    "template-rendering-intent": ""
+  },
+  "info": {
+    "version": 1,
+    "author": ""
+  }
+}

@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Plugin.DeviceInfo.Abstractions</name>
+    </assembly>
+    <members>
+        <member name="T:Plugin.DeviceInfo.Abstractions.IDeviceInfo">
+            <summary>
+            Interface for DeviceInfo
+            </summary>
+        </member>
+        <member name="M:Plugin.DeviceInfo.Abstractions.IDeviceInfo.GenerateAppId(System.Boolean,System.String,System.String)">
+            <summary>
+            Generates a an AppId optionally using the PhoneId a prefix and a suffix and a Guid to ensure uniqueness
+            
+            The AppId format is as follows {prefix}guid{phoneid}{suffix}, where parts in {} are optional.
+            </summary>
+            <param name="usingPhoneId">Setting this to true adds the device specific id to the AppId (remember to give the app the correct permissions)</param>
+            <param name="prefix">Sets the prefix of the AppId</param>
+            <param name="suffix">Sets the suffix of the AppId</param>
+            <returns></returns>
+        </member>
+        <member name="P:Plugin.DeviceInfo.Abstractions.IDeviceInfo.Id">
+            <summary>
+            This is the device specific Id (remember the correct permissions in your app to use this)
+            </summary>
+        </member>
+        <member name="P:Plugin.DeviceInfo.Abstractions.IDeviceInfo.Model">
+            <summary>
+            Get the model of the device
+            </summary>
+        </member>
+        <member name="P:Plugin.DeviceInfo.Abstractions.IDeviceInfo.Version">
+            <summary>
+            Get the version of the Operating System
+            </summary>
+        </member>
+        <member name="P:Plugin.DeviceInfo.Abstractions.IDeviceInfo.VersionNumber">
+            <summary>
+            Gets the version number of the operating system
+            </summary>
+        </member>
+        <member name="P:Plugin.DeviceInfo.Abstractions.IDeviceInfo.Platform">
+            <summary>
+            Get the platform of the device
+            </summary>
+        </member>
+        <member name="P:Plugin.DeviceInfo.Abstractions.IDeviceInfo.Idiom">
+            <summary>
+            Get the idom of the device
+            </summary>
+        </member>
+    </members>
+</doc>

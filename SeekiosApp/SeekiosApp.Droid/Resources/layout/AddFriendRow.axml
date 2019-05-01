@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+<!-- IMAGE DE L'AMI-->
+    <SeekiosApp.Droid.CustomComponents.RoundedImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="@dimen/marginXS"
+        android:layout_marginTop="@dimen/marginXS"
+        android:layout_marginLeft="@dimen/marginS"
+        android:layout_centerVertical="true"
+        android:src="@drawable/DefaultCommunityUser"
+        android:id="@+id/addFriend_userImage" />
+<!-- NOM DE L'AMI-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/Title"
+        android:textColor="@color/communityLightBlue"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/addFriend_userImage"
+        android:layout_marginLeft="@dimen/marginM"
+        android:id="@+id/addFriend_nameText" />
+<!-- IMAGE D'AJOTU D'AMIS OU AMI DEJA AJOUTE OU EN ATTENTE-->
+    <LinearLayout
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentRight="true">
+        <XamSvg.SvgImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            local:svg="@drawable/addfriend"
+            android:id="@+id/addFriendRow_image"
+            android:layout_marginTop="@dimen/marginXS"
+            android:layout_gravity="center_horizontal" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/smallTextSize"
+            android:id="@+id/addfriend_infoTextView"
+            android:layout_gravity="center_horizontal" />
+    </LinearLayout>
+</RelativeLayout>

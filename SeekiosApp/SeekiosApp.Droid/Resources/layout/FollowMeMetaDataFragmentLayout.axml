@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+  <!-- Statut du mode -->
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="@dimen/mapBase_visibleBottomLayoutHeight"
+      android:layout_marginLeft="@dimen/mapBase_creditCircleDiameter"
+      android:layout_marginTop="@dimen/mapBase_creditCircleOverflow"
+      android:gravity="center_vertical"
+      android:textColor="?attr/textColorTitle"
+      android:textSize="@dimen/textSize"
+      android:id="@+id/modeFollowMe_status"/>
+  <!--MODE EDITION-->
+  <LinearLayout
+      android:layout_alignParentTop="true"
+      android:layout_marginTop="@dimen/mapBase_creditCircleDiameter"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_marginLeft="@dimen/marginM"
+      android:layout_marginRight="@dimen/marginM"
+      android:orientation="vertical"
+      android:id="@+id/modeFollowMe_onEdition">
+    <!--Bouton pour connecter le téléphone au seekios-->
+    <!--<RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:textColor="?attr/textColorTitle"
+          android:textSize="@dimen/titleTextSize"
+          android:text="@string/modeFollowMe_connectWithSeekiosTitle" />
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginRight="110dp"
+          android:layout_marginTop="20dp"
+          android:textColor="?attr/textColorTitle"
+          android:textSize="@dimen/smallTextSize"
+          android:text="@string/modeFollowMe_connectWithSeekiosDescr" />
+      <Button
+          android:layout_width="110dp"
+          android:layout_height="wrap_content"
+          android:layout_alignParentRight="true"
+          android:layout_centerVertical="true"
+          android:text="@string/modeFollowMe_connectWithSeekiosButtonText"
+          android:id="@+id/modeFollowMe_connectWithSeekios" />
+    </RelativeLayout>-->
+    <!--Switch pour activer le tracking-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:textColor="?attr/textColorTitle"
+          android:textSize="@dimen/titleTextSize"
+          android:text="@string/modeFollowMe_trackingAfterConnectionLossTitle" />
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginRight="@dimen/switchWidth"
+          android:layout_marginTop="20dp"
+          android:textColor="?attr/textColorTitle"
+          android:textSize="@dimen/smallTextSize"
+          android:text="@string/modeFollowMe_trackingAfterConnectionLossDescr" />
+      <Switch
+          android:layout_width="@dimen/switchWidth"
+          android:layout_height="wrap_content"
+          android:layout_alignParentRight="true"
+          android:layout_centerVertical="true"
+          android:checked="true"
+          android:textOn="YES"
+          android:textOff="NO"
+          android:id="@+id/modeFollowMe_trackingAfterConnectionLossSwitch" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="70dp"
+          android:textColor="?attr/textColorTitle"
+          android:textSize="@dimen/smallTextSize"
+          android:text="@string/metaData_trackingRefreshTime" />
+      <Spinner
+          android:layout_width="70dp"
+          android:layout_height="wrap_content"
+          android:textColor="?attr/textColorTitle"
+          android:popupBackground="?attr/layoutBackground"
+          android:prompt="@string/modeZone_refreshTime"
+          android:textSize="16dp"
+          android:id="@+id/modeFollowMe_trackingRefreshTimeSpinner" />
+    </RelativeLayout>
+  </LinearLayout>
+  <!--MODE MAP-->
+  <LinearLayout
+      android:layout_alignParentTop="true"
+      android:layout_marginTop="@dimen/mapBase_creditCircleDiameter"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_marginLeft="@dimen/marginM"
+      android:layout_marginRight="@dimen/marginM"
+      android:orientation="vertical"
+      android:visibility="gone"
+      android:id="@+id/modeFollowMe_onMap">
+    <!--Bouton pour relancer le mode don't move-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:id="@+id/modeFollowMe_restartModeLayout">
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:textColor="?attr/textColorTitle"
+          android:textSize="@dimen/titleTextSize"
+          android:text="@string/modeFollowMe_restartModeTitle" />
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginRight="150dp"
+          android:layout_marginTop="20dp"
+          android:textColor="?attr/textColorTitle"
+          android:textSize="@dimen/smallTextSize"
+          android:text="@string/modeFollowMe_restartModeDescr" />
+      <Button
+          android:layout_width="150dp"
+          android:layout_height="wrap_content"
+          android:layout_alignParentRight="true"
+          android:layout_centerVertical="true"
+          android:clickable="true"
+          android:text="@string/modeDontMove_restartModeButtonText"
+          android:id="@+id/modeFollowMe_restartMode" />
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:textColor="?attr/textColorTitle"
+        android:textSize="@dimen/titleTextSize"
+        android:text="@string/metaData_stats" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:textColor="?attr/textColorTitle"
+        android:textSize="@dimen/textSiz"
+        android:id="@+id/modeFollowMe_activateSince" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:textColor="?attr/textColorTitle"
+        android:textSize="@dimen/textSiz"
+        android:id="@+id/modeFollowMe_countOfDisconnect" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:textColor="?attr/textColorTitle"
+        android:textSize="@dimen/textSiz"
+        android:id="@+id/modeFollowMe_trackingRefreshTimeStat" />
+  </LinearLayout>
+</RelativeLayout>

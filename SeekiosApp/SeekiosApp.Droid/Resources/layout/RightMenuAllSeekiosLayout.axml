@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:columnCount="2"
+    android:rowCount="7"
+    android:layout_width="330dp"
+    android:layout_height="match_parent"
+    android:layout_gravity="end"
+    android:background="?attr/layoutBackground"
+    android:id="@+id/rightMenuAllSeekios_mainLayout">
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/rightMenuAllSeekios_seekiosList"
+        android:divider="?attr/layoutSeparator"
+        android:dividerHeight="1dp" />
+</GridLayout>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<!-- ACTION BAR -->
+    <include
+        layout="@layout/ActionBarTemplate" />
+<!-- TEXTE INFORMATIF -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/communityBlue"
+        android:id="@+id/shareSeekios_informationLayout">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/textColorLink"
+            android:textSize="@dimen/mediumTextSize"
+            android:id="@+id/shareSeekios_informationSeekios" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/textColorLink"
+            android:textSize="@dimen/mediumTextSize"
+            android:id="@+id/shareSeekios_informationFriend" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/textColorLink"
+            android:textSize="@dimen/mediumTextSize"
+            android:id="@+id/shareSeekios_informationDate" />
+    </LinearLayout>
+<!-- ===== SECTION SEEKIOS ======================== -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/marginS">
+        <SeekiosApp.Droid.CustomComponents.SectionBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            local:sectionBarTitle="@string/shareSeekios_seekiosSectionTitle"
+            android:id="@+id/shareSeekios_seekiosSectionTitle" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/communityBlue"
+            android:layout_gravity="center_vertical"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:text="@string/shareSeekios_addFriend"
+            android:layout_marginRight="@dimen/marginS"
+            android:id="@+id/shareSeekios_seekiosAddButton" />
+    </RelativeLayout>
+<!-- CONTENU AMI -->
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:id="@+id/shareSeekios_shortSeekiosList"
+        android:divider="?attr/layoutSeparator"
+        android:dividerHeight="1dp" />
+<!-- ===== SECTION AMI ======================== -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <SeekiosApp.Droid.CustomComponents.SectionBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            local:sectionBarTitle="@string/shareSeekios_friendSectionTitle"
+            android:id="@+id/shareSeekios_friendSectionTitle" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/communityBlue"
+            android:layout_gravity="center_vertical"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:text="@string/shareSeekios_addFriend"
+            android:layout_marginRight="@dimen/marginS"
+            android:id="@+id/shareSeekios_friendAddButton" />
+    </RelativeLayout>
+<!-- CONTENU AMI -->
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/shareSeekios_shortFriendList"
+        android:divider="?attr/layoutSeparator"
+        android:dividerHeight="1dp" />
+</LinearLayout>

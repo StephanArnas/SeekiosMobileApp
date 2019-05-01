@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<!-- Tilte popup -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Choix du mode"
+        android:textColor="@color/textColorPrimary"
+        android:textSize="20dp"
+        android:background="@color/primary"
+        android:gravity="center"
+        android:paddingTop="@dimen/marginM"
+        android:paddingBottom="@dimen/marginM"
+        android:id="@+id/title" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/linearLayout">
+        <XamSvg.SvgImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            local:svg="@drawable/credit"
+            android:layout_marginTop="20dp" />
+        <TextView
+            android:layout_height="wrap_content"
+            android:textColor="@color/textColorContent"
+            android:text="Every 16th of the month you get a 60 credits refund by seekios :) Locate well."
+            android:layout_marginTop="20dp"
+            android:textSize="14dp"
+            android:id="@+id/popupReloadCreditMonthly_content"
+            android:layout_width="wrap_content"
+            android:layout_marginBottom="20dp" />
+    </LinearLayout>
+<!-- line separator -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@id/linearLayout"
+        android:background="?attr/layoutSeparator" />
+</RelativeLayout>

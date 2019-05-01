@@ -1,0 +1,68 @@
+﻿<UserControl x:Name="userControl"
+    x:Class="SeekiosApp.UWP.UserControls.MapSeekiosMarkerOverlay"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:SeekiosApp.UWP.UserControls"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Margin="0,0,0,150"
+    Height="60"
+    Width="300">
+    <Border BorderBrush="White" BorderThickness="1" CornerRadius="10">
+        <Border.Background>
+            <SolidColorBrush Color="White" Opacity="0.95"/>
+        </Border.Background>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+            <TextBlock Grid.Row="0" 
+                       Grid.Column="2" 
+                       Text="{Binding SeekiosName, ElementName=userControl}"
+                       Margin="10,0,0,0" 
+                       Foreground="#333333" 
+                       FontSize="20" 
+                       VerticalAlignment="Center" />
+            <TextBlock Grid.Row="1" 
+                       Grid.Column="2" 
+                       Text="{Binding SeekiosDate, ElementName=userControl}"
+                       Margin="10,0,0,0" 
+                       Foreground="#999999" 
+                       FontSize="12" 
+                       VerticalAlignment="Center"/>
+            <Button Grid.Row="0" 
+                    Grid.RowSpan="2"
+                    Grid.Column="0"
+                    Background="Transparent">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    <Image Grid.Row="0" Width="30" Height="30" Source="ms-appx:///Assets/Icons/RefreshSeekios.png" />
+                    <TextBlock Grid.Row="1" Text="Actualiser" FontSize="12" Foreground="#999999"   />
+                </Grid>
+            </Button>
+            <Button Grid.Row="0" 
+                    Grid.RowSpan="2"
+                    Grid.Column="1"
+                    Background="Transparent">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    <Image Grid.Row="0" Width="30" Height="30" Source="ms-appx:///Assets/Icons/ShareSeekios.png" />
+                    <TextBlock Grid.Row="1" Text="Partager" FontSize="12" Foreground="#999999"   />
+                </Grid>
+            </Button>
+        </Grid>
+    </Border>
+</UserControl>

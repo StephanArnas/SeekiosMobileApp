@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<resources>
+
+  <!-- SECTION BAR -->
+  <declare-styleable name="SectionBarLayout">
+    <attr name="sectionBarTitle" format="string" />
+  </declare-styleable>
+  
+  <!-- CONTACT LAYOUT -->
+  <declare-styleable name="LimitOfRecipient">
+    <attr name="limitOfRecipient" format="integer" />
+  </declare-styleable>
+
+  <!-- BOUTON AVEC IMAGE -->
+  <declare-styleable name="ImageButtonLayout">
+    <attr name="titleButton" format="string" />
+    <attr name="imageButton" format="integer" />
+  </declare-styleable>
+
+  <!-- EDITTEXT AVEC IMAGE -->
+  <declare-styleable name="ImageEditTextLayout">
+    <attr name="textPlaceholder" format="string" />
+    <attr name="imageEditText" format="integer" />
+    <attr name="imageEditTextSize" format="integer" />
+  </declare-styleable>
+
+  <!-- SECTION BAR TEXT -->
+  <declare-styleable name="TextSectionBar">
+    <attr name="textSectionBar" format="string" />
+  </declare-styleable>
+  
+  <declare-styleable name="CustomTitle">
+    <attr name="customTitle" format="string" />
+  </declare-styleable>
+  
+  <!-- BUTTON IMAGE LAYOUT -->
+  <!-- BUTTON IMAGE LAYOUT TEXT -->
+  <declare-styleable name="TextButtonImageLayout">
+    <attr name="textButtonImageLayout" format="string" />
+  </declare-styleable>
+  
+  <!-- BUTTON IMAGE LAYOUT SVG -->
+    <declare-styleable name="SvgImageButtonLayout">
+    <attr name="svgImageButtonLayout" format="string" />
+  </declare-styleable>
+
+  <!-- FACEBOOK LOGIN BUTTON-->
+  <!-- FACEBOOK LOGIN BUTTON TEXT -->
+  <declare-styleable name="FacebookLoginButton">
+    <attr name="buttonText" format="string" />
+    <attr name="textSize" format="integer" />
+    <attr name="imageFacebookButton" format="integer" />
+  </declare-styleable>
+
+  <declare-styleable name="CountryCodePicker">
+    <attr name="defaultCode" format="integer" />
+    <attr name="contentColor" format="color"/>
+    <attr name="arrowSize" format="dimension"/>
+    <attr name="countryPreference" format="string"/>
+    <attr name="defaultNameCode" format="string" />
+    <attr name="hideNameCode" format="boolean"/>
+    <attr name="ccpLanguage" format="enum">
+      <enum name="ARABIC" value="1"/>
+      <enum name="BENGALI" value="2"/>
+      <enum name="CHINESE" value="3"/>
+      <enum name="ENGLISH" value="4"/>
+      <enum name="FRENCH" value="5"/>
+      <enum name="GERMAN" value="6"/>
+      <enum name="GUJARATI" value="7"/>
+      <enum name="HINDI" value="8"/>
+      <enum name="JAPANESE" value="9"/>
+      <enum name="JAVANESE" value="10"/>
+      <enum name="PORTUGUESE" value="11"/>
+      <enum name="RUSSIAN" value="12"/>
+      <enum name="SPANISH" value="13"/>
+    </attr>
+    <attr name="keyboardAutoPopOnSearch" format="boolean"/>
+    <attr name="customMasterCountries" format="string" />
+  </declare-styleable>
+
+  <!-- COULEURS DES TEXTES -->
+  <attr name="textColorContent" format="reference|color"/>
+  <attr name="textColorTitle" format="reference|color"/>
+  <attr name="textColorSubTitle" format="reference|color"/>
+  <attr name="textColorLink" format="reference|color"/>
+  <attr name="textColorHint" format="reference|color"/>
+  <attr name="textColorTheme" format="reference|color"/>
+  <attr name="textColorWhite" format="reference|color"/>
+
+  <!-- COULEURS ALTERNATIVES -->
+  <attr name="colorFirst" format="reference|color"/>
+  <attr name="colorFirstDark" format="reference|color"/>
+  <attr name="colorSecondly" format="reference|color"/>
+  <attr name="colorThirdly" format="reference|color"/>
+  <attr name="colorFourthly" format="reference|color"/>
+
+  <!-- COULEURS DES LAYOUT -->
+  <attr name="layoutBackground" format="reference|color"/>
+  <attr name="layoutBackgroundDark" format="reference|color"/>
+  <attr name="layoutBackgroundWhite" format="reference|color"/>
+  <attr name="layoutBackgroundPopup" format="reference|color"/>
+  <attr name="layoutBackgroundSecondly" format="reference|color"/>
+  <attr name="layoutBackgroundThirdly" format="reference|color"/>
+  <attr name="layoutBackgroundImage" format="reference|color"/>
+  <attr name="layoutBackgroundSectionBar" format="reference|color"/>
+  <attr name="layoutSlideUp" format="reference|color"/>
+  <attr name="layoutSeparator" format="reference|color"/>
+  <attr name="layoutSeparatorDark" format="reference|color"/>
+  <attr name="buttonTextColor" format="reference|color"/>
+  <attr name="leftMenuDarkGray" format="reference|color"/>
+  
+  <!-- COULEURS POPUP -->
+  <attr name="popupBackground" format="reference|color"/>
+
+  <declare-styleable name="BoutonSuivant">
+    <attr name="boutonSuivantColor" format="reference|color" />
+  </declare-styleable>
+
+  
+
+</resources>

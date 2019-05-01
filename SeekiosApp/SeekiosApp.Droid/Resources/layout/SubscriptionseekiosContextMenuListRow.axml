@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+  
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/customListRow_layout">
+    <!-- IMAGE DE L'AMI -->
+        <SeekiosApp.Droid.CustomComponents.RoundedImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_gravity="center_vertical|left"
+            android:src="@drawable/Icon"
+            android:id="@+id/customListRow_image" />
+    <!-- NOM DE L'AMI -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/primary"
+            style="@style/Title"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center_vertical"
+            android:layout_toRightOf="@id/customListRow_image"
+            android:id="@+id/customListRow_text" />
+        <XamSvg.SvgImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            local:svg="@drawable/coindollar"
+            android:layout_alignParentRight="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="end|center"
+            local:colorMapping="cccccc=ffffff"
+            local:colorMappingSelected="cccccc=cccccc"
+            android:id="@+id/addSeekiosRow_connect" />
+    </LinearLayout>
+</LinearLayout>

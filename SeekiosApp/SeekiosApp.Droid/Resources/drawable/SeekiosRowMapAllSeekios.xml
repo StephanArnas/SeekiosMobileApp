@@ -1,0 +1,162 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:orientation="horizontal">
+  <!--IMG SEEKIOS-->
+  <SeekiosApp.Droid.CustomComponents.RoundedImageView
+      android:layout_width="60dp"
+      android:layout_height="60dp"
+      android:layout_gravity="center_vertical"
+      android:layout_marginLeft="5dp"
+      android:src="@drawable/DefaultSeekios"
+      android:id="@+id/seekiosRow_seekiosImage" />
+  <!--NOM DU SEEKIOS et DERNIERE POSITION-->
+  <LinearLayout
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center_vertical"
+      android:layout_marginLeft="5dp"
+      android:orientation="vertical">
+    <!--NOM DU SEEKIOS-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:text="Jean-Marie"
+        android:id="@+id/seekiosRow_seekiosName" />
+    <!--DERNIERE POSITION-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:layout_margin="0dp"
+        android:textSize="@dimen/smallTextSize"
+        android:text="@string/listSeekios_lastPositionNone"
+        android:id="@+id/seekiosRow_lastPosition" />
+  </LinearLayout>
+  <Space
+      android:layout_width="wrap_content"
+      android:layout_height="match_parent"
+      android:layout_weight="1" />
+  <!--LOGO MODE-->
+  <LinearLayout
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center_vertical"
+      android:orientation="vertical">
+    <!--LOGO BATTERIE-->
+    <XamSvg.SvgImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        local:colorMapping="dddddd=555555"
+        android:id="@+id/seekiosRow_modeLogo" />
+    <!--Text vide pour assurer l'allignement du logo du mode avec les logos battery et signal-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:textSize="@dimen/smallTextSize"
+        android:textColor="?attr/textColorLink"
+        android:layout_gravity="center_horizontal"
+        android:text=""/>
+  </LinearLayout>
+  <!--LOGO BATTERIE et % BATTERIE-->
+  <LinearLayout
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center_vertical"
+      android:orientation="vertical">
+    <!--LOGO BATTERIE-->
+    <RelativeLayout
+        android:layout_width="10dp"
+        android:layout_height="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_margin="5dp"
+        android:id="@+id/listSeekiosRow_logoBatteryLayout">
+      <XamSvg.SvgImageView
+          android:layout_width="10dp"
+          android:layout_height="20dp"
+          android:layout_alignParentBottom="true"
+          local:svg="@drawable/battery"
+          android:id="@+id/seekiosRow_batteryLogo" />
+      <RelativeLayout
+          android:layout_width="10dp"
+          android:layout_height="0dp"
+          android:layout_alignParentBottom="true"
+          android:clipChildren="false"
+          android:id="@+id/seekiosRow_batteryProgressLayout">
+        <XamSvg.SvgImageView
+            android:layout_width="10dp"
+            android:layout_height="20dp"
+            android:layout_alignParentBottom="true"
+            android:clipToPadding="false"
+            local:svg="@drawable/battery"
+            android:id="@+id/seekiosRow_batteryLogoProgress" />
+      </RelativeLayout>
+    </RelativeLayout>
+    <!--% BATTERIE-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:textSize="@dimen/smallTextSize"
+        android:textColor="?attr/textColorLink"
+        android:layout_gravity="center_horizontal"
+        android:text="100%"
+        android:id="@+id/seekiosRow_battery" />
+  </LinearLayout>
+  <!--LOGO SIGNAL et % SIGNAL-->
+  <LinearLayout
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center_vertical"
+      android:orientation="vertical">
+    <!--LOGO SIGNAL-->
+    <RelativeLayout
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_margin="5dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/listSeekiosRow_logoSignalLayout">
+      <XamSvg.SvgImageView
+          android:layout_width="20dp"
+          android:layout_height="20dp"
+          android:layout_alignParentLeft="true"
+          local:svg="@drawable/signal"
+          android:id="@+id/seekiosRow_signalLogo" />
+      <RelativeLayout
+          android:layout_width="0dp"
+          android:layout_height="20dp"
+          android:layout_alignParentBottom="true"
+          android:clipChildren="false"
+          android:id="@+id/seekiosRow_signalProgressLayout">
+        <XamSvg.SvgImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:scaleType="fitStart"
+            android:layout_alignParentLeft="true"
+            android:clipToPadding="false"
+            local:svg="@drawable/signal"
+            android:id="@+id/seekiosRow_signalLogoProgress" />
+      </RelativeLayout>
+    </RelativeLayout>
+    <!--% SIGNAL-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:textSize="@dimen/smallTextSize"
+        android:textColor="?attr/textColorLink"
+        android:layout_gravity="center_horizontal"
+        android:text="100%"
+        android:id="@+id/seekiosRow_signal" />
+  </LinearLayout>
+</LinearLayout>

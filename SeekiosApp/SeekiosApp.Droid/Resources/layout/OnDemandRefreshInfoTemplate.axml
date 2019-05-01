@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:layout_below="@id/toolbarLayout">
+<!-- REFRESH ACTION INFO-->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/buttonrounded"
+        android:clickable="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/marginS"
+        android:visibility="gone"
+        android:id="@+id/mapBase_refreshLayout">
+    <!-- Info button -->
+        <XamSvg.SvgImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="@dimen/marginXS"
+            android:layout_marginTop="@dimen/marginXS"
+            local:svg="@drawable/info"
+            local:colorMapping="969696=ffffff"
+            android:id="@+id/mapBase_infoRefresh"
+            android:layout_marginBottom="@dimen/marginXS" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_below="@id/toolbarLayout"
+            android:text="En cours..."
+            android:textSize="16dp"
+            android:textColor="#ffffff"
+            android:id="@+id/mapBase_inProgress"
+            android:layout_margin="@dimen/marginXS"
+            android:gravity="center" />
+    </LinearLayout>
+<!-- TIMER INFO -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_below="@id/mapBase_refreshLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/marginXS"
+        android:text="01:30"
+        android:textColor="#ffffff"
+        android:textSize="15dp"
+        android:visibility="gone"
+        android:layout_marginTop="@dimen/marginXS"
+        android:id="@+id/mapBase_timerInfo" />
+</RelativeLayout>

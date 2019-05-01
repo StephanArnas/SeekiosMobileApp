@@ -1,0 +1,183 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DeviceMotion.Plugin.Abstractions</name>
+    </assembly>
+    <members>
+        <member name="T:DeviceMotion.Plugin.Abstractions.IDeviceMotion">
+            <summary>
+            Device motion Interface.
+            </summary>
+        </member>
+        <member name="E:DeviceMotion.Plugin.Abstractions.IDeviceMotion.SensorValueChanged">
+            <summary>
+            Occurs when sensor value changed.
+            </summary>
+        </member>
+        <member name="M:DeviceMotion.Plugin.Abstractions.IDeviceMotion.Start(DeviceMotion.Plugin.Abstractions.MotionSensorType,DeviceMotion.Plugin.Abstractions.MotionSensorDelay)">
+            <summary>
+            Start the specified sensorType and interval.
+            </summary>
+            <param name="sensorType">Sensor type.</param>
+            <param name="interval">Interval.</param>
+        </member>
+        <member name="M:DeviceMotion.Plugin.Abstractions.IDeviceMotion.Stop(DeviceMotion.Plugin.Abstractions.MotionSensorType)">
+            <summary>
+            Stop the specified sensorType.
+            </summary>
+            <param name="sensorType">Sensor type.</param>
+        </member>
+        <member name="M:DeviceMotion.Plugin.Abstractions.IDeviceMotion.IsActive(DeviceMotion.Plugin.Abstractions.MotionSensorType)">
+            <summary>
+            Determines whether this instance is active the specified sensorType.
+            </summary>
+            <returns><c>true</c> if this instance is active the specified sensorType; otherwise, <c>false</c>.</returns>
+            <param name="sensorType">Sensor type.</param>
+        </member>
+        <member name="T:DeviceMotion.Plugin.Abstractions.SensorValueChangedEventArgs">
+            <summary>
+            Sensor changed event arguments.
+            </summary>
+        </member>
+        <member name="P:DeviceMotion.Plugin.Abstractions.SensorValueChangedEventArgs.SensorType">
+            <summary>
+            Gets or sets the type of the sensor.
+            </summary>
+            <value>The type of the sensor.</value>
+        </member>
+        <member name="P:DeviceMotion.Plugin.Abstractions.SensorValueChangedEventArgs.Value">
+            <summary>
+            Gets or sets the value.
+            </summary>
+            <value>The value.</value>
+        </member>
+        <member name="P:DeviceMotion.Plugin.Abstractions.SensorValueChangedEventArgs.ValueType">
+            <summary>
+            Gets the type of the value.
+            </summary>
+            <value>The type of the value.</value>
+        </member>
+        <member name="T:DeviceMotion.Plugin.Abstractions.SensorValueChangedEventHandler">
+            <summary>
+            Sensor value changed event handler.
+            </summary>
+        </member>
+        <member name="T:DeviceMotion.Plugin.Abstractions.MotionSensorDelay">
+            <summary>
+            Motion sensor delay enum.
+            </summary>
+        </member>
+        <member name="F:DeviceMotion.Plugin.Abstractions.MotionSensorDelay.Fastest">
+            <summary>
+            Fastest Delay
+            </summary>
+        </member>
+        <member name="F:DeviceMotion.Plugin.Abstractions.MotionSensorDelay.Game">
+            <summary>
+            Game Delay
+            </summary>
+        </member>
+        <member name="F:DeviceMotion.Plugin.Abstractions.MotionSensorDelay.Ui">
+            <summary>
+            Ui Delay
+            </summary>
+        </member>
+        <member name="F:DeviceMotion.Plugin.Abstractions.MotionSensorDelay.Default">
+            <summary>
+            Default Delay
+            </summary>
+        </member>
+        <member name="T:DeviceMotion.Plugin.Abstractions.MotionSensorType">
+            <summary>
+            Motion sensor type enum.
+            </summary>
+        </member>
+        <member name="F:DeviceMotion.Plugin.Abstractions.MotionSensorType.Accelerometer">
+            <summary>
+            Accelerometer Sensor
+            </summary>
+        </member>
+        <member name="F:DeviceMotion.Plugin.Abstractions.MotionSensorType.Gyroscope">
+            <summary>
+            Gyroscope Sensor
+            </summary>
+        </member>
+        <member name="F:DeviceMotion.Plugin.Abstractions.MotionSensorType.Magnetometer">
+            <summary>
+            Magnetometer Sensor
+            </summary>
+        </member>
+        <member name="F:DeviceMotion.Plugin.Abstractions.MotionSensorType.Compass">
+            <summary>
+            Compass Sensor
+            </summary>
+        </member>
+        <member name="T:DeviceMotion.Plugin.Abstractions.MotionVector">
+            <summary>
+            Motion vector.
+            </summary>
+        </member>
+        <member name="P:DeviceMotion.Plugin.Abstractions.MotionVector.X">
+            <summary>
+            Gets or sets the x.
+            </summary>
+            <value>The x.</value>
+        </member>
+        <member name="P:DeviceMotion.Plugin.Abstractions.MotionVector.Y">
+            <summary>
+            Gets or sets the y.
+            </summary>
+            <value>The y.</value>
+        </member>
+        <member name="P:DeviceMotion.Plugin.Abstractions.MotionVector.Z">
+            <summary>
+            Gets or sets the z.
+            </summary>
+            <value>The z.</value>
+        </member>
+        <member name="M:DeviceMotion.Plugin.Abstractions.MotionVector.ToString">
+            <summary>
+            Vector to string
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:DeviceMotion.Plugin.Abstractions.MotionVector.Value">
+            <summary>
+            Gets total value.
+            </summary>
+            <value>The value.</value>
+        </member>
+        <member name="T:DeviceMotion.Plugin.Abstractions.MotionSensorValueType">
+            <summary>
+            Motion sensor value type.
+            </summary>
+        </member>
+        <member name="F:DeviceMotion.Plugin.Abstractions.MotionSensorValueType.Single">
+            <summary>
+            Single value.
+            </summary>
+        </member>
+        <member name="F:DeviceMotion.Plugin.Abstractions.MotionSensorValueType.Vector">
+            <summary>
+            Vector value.
+            </summary>
+        </member>
+        <member name="T:DeviceMotion.Plugin.Abstractions.MotionValue">
+            <summary>
+            Motion value.
+            </summary>
+        </member>
+        <member name="P:DeviceMotion.Plugin.Abstractions.MotionValue.Value">
+            <summary>
+            Gets or sets the value.
+            </summary>
+            <value>The value.</value>
+        </member>
+        <member name="M:DeviceMotion.Plugin.Abstractions.MotionValue.ToString">
+            <summary>
+            Value to string
+            </summary>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

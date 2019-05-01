@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/whiteroundedpopupbackground"
+    android:orientation="vertical"
+    android:id="@+id/mainLayout">
+  <!-- REFRESH TEXTVIEW -->
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="@string/map_refreshTitle"
+      android:textColor="#333333"
+      android:textStyle="bold"
+      android:textSize="20dp"
+      android:layout_marginTop="@dimen/marginS"
+      android:id="@+id/popupRefreshinProgress_title"
+      android:layout_gravity="center_horizontal" />
+  <!-- STEP TEXTVIEW -->
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:gravity="center"
+      android:text="Etape 3/3, récupération de la position GPS"
+      android:textColor="#999999"
+      android:textSize="12dp"
+      android:id="@+id/popupRefreshInProgress_stepText"
+      android:layout_marginTop="@dimen/marginXS"
+      android:layout_gravity="center_horizontal"
+      android:layout_marginLeft="@dimen/marginXS"
+      android:layout_marginRight="@dimen/marginXS" />
+  <!-- TIMER TEXTVIEW -->
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:gravity="center"
+      android:layout_marginBottom="@dimen/marginXS"
+      android:text="01:30"
+      android:textColor="#999999"
+      android:textSize="15dp"
+      android:id="@+id/popupRefreshInProgress_timerText"
+      android:layout_marginTop="@dimen/marginXS"
+      android:layout_gravity="center_horizontal"
+      android:layout_marginRight="@dimen/marginXS"
+      android:layout_marginLeft="@dimen/marginXS" />
+  <View
+      style="@style/View" />
+  <!-- STEPS LAYOUT -->
+  <LinearLayout
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      android:layout_gravity="center_horizontal">
+    <XamSvg.SvgImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center_vertical"
+        local:svg="@drawable/refreshsteps"
+        android:id="@+id/popupRefreshInProgress_refreshStepImage"
+        android:layout_marginLeft="@dimen/marginS" />
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="@dimen/marginM">
+      <!-- Validate state -->
+      <XamSvg.SvgImageView
+          android:layout_width="25dp"
+          android:layout_height="25dp"
+          android:layout_gravity="center_vertical"
+          local:svg="@drawable/validate"
+          android:layout_marginTop="48dp" />
+      <!-- Validate state -->
+      <XamSvg.SvgImageView
+          android:layout_width="25dp"
+          android:layout_height="25dp"
+          android:layout_gravity="center_vertical"
+          local:svg="@drawable/validate"
+          android:layout_marginTop="20dp" />
+      <!-- Validate state -->
+      <XamSvg.SvgImageView
+          android:layout_width="25dp"
+          android:layout_height="25dp"
+          android:layout_gravity="center_vertical"
+          local:svg="@drawable/validate"
+          android:visibility="gone"
+          android:id="@+id/popupRefreshInProgress_validateImageStep3"
+          android:layout_marginTop="20dp" />
+      <!-- ProgressBar -->
+      <ProgressBar
+          android:layout_width="25dp"
+          android:layout_height="25dp"
+          android:layout_marginTop="20dp"
+          android:layout_gravity="center_vertical"
+          android:indeterminateOnly="true"
+          android:id="@+id/popupRefreshInProgress_progressBarStep3" />
+    </LinearLayout>
+  </LinearLayout>
+  <View
+      style="@style/View"
+      android:layout_marginTop="@dimen/marginXS" />
+</LinearLayout>

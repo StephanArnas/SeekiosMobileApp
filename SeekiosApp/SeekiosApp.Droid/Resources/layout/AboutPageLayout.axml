@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    android:background="@drawable/backgroundabout"
+    android:orientation="vertical">
+<!-- NAVIGATION BAR -->
+    <include
+        layout="@layout/ActionBarTemplate" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40dp"
+        android:orientation="vertical">
+    <!--LIKE US-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/about_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="like us"
+                android:textColor="@android:color/white"
+                android:textSize="70sp"
+                android:textStyle="normal" />
+        </LinearLayout>
+    <!--LOGO SOCIAL NETWORK-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp">
+            <XamSvg.SvgImageView
+                android:id="@+id/about_fbicon"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_gravity="center"
+                android:layout_weight="1.0"
+                local:colorMappingSelected="FFFFFF=ededed"
+                local:svg="@drawable/facebooklogo" />
+            <XamSvg.SvgImageView
+                android:id="@+id/about_twittericon"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_gravity="center"
+                android:layout_weight="1.0"
+                local:colorMappingSelected="FFFFFF=ededed"
+                local:svg="@drawable/twitterlogo" />
+            <XamSvg.SvgImageView
+                android:id="@+id/about_instaicon"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_gravity="center"
+                android:layout_weight="1.0"
+                local:colorMappingSelected="FFFFFF=ededed"
+                local:svg="@drawable/instagramlogo" />
+            <XamSvg.SvgImageView
+                android:id="@+id/about_inicon"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_gravity="center"
+                android:layout_weight="1.0"
+                local:colorMappingSelected="FFFFFF=ededed"
+                local:svg="@drawable/inlogo" />
+        </LinearLayout>
+    <!--VERSION-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="Version 1.01.0607.399"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:textStyle="normal"
+                android:id="@+id/versionNumber" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/transparent"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+    <!--LINK SEEKIOS.COM AND POLICY-->
+        <TextView
+            android:id="@+id/about_seekios_siteurl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/seekios_weblink"
+            android:textColor="@color/colorwhite"
+            android:textSize="15sp" />
+        <TextView
+            android:id="@+id/about_privacy_url"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="@string/seekios_link"
+            android:textColor="@color/colorwhite"
+            android:textSize="15sp" />
+    </LinearLayout>
+</RelativeLayout>

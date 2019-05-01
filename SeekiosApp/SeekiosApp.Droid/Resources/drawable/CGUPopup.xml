@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/whiteroundedpopupbackground"
+    android:orientation="vertical"
+    android:id="@+id/mainLayout">
+  <!-- REFRESH TEXTVIEW -->
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="@string/popupcgu_title"
+      android:textColor="#333333"
+      android:textStyle="bold"
+      android:textSize="20dp"
+      android:layout_marginTop="@dimen/marginS"
+      android:id="@+id/popupRefreshinProgress_title"
+      android:gravity="center"
+      android:layout_gravity="center_horizontal" />
+  <!-- STEP TEXTVIEW -->
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:gravity="center"
+      android:text="@string/popupcgu_text"
+      android:textColor="#999999"
+      android:textSize="12dp"
+      android:maxLines="25"
+      android:scrollbars="vertical"
+      android:id="@+id/popupRefreshInProgress_stepText"
+      android:layout_marginTop="@dimen/marginXS"
+      android:layout_gravity="center_vertical|left"
+      android:layout_marginLeft="@dimen/marginXS"
+      android:layout_marginRight="@dimen/marginXS" />
+  
+  <TextView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="@drawable/buttonrounded"
+      android:text="@string/popupcgu_linkwebcgutext"
+      android:textSize="14dp"
+      android:textColor="#ffffff"
+      android:id="@+id/popupcgu_linkwebcgu"
+      android:gravity="center"
+      android:padding="5dp"
+      android:layout_gravity="center_horizontal"
+      android:layout_marginLeft="70dp"
+      android:layout_marginRight="70dp"
+      android:layout_marginTop="20dp"
+      android:elevation="4dp"
+      android:layout_marginBottom="10dp" />
+  
+  <View style="@style/View"
+      android:layout_marginTop="@dimen/marginXS" />
+</LinearLayout>

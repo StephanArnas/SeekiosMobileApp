@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="right"
+    android:gravity="center"
+    android:padding="8dp"
+    android:clickable="true"
+    android:foreground="?attr/selectableItemBackground"
+    android:id="@+id/relative_countryCodeHolder">
+
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_centerVertical="true"
+      android:text="(FR) +33"
+      android:textSize="18dp" 
+      android:textColor="@color/textColorContent"
+      android:id="@+id/textView_selectedCountry"/>
+
+  <ImageView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_centerVertical="true"
+      android:layout_toRightOf="@+id/textView_selectedCountry"
+      android:tint="@android:color/black"
+      android:adjustViewBounds="true"
+      android:alpha="0.6"
+      android:src="@drawable/ic_arrow_drop_down_black_24dp"
+      android:id="@+id/imageView_arrow" />
+</RelativeLayout>

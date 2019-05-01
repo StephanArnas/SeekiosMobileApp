@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/mainlayout"
+    android:descendantFocusability="blocksDescendants">
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      android:layout_marginTop="@dimen/marginXS"
+      android:layout_marginBottom="@dimen/marginXS"
+      android:id="@+id/customListRow_layout">
+    <!-- CHECKBOX-->
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/marginS"
+        android:checked="false"
+        android:id="@+id/customListRow_checkBox"
+        android:layout_gravity="center_vertical"
+        android:background="@color/textColorTitle"/>
+    <!-- IMAGE DE L'AMI -->
+    <SeekiosApp.Droid.CustomComponents.RoundedImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="@dimen/marginM"
+        android:layout_gravity="center_vertical|left"
+        android:src="@drawable/Icon"
+        android:id="@+id/customListRow_image" />
+    <!-- NOM DE L'AMI -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/primary"
+        style="@style/Title"
+        android:layout_marginLeft="@dimen/marginL"
+        android:layout_gravity="center_vertical"
+        android:layout_toRightOf="@id/customListRow_image"
+        android:id="@+id/customListRow_text" />
+  </LinearLayout>
+</LinearLayout>

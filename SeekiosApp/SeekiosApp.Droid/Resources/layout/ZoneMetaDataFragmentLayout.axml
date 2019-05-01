@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<!-- TEXTE d'EXPLICATION -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/mapBase_visibleBottomLayoutHeight"
+        android:layout_alignParentTop="true"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="@dimen/mapBase_creditCircleDiameter"
+        android:layout_marginTop="@dimen/mapBase_creditCircleOverflow"
+        android:text="@string/modeZone_explanationText"
+        android:textSize="@dimen/textSize"
+        android:textColor="?attr/textColorTitle"
+        android:id="@+id/modeZone_explanationTextView" />
+<!-- NOMBRE DE POINTS ET SURFACE DE LA ZONE -->
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/mapBase_visibleBottomLayoutHeight"
+        android:rowCount="2"
+        android:columnCount="4"
+        android:layout_marginTop="@dimen/mapBase_creditCircleOverflow"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"
+        android:id="@+id/modeZone_bottomGridView">
+    <!-- NUMBER OF POINTS -->
+        <TextView
+            android:layout_height="20dp"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:gravity="bottom"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/modeZone_points"
+            android:textSize="@dimen/smallTextSize"
+            android:textColor="?attr/textColorTitle" />
+        <TextView
+            android:layout_row="1"
+            android:layout_column="0"
+            android:layout_gravity="center_horizontal|top"
+            android:textSize="@dimen/titleTextSize"
+            android:textColor="?attr/textColorTitle"
+            android:id="@+id/modeZone_countOfPoints" />
+    <!-- SURFACE -->
+        <TextView
+            android:layout_height="20dp"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:layout_marginLeft="30dp"
+            android:gravity="bottom"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/modeZone_surface"
+            android:textSize="@dimen/smallTextSize"
+            android:textColor="?attr/textColorTitle" />
+        <TextView
+            android:layout_row="1"
+            android:layout_column="1"
+            android:layout_marginLeft="30dp"
+            android:layout_gravity="center_horizontal|top"
+            android:textSize="@dimen/titleTextSize"
+            android:textColor="?attr/textColorTitle"
+            android:id="@+id/modeZone_surface" />
+    </GridLayout>
+<!-- TEXTE : Seekios dans la zone ou pas -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/mapBase_visibleBottomLayoutHeight"
+        android:layout_alignParentTop="true"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="@dimen/mapBase_creditCircleDiameter"
+        android:layout_marginTop="@dimen/mapBase_creditCircleOverflow"
+        android:text="@string/modeZone_seekiosInZone"
+        android:textSize="@dimen/textSize"
+        android:textColor="?attr/textColorTitle"
+        android:id="@+id/modeZone_isSeekiosInZoneTextView" />
+<!--MODE EDITION-->
+    <LinearLayout
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="@dimen/mapBase_creditCircleDiameter"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/marginM"
+        android:layout_marginRight="@dimen/marginM"
+        android:orientation="vertical"
+        android:id="@+id/modeZone_onEdition">
+    <!--Switch pour activer le tracking-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="?attr/textColorTitle"
+                android:textSize="@dimen/titleTextSize"
+                android:text="@string/modeZone_trackingAfterZoneTitle" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/switchWidth"
+                android:layout_marginTop="20dp"
+                android:textColor="?attr/textColorTitle"
+                android:textSize="@dimen/smallTextSize"
+                android:text="@string/modeZone_trackingAfterZoneDescr" />
+            <Switch
+                android:layout_width="@dimen/switchWidth"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:checked="true"
+                android:textOn="YES"
+                android:textOff="NO"
+                android:id="@+id/modeZone_trackingAfterZoneSwitch" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="70dp"
+                android:textColor="?attr/textColorTitle"
+                android:textSize="@dimen/smallTextSize"
+                android:text="@string/metaData_trackingRefreshTime" />
+            <Spinner
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:textColor="?attr/textColorTitle"
+                android:popupBackground="?attr/layoutBackground"
+                android:prompt="@string/modeZone_refreshTime"
+                android:textSize="16dp"
+                android:id="@+id/modeZone_trackingRefreshTimeSpinner" />
+        </RelativeLayout>
+    </LinearLayout>
+<!--MODE MAP-->
+    <LinearLayout
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="@dimen/mapBase_creditCircleDiameter"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/marginM"
+        android:layout_marginRight="@dimen/marginM"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:id="@+id/modeZone_onMap">
+    <!--Bouton pour relancer le mode Zone après avoir ramené le seekios dans la zone-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:id="@+id/modeZone_notifyBackInZoneLayout">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="?attr/textColorTitle"
+                android:textSize="@dimen/titleTextSize"
+                android:text="@string/modeZone_notifyBackInZoneTitle" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="150dp"
+                android:layout_marginTop="20dp"
+                android:textColor="?attr/textColorTitle"
+                android:textSize="@dimen/smallTextSize"
+                android:text="@string/modeZone_notifyBackInZoneDescr" />
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:clickable="true"
+                android:text="@string/modeZone_notifyBackInZoneButtonText"
+                android:id="@+id/modeZone_notifyBackInZone" />
+        </RelativeLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:textColor="?attr/textColorTitle"
+            android:textSize="@dimen/titleTextSize"
+            android:text="@string/metaData_stats" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:textColor="?attr/textColorTitle"
+            android:textSize="@dimen/textSiz"
+            android:id="@+id/modeZone_activateSince" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:textColor="?attr/textColorTitle"
+            android:textSize="@dimen/textSiz"
+            android:id="@+id/modeZone_countOfOutAlert" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:textColor="?attr/textColorTitle"
+            android:textSize="@dimen/textSiz"
+            android:id="@+id/modeZone_surfaceStat" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:textColor="?attr/textColorTitle"
+            android:textSize="@dimen/textSiz"
+            android:id="@+id/modeZone_trackingRefreshTimeStat" />
+    </LinearLayout>
+</RelativeLayout>

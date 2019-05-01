@@ -1,0 +1,408 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+  <ScrollView
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_weight="1"
+      android:id="@+id/detailSeekios_scrollView">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+      <!-- Liste des packs de crédits -->
+      <!-- ITEM 1  -->
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal"
+          android:layout_gravity="center_horizontal"
+          android:id="@+id/item1_layout"
+          android:layout_marginTop="10dp">
+        <!-- PACK LAYOUT ITEM 1 -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:background="#f4f4f4"
+            android:layout_margin="10dp">
+          <!-- TITLE -->
+          <TextView
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="#9FDD7C"
+              android:text="Observation"
+              android:textColor="@color/textColorPrimary"
+              android:textSize="22dp"
+              android:id="@+id/packTitle_obs"
+              android:gravity="center_horizontal"
+              android:padding="5dp" />
+          <!-- CREDITS NUMBER -->
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="match_parent"
+              android:text="30"
+              android:textColor="@color/textColorContent"
+              android:textSize="35dp"
+              android:id="@+id/creditNumber_obs"
+              android:layout_gravity="center_horizontal"
+              android:layout_marginTop="5dp" />
+          <!-- CREDITS -->
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="Crédits"
+              android:textColor="@color/textColorContent"
+              android:textSize="15dp"
+              android:id="@+id/creditPack_obs"
+              android:layout_gravity="center_horizontal" />
+          <!-- BUTTON BUY -->
+          <Button
+              android:layout_width="wrap_content"
+              android:layout_height="30dp"
+              android:text="Acheter"
+              android:background="#9FDD7C"
+              android:textColor="@color/textColorPrimary"
+              android:textSize="12dp"
+              android:id="@+id/buyButton_obs"
+              android:layout_gravity="center_horizontal"
+              android:layout_marginTop="2dp" />
+          <!-- PRICE -->
+          <TextView
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="0,99 EUR"
+              android:textColor="@color/textColorTitle"
+              android:textSize="16dp"
+              android:id="@+id/packPrice_obs"
+              android:gravity="center_horizontal"
+              android:layout_marginTop="5dp"
+              android:layout_marginBottom="2dp" />
+        </LinearLayout>
+        <!-- PACK LAYOUT ITEM 2 -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:background="#f4f4f4"
+            android:layout_margin="10dp">
+          <!-- TITLE -->
+          <TextView
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="#62DA73"
+              android:text="Découverte"
+              android:textColor="@color/textColorPrimary"
+              android:textSize="22dp"
+              android:id="@+id/creditPack_discovery"
+              android:gravity="center_horizontal"
+              android:padding="5dp" />
+          <!-- CREDITS NUMBER -->
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="match_parent"
+              android:text="100"
+              android:textColor="@color/textColorContent"
+              android:textSize="35dp"
+              android:id="@+id/creditNumber_discovery"
+              android:layout_gravity="center_horizontal"
+              android:layout_marginTop="5dp" />
+          <!-- CREDITS -->
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="Crédits"
+              android:textColor="@color/textColorContent"
+              android:textSize="15dp"
+              android:id="@+id/creditText_discovery"
+              android:layout_gravity="center_horizontal" />
+          <!-- BUTTON BUY -->
+          <Button
+              android:layout_width="wrap_content"
+              android:layout_height="30dp"
+              android:text="Acheter"
+              android:background="#62DA73"
+              android:textColor="@color/textColorPrimary"
+              android:textSize="12dp"
+              android:id="@+id/buyButton_discovery"
+              android:layout_gravity="center_horizontal"
+              android:layout_marginTop="2dp" />
+          <!-- PRICE -->
+          <TextView
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="1,99 EUR"
+              android:textColor="@color/textColorTitle"
+              android:textSize="16dp"
+              android:id="@+id/packPrice_discovery"
+              android:gravity="center_horizontal"
+              android:layout_marginTop="5dp"
+              android:layout_marginBottom="2dp" />
+        </LinearLayout>
+      </LinearLayout>
+      <!-- ITEM 2  -->
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal"
+          android:layout_below="@id/item1_layout"
+          android:id="@+id/item2_layout"
+          android:layout_gravity="center_horizontal">
+        <!-- PACK LAYOUT ITEM 3 -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:background="#f4f4f4"
+            android:layout_margin="10dp">
+          <!-- TITLE -->
+          <TextView
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="#00BA99"
+              android:text="Exploration"
+              android:textColor="@color/textColorPrimary"
+              android:textSize="22dp"
+              android:id="@+id/packTitle_explo"
+              android:gravity="center_horizontal"
+              android:padding="5dp" />
+          <!-- CREDITS NUMBER -->
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="match_parent"
+              android:text="300"
+              android:textColor="@color/textColorContent"
+              android:textSize="35dp"
+              android:id="@+id/creditNumber_explo"
+              android:layout_gravity="center_horizontal"
+              android:layout_marginTop="5dp" />
+          <!-- CREDITS -->
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="Crédits"
+              android:textColor="@color/textColorContent"
+              android:textSize="15dp"
+              android:id="@+id/creditPack_explo"
+              android:layout_gravity="center_horizontal" />
+          <!-- BUTTON BUY -->
+          <Button
+              android:layout_width="wrap_content"
+              android:layout_height="30dp"
+              android:text="Acheter"
+              android:background="#00BA99"
+              android:textColor="@color/textColorPrimary"
+              android:textSize="12dp"
+              android:id="@+id/buyButton_explo"
+              android:layout_gravity="center_horizontal"
+              android:layout_marginTop="2dp" />
+          <!-- PRICE -->
+          <TextView
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="4,99 EUR"
+              android:textColor="@color/textColorTitle"
+              android:textSize="16dp"
+              android:id="@+id/packPrice_explo"
+              android:gravity="center_horizontal"
+              android:layout_marginTop="5dp"
+              android:layout_marginBottom="2dp" />
+        </LinearLayout>
+        <!-- PACK LAYOUT ITEM 4 -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:background="#f4f4f4"
+            android:layout_margin="10dp">
+          <!-- TITLE -->
+          <TextView
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="#21B928"
+              android:text="Aventure"
+              android:textColor="@color/textColorPrimary"
+              android:textSize="22dp"
+              android:id="@+id/creditPack_adventure"
+              android:gravity="center_horizontal"
+              android:padding="5dp" />
+          <!-- CREDITS NUMBER -->
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="match_parent"
+              android:text="1000"
+              android:textColor="@color/textColorContent"
+              android:textSize="35dp"
+              android:id="@+id/creditNumber_adventure"
+              android:layout_gravity="center_horizontal"
+              android:layout_marginTop="5dp" />
+          <!-- CREDITS -->
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="Crédits"
+              android:textColor="@color/textColorContent"
+              android:textSize="15dp"
+              android:id="@+id/creditText_adventure"
+              android:layout_gravity="center_horizontal" />
+          <!-- BUTTON BUY -->
+          <Button
+              android:layout_width="wrap_content"
+              android:layout_height="30dp"
+              android:text="Acheter"
+              android:background="#21B928"
+              android:textColor="@color/textColorPrimary"
+              android:textSize="12dp"
+              android:id="@+id/buyButton_adventure"
+              android:layout_gravity="center_horizontal"
+              android:layout_marginTop="2dp" />
+          <!-- PRICE -->
+          <TextView
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="13,99 EUR"
+              android:textColor="@color/textColorTitle"
+              android:textSize="16dp"
+              android:id="@+id/packPrice_adventure"
+              android:gravity="center_horizontal"
+              android:layout_marginTop="5dp"
+              android:layout_marginBottom="2dp" />
+        </LinearLayout>
+      </LinearLayout>
+      <!-- ITEM 3  -->
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal"
+          android:layout_below="@id/item2_layout"
+          android:layout_gravity="center_horizontal"
+          android:id="@+id/item3_layout">
+        <!-- PACK LAYOUT ITEM 4 -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:background="#f4f4f4"
+            android:layout_margin="10dp"
+            android:id="@+id/epic_layout">
+          <!-- TITLE -->
+          <TextView
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="#009444"
+              android:text="Epopée"
+              android:textColor="@color/textColorPrimary"
+              android:textSize="22dp"
+              android:id="@+id/packTitle_epic"
+              android:gravity="center_horizontal"
+              android:padding="5dp" />
+          <!-- CREDITS NUMBER -->
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="match_parent"
+              android:text="2000"
+              android:textColor="@color/textColorContent"
+              android:textSize="35dp"
+              android:id="@+id/creditNumber_epic"
+              android:layout_gravity="center_horizontal"
+              android:layout_marginTop="5dp" />
+          <!-- CREDITS -->
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="Crédits"
+              android:textColor="@color/textColorContent"
+              android:textSize="15dp"
+              android:id="@+id/creditPack_epic"
+              android:layout_gravity="center_horizontal" />
+          <!-- BUTTON BUY -->
+          <Button
+              android:layout_width="wrap_content"
+              android:layout_height="30dp"
+              android:text="Acheter"
+              android:background="#009444"
+              android:textColor="@color/textColorPrimary"
+              android:textSize="12dp"
+              android:id="@+id/buyButton_epic"
+              android:layout_gravity="center_horizontal"
+              android:layout_marginTop="2dp" />
+          <!-- PRICE -->
+          <TextView
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="19,99 EUR"
+              android:textColor="@color/textColorTitle"
+              android:textSize="16dp"
+              android:id="@+id/packPrice_epic"
+              android:gravity="center_horizontal"
+              android:layout_marginTop="5dp"
+              android:layout_marginBottom="2dp" />
+        </LinearLayout>
+        <!-- PACK LAYOUT ITEM 4 -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:background="#f4f4f4"
+            android:visibility="visible"
+            android:layout_margin="10dp">
+          <!-- TITLE -->
+          <!-- CREDITS NUMBER -->
+          <!-- TITLE -->
+          <TextView
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="#009444"
+              android:text="Epopée"
+              android:textColor="@color/textColorPrimary"
+              android:textSize="22dp"
+              android:id="@+id/packTitle_epic"
+              android:gravity="center_horizontal"
+              android:padding="5dp"
+              android:visibility="invisible" />
+          <TextView
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="Les crédits sont cumulables et utilisables sans limite de temps."
+              android:textColor="@color/textColorContent"
+              android:textSize="16dp"
+              android:id="@+id/packInformativeText"
+              android:gravity="center_horizontal"
+              android:padding="5dp"
+              android:layout_below="@id/item2_layout"
+              android:layout_gravity="center_horizontal"
+              android:layout_marginTop="4dp" />
+          <!-- CREDITS -->
+          <!-- BUTTON BUY -->
+          <!-- PRICE -->
+          <Button
+              android:layout_width="wrap_content"
+              android:layout_height="30dp"
+              android:text="Acheter"
+              android:background="#009444"
+              android:textColor="@color/textColorPrimary"
+              android:textSize="12dp"
+              android:id="@+id/buyButton_epic"
+              android:layout_gravity="center_horizontal"
+              android:layout_marginTop="2dp"
+              android:visibility="invisible" />
+        </LinearLayout>
+      </LinearLayout>
+    </LinearLayout>
+  </ScrollView>
+</RelativeLayout>

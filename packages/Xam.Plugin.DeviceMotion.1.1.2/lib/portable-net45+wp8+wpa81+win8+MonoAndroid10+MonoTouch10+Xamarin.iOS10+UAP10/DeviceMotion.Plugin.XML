@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DeviceMotion.Plugin</name>
+    </assembly>
+    <members>
+        <member name="T:DeviceMotion.Plugin.CrossDeviceMotion">
+            <summary>
+            Cross platform DeviceMotion implemenations
+            </summary>
+        </member>
+        <member name="P:DeviceMotion.Plugin.CrossDeviceMotion.Current">
+            <summary>
+            Current settings to use
+            </summary>
+        </member>
+    </members>
+</doc>

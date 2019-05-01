@@ -1,0 +1,501 @@
+﻿/* ###### GENERAL VIEW ###### */
+
+"Next" = "Next";
+"Skip" = "Skip";
+"Previous" = "Previous";
+
+
+/* ###### LOGIN VIEW ###### */
+
+
+"EmailAddress" = "Email";
+"AskForAPassword" = "Get a new password";
+"Password" = "Password";
+"Login" = "Connect";
+"ForgetPassword" = "Forgotten password";
+"CreateAccount" = "Create account";
+"FirstName" = "First name";
+"LastName" = "Last name";
+"ConfirmPassword" = "Confirm password";
+"PasswordErrorLength" = "Your password must be 6 characters long.";
+"CreateMyAccount" = "Create my account";
+"Back" = "Back";
+"ResetPassword" = "Reset password";
+"WhatIsSeekios" = "What is a seekios ?";
+
+"ErrorFirstName" = "First name is empty";
+"ErrorLastName" = "Last name is empty";
+"ErrorEmail" = "Email is incorrect";
+"ErrorWeakPassword" = "At least 8 character required";
+"ErrorNotTheSamePassword" = "Both passwords doesn't match";
+
+
+/* ###### UPDATE VIEW ###### */
+
+
+"UpdateApp" = "An obligatory update is available.";
+"DoUpdate" = "Update";
+
+
+/* ###### LISTSEEKIOS VIEW ###### */
+
+
+"ListSeekiosTitle" = "seekios";
+"NoSeekios" = "You don't have any seekios";
+"NoPosition" = "No position";
+"FirstPosition" = "Refresh the position";
+"InProgress" = "In progress";
+"SeekiosMoved" = "Your seekios has moved";
+"DontMove" = "Don't Move";
+"SeekiosOutOfZone" = "Your seekios is out of zone";
+"Zone" = "Zone";
+"NotificationLong" = "Notification";
+"NotificationShort" = "Notif";
+"Tracking" = "Tracking";
+"Email" = "email";
+"Emails" = "emails";
+"SOSAlert" = "SOS";
+"RefreshPosition" = "Refresh in progress ...";
+
+
+/* ###### DETAIL VIEW ###### */
+
+
+"DetailSeekiosTitle" = "Detail";
+"Credits" = "Credits";
+"Battery" = "Battery";
+"Update" = "Refresh";
+"UpdatePosition" = "Refresh position";
+"BatteryLevel" = "{0}% battery {1}";
+"NoInformation" = "No information available";
+"CreditOfferedAmount" = "including {0} offered";
+"NextRefill" = "Next reload the";
+"SeekiosNeedUpdateTitlePopup" = "An seekios update is available";
+"SeekiosNeedUpdateGoWebsiteButton" = "See the update";
+"AlertCannotBeSavedAsRead" = "The alert could not be saved as viewed.";
+"Close" = "Close";
+"NextNoon" = "Activation in {0}";
+
+
+/* ###### CELL DETAIL VIEW ###### */
+
+
+"Map" = "Map";
+"UpdateSeekiosPosition" = "Refresh the position of your seekios";
+"RefillCredits" = "Credit Recharge";
+"CreditsWithCreditsOffered" = "{0} credit(s) including {1} offered";
+
+"Delete" = "Delete";
+"SureToDeleteMode" = "Do you want to delete the mode?";
+"ModeTracking" = "Tracking";
+"TrackingDescr" = "Observe the movement of your seekios";
+"ModeDontMove" =  "Don't Move";
+"DontMoveDescr" = "Be alerted if the seekios moves";
+"ModeZone" = "Zone";
+"ZoneDescr" = "Be alerted if the seekios leaves the area";
+"ConfigureEmail" = "Configure an email message";
+"Parameters" = "Settings";
+"ModifyNameImage" = "Modify the name and image of your seekios";
+"OK" = "Ok";
+"Cancel" = "Cancel";
+
+
+/* ###### ADDSEEKIOS VIEW ###### */
+
+
+"AddSeekiosTitle" = "Add a seekios";
+"Validate" = "Validate";
+"InvalidIMEIOrPin" = "The IMEI number or pin code is incorrect.";
+"Verifying" = "Being verified ...";
+"AlreadyAdded" = "This seekios has already been added.";
+"MaxSizeSeekiosName" = "{0}/30";
+"MaxSizeIMEI" = "{0}/15";
+"MaxSizePin" = "{0}/4";
+"SureToDeleteSeekios" = "Are you sure you want to delete the seekios ?";
+"Yes" = "Yes";
+"No" = "No";
+"ModifyImage" = "Edit image";
+"SeekiosName" = "Seekios name";
+"MyNameIs" = "My name is ...";
+"IMEINumber" = "IMEI Number"; 
+"IMEIPlaceholder" = "12345678912345";
+"PinCode" = "Pin code";
+"PinPlaceholder" = "1234";
+"Save" = "Save";
+"WrongIMEIOrPinCodeLoading" = "Loading ...";
+"WrongIMEIOrPinCodeError" = "The IMEI or the Code Pin is invalid";
+"VersionEmbeddedLabel" = "Firmware version";
+"VersionEmbeddedUpdateLabel" = "(Update available: {0})";
+"NotificationNewLocationTracking" = "Notification when a new position in mode Tracking is comming";
+"NotificationNewLocationOutOfZone" = "Notification when a new position in mode Zone is comming";
+"NotificationNewLocationMoved" = "Notification when a new position in mode Don't Move is comming";
+
+
+/* ###### LEFTMENU VIEW ~~ MENUCONTROLLER ###### */
+
+
+"UserGuide" = "User help";
+"MyConso" = "My consumption";
+"AddSeekios" = "Add a seekios";
+"AllSeekiosMap" = "Map all seekios";
+"Feedback" = "Feedback";
+"UserSettings" = "Settings";
+"ZeroSeekios" = "No seekios";
+"NeedAtLeastOneSeekios" = "You must have at least 1 seekios to access the map of seekios.";
+"OneSeekiosNewlyAdded" = "The seekios has just been added. Please refresh your position before accessing to the map.";
+"PluralSeekiosNewlyAdded" = "The seekios have just been added. Please refresh their position before accessing to the map.";
+
+
+/* ###### PACK VIEW ###### */
+
+"PaymentFailure" = "Payment failed";
+"CantPurchase" = "Sorry, you can not make payment on the Apple Store. please try again later.";
+"NoInternet" = "No internet connection.";
+"BuyPack" = "Purchase Pack";
+"SureToBuy" = "Do you want to buy the pack {0} for {1} ?";
+"Buy" = "Buy";
+"BuySuccess" = "The purchase of the pack {0} has succeeded, you will be credited.";
+"BuyFailed" = "The purchase of the {0} pack failed: {1}";
+
+"Observation" = "Observation";
+"Discovery" = "Discovery";
+"Exploration" = "Exploration";
+"Adventure" = "Adventure";
+"Epic" = "Epic";
+"BuyPrice" = "Buy - {0}";
+"CreditUseInformation" = "The credits are cumulative and can be used without any time limit";
+
+"ObservationPack" = "30 credits";
+"DiscoveryPack" = "100 credits";
+"ExplorationPack" = "300 credits";
+"AdventurePack" = "1000 credits";
+"EpicPack" = "2000 credits";
+
+
+/* ###### ALERT SOS VIEW ###### */
+
+
+"AlertTitle" = "Subject of the alert (email)";
+"TitleAlertPlaceholder" = "Subject of the alert";
+"MessageAlert" = "Message";
+"AddRecipientsAlert" = "Add a recipient (email)";
+"RecipientsAlert" = "Recipients";
+
+
+/* ###### ALERT VIEW ###### */
+
+"Title1AlertSOS" = "How does the SOS alert work?";
+"SubTitle11AlertSOS" = "Make 3 short presses on the seekios button to send the alert..";
+"SubTitle12AlertSOS" = "The send functioned when all the LEDs flash three consecutive times.";
+"SubTitle13AlertSOS" = "When the alert is triggered, you will receive a notification and an email with the position of the seekios.";
+"Title2AlertSOS" = "Alert your loved ones by email";
+
+"AlertPeople" = "Alert your loved ones in case of emergency.";
+
+"TitleAlertSOS" = "Subject of the alert (email)";
+"PlaceholderAlertSOS" = "Subject ...";
+"RecipientsAlertSOS" = "Recipients";
+"AddRecipientsAlertSOS" = "Add a recipient (email)";
+"MessageAlertSOS" = "Message";
+
+
+/* ###### ALERT SOS VIEW ###### */
+
+"AlertEmailTitle" = "Email address";
+"AlertSeekiosMovedTitle" = "[{0}] - Don't Move";
+"AlertSeekiosMovedContent" = "The seekios [{0}] sent an alert to indicate that it was moved.";
+"AlertSeekiosOutOfZoneTitle" = "[{0}] - Zone";
+"AlertSeekiosOutOfZoneContent" = "The seekios [{0}] left the area.";
+
+
+/* ###### MAP VIEW ###### */
+
+"MapTitle" = "Map";
+"DeleteModeMap" = "Delete the mode";
+"SeekiosFirstSetupExplanation" = "Step 1: Turn on your seekios\n\nStep 2: Make sure your seekios has enough battery power\n\nStep 3: Press the button below";
+"CreditsOffered" = "Credits offered";
+"FirstLocationAsked" = "A request for a location has been sent. Wait for the time that the position is displayed on the screen";
+"TheSeekios" = "seekios ";
+"SeekiosFailedToLocate" = "The location request failed. Your seekios may be switched off or in an area not covered by telecoms (2G). Please try again later.";
+"UserGuideFirstLocation" = "See the user guide";
+
+"WaitingForPosition" = "Waiting for position";
+"NoFirstPositionExplanation" = "No position available. Refresh the seekios position and you will be able to see it on the map and set up modes.";
+"StepOnePowerOn" = "First of all, turn on your seekios";
+
+"ActiveSince" = "Active since";
+"TrackingIfAlert" = "Tracking if alert";
+"ActiveSinceInAlert" = "Alert received since";
+"NumberOfPosition" = "Number of positions";
+
+
+/* ###### MAP HISTORIC VIEW ###### */
+
+"MapHistoricTitle" = "Historic";
+"HistoricPosition" = "Position {0} on {1}";
+"NoHistoricPosition" = "No position in the historic";
+"RecentDate_n" = "Recent Date \n\n\n\n\n\n\n\n\n\n\n\n\n";
+"OldDate_n" = "Old date \n\n\n\n\n\n\n\n\n\n\n\n\n";
+"RecentDate" = "Recent Date";
+"OldDate" = "Old date";
+"LowerDateExample" = "2 September";
+"UpperDateExample" = "2 October";
+"PreviousPosition" = "< Previous";
+"NextPosition" = "Next >";
+
+
+/* ###### MAP ALL SEEKIOS ###### */
+
+"MapAllSeekiosTitle" = "Map all seekios";
+
+
+/* ###### MODE POPUP ###### */
+
+"ModePopupOldMode" = "Active mode";
+"ModePopupNewMode" = "New mode";
+
+
+/* ###### MODE DONT MOVE FIRST VIEW ###### */
+
+"DMTitle" = "Configuration 2/2";
+"Functionning" = "Working";
+"TrackingAfterMovedExplanation" = "If your seekios moves, he will update his position at the cost of 1 credit per position";
+"DMTitleTracking" = "Tracking after alerting";
+"DMDescriptionTracking" = "Follow the seekios when it's moving:";
+"DMUpdatePosition" = "Refresh position every:";
+"DMTitlePowerSaving" = "Power saving";
+"DMTitlePowerSavingWithSpace" = "          Power saving";
+"DMDescriptionPowerSaving" = "By reducing some features of the seekios, the power saving mode makes possible to improve the seekios autonomy.";
+"DMActivatePowerSaving" = "Enable Power Saving:";
+"DMActivate" = "Enable (2 credits)";
+
+/* ###### MODE DONT MOVE SECOND VIEW ###### */
+
+"DMTitle2" = "Notif and alerts 1/2";
+"MobileNotification" = "Working";
+"NotifActivatedDontMove" = "Tell your loved ones when an alert is triggered. As the owner of the seekios, you will be alerted.";
+"EmailAlert" = "Alert your loved ones by email";
+"CreateButton" = "Create";
+"NoEmailAlertConfigured" = "Create an alert to send to your loved ones or skip this step";
+
+/* ###### MODE TRACKING VIEW ###### */
+
+"ModeTrackingTitle" = "Tracking";
+"TrackingPositionExplanation" = "The seekios will update its position on the map (at the cost of one credit per position)";
+"TrackingParameterTitle" = "Settings";
+"TrackingUpdatePosition" = "Refresh position every :";
+"ActivateTracking" = "Enable (2 credits)";
+
+/* ###### MODE ZONE FIRST VIEW ###### */
+
+"ModeZoneTitle" = "Define Zone 1/3";
+"Need3PointsForZone" = "   It takes at least 3 points";
+"ClickOnMap" = "   Click on the map";
+"Max10Points" = "10 points maximum";
+"CantDefineZone" = "You can not set a zone with more than 10 points";
+"OldSeekiosPositionTitlePopup" = "Last known old position";
+"OldSeekiosPositionMessagePopup" = "The last known position of the seekios is more than one hour old.\nIf the seekios is no longer in this zone, you will receive a notification immediately.";
+"Continue" = "Continuer";
+
+
+/* ###### MODE ZONE SECOND / THIRD VIEW ###### */
+
+"ModeZone2Title" = "Notif et alerts 2/3";
+"NotifActivatedZone" = "When the seekios goes out of the zone, a notification and an email will automatically be sent to you.";
+"ZoneDescriptionTracking" = "Follow the seekios when it's out of the area";
+"ModeZone3Title" = "Configuration 3/3";
+"ZoneTrackingExplanation" = "If your sekios leaves the defined area, it will update its position at the cost of one credit per position.";
+"ZoneUpdatePosition" = "Refresh position every :";
+"ActivateZone" = "Enable (2 credits)";
+
+/* ###### ABOUT VIEW ###### */
+
+"About" = "About";
+"PrivacyPolicy" = "Privacy policy";
+
+/* ###### PARAMETER VIEW ###### */
+
+"ParameterTitle" = "Settings";
+"EmailParam" = "Email";
+"AboutParam" = "             About";
+"Logout" = "             Logout";
+
+"PhoneNumber" = "Phone number";
+"NewPassword_n" = "New password\n\n\n\n\n\n\n\n\n\n\n";
+"Modify" = "Modify";
+"ActualPassword" = "Current password";
+"ActualPH" = " Current";
+"NewPassword" = "New password";
+"NewPH" = " New";
+"ConfirmPassword" = "Password Confirmation";
+"Confirm" = " Confirmation";
+
+"WrongPassword" = "The current password is not correct.";
+"PasswordLengthError" = "The minimum password length is 6 characters.";
+"ConfirmError" = "Password and confirmation don't match.";
+"PasswordParam" = "             Password";
+
+
+/* ###### TUTORIAL VIEWS ###### */
+
+"Help" = "Help";
+"SeekiosHelp" = "User help";
+"GeneralHelp" = "General Help";
+"SeekiosLEDs" = "The LEDs of the seekios";
+"SeekiosLEDsShort" = "seekios LEDs";
+"OnlineHelp" = "Online help";
+"IMEIAndPinHelp" = "To add a seekios, enter the IMEI code and the PIN code written on the back side of the seekios";
+"CreditsHelp" = "60 credits are offered each month by seekios. If you do not use them they will be lost. If you want more, you can buy more";
+"FirstUseHelp" = "Refresh the position of your seekios, and configure modes: 'Zone', 'Don't Move' and 'Tracking'";
+
+
+/* ###### TUTORIAL BACKGROUND / FOREGROUND ###### */
+
+
+"SkipButton" = "Next";
+"DoneButton" = "Done";
+
+
+/* ###### TRANSACTION VIEW ###### */
+
+"TransactionTitle" = "My consumption";
+"TransactionNoCredit" = "You have consumed no credit at this time";
+"transactionHistoric_date" ="{0}th at {1}";
+"transactionHistoric_monthlyCredits" = "Monthly credits";
+"transactionHistoric_tracking" = "Tracking";
+"transactionHistoric_zoneTracking" = "Zone (with tracking)";
+"transactionHistoric_zone" = "Zone";
+"transactionHistoric_dontmove" ="Don't Move";
+"transactionHistoric_dontMoveTracking" = "Don't Move (with Tracking)";
+"transactionHistoric_refreshPosition" = "Refresh position";
+"transactionHistoric_refreshBattery" = "Refresh battery";
+"transactionHistoric_modeInSettings" = "Mode enable";
+"transactionHistoric_sos" = "SOS Alert";
+"transaction_epicPack" = "Epic Pack";
+"transaction_adventurePack" = "Adventure Pack";
+"transaction_explorationPack" = "Exploration Pack";
+"transaction_observationPack" = "Observation Pack";
+"transaction_discoveryPack" = "Discovery Pack";
+"transaction_instantPack" = "Instant Purchase";
+"transaction_subscriptionPack" = "Automatic renewal";
+"transactionHistoric_deletedSeekios" = "seekios deleted";
+
+
+/* ###### LEDs VIEW ###### */
+
+"StarterBlinking" = "LEDs turn";
+"StarterTitle" = "Starting";
+"StarterExplanation" = "Long press of 3 seconds";
+"ExtinctionBlinking" = "Flashes red";
+"ExtinctionTitle" = "Extinction";
+"ExtinctionExplanation" = "Long press of 3 seconds";
+"SOSBlinking" = "3 flashes";
+"SOSTitle" = "SOS Alert sending";
+"SOSExplanation" = "3 short supports";
+"BatteryTitle" = "Battery";
+"BatteryExplanation" = "1 short support";
+"Between1" = "between        100-67%";
+"Between2" = "between        66-34%";
+"Between3" = "between           33-0%";
+"CommunicateTitle" = "I communicate";
+"CommunicateExplanation" = "I blink when I get the information";
+
+
+/* ###### POWER SAVING VIEW ###### */
+
+
+"PowerSaving" = "Power saving";
+"PSTitle1" = "Power saving";
+"PSDescription1" = "The power saving functionality allows you to extend the autonomy of the seekios. (Available on the seekios version 1.007)";
+"PSTitle2" = "Working";
+"PSDescription2" = "Once the mode is on, the Seekios will switch off its GSM module. It will no longer be possible to communicate in real time with it.";
+"PSTitle3" = "What does that mean ?";
+"PSDescription31" = "The seekios will only wake up once a day, at noon and to check if a new instruction is available.";
+"PSDescription32" = "If the seekios is in power saving and I want to setup a new mode, it will only be effective at « next noon ».";
+"PSTitle4" = "How do I reactivate real time ?";
+"PSDescription41" = "Real time reactivates under three conditions :";
+"PSDescription42" = "1) - The mode is removed from the mode via my application (effective at the next noon)";
+"PSDescription43" = "2) - The seekios is switched off and switched on by using the button";
+"PSDescription44" = "3) - The seekios transmit an alert (SOS included)";
+
+
+/* ###### CREDIT COST VIEW ###### */
+
+
+"CreditCostTitle" = "Credits cost";
+"CreditCostTitleLabel" = "The consumption of credits is based on the action requested.";
+"CreditCost1" = "Refresh position";
+"CreditCost2" = "Setup a mode";
+"CreditCost3" = "Deactivating a mode";
+"CreditCost4" = "Receiving an alert";
+"CreditCost5" = "Refresh the battery";
+"CreditCost6" = "Receiving a tracking position";
+"CreditCost7" = "SOS (alert and receipt)";
+"MoreCreditExplanation" ="More explanation on credits";
+
+
+/* ###### Action Sheet ###### */
+
+
+"PhotographySeekios" = "Change the seekios picture";
+"PhotographyUser" = "Change the user picture";
+"Camera" = "Camera";
+"ImageGalery" = "Image Gallery";
+
+"NoAdressSeekios" = "No seekios adress";
+"Navigate" = "Navigate to";
+"Share" = "Share";
+"CopyAdress" = "Copy adress";
+
+
+/* ###### Alert Controller Helper ###### */
+
+"ConditionsOfUseTitle" = "Terms of use";
+"ConditionsOfUseContent" ="By clicking on 'I accept the terms of use', I certify that I have read the terms of use.";
+"AcceptConditions" = "I accept the conditions of use";
+"ReadConditions" = "Read Terms of Use";
+
+"NoAdressSeekiosContent" = "No address found matching to the seekios position.";
+
+"UpdateCostTitle" = "Cost of refreshing";
+"UpdateCostContent" = "The cost of updating the seekios battery is 1 credit.";
+"UpdateAndRemember" = "Refresh and no longer display";
+
+"DeleteActiveModeTitle" = "Deleting active mode";
+"DeleteActiveModeContent" = "Enabling this mode will remove the current mode: '{0}' on your seekios: '{1}'.";
+
+"SOSAlertReceivedTitle" = "SOS Alert received";
+"SOSAlertReceivedContent" = "Your seekios has put together an SOS alert !";
+"Seen" = "Seen";
+
+"RefreshInProgress" = "Refresh in progress ...";
+"ReceivingSeekiosLastPosition" = "We retrieve the last position of your seekios ";
+"TimeTaken" = ". This action can take up to 04: 00s.";
+
+"InDevelopment" = "Under development";
+"BeingDeveloped" = "Under development";
+
+"NoPositionFound" = "No position found";
+"TheRefreshOf" = "Refresh your seekios ";
+"RefreshFailed" = " failed. Your seekios is either switched off or in an area not covered by the network.";
+
+"Impossible" = "Impossible";
+"ProblemFoundWhenUpdating" = "There was a problem updating the data. Please try again later.";
+"Loading_n" = "Loading ...\n\n\n";
+
+"AddContact_n" =  "Add a contact\n\n\n\n\n\n\n";
+"Add" = "Add";
+
+"NameSurname" = "Firstname name";
+"NameSurnamePH" = " Firstname name";
+"ModeZone" = "Zone";
+"ModeDM" = "Don't Move";
+"EmailAddressPH" = " Email adress";
+
+"InternetConnectionNotAvailable" = "Internet connection is not available";
+"DateNotAvailable" = "Date unavailable";
+
+"More" = "More";
+"DeleteImage" = "Remove image";
+
+/* ###################################### */

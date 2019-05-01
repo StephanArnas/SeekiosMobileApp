@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<!-- Bouton lancer la vidéo -->
+    <RelativeLayout
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:background="@drawable/ellipsiscreditmapbackground"
+        android:id="@+id/tabCreditFreemieum_DisplayVideo"
+        android:layout_centerInParent="true">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Lancer la vidéo"
+            android:textSize="20dp"
+            android:textColor="#008506"
+            android:id="@+id/tabCreditFreemieum_TextDisplayVideo"
+            style="@style/HomeText" />
+    </RelativeLayout>
+<!-- Nombre de credit -->
+    <RelativeLayout
+        android:layout_width="@dimen/mapBase_creditCircleDiameter"
+        android:layout_height="@dimen/mapBase_creditCircleDiameter"
+        android:layout_marginLeft="@dimen/mapBase_negativeCreditCircleOverflow"
+        android:background="@drawable/ellipsiscreditmapbackground"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="-10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="@string/mode_credit"
+            android:textSize="10dp"
+            android:textColor="#008506"
+            style="@style/HomeText" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textSize="30dp"
+            android:textColor="#008506"
+            style="@style/HomeText"
+            android:id="@+id/tabCreditFreemieum_remainingRequest" />
+    </RelativeLayout>
+</RelativeLayout>

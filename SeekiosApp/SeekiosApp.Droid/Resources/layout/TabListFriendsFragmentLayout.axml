@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <GridLayout
+        android:rowCount="2"
+        android:columnCount="1"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/seekios_root">
+    <!-- EMPTY LIST -->
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:layout_rowSpan="2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="100"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginBottom="80dp"
+            android:id="@+id/friend_emptyLayout">
+            <XamSvg.SvgImageView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="30dp"
+                android:layout_gravity="center"
+                android:clickable="true"
+                local:colorMapping="555555=cccccc"
+                local:svg="@drawable/addfriend"
+                android:id="@+id/listFriend_alertImgActionClick" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/listFriend_emptyList"
+                android:textColor="?attr/textColorSubTitle"
+                android:textSize="18dp"
+                android:layout_gravity="center"
+                android:gravity="center" />
+        </LinearLayout>
+    <!-- TITRE (NOMBRE D'AMIS) -->
+        <TextView
+            android:layout_row="0"
+            android:layout_column="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/textSiz"
+            android:layout_margin="10dp"
+            android:textColor="#999999"
+            android:id="@+id/listFriend_title" />
+    <!-- LISTVIEW DES ALERTS -->
+        <ListView
+            android:layout_row="1"
+            android:layout_column="0"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="50dp"
+            android:scrollbars="vertical"
+            android:id="@+id/user_friendList" />
+    <!-- BOUTON D'AJOUT D'AMIS -->
+        <com.refractored.fab.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:layout_gravity="bottom|right"
+            android:layout_marginBottom="50dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/ic_action_add"
+            local:fab_colorNormal="@color/communityBlue"
+            local:fab_colorPressed="@color/communityDarkBlue"
+            local:fab_colorRipple="@color/communityLightBlue"
+            android:id="@+id/listFriend_floatingActionButton" />
+    </GridLayout>
+</android.support.v4.widget.DrawerLayout>

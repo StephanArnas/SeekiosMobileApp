@@ -1,0 +1,46 @@
+{
+  "images": [
+    {
+      "scale": "1x",
+      "idiom": "iphone",
+      "filename": "MapDetail2.png"
+    },
+    {
+      "scale": "2x",
+      "idiom": "iphone",
+      "filename": "MapDetail2@2x.png"
+    },
+    {
+      "scale": "3x",
+      "idiom": "iphone",
+      "filename": "MapDetail2@3x.png"
+    },
+    {
+      "idiom": "iphone",
+      "filename": "MapDetail2.pdf"
+    },
+    {
+      "idiom": "ipad",
+      "filename": "MapDetail2.pdf"
+    },
+    {
+      "scale": "1x",
+      "idiom": "ipad"
+    },
+    {
+      "scale": "2x",
+      "idiom": "ipad"
+    },
+    {
+      "scale": "3x",
+      "idiom": "ipad"
+    }
+  ],
+  "properties": {
+    "template-rendering-intent": ""
+  },
+  "info": {
+    "version": 1,
+    "author": ""
+  }
+}

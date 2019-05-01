@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<!-- ACTION BAR -->
+    <include
+        layout="@layout/ActionBarTemplate" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbarLayout"
+        android:layout_marginBottom="60dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/modeZone_functionningTitle"
+            android:textSize="17dp"
+            android:layout_below="@id/toolbarLayout"
+            android:textColor="@color/textColorContent"
+            android:id="@+id/modeZone3_functionningTitle"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/modeZone_functionningContent"
+            android:layout_below="@id/modeZone3_functionningTitle"
+            android:id="@+id/modeZone3_functionningContent"
+            android:textSize="15dp"
+            android:textColor="#999999"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/modeZone_alertEmailTitle"
+            android:textSize="17dp"
+            android:layout_below="@id/modeZone3_functionningContent"
+            android:textColor="@color/textColorContent"
+            android:id="@+id/modeZone3_alertEmailTitle"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:layout_alignParentRight="true"
+            android:text="@string/modeZone_createAlert"
+            android:textSize="16dp"
+            android:textColor="#ffffff"
+            android:background="@drawable/buttonrounded"
+            android:id="@+id/modeZone_createButton"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:layout_alignTop="@id/modeZone3_alertEmailTitle"
+            android:layout_alignBaseline="@id/modeZone3_alertEmailTitle" />
+    <!-- liste vide -->
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginTop="50dp"
+            android:layout_below="@id/modeZone3_alertEmailTitle"
+            android:visibility="gone"
+            android:id="@+id/modeZone3_emptyField">
+            <XamSvg.SvgImageView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp"
+                android:layout_gravity="center"
+                android:clickable="true"
+                local:svg="@drawable/emptyalertlist"
+                android:id="@+id/modeZone3_alertImgActionClick" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/listAlert_emptyList"
+                android:textColor="?attr/textColorSubTitle"
+                android:textSize="18dp"
+                android:layout_gravity="center"
+                android:gravity="center" />
+        </LinearLayout>
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/modeZone3_alertEmailTitle"
+            android:divider="?attr/layoutSeparator"
+            android:dividerHeight="2dp"
+            android:scrollbars="vertical"
+            android:id="@+id/modeZone3_alertsSeekiosList" />
+    </RelativeLayout>
+<!-- BOTTOM LAYOUT -->
+<!-- Background du bottom menu (pour la couleur de fond) -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/BottomLayoutBackgroundGray"
+        android:layout_alignParentBottom="true">
+        <TextView
+            style="@style/ButtonNext"
+            android:id="@+id/modeZone3_suivant"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content" />
+    </RelativeLayout>
+<!-- LAYOUT DE CHARGEMENT -->
+    <include
+        layout="@layout/LoadingTemplate" />
+</RelativeLayout>

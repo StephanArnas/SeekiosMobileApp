@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/rootLayout">
+<!-- Layout Main -->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="6dp"
+        local:elevation="4dp"
+        android:background="@drawable/popupmarkerseekiosbackground"
+        android:id="@+id/customMarker_rootPanel">
+    <!-- Refresh -->
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:background="@drawable/ButtonRippleEffect">
+            <XamSvg.SvgImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                local:svg="@drawable/refresh2"
+                android:id="@+id/customMarker_refresh"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="1dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="36dp"
+                android:text="@string/customMarker_refreshTxt"
+                android:textSize="10dp"
+                android:textColor="#62da73"
+                android:id="@+id/customMarker_refreshText"
+                android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+    <!-- More -->
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/ButtonRippleEffect">
+            <XamSvg.SvgImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                local:svg="@drawable/more"
+                android:id="@+id/customMarker_share"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="1dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="36dp"
+                android:text="@string/customMarker_MoreTxt"
+                android:textSize="10dp"
+                android:textColor="#62da73"
+                android:id="@+id/customMarker_shareText"
+                android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_gravity="center"
+            android:layout_centerVertical="true">
+        <!-- Nom du seekios -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Albert"
+                android:textSize="25dp"
+                android:textColor="?attr/textColorContent"
+                android:id="@+id/customMarker_seekiosName" />
+        <!-- Dernière position -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/listSeekios_lastPositionNone"
+                android:textSize="10dp"
+                android:textColor="#999999"
+                android:id="@+id/customMarker_lastPosition" />
+        </LinearLayout>
+    </LinearLayout>
+<!-- Flèche vers le bas -->
+<!--<LinearLayout
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/popupmarkerseekiostriangle" />-->
+</LinearLayout>

@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<!-- ACTION BAR -->
+    <include
+        layout="@layout/ActionBarTemplate" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="900dp"
+        android:layout_below="@id/toolbarLayout"
+        android:layout_above="@id/map_bottomLayout">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/marginS"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center_vertical"
+                android:text="@string/trackingConfigurationTitle"
+                android:textColor="@color/textColorContent"
+                android:textSize="17dp"
+                android:id="@+id/trackingConfigurationTitle"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/trackingConfigurationTitle"
+                android:text="@string/trackingConfiguration_explanation"
+                android:textSize="15dp"
+                android:textColor="#999999"
+                android:id="@+id/trackingConfiguration_explanationText"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="@dimen/marginS"
+                android:layout_marginRight="@dimen/marginS"
+                android:layout_marginBottom="@dimen/marginS" />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/marginS"
+                android:layout_marginLeft="@dimen/marginS"
+                android:layout_marginTop="20dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/trackingConfiguration_explanationText"
+                android:scaleType="centerCrop"
+                android:adjustViewBounds="true"
+                android:src="@drawable/modetrackingparam"
+                android:id="@+id/trackingConfiguration_image" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/trackingConfiguration_image"
+                android:text="@string/trackingConfiguration_paramTitle"
+                android:textSize="17dp"
+                android:textColor="@color/textColorContent"
+                android:id="@+id/trackingConfiguration_paramTitle"
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="@dimen/marginS"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/trackingConfiguration_paramText"
+                android:textSize="15dp"
+                android:textColor="@color/textColorContent"
+                android:id="@+id/trackingConfiguration_paramText"
+                android:layout_marginLeft="@dimen/marginS"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/trackingConfiguration_paramTitle" />
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/marginS"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="right"
+                android:textSize="16dp"
+                android:textColor="?attr/textColorHint"
+                android:popupBackground="?attr/layoutBackground"
+                android:id="@+id/trackingConfiguration_refreshRateSpinner"
+                android:layout_marginTop="-9dp"
+                android:layout_alignTop="@id/trackingConfiguration_paramText" />
+          <XamSvg.SvgImageView
+              android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_marginLeft="@dimen/marginS"
+                android:layout_alignParentLeft="true"
+                local:svg="@drawable/powersaving"
+                android:id="@+id/trackingPowerSaving_image"
+                android:layout_marginTop="43dp"
+                android:layout_below="@id/trackingConfiguration_paramText" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/trackingConfiguration_paramText"
+                android:text="@string/powerSaving_title"
+                android:textSize="17dp"
+                android:textColor="@color/textColorContent"
+                android:textStyle="bold"
+                android:layout_toRightOf="@id/trackingPowerSaving_image"
+                android:id="@+id/trackingPowerSaving_title"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="40dp" />
+            <XamSvg.SvgImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="40dp"
+                android:layout_below="@id/trackingConfiguration_paramText"
+                local:svg="@drawable/help2"
+                android:id="@+id/trackingPowerSaving_aboutImage"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/trackingPowerSaving_title"
+                android:text="@string/powerSaving_explanation"
+                android:textSize="15dp"
+                android:textColor="#999999"
+                android:id="@+id/trackingPowerSaving_explanation"
+                android:layout_marginLeft="@dimen/marginS"
+                android:layout_marginTop="10dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/trackingPowerSaving_explanation"
+                android:text="@string/powerSaving_paramTitle"
+                android:textSize="15dp"
+                android:textColor="@color/textColorContent"
+                android:id="@+id/trackingPowerSaving_paramTitle"
+                android:layout_marginLeft="@dimen/marginS"
+                android:layout_marginTop="10dp"
+                android:paddingBottom="10dp"
+                android:layout_marginBottom="100dp" />
+            <Switch
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/trackingPowerSaving_explanation"
+                android:layout_marginRight="10dp"
+                android:checked="false"
+                android:id="@+id/trackingPowerSaving_switch"
+                android:layout_alignParentRight="true"
+                android:layout_alignBaseline="@id/trackingPowerSaving_paramTitle" />
+        </RelativeLayout>
+    </ScrollView>
+<!-- BOTTOM LAYOUT -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/BottomLayoutBackgroundGray"
+        android:id="@+id/map_bottomLayout">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:padding="@dimen/marginS"
+            android:text="@string/trackingConfiguration_endText"
+            android:textSize="16dp"
+            android:textColor="#ffffff"
+            android:background="@drawable/buttonrounded"
+            android:id="@+id/modeTracking_saveButton" />
+    </RelativeLayout>
+<!-- CREDITS -->
+<!--<include
+        layout="@layout/CreditTemplate" />-->
+<!-- LAYOUT DE CHARGEMENT -->
+    <include
+        layout="@layout/LoadingTemplate" />
+</RelativeLayout>

@@ -1,0 +1,54 @@
+﻿<Page
+    x:Class="SeekiosApp.UWP.Pages.ParameterUserPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:SeekiosApp.UWP.Pages"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+            <StackPanel Grid.Row="0" Orientation="Vertical" Height="120" VerticalAlignment="Top" Background="#62da73"/>
+            <Image Grid.Row="0" Source="../Assets/Icons/DefaultUser.png" Width="200" Height="200" Margin="0,20,0,10" Stretch="Uniform" HorizontalAlignment="Center"/>
+            <Button Grid.Row="1" x:Uid="SeekiosPictureButton" Content="Modifier image" Style="{StaticResource GreenButton}" Margin="0,10,0,20" HorizontalAlignment="Center"/>
+            <Grid Grid.Row="2" Width="300" Margin="0,50,0,0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+                <TextBlock Grid.Row="0" x:Uid="FirstNameTextBlock" Text="Prénom"/>
+                <TextBox Grid.Row="1" x:Name="FirstNameTextBlock"/>
+                <TextBlock Grid.Row="2" x:Uid="LastNameTextBlock" Text="Nom" Margin="0,20,0,0"/>
+                <TextBox Grid.Row="3" x:Name="LastNameTextBlock" />
+                <TextBlock Grid.Row="4" x:Uid="EmailTextBlock" Text="Email" Margin="0,20,0,0"/>
+                <TextBox Grid.Row="5" x:Name="EmailTextBlock" IsEnabled="False" />
+                <Button Grid.Row="6" x:Uid="SaveButton" IsEnabled="False" Content="Enregistrer" Style="{StaticResource GreenButton}" Margin="0,20,0,0" HorizontalAlignment="Center" Width="300"/>
+            </Grid>
+        </Grid>
+        <!--<controls:Loading x:Name="LoadingControl" 
+            HorizontalContentAlignment="Center" 
+            VerticalContentAlignment="Center"
+            Background="White" 
+            Opacity="0.7"
+            Visibility="Visible">
+            <ProgressRing Width="60" 
+                Height="60" 
+                Margin="0,0,0,0" 
+                HorizontalAlignment="Center" 
+                VerticalAlignment="Center" 
+                IsActive="True" />
+        </controls:Loading>-->
+    </Grid>
+</Page>

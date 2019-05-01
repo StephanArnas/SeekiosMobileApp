@@ -1,0 +1,46 @@
+{
+  "images": [
+    {
+      "scale": "1x",
+      "idiom": "iphone",
+      "filename": "Tuto1.png"
+    },
+    {
+      "scale": "2x",
+      "idiom": "iphone",
+      "filename": "Tuto1@2x.png"
+    },
+    {
+      "scale": "3x",
+      "idiom": "iphone",
+      "filename": "Tuto1@3x.png"
+    },
+    {
+      "idiom": "iphone",
+      "filename": "TutoIcon1.pdf"
+    },
+    {
+      "idiom": "ipad",
+      "filename": "TutoIcon1.pdf"
+    },
+    {
+      "scale": "1x",
+      "idiom": "ipad"
+    },
+    {
+      "scale": "2x",
+      "idiom": "ipad"
+    },
+    {
+      "scale": "3x",
+      "idiom": "ipad"
+    }
+  ],
+  "properties": {
+    "template-rendering-intent": ""
+  },
+  "info": {
+    "version": 1,
+    "author": ""
+  }
+}

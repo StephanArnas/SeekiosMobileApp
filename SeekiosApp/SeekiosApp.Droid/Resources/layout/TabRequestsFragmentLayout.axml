@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<!-- EMPTY LIST -->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="100"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginBottom="80dp"
+        android:id="@+id/tabRequest_emptyLayout">
+        <XamSvg.SvgImageView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="30dp"
+            android:layout_gravity="center"
+            android:clickable="true"
+            local:colorMapping="555555=cccccc"
+            local:svg="@drawable/community"
+            android:id="@+id/tabRequest_requestImgActionClick" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/tabRequest_emptyList"
+            android:textColor="?attr/textColorSubTitle"
+            android:textSize="18dp"
+            android:layout_gravity="center"
+            android:gravity="center" />
+    </LinearLayout>
+<!-- LISTVIEW DES ALERTS -->
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:layout_marginBottom="35dp"
+        android:scrollbars="vertical"
+        android:divider="?attr/layoutSeparator"
+        android:dividerHeight="1dp"
+        android:id="@+id/tabRequest_requestList" />
+</LinearLayout>

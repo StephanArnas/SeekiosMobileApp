@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DeviceMotion.Plugin</name>
+    </assembly>
+    <members>
+        <member name="T:DeviceMotion.Plugin.DeviceMotionImplementation">
+            <summary>
+            Implementation for DeviceMotion
+            </summary>
+        </member>
+        <member name="M:DeviceMotion.Plugin.DeviceMotionImplementation.#ctor">
+            <summary>
+            Initializes a new instance of the DeviceMotionImplementation class.
+            </summary>
+        </member>
+        <member name="E:DeviceMotion.Plugin.DeviceMotionImplementation.SensorValueChanged">
+            <summary>
+            Occurs when sensor value changed.
+            </summary>
+        </member>
+        <member name="M:DeviceMotion.Plugin.DeviceMotionImplementation.Start(DeviceMotion.Plugin.Abstractions.MotionSensorType,DeviceMotion.Plugin.Abstractions.MotionSensorDelay)">
+            <summary>
+            Start the specified sensorType and interval.
+            </summary>
+            <param name="sensorType">Sensor type.</param>
+            <param name="interval">Interval.</param>
+        </member>
+        <member name="M:DeviceMotion.Plugin.DeviceMotionImplementation.Stop(DeviceMotion.Plugin.Abstractions.MotionSensorType)">
+            <summary>
+            Stop the specified sensorType.
+            </summary>
+            <param name="sensorType">Sensor type.</param>
+        </member>
+        <member name="M:DeviceMotion.Plugin.DeviceMotionImplementation.IsActive(DeviceMotion.Plugin.Abstractions.MotionSensorType)">
+            <summary>
+            Determines whether this instance is active the specified sensorType.
+            </summary>
+            <returns><c>true</c> if this instance is active the specified sensorType; otherwise, <c>false</c>.</returns>
+            <param name="sensorType">Sensor type.</param>
+        </member>
+        <member name="M:DeviceMotion.Plugin.DeviceMotionImplementation.Dispose">
+            <summary>
+            Dispose of class and parent classes
+            </summary>
+        </member>
+        <member name="M:DeviceMotion.Plugin.DeviceMotionImplementation.Finalize">
+            <summary>
+            Dispose up
+            </summary>
+        </member>
+        <member name="M:DeviceMotion.Plugin.DeviceMotionImplementation.Dispose(System.Boolean)">
+            <summary>
+            Dispose method
+            </summary>
+            <param name="disposing"></param>
+        </member>
+        <member name="T:DeviceMotion.Plugin.CrossDeviceMotion">
+            <summary>
+            Cross platform DeviceMotion implemenations
+            </summary>
+        </member>
+        <member name="P:DeviceMotion.Plugin.CrossDeviceMotion.Current">
+            <summary>
+            Current settings to use
+            </summary>
+        </member>
+    </members>
+</doc>

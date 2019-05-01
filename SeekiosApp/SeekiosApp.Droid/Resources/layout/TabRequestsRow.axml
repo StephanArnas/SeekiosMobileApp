@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tabRequest_rowLayout">
+    <!-- AVATAR DE L'AMI-->
+        <SeekiosApp.Droid.CustomComponents.RoundedImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/DefaultCommunityUser"
+            android:id="@+id/tabRequestRow_userImage" />
+    <!-- TEXT INFORMATIF DE LA REQUETE D'AMI-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/tabRequestRow_userImage"
+            android:textColor="@color/textColorLink"
+            android:textSize="@dimen/smallTextSize"
+            android:id="@+id/tabRequestRow_information"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="80dp" />
+    <!-- LAYOUT D'ACCEPTATION OU DE REFUS DE LA DEMANDE-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_centerInParent="true"
+            android:layout_alignParentRight="true"
+            android:id="@+id/tabRequest_responseLayout">
+            <XamSvg.SvgImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_gravity="center"
+                android:clickable="true"
+                local:colorMapping="cccccc=36da3e"
+                local:svg="@drawable/valid"
+                android:id="@+id/tabRequest_acceptRequestImgActionClick" />
+            <XamSvg.SvgImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="center"
+                android:clickable="true"
+                local:svg="@drawable/delete"
+                android:id="@+id/tabRequest_refuseRequestImgActionClick" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

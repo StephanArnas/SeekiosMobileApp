@@ -1,0 +1,47 @@
+{
+  "images": [
+    {
+      "scale": "1x",
+      "idiom": "iphone",
+      "filename": "BackgroundAbout.png"
+    },
+    {
+      "scale": "2x",
+      "idiom": "iphone",
+      "filename": "BackgroundAbout@2x.png"
+    },
+    {
+      "scale": "3x",
+      "idiom": "iphone",
+      "filename": "BackgroundAbout@3x.png"
+    },
+    {
+      "idiom": "iphone"
+    },
+    {
+      "idiom": "ipad"
+    },
+    {
+      "scale": "1x",
+      "idiom": "ipad",
+      "filename": "BackgroundAbout.png"
+    },
+    {
+      "scale": "2x",
+      "idiom": "ipad",
+      "filename": "BackgroundAbout.png"
+    },
+    {
+      "scale": "3x",
+      "idiom": "ipad",
+      "filename": "BackgroundAbout.png"
+    }
+  ],
+  "properties": {
+    "template-rendering-intent": ""
+  },
+  "info": {
+    "version": 1,
+    "author": ""
+  }
+}

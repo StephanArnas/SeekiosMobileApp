@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <GridLayout
+        android:rowCount="2"
+        android:columnCount="4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:padding="10dp"
+        android:clickable="true"
+        android:background="@android:color/transparent"
+        android:id="@+id/favoriteArea_rootGrid">
+    <!--Nom de la zone favorite-->
+        <TextView
+            android:layout_row="0"
+            android:layout_column="1"
+            android:layout_rowSpan="2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/titleTextSize"
+            android:textColor="?attr/textColorSubTitle"
+            android:layout_gravity="center_vertical|left"
+            android:id="@+id/favoriteArea_areaName" />
+    <!--Nombres de points-->
+        <TextView
+            android:layout_row="0"
+            android:layout_column="2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/editTextSize"
+            android:textColor="?attr/textColorTitle"
+            android:layout_gravity="bottom|right"
+            android:id="@+id/favoriteArea_pointsCount" />
+    <!--Surface-->
+        <TextView
+            android:layout_row="1"
+            android:layout_column="2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/editTextSize"
+            android:textColor="?attr/textColorTitle"
+            android:layout_gravity="top|right"
+            android:id="@+id/favoriteArea_area" />
+    <!--Supprimer-->
+        <XamSvg.SvgImageView
+            android:layout_row="0"
+            android:layout_column="3"
+            android:layout_rowSpan="2"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center_vertical"
+            android:clickable="true"
+            local:svg="@drawable/delete"
+            android:id="@+id/favoriteArea_delete" />
+    </GridLayout>
+<!-- LIGNE SEPARATOR -->
+    <View
+        style="@style/ViewDark" />
+</LinearLayout>

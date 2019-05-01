@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true">
+    <include
+        layout="@layout/ActionBarTemplate" />
+<!-- AUTOCOMPLETE LAYOUT -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding=" 5dp"
+        android:background="@color/communityDarkBlue">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/roundedshadowedlinearlayout"
+            android:gravity="center"
+            android:id="@+id/autoComp_layout">
+            <XamSvg.SvgImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                local:svg="@drawable/search"
+                local:colorMapping="F1F2F2=2cc5c2"
+                android:id="@+id/addFriend_searchImage" />
+            <AutoCompleteTextView xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:layout_marginLeft="@dimen/marginM"
+                android:layout_gravity="center"
+                android:id="@+id/addFriend_autoCompleteTextView"
+                tools:visibility="invisible" />
+        </LinearLayout>
+    </LinearLayout>
+<!-- Button Layout-->
+    <RadioGroup
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:checkedButton="@+id/addFriend_nameRadioButton"
+        android:id="@+id/addFriend_radioGroup">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:textColor="@color/textColorContent"
+            android:buttonTint="@color/communityBlue"
+            android:text="@string/addFriend_nameRadioButton"
+            android:id="@+id/addFriend_nameRadioButton" />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:buttonTint="@color/communityBlue"
+            android:textColor="@color/textColorContent"
+            android:text="@string/addFriend_emailRadioButton"
+            android:id="@+id/addFriend_emailRadioButton" />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:buttonTint="@color/communityBlue"
+            android:textColor="@color/textColorContent"
+            android:text="@string/addFriend_phoneRadioButton"
+            android:id="@+id/addFriend_phoneRadioButton" />
+    </RadioGroup>
+<!-- LIGNE SEPARATOR -->
+    <View
+        style="@style/View" />
+<!-- EMPTY LIST -->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="100"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginBottom="80dp"
+        android:clickable="true"
+        android:id="@+id/addFriend_emptyLayout">
+        <XamSvg.SvgImageView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="30dp"
+            android:layout_gravity="center"
+            local:colorMapping="555555=cccccc"
+            local:svg="@drawable/addfriend"
+            android:id="@+id/emptyList_image" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/addFriend_emptySearch"
+            android:textColor="?attr/textColorSubTitle"
+            android:textSize="18dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:id="@+id/emptyList_text" />
+    </LinearLayout>
+<!-- LISTE DES SEEKIOS -->
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/addFriend_listView"
+        android:divider="?attr/layoutSeparator"
+        android:dividerHeight="1dp" />
+</LinearLayout>

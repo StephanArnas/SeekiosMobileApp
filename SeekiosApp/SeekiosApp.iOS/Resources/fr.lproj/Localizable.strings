@@ -1,0 +1,502 @@
+﻿/* ###### GENERAL VIEW ###### */
+
+"Next" = "Suivant";
+"Skip" = "Passer";
+"Previous" = "Précédent";
+
+
+/* ###### LOGIN VIEW ###### */
+
+
+"EmailAddress" = "Adresse email";
+"AskForAPassword" = "Demander un mot de passe";
+"Password" = "Mot de passe";
+"Login" = "Connexion";
+"ForgetPassword" = "Mot de passe oublié";
+"CreateAccount" = "Créer un compte";
+"FirstName" = "Prénom";
+"LastName" = "Nom";
+"ConfirmPassword" = "Confirmer le mot de passe";
+"PasswordErrorLength" = "Votre mot de passe doit contenir au moins 8 caractères";
+"CreateMyAccount" = "Créer mon compte";
+"Back" = "Retour";
+"ResetPassword" = "Demander un mot de passe";
+"WhatIsSeekios" = "C'est quoi un seekios ?";
+
+"ErrorFirstName" = "Le prénom est vide";
+"ErrorLastName" = "Le nom est vide";
+"ErrorEmail" = "L'email est incorrect";
+"ErrorWeakPassword" = "Au moins 8 caractères requis";
+"ErrorNotTheSamePassword" = "Les deux mots de passe ne correspondent pas";
+
+
+/* ###### UPDATE VIEW ###### */
+
+
+"UpdateApp" = "Une mise à jour obligatoire est disponible.";
+"DoUpdate" = "Faire la mise à jour";
+
+
+/* ###### LISTSEEKIOS VIEW ###### */
+
+
+"ListSeekiosTitle" = "seekios";
+"NoSeekios" = "Vous n'avez pas de seekios";
+"NoPosition" = "Aucune position";
+"FirstPosition" = "Actualiser la position";
+"InProgress" = "En cours";
+"SeekiosMoved" = "Votre seekios a bougé";
+"DontMove" = "Don't Move";
+"SeekiosOutOfZone" = "Votre seekios est sorti de la zone";
+"Zone" = "Zone";
+"NotificationLong" = "Notification";
+"NotificationShort" = "Notif";
+"Tracking" = "Tracking";
+"Email" = "email";
+"Emails" = "emails";
+"SOSAlert" = "SOS";
+"RefreshPosition" = "Actualisation en cours ...";
+
+
+/* ###### DETAIL VIEW ###### */
+
+
+"DetailSeekiosTitle" = "Détail";
+"Credits" = "Crédits";
+"Battery" = "Batterie";
+"Update" = "Actualiser";
+"UpdatePosition" = "Actualiser la position";
+"BatteryLevel" = "{0}% de batterie {1}";
+"NoInformation" = "Pas d'information disponible";
+"CreditOfferedAmount" = "dont {0} offert(s)";
+"NextRefill" = "Prochaine recharge le";
+"SeekiosNeedUpdateTitlePopup" = "Une mise à jour est disponible";
+"SeekiosNeedUpdateGoWebsiteButton" = "Voir la màj";
+"AlertCannotBeSavedAsRead" = "L'alerte n'a pas pu être enregistrée comme étant vue.";
+"Close" = "Fermer";
+"NextNoon" = "Activation dans {0}";
+
+
+/* ###### CELL DETAIL VIEW ###### */
+
+
+"Map" = "Carte";
+"UpdateSeekiosPosition" = "Actualisez la position de votre seekios";
+"RefillCredits" = "Recharge de crédits";
+"CreditsWithCreditsOffered" = "{0} crédit(s) dont {1} offert(s)";
+
+"Delete" = "Supprimer";
+"SureToDeleteMode" = "Voulez-vous supprimer le mode ?";
+"ModeTracking" = "Suivi de position";
+"TrackingDescr" = "Observez le déplacement de votre seekios";
+"ModeDontMove" =  "Détection de mouvements";
+"DontMoveDescr" = "Soyez alerté si le seekios bouge";
+"ModeZone" = "Sortie de zone";
+"ZoneDescr" = "Soyez alerté si le seekios sort de la zone";
+"ConfigureEmail" = "Configurez un message email";
+"Parameters" = "Paramètres";
+"ModifyNameImage" = "Modifiez le nom et l'image de votre seekios";
+"OK" = "Ok";
+"Cancel" = "Annuler";
+
+
+/* ###### ADDSEEKIOS VIEW ###### */
+
+
+"AddSeekiosTitle" = "Ajouter un seekios";
+"Validate" = "Valider";
+"InvalidIMEIOrPin" = "Le numéro IMEI ou le code pin est incorrect.";
+"Verifying" = "En cours de vérification ...";
+"AlreadyAdded" = "Ce seekios a déjà été ajouté.";
+"MaxSizeSeekiosName" = "{0}/30";
+"MaxSizeIMEI" = "{0}/15";
+"MaxSizePin" = "{0}/4";
+"SureToDeleteSeekios" = "Etes vous sur de vouloir supprimer le seekios ?";
+"Yes" = "Oui";
+"No" = "Non";
+"ModifyImage" = "Modifier image";
+"SeekiosName" = "Nom du seekios";
+"MyNameIs" = "Je m'appelle...";
+"IMEINumber" = "Numéro IMEI"; 
+"IMEIPlaceholder" = "12345678912345";
+"PinCode" = "Code Pin";
+"PinPlaceholder" = "1234";
+"Save" = "Enregistrer";
+"WrongIMEIOrPinCodeLoading" = "Chargement ...";
+"WrongIMEIOrPinCodeError" = "Le IMEI ou le Code Pin est incorrect";
+"VersionEmbeddedLabel" = "Version du firmware";
+"VersionEmbeddedUpdateLabel" = "(màj disponible: {0})";
+"NotificationNewLocationTracking" = "Notification lors d'une nouvelle position en Suivi de position";
+"NotificationNewLocationOutOfZone" = "Notification lors d'une nouvelle position en Sortie de zone";
+"NotificationNewLocationMoved" = "Notification lors d'une nouvelle position en Détection de mouvement";
+
+
+/* ###### LEFTMENU VIEW ~~ MENUCONTROLLER ###### */
+
+
+"UserGuide" = "Aide à l'utilisation";
+"MyConso" = "Ma consommation";
+"AddSeekios" = "Ajouter un seekios";
+"AllSeekiosMap" = "Carte des seekios";
+"Feedback" = "Donner un avis";
+"UserSettings" = "Paramètres";
+"ZeroSeekios" = "Aucun seekios";
+"NeedAtLeastOneSeekios" = "Vous devez posséder au moins 1 seekios pour accéder à la carte des seekios.";
+"OneSeekiosNewlyAdded" = "Le seekios vient d'être ajouté. Veuillez d'abord rafraîchir sa position avant d'accéder à la carte des seekios.";
+"PluralSeekiosNewlyAdded" = "Les seekios viennent d'être ajoutés. Veuillez d'abord rafraîchir leur position avant d'accéder à la carte des seekios.";
+
+
+/* ###### PACK VIEW ###### */
+
+"PaymentFailure" = "Échec de paiement";
+"CantPurchase" = "Désolé, vous ne pouvez pas faire de paiement sur l'Apple Store. Veuillez réessayer plus tard.";
+"NoInternet" = "Aucune connexion internet.";
+"BuyPack" = "Achat Pack";
+"SureToBuy" = "Voulez-vous acheter le pack {0} pour {1}?";
+"Buy" = "Acheter";
+"BuySuccess" = "L'achat du pack {0} a réussi, vous allez être crédité.";
+"BuyFailed" = "L'achat du pack {0} a échoué: {1}";
+
+"Observation" = "Observation";
+"Discovery" = "Découverte";
+"Exploration" = "Exploration";
+"Adventure" = "Aventure";
+"Epic" = "Epopée";
+"BuyPrice" = "Acheter - {0}";
+"CreditUseInformation" = "Les crédits sont cumulables et utilisables sans limite de temps";
+
+"ObservationPack" = "de 30 crédits";
+"DiscoveryPack" = "de 100 crédits";
+"ExplorationPack" = "de 300 crédits";
+"AdventurePack" = "de 1000 crédits";
+"EpicPack" = "de 2000 crédits";
+
+
+/* ###### ALERT SOS VIEW ###### */
+
+
+"AlertTitle" = "Objet de l'alerte (email)";
+"TitleAlertPlaceholder" = "Objet de l'alerte";
+"MessageAlert" = "Message";
+"AddRecipientsAlert" = "Ajouter un destinataire (email)";
+"RecipientsAlert" = "Destinataires";
+
+
+/* ###### ALERT SOS VIEW ###### */
+
+"Title1AlertSOS" = "Comment fonctionne l'alerte SOS ?";
+"SubTitle11AlertSOS" = "Faite 3 appuis court sur le bouton du seekios pour envoyer l'alerte.";
+"SubTitle12AlertSOS" = "L'envoi a fonctionné lorsque toutes les LEDs clignotent 3 fois consécutives.";
+"SubTitle13AlertSOS" = "Quand l'alerte est déclenchée, vous recevrez une notification et un email avec la position du seekios.";
+"Title2AlertSOS" = "Alertez vos proches par email";
+
+"AlertPeople" = "alerter vos proches en cas d'urgence.";
+
+"TitleAlertSOS" = "Objet de l'alerte (email)";
+"PlaceholderAlertSOS" = "Objet de l'alerte";
+"RecipientsAlertSOS" = "Destinataires";
+"AddRecipientsAlertSOS" = "Ajouter un destinataire (email)";
+"MessageAlertSOS" = "Message";
+
+
+/* ###### ALERT SOS VIEW ###### */
+
+"AlertEmailTitle" = "Alerte Email";
+"AlertSeekiosMovedTitle" = "[{0}] - Détection de mouvement";
+"AlertSeekiosMovedContent" = "Le seekios [{0}] a envoyé une alerte pour indiquer qu'il a été déplacé.";
+"AlertSeekiosOutOfZoneTitle" = "[{0}] - Sortie de zone";
+"AlertSeekiosOutOfZoneContent" = "Le seekios [{0}] est sorti de la zone.";
+
+
+/* ###### MAP VIEW ###### */
+
+"RefreshButton" = "Actualiser la position";
+"RefreshButtonFailed" = "Réessayer";
+"MapTitle" = "Carte";
+"DeleteModeMap" = "Supprimer le mode";
+"SeekiosFirstSetupExplanation" = "Étape 1 : Allumer votre seekios\n\nÉtape 2 : Vérifiez que votre seekios est suffisamment chargé\n\nÉtape 3 : Appuyez sur le bouton ci-dessous";
+"CreditsOffered" = "Crédits offerts";
+"FirstLocationAsked" = "Localisation en cours ...";
+"TheSeekios" = "Le seekios ";
+"SeekiosFailedToLocate" = "Impossible de localiser votre seekios :(\n\nSoit votre seekios est éteint, soit il se trouve dans une zone non couverte par le réseau 2G.";
+"UserGuideFirstLocation" = "Voir le guide d'utilisation";
+
+"WaitingForPosition" = "En attente de la position";
+"NoFirstPositionExplanation" = "Actualisez la position de votre seekios. Positionnez le seekios en extérieur pour une localisation précise.";
+"StepOnePowerOn" = "Assurez-vous que le seekios soit allumé !";
+
+"ActiveSince" = "Actif depuis";
+"ActiveSinceInAlert" = "Alerte reçue depuis";
+"TrackingIfAlert" = "Tracking si alerte";
+"NumberOfPosition" = "Nombre de position";
+
+
+/* ###### MAP HISTORIC VIEW ###### */
+
+"MapHistoricTitle" = "Historique";
+"HistoricPosition" = "Position n°{0} sur {1}";
+"NoHistoricPosition" = "Aucune position dans l'historique";
+"RecentDate_n" = "Date récente \n\n\n\n\n\n\n\n\n\n\n\n\n";
+"OldDate_n" = "Date ancienne \n\n\n\n\n\n\n\n\n\n\n\n\n";
+"RecentDate" = "Date récente";
+"OldDate" = "Date ancienne";
+"LowerDateExample" = "2 Septembre";
+"UpperDateExample" = "2 Octobre";
+"PreviousPosition" = "< Précédent";
+"NextPosition" = "Suivant >";
+
+
+/* ###### MAP ALL SEEKIOS ###### */
+
+"MapAllSeekiosTitle" = "Carte des seekios";
+
+
+/* ###### MODE POPUP ###### */
+
+"ModePopupOldMode" = "Mode actuel";
+"ModePopupNewMode" = "Nouveau mode";
+
+
+/* ###### MODE DONT MOVE FIRST VIEW ###### */
+
+"DMTitle" = "Configuration 2/2";
+"Functionning" = "Fonctionnement";
+"TrackingAfterMovedExplanation" = "Si votre seekios bouge, il actualisera sa position au coût de 1 crédit par position";
+"DMTitleTracking" = "Suivi de position après alerte";
+"DMDescriptionTracking" = "Suivre la position du seekios quand ce dernier bouge :";
+"DMUpdatePosition" = "Actualiser la position toutes les:";
+"DMTitlePowerSaving" = "Économie d'énergie";
+"DMTitlePowerSavingWithSpace" = "          Économie d'énergie";
+"DMDescriptionPowerSaving" = "En réduisant certaines fonctionnalités du seekios, le mode économie d'énergie permet d'améliorer l'autonomie du seekios.";
+"DMActivatePowerSaving" = "Activer le mode économie d'énergie:";
+"DMActivate" = "Activer (2 crédits)";
+
+/* ###### MODE DONT MOVE SECOND VIEW ###### */
+
+"DMTitle2" = "Alertez vos proches 1/2";
+"MobileNotification" = "Fonctionnement";
+"NotifActivatedDontMove" = "Lorsque le seekios bouge, une notification et un email vous seront automatiquement envoyés.";
+"EmailAlert" = "Alertez vos proches (email)";
+"CreateButton" = "Créer";
+"NoEmailAlertConfigured" = "Créer une alerte à envoyer à vos proches où passez cette étape.";
+
+/* ###### MODE TRACKING VIEW ###### */
+
+"ModeTrackingTitle" = "Suivi de position";
+"TrackingPositionExplanation" = "Le seekios actualisera sa position à des intervalles de temps réguliers sur la carte, au coût d'un crédit par position";
+"TrackingParameterTitle" = "Paramètres";
+"TrackingUpdatePosition" = "Actualiser la position toutes les :";
+"ActivateTracking" = "Activer (2 crédits)";
+
+/* ###### MODE ZONE FIRST VIEW ###### */
+
+"ModeZoneTitle" = "Définir zone 1/3";
+"Need3PointsForZone" = "   Il faut au moins 3 points";
+"ClickOnMap" = "   Cliquez sur la carte";
+"Max10Points" = "10 points maximum";
+"CantDefineZone" = "Vous ne pouvez pas définir une zone avec plus de 10 points";
+"OldSeekiosPositionTitlePopup" = "Dernière position connue ancienne";
+"OldSeekiosPositionMessagePopup" = "La dernière position connue du seekios date de plus d'une heure.\nSi le seekios n'est plus dans cette zone, vous recevrez immédiatement la notification.";
+"Continue" = "Continuer";
+
+/* ###### MODE ZONE SECOND / THIRD VIEW ###### */
+
+"ModeZone2Title" = "Notif et alertes 2/3";
+"NotifActivatedZone" = "Lorsque le seekios sort de la zone, une notification et un email vous seront automatiquement envoyés.";
+"ModeZone3Title" = "Configuration 3/3";
+"ZoneDescriptionTracking" = "Suivre la position du seekios quand ce dernier sort de la zone:";
+"ZoneTrackingExplanation" = "Si votre sekios sort de la zone définie, il actualisera sa position au coût d'un crédit par position.";
+"ZoneUpdatePosition" = "Actualiser la position toutes les :";
+"ActivateZone" = "Activer (2 crédits)";
+
+/* ###### ABOUT VIEW ###### */
+
+"About" = "À propos";
+"PrivacyPolicy" = "politique de confidentialité";
+
+/* ###### PARAMETER VIEW ###### */
+
+"ParameterTitle" = "Paramètres";
+"EmailParam" = "Email";
+"AboutParam" = "             À propos";
+"Logout" = "             Se déconnecter";
+
+"PhoneNumber" = "Numéro de téléphone";
+"NewPassword_n" = "Nouveau mot de passe\n\n\n\n\n\n\n\n\n\n\n";
+"Modify" = "Modifier";
+"ActualPassword" = "Mot de passe actuel";
+"ActualPH" = " Actuel";
+"NewPassword" = "Nouveau mot de passe";
+"NewPH" = " Nouveau";
+"ConfirmPassword" = "Confirmation du mot de passe";
+"Confirm" = " Confirmation";
+
+"WrongPassword" = "Le mot de passe actuel n'est pas correct.";
+"PasswordLengthError" = "Votre mot de passe doit contenir au moins 8 caractères.";
+"ConfirmError" = "Le mot de passe et la confirmation ne correspondent pas.";
+"PasswordParam" = "             Mot de passe";
+
+
+/* ###### TUTORIAL VIEWS ###### */
+
+"Help" = "Aide";
+"SeekiosHelp" = "Aide à l'utilisation";
+"GeneralHelp" = "Aide générale";
+"SeekiosLEDs" = "Les LEDs du seekios";
+"SeekiosLEDsShort" = "LEDs seekios";
+"OnlineHelp" = "Aide en ligne";
+"IMEIAndPinHelp" = "Pour ajouter un seekios, renseignez le code IMEI et le code PIN écrits sur la face arrière du seekios";
+"CreditsHelp" = "Vous bénéficiez de 60 crédits offerts par seekios, par mois,  non cumulables. Ces crédits servent à communiquer avec le seekios.";
+"FirstUseHelp" = "Rafraîchissez la position de votre seekios, et configurez des modes : 'Sortie de zone', 'Détection de mouvements' et 'Suivi de position'";
+
+
+/* ###### TUTORIAL BACKGROUND / FOREGROUND ###### */
+
+
+"SkipButton" = "Suivant";
+"DoneButton" = "Terminer";
+
+
+/* ###### TRANSACTION VIEW ###### */
+
+"TransactionTitle" = "Ma consommation";
+"TransactionNoCredit" = "Vous avez consommé aucun crédit pour le moment";
+"transactionHistoric_date" ="Le {0} à {1}";
+"transactionHistoric_monthlyCredits" = "Crédits mensuels";
+"transactionHistoric_tracking" = "Suivi de position";
+"transactionHistoric_zoneTracking" = "Sortie de zone (avec Tracking)";
+"transactionHistoric_zone" = "Sortie de zone";
+"transactionHistoric_dontmove" ="Détection de mouvements";
+"transactionHistoric_dontMoveTracking" = "Détection de mouvements (avec Tracking)";
+"transactionHistoric_refreshPosition" = "Rafraîchissement position";
+"transactionHistoric_refreshBattery" = "Rafraîchissement batterie";
+"transactionHistoric_modeInSettings" = "Activation d'un mode";
+"transactionHistoric_sos" = "Alerte SOS";
+"transaction_epicPack" = "Pack Épopée";
+"transaction_adventurePack" = "Pack Aventure";
+"transaction_explorationPack" = "Pack Exploration";
+"transaction_observationPack" = "Pack Observation";
+"transaction_discoveryPack" = "Pack Découverte";
+"transaction_instantPack" = "Achat instantané";
+"transaction_subscriptionPack" = "Renouvellement automatique";
+"transactionHistoric_deletedSeekios" = "seekios supprimé";
+
+
+/* ###### LEDs VIEW ###### */
+
+
+"StarterBlinking" = "LEDs tournent";
+"StarterTitle" = "Allumage";
+"StarterExplanation" = "Appui long de 3 secondes";
+"ExtinctionBlinking" = "clignote rouge";
+"ExtinctionTitle" = "Extinction";
+"ExtinctionExplanation" = "Appui long de 3 secondes";
+"SOSBlinking" = "3 clignotements";
+"SOSTitle" = "Envoi alerte SOS";
+"SOSExplanation" = "3 appuis courts";
+"BatteryTitle" = "Batterie";
+"BatteryExplanation" = "1 appui court";
+"Between1" = "entre          100-67%";
+"Between2" = "entre          66-34%";
+"Between3" = "entre             33-0%";
+"CommunicateTitle" = "Je communique";
+"CommunicateExplanation" = "Je clignote quand je reçois l'information";
+
+
+/* ###### POWER SAVING VIEW ###### */
+
+
+"PowerSaving" = "Économie d'énergie";
+"PSTitle1" = "Économie d'énergie";
+"PSDescription1" = "La fonctionnalité économie d’énergie permet de prolonger l’autonomie du seekios. (Disponible sur la version 1.007 du seekios)";
+"PSTitle2" = "Fonctionnement";
+"PSDescription2" = "Une fois la transmission du mode effectuée, le seekios éteindra son GSM. Il ne sera donc plus possible de communiquer en temps réel avec lui.";
+"PSTitle3" = "Qu’est ce que cela signifie ?";
+"PSDescription31" = "Le seekios ne se réveillera qu’une fois par jour, à midi, pour vérifier si une nouvelle instruction est disponible.";
+"PSDescription32" = "Si le seekios est en économie d’énergie, et que je souhaite programmer un nouveau mode, ce dernier ne sera donc effectif qu’au « prochain midi ».";
+"PSTitle4" = "Comment se réactive le temps réel ?";
+"PSDescription41" = "Le temps réel se réactive sous trois conditions :";
+"PSDescription42" = "1) - Le mode est supprimé du mode via mon application (effectif au prochain midi)";
+"PSDescription43" = "2) - Le seekios est éteint puis rallumé par utilisation du bouton";
+"PSDescription44" = "3) - Le seekios émet une alerte (SOS inclus)";
+
+
+/* ###### CREDIT COST VIEW ###### */
+
+
+"CreditCostTitle" = "Coût des crédits";
+"CreditCostTitleLabel" = "La consommation des crédits se fait en fonction de l'action demandée :";
+"CreditCost1" = "Actualiser la position";
+"CreditCost2" = "Configurer un mode";
+"CreditCost3" = "Désactiver un mode";
+"CreditCost4" = "Réception d'une alerte";
+"CreditCost5" = "Actualiser la batterie";
+"CreditCost6" = "Réception d'une position de tracking";
+"CreditCost7" = "SOS (alerte et réception)";
+"MoreCreditExplanation" ="Plus d'explication sur les crédits";
+
+
+/* ###### Action Sheet ###### */
+
+"PhotographySeekios" = "Changer la photo de votre seekios";
+"PhotographyUser" = "Changer la photo de profil";
+"Camera" = "Appareil photo";
+"ImageGalery" = "Galerie d'image";
+
+"NoAdressSeekios" = "Aucune adresse";
+"Navigate" = "Naviguer à";
+"Share" = "Partager";
+"CopyAdress" = "Copier adresse";
+
+
+/* ###### Alert Controller Helper ###### */
+
+"ConditionsOfUseTitle" = "Conditions d'utilisation";
+"ConditionsOfUseContent" ="En cliquant sur 'J'accepte les conditions d'utilisation', je certifie avoir pris connaissance des conditions d'utilisation.";
+"AcceptConditions" = "J'accepte les conditions d'utilisation";
+"ReadConditions" = "Lire les conditions d'utilisations";
+
+"NoAdressSeekiosContent" = "Aucune adresse trouvée qui correspond à la position du seekios.";
+
+"UpdateCostTitle" = "Coût de l'actualisation";
+"UpdateCostContent" = "Le coût d'actualisation de la batterie du seekios est de 1 crédit.";
+"UpdateAndRemember" = "Actualiser et ne plus afficher";
+
+"DeleteActiveModeTitle" = "Suppression du mode actif";
+"DeleteActiveModeContent" = "L'activation de ce mode entrainera la suppression du mode actif : '{0}' sur votre seekios : '{1}'.";
+
+"SOSAlertReceivedTitle" = "Alerte SOS reçue";
+"SOSAlertReceivedContent" = "Votre seekios a remonté une alerte SOS !";
+"Seen" = "Vu";
+
+"RefreshInProgress" = "Rafraîchissement en cours...";
+"ReceivingSeekiosLastPosition" = "Nous récupérons la dernière position de votre seekios ";
+"TimeTaken" = ". Cette action peut prendre au maximum 04:00s.";
+
+"InDevelopment" = "En développement";
+"BeingDeveloped" = "En cours de développement";
+
+"NoPositionFound" = "Aucune position trouvée";
+"TheRefreshOf" = "Le rafraîchissement de votre seekios ";
+"RefreshFailed" = " a échoué. Votre seekios est soit éteint ou dans une zone non couverte par le réseau.";
+
+"Impossible" = "Impossible";
+"ProblemFoundWhenUpdating" = "Un problème est survenu lors de la mise à jour des données. Veuillez rééssayer plus tard.";
+"Loading_n" = "Chargement...\n\n\n";
+
+"AddContact_n" =  "Ajouter un contact\n\n\n\n\n\n\n";
+"Add" = "Ajouter";
+
+"NameSurname" = "Prénom Nom";
+"NameSurnamePH" = " Prénom Nom";
+"ModeZone" = "Sortie de zone";
+"ModeDM" = "Détection de mouvements";
+"EmailAddressPH" = " Adresse email";
+
+"InternetConnectionNotAvailable" = "La connexion internet n'est pas disponible";
+"DateNotAvailable" = "Date indisponible";
+
+"More" = "Plus";
+"DeleteImage" = "Supprimer image";
+
+/* ###################################### */

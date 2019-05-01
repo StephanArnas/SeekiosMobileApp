@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <cheesebaron.slidinguppanel.SlidingUpPanelLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        local:collapsedHeight="@dimen/mapBase_visibleBottomLayoutHeightWithOverflow"
+        local:shadowHeight="4dp"
+        local:overlay="true"
+        local:dragView="@+id/mapBase_clickToSlide"
+        android:id="@+id/mapBase_slidingUpLayout">
+    <!-- MAP ET COMPOSANTS -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <!-- MAP -->
+            <SeekiosApp.Droid.CustomComponents.MapWrapperLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:animateLayoutChanges="true"
+                android:id="@+id/mapBase_layout">
+                <fragment
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    class="com.google.android.gms.maps.MapFragment"
+                    android:id="@+id/mapBase_map" />
+            </SeekiosApp.Droid.CustomComponents.MapWrapperLayout>
+        <!-- ACTION BAR -->
+            <include
+                layout="@layout/ActionBarTemplate" />
+        <!-- PROGRESS BAR -->
+            <ProgressBar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-6dp"
+                android:layout_below="@id/toolbar"
+                android:visibility="gone"
+                android:indeterminate="true"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:id="@+id/mapBase_progressBar" />
+        <!-- CENTER ON POSITION -->
+            <XamSvg.SvgImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="120dp"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="left"
+                android:clickable="true"
+                local:svg="@drawable/showseekios"
+                local:colorMappingSelected="88B3B3B3=36da3e"
+                android:id="@+id/mapBase_showSeekios" />
+        </RelativeLayout>
+    <!-- Bottom Layout -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#01000000">
+        <!-- Background du bottom menu (pour la couleur de fond) -->
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="@dimen/mapBase_creditCircleOverflow"
+                android:clickable="true"
+                android:background="?attr/layoutBackground" />
+        <!-- Layout de click pour le slideup -->
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/mapBase_visibleBottomLayoutHeight"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="@dimen/mapBase_creditCircleOverflow"
+                android:layout_marginRight="@dimen/mapBase_bottomLayoutLogoDiameterWithMarginRight"
+                android:layout_marginLeft="@dimen/mapBase_creditCircleDiameterWantingOverflow"
+                android:id="@+id/mapBase_clickToSlide" />
+        <!-- Slider des métadata et Historique des localisations -->
+            <seekiosapp.droid.customcomponents.SwipeManagedViewPager
+                android:id="@+id/mapBase_bottomLayoutViewPager"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" />
+        <!-- Nombre de credit -->
+            <RelativeLayout
+                android:layout_width="@dimen/mapBase_creditCircleDiameter"
+                android:layout_height="@dimen/mapBase_creditCircleDiameter"
+                android:layout_marginLeft="@dimen/mapBase_negativeCreditCircleOverflow"
+                android:layout_alignParentTop="true"
+                android:layout_gravity="left"
+                android:background="@drawable/ellipsiscreditmapbackground"
+                android:id="@+id/modeDailyTrack_creditLayout">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/mode_credit"
+                    android:textSize="10dp"
+                    android:textColor="#008506"
+                    style="@style/HomeText" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:textSize="30dp"
+                    android:textColor="#008506"
+                    style="@style/HomeText"
+                    android:id="@+id/mapBase_remainingRequest" />
+            </RelativeLayout>
+        <!-- Logo du bottomLayout -->
+            <RelativeLayout
+                android:layout_width="@dimen/mapBase_bottomLayoutLogoDiameter"
+                android:layout_height="@dimen/mapBase_bottomLayoutLogoDiameter"
+                android:layout_marginRight="@dimen/mapBase_bottomLayoutMarginRight"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/ellipsisbottomlayoutlogo"
+                android:id="@+id/mapBase_BottomLayoutLogoContainer">
+                <XamSvg.SvgImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:clickable="true"
+                    local:svg="@drawable/modedailytrack"
+                    android:id="@+id/mapBase_bottomLayoutLogo" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </cheesebaron.slidinguppanel.SlidingUpPanelLayout>
+<!-- LAYOUT DE CHARGEMENT -->
+    <include
+        layout="@layout/LoadingTemplate" />
+</RelativeLayout>

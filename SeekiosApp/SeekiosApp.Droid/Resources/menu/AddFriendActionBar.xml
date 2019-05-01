@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:local="http://schemas.android.com/apk/res-auto"
+      android:theme="@style/Theme.Normal">
+  <item android:id="@+id/menu_save"
+      local:showAsAction="always"
+      android:icon="@drawable/ic_action_save"
+      android:title="@string/actionBar_save"/>
+</menu>

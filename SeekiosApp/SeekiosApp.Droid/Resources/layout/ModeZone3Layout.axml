@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer_layout"
+    android:background="#FFFFFF"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<!-- ACTION BAR -->
+    <include
+        layout="@layout/ActionBarTemplate" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbarLayout"
+        android:layout_above="@id/map_bottomLayout">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/marginS"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center_vertical"
+                android:text="@string/modeZoneConfigurationTitle"
+                android:textColor="@color/textColorContent"
+                android:textSize="17dp"
+                android:id="@+id/modeZoneConfigurationTitle"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/modeZoneConfigurationTitle"
+                android:text="@string/modeZoneConfiguration_explanation"
+                android:textSize="15dp"
+                android:textColor="#999999"
+                android:id="@+id/modeZoneConfiguration_explanationText"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="@dimen/marginS"
+                android:layout_marginRight="@dimen/marginS"
+                android:layout_marginBottom="@dimen/marginS" />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/marginS"
+                android:layout_marginLeft="@dimen/marginS"
+                android:layout_marginTop="20dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/modeZoneConfiguration_explanationText"
+                android:scaleType="centerCrop"
+                android:adjustViewBounds="true"
+                android:src="@drawable/ModeZoneParam"
+                android:id="@+id/modeZoneConfiguration_image" />
+            <XamSvg.SvgImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginLeft="@dimen/marginS"
+                android:layout_below="@id/modeZoneConfiguration_image"
+                android:scaleType="centerCrop"
+                android:adjustViewBounds="true"
+                local:colorMapping="999999=62da73"
+                local:svg="@drawable/modetracking"
+                android:id="@+id/modeZoneConfiguration_paramImage" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/modeZoneConfiguration_image"
+                android:layout_toRightOf="@id/modeZoneConfiguration_paramImage"
+                android:text="@string/modeDMConfiguration_title"
+                android:textSize="17dp"
+                android:textColor="@color/textColorContent"
+                android:textStyle="bold"
+                android:id="@+id/modeZoneConfiguration_title"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="20dp" />
+            <Switch
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:checked="false"
+                android:id="@+id/modeZone2_tracking_switch"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/modeZoneConfiguration_title"
+                android:layout_marginTop="6dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/modeZoneConfiguration_paramImage"
+                android:layout_marginRight="10dp"
+                android:text="@string/modeZoneConfiguration_paramTitle"
+                android:textSize="15dp"
+                android:textColor="@color/textColorContent"
+                android:id="@+id/modeZoneConfiguration_paramTitle2"
+                android:layout_marginLeft="@dimen/marginS"
+                android:layout_toLeftOf="@id/modeZone2_tracking_switch"
+                android:layout_marginTop="10dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/modeZoneConfiguration_paramTitle2"
+                android:text="@string/modeZone_refreshEvery"
+                android:textSize="15dp"
+                android:textColor="@color/textColorContent"
+                android:id="@+id/modeZoneConfiguration_refreshRate"
+                android:layout_marginLeft="@dimen/marginS"
+                android:layout_marginTop="10dp" />
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/marginS"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="right"
+                android:textSize="16dp"
+                android:textColor="?attr/textColorHint"
+                android:popupBackground="?attr/layoutBackground"
+                android:id="@+id/modeZoneConfiguration_refreshRateSpinner"
+                android:layout_alignTop="@id/modeZoneConfiguration_refreshRate"
+                android:layout_marginTop="-9dp" />
+            <XamSvg.SvgImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_marginLeft="@dimen/marginS"
+                android:layout_marginTop="43dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/modeZoneConfiguration_refreshRate"
+                local:svg="@drawable/powersaving"
+                android:id="@+id/modeZonePowerSaving_image" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/modeZoneConfiguration_refreshRate"
+                android:text="@string/powerSaving_title"
+                android:textSize="17dp"
+                android:textColor="@color/textColorContent"
+                android:textStyle="bold"
+                android:layout_toRightOf="@id/modeZonePowerSaving_image"
+                android:id="@+id/modeZonePowerSaving_title"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="40dp" />
+            <XamSvg.SvgImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="40dp"
+                android:layout_below="@id/modeZoneConfiguration_refreshRate"
+                android:scaleType="centerCrop"
+                android:adjustViewBounds="true"
+                local:svg="@drawable/help2"
+                android:id="@+id/modeZonePowerSaving_aboutImage"
+                android:layout_marginRight="10dp"
+                android:layout_alignParentRight="true" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/modeZonePowerSaving_title"
+                android:text="@string/powerSaving_explanation"
+                android:textSize="15dp"
+                android:textColor="#999999"
+                android:id="@+id/modeZonePowerSaving_explanation"
+                android:layout_marginLeft="@dimen/marginS"
+                android:layout_marginTop="10dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/modeZonePowerSaving_explanation"
+                android:text="@string/powerSaving_paramTitle"
+                android:textSize="15dp"
+                android:textColor="@color/textColorContent"
+                android:id="@+id/modeZonePowerSaving_paramTitle"
+                android:layout_marginLeft="@dimen/marginS"
+                android:layout_marginTop="10dp"
+                android:paddingBottom="10dp"
+                android:layout_marginBottom="100dp" />
+            <Switch
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:checked="false"
+                android:id="@+id/modeZonePowerSaving_switch"
+                android:layout_alignParentRight="true"
+                android:layout_alignBaseline="@id/modeZonePowerSaving_paramTitle" />
+        </RelativeLayout>
+    </ScrollView>
+<!-- BOTTOM LAYOUT -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/BottomLayoutBackgroundGray"
+        android:id="@+id/map_bottomLayout">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:padding="@dimen/marginS"
+            android:text="@string/modeZoneConfiguration_endText"
+            android:textSize="16dp"
+            android:textColor="#ffffff"
+            android:background="@drawable/buttonrounded"
+            android:id="@+id/modeZone2_saveButton" />
+    </RelativeLayout>
+<!-- LAYOUT DE CHARGEMENT -->
+    <include
+        layout="@layout/LoadingTemplate" />
+</RelativeLayout>

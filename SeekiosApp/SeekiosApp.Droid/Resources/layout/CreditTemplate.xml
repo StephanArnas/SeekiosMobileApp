@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="100dp"
+    android:layout_height="100dp"
+    android:layout_alignParentBottom="true"
+    android:layout_marginLeft="-19dp"
+    android:layout_marginBottom="-14dp"
+    android:gravity="center_vertical"
+    android:background="@drawable/ellipsiscreditmapbackground"
+    android:id="@+id/modeTracking_creditLayout">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="27dp"
+        android:text="@string/map_credits"
+        android:textSize="16dp"
+        android:textColor="#ffffff"
+        android:id="@+id/mapBase_creditTitle"
+        android:layout_marginTop="-4dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="14dp"
+        android:text="100"
+        android:textSize="28dp"
+        android:textColor="#ffffff"
+        android:id="@+id/mapBase_creditValue" />
+</RelativeLayout>

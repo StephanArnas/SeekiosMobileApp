@@ -1,0 +1,548 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/layoutSeparator">
+<!-- LAYOUT DE CHARGEMENT -->
+    <include
+        layout="@layout/LoadingTemplate" />
+<!-- ACTION BAR -->
+    <include
+        layout="@layout/ActionBarTemplate" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_below="@+id/toolbarLayout"
+        android:layout_above="@+id/detailSeekios_spaceBeforeDeleteSeekios"
+        android:id="@+id/detailSeekios_scrollView">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <!-- SEEKIOS LAYOUT -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@drawable/RippleEffectWhiteBackground"
+                android:id="@+id/detailSeekios_seekiosLayout"
+                android:layout_marginBottom="2dp">
+            <!--NOM DU SEEKIOS, DERNIERE POSITION & MODE & ALERT IMAGES ON THE RIGHT-->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="90dp">
+                <!--NOM DU SEEKIOS & DERNIERE POSITION-->
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="20dp">
+                    <!--NOM DU SEEKIOS-->
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:layout_marginRight="140dp"
+                            android:ellipsize="end"
+                            android:singleLine="true"
+                            android:text="Albert"
+                            android:textSize="22dp"
+                            android:textColor="@color/primary"
+                            android:id="@+id/detailSeekios_seekiosName" />
+                    <!--DERNIERE POSITION-->
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/listSeekios_lastPositionNone"
+                            android:textSize="@dimen/smallTextSize"
+                            android:textColor="#999999"
+                            android:layout_marginTop="@dimen/marginXS"
+                            android:id="@+id/detailSeekios_lastPosition" />
+                    </LinearLayout>
+                <!-- MODE & ALERT IMAGES ON THE RIGHT -->
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="right"
+                        android:id="@+id/myseekios_ButtonsRight">
+                    <!-- mode part -->
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/marginS"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="center_vertical"
+                            android:id="@+id/detailSeekios_modeSeekiosLayout">
+                            <XamSvg.SvgImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_gravity="center"
+                                local:colorMapping="999999=62da73"
+                                android:id="@+id/detailSeekios_modeImage" />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/smallTextSize"
+                                android:textColor="#999999"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginTop="@dimen/marginXS"
+                                android:id="@+id/detailSeekios_modeImageText" />
+                        </LinearLayout>
+                    <!-- alert part -->
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:orientation="vertical"
+                            android:id="@+id/detailSeekios_alertLayout"
+                            android:layout_toLeftOf="@id/detailSeekios_modeSeekiosLayout"
+                            android:layout_marginRight="@dimen/marginS"
+                            android:layout_centerVertical="true">
+                            <XamSvg.SvgImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_gravity="center"
+                                local:colorMapping="2FAD62=da2e2e"
+                                local:svg="@drawable/sos"
+                                android:id="@+id/detailSeekios_alertImage" />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/smallTextSize"
+                                android:text="@string/detailSeekios_sos"
+                                android:textColor="#da2e2e"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginTop="@dimen/marginXS"
+                                android:id="@+id/detailSeekios_alertImageText" />
+                        </LinearLayout>
+                    </RelativeLayout>
+                </RelativeLayout>
+            <!--IMG SEEKIOS-->
+                <SeekiosApp.Droid.CustomComponents.RoundedImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginLeft="@dimen/marginS"
+                    android:src="@drawable/DefaultSeekios"
+                    android:id="@+id/detailSeekios_seekiosImage"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="@dimen/marginM" />
+            <!--IMG POWER SAVING -->
+                <XamSvg.SvgImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginTop="62dp"
+                    android:layout_marginLeft="67dp"
+                    android:layout_alignParentLeft="true"
+                    local:svg="@drawable/powersaving"
+                    android:id="@+id/detailSeekios_powerSavingImage" />
+            <!--IMG NEED UPDATE -->
+                <XamSvg.SvgImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginTop="64dp"
+                    android:layout_marginLeft="67dp"
+                    android:visibility="gone"
+                    local:colorMapping="999999=62da73"
+                    local:svg="@drawable/versionapplicationupdatewithbackground"
+                    android:id="@+id/detailSeekios_firmwareUpdate" />
+            <!-- PREMIUM OR FREEMIUM IMAGE -->
+            </RelativeLayout>
+        <!-- END OF SEEKIOS INFORMATION LAYOUT -->
+        <!-- INFORMATION ON MODE LAYOUT -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@color/background"
+                android:layout_marginBottom="2dp"
+                android:id="@+id/detailSeekios_informationModeLayout">
+            <!-- Mode image zone -->
+                <XamSvg.SvgImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    local:svg="@drawable/modezone"
+                    local:colorMapping="dddddd=62da73"
+                    android:id="@+id/detailSeekios_informationModePicture"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/marginS" />
+            <!-- Mode text Layout -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginBottom="@dimen/marginS"
+                    android:layout_marginLeft="@dimen/marginM"
+                    android:layout_centerVertical="true">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="Mode Zone activé depuis 2 jours"
+                        android:textColor="#999999"
+                        android:textSize="@dimen/mediumTextSize"
+                        android:layout_marginTop="@dimen/marginS"
+                        android:id="@+id/detailSeekios_informationModeText" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="Notification mobile, 1 alerte par email"
+                        android:textColor="#999999"
+                        android:textSize="@dimen/mediumTextSize"
+                        android:layout_marginTop="@dimen/marginS"
+                        android:id="@+id/detailSeekios_informationAlertText" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="Mode tracking activé en sortie de zone"
+                        android:textColor="#999999"
+                        android:textSize="@dimen/mediumTextSize"
+                        android:layout_marginTop="@dimen/marginS"
+                        android:id="@+id/detailSeekios_informationTrackingText" />
+                </LinearLayout>
+            </LinearLayout>
+        <!-- END OF MODE INFORMATION LAYOUT -->
+        <!-- CREDIT AND BATTERY LAYOUT -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="2dp">
+            <!-- CREDIT LAYOUT -->
+                <LinearLayout
+                    android:layout_width="200dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:paddingTop="@dimen/marginXS"
+                    android:background="@drawable/RippleEffectWhiteBackground"
+                    android:layout_marginRight="1dp"
+                    android:id="@+id/detailSeekios_creditLayout"
+                    android:clickable="true">
+                <!-- CREDIT TEXT -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/detailSeekios_creditsTitle"
+                        android:textAllCaps="true"
+                        android:textColor="#666666"
+                        android:textSize="@dimen/mediumTextSize"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:textStyle="bold" />
+                <!-- CREDIT NUMBER TEXT -->
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="9999"
+                            android:textColor="@color/primary"
+                            android:textSize="22dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:textStyle="bold"
+                            android:id="@+id/detailSeekios_credits"
+                            android:layout_centerHorizontal="true" />
+                        <XamSvg.SvgImageView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_marginLeft="130dp"
+                            local:svg="@drawable/addleft"
+                            android:layout_centerVertical="true" />
+                    </RelativeLayout>
+                <!-- CREDIT OFFERED TEXT -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="dont 60 offert(s)"
+                        android:textColor="#666666"
+                        android:textSize="@dimen/mediumTextSize"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginBottom="5dp"
+                        android:id="@+id/detailSeekios_freeCredits" />
+                <!-- CREDIT NEXT RELOAD TEXT -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="prochaine recharge le 16/08/2017"
+                        android:textColor="#bbbbbb"
+                        android:textSize="@dimen/mediumTextSize"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="5dp"
+                        android:gravity="center"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:id="@+id/detailSeekios_freeCreditsReloadDate"
+                        android:layout_marginTop="2dp" />
+                </LinearLayout>
+            <!-- BATTERY LAYOUT -->
+                <LinearLayout
+                    android:layout_width="200dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:background="@drawable/RippleEffectWhiteBackground"
+                    android:layout_marginLeft="1dp"
+                    android:clickable="false"
+                    android:id="@+id/detailSeekios_batteryLayout">
+                <!-- Loader battery -->
+                    <ProgressBar
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:indeterminateOnly="true"
+                        android:id="@+id/detailSeekios_loaderBattery"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="20dp"
+                        android:visibility="invisible"
+                        android:indeterminate="true" />
+                <!-- Battery Text -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/detailSeekios_refreshBatteryTitleText"
+                        android:textAllCaps="true"
+                        android:textColor="#666666"
+                        android:textSize="@dimen/mediumTextSize"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="-23dp"
+                        android:textStyle="bold" />
+                <!-- Battery Button -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginTop="20dp"
+                        android:layout_gravity="center_horizontal"
+                        android:clickable="true"
+                        android:text="@string/detailSeekios_refreshBatteryText"
+                        android:textSize="14dp"
+                        android:textColor="#ffffff"
+                        android:background="@drawable/buttonrounded"
+                        android:id="@+id/detailSeekios_refreshButton"
+                        android:paddingRight="5dp"
+                        android:paddingLeft="5dp"
+                        android:layout_alignParentRight="true"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp" />
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="10dp">
+                    <!-- Battery Image -->
+                        <XamSvg.SvgImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="10dp"
+                            local:svg="@drawable/battery"
+                            android:id="@+id/detailSeekios_batteryPicture"
+                            android:layout_marginRight="10dp" />
+                    <!-- Battery Information Text -->
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@id/detailSeekios_batteryPicture"
+                            android:layout_gravity="center_vertical"
+                            android:text="30% de batterie hier à 17h30"
+                            android:textSize="12dp"
+                            android:textColor="#bbbbbb"
+                            android:id="@+id/detailSeekios_batteryText" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        <!-- CREDIT AND BATTERY LAYOUT -->
+        <!-- MAP AND MODE LAYOUT -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="2dp">
+            <!-- MAP LAYOUT -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:paddingTop="@dimen/marginXS"
+                    android:background="@drawable/RippleEffectWhiteBackground"
+                    android:layout_marginRight="1dp"
+                    android:clickable="true"
+                    android:id="@+id/detailSeekios_mapLayout">
+                <!-- Map Image -->
+                    <XamSvg.SvgImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_centerVertical="true"
+                        local:svg="@drawable/map"
+                        android:id="@+id/detailSeekios_mapPicture"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="@dimen/marginM" />
+                <!-- Map Text -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/detailSeekios_mapTitle"
+                        android:textAllCaps="true"
+                        android:textColor="#666666"
+                        android:textSize="@dimen/mediumTextSize"
+                        android:id="@+id/detailSeekios_mapText"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="@dimen/marginM"
+                        android:layout_marginBottom="@dimen/marginM"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            <!-- MODE LAYOUT -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:paddingTop="@dimen/marginXS"
+                    android:background="@drawable/RippleEffectWhiteBackground"
+                    android:layout_marginLeft="1dp"
+                    android:clickable="true"
+                    android:id="@+id/detailSeekios_modeLayout">
+                <!-- Mode Image -->
+                    <XamSvg.SvgImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_centerVertical="true"
+                        local:svg="@drawable/selectmode"
+                        local:colorMapping="999999=57e357"
+                        android:id="@+id/detailSeekios_modePicture"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="@dimen/marginM" />
+                <!-- Mode Text -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/detailSeekios_modeTitle"
+                        android:textAllCaps="true"
+                        android:textColor="#666666"
+                        android:textSize="@dimen/mediumTextSize"
+                        android:id="@+id/detailSeekios_modeText"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="@dimen/marginM"
+                        android:layout_marginBottom="@dimen/marginM"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+        <!-- END OF MAP AND MODE LAYOUT -->
+        <!-- SOS & PARAMETER[Hide] LAYOUT -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="2dp">
+            <!-- SOS LAYOUT -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:paddingTop="@dimen/marginXS"
+                    android:background="@drawable/RippleEffectWhiteBackground"
+                    android:layout_marginRight="1dp"
+                    android:clickable="true"
+                    android:id="@+id/detailSeekios_sosLayout"
+                    android:layout_gravity="center_horizontal">
+                <!-- SOS Image -->
+                    <XamSvg.SvgImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_centerVertical="true"
+                        local:svg="@drawable/sos"
+                        android:id="@+id/detailSeekios_sosPicture"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="@dimen/marginM" />
+                <!-- SOS Text -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/detailSeekios_sosTitle"
+                        android:textColor="#666666"
+                        android:textSize="@dimen/mediumTextSize"
+                        android:id="@+id/detailSeekios_shareText"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="@dimen/marginM"
+                        android:textAllCaps="true"
+                        android:layout_marginBottom="@dimen/marginM"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            <!-- PARAMETER LAYOUT -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:paddingTop="@dimen/marginXS"
+                    android:background="@drawable/RippleEffectWhiteBackground"
+                    android:layout_marginLeft="1dp"
+                    android:clickable="true"
+                    android:id="@+id/detailSeekios_parameterLayout">
+                <!-- PARAMETER Image -->
+                    <XamSvg.SvgImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_centerVertical="true"
+                        local:svg="@drawable/settings"
+                        android:id="@+id/detailSeekios_parameterPicture"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="@dimen/marginM" />
+                <!-- PARAMETER Text -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/detailSeekios_parameterTitle"
+                        android:textColor="#666666"
+                        android:textSize="@dimen/mediumTextSize"
+                        android:id="@+id/detailSeekios_parameterText"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="@dimen/marginM"
+                        android:textAllCaps="true"
+                        android:layout_marginBottom="@dimen/marginM"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+        <!-- END OF SHARE AND PARAMETER LAYOUT -->
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

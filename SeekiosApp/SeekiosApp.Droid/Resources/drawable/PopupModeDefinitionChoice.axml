@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:background="@drawable/whiteroundedpopupbackground"
+    android:id="@+id/mainLayout">
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical">
+    <!-- CHOICE OF MODE TITLE-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/detailSeekios_popupSelectModeTitle"
+        android:textColor="@color/textColorPrimary"
+        android:textSize="20dp"
+        android:background="@color/primary"
+        android:gravity="center"
+        android:paddingTop="@dimen/marginM"
+        android:paddingBottom="@dimen/marginM" />
+    <!--Mode Tracking-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:orientation="horizontal"
+        android:id="@+id/modeDefinition_tracking">
+      <!--Image du mode-->
+      <XamSvg.SvgImageView
+          android:layout_width="40dp"
+          android:layout_height="40dp"
+          android:layout_marginLeft="@dimen/marginS"
+          android:layout_gravity="center_vertical"
+          local:colorMapping="62da73=999999"
+          local:svg="@drawable/modetracking"
+          android:id="@+id/modeDefinition_trackingImg"
+          android:layout_marginTop="@dimen/marginS"
+          android:layout_marginBottom="@dimen/marginS" />
+      <LinearLayout
+          android:orientation="vertical"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center_vertical"
+          android:layout_marginLeft="@dimen/marginS"
+          android:layout_marginTop="@dimen/marginS"
+          android:layout_marginBottom="@dimen/marginS">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/textColorContent"
+            android:text="@string/modeDefinition_tracking"
+            android:id="@+id/modeDefinition_trackingTitle" />
+        <!--Description du mode-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/textColorSubTitle"
+            android:gravity="center_vertical"
+            android:layout_marginRight="@dimen/marginS"
+            android:text="@string/modeDefinition_trackingDescr"
+            android:layout_marginTop="2dp" />
+      </LinearLayout>
+    </LinearLayout>
+    <View style="@style/View" />
+    <!--Mode Dont Move-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:orientation="horizontal"
+        android:id="@+id/modeDefinition_dontMove">
+      <!--Image du mode-->
+      <XamSvg.SvgImageView
+          android:layout_width="40dp"
+          android:layout_height="40dp"
+          android:layout_marginLeft="@dimen/marginS"
+          android:layout_gravity="center_vertical"
+          local:colorMapping="62da73=999999"
+          local:svg="@drawable/modedontmove"
+          android:id="@+id/modeDefinition_dontMoveImg"
+          android:layout_marginTop="@dimen/marginS"
+          android:layout_marginBottom="@dimen/marginS" />
+      <LinearLayout
+          android:orientation="vertical"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center_vertical"
+          android:layout_marginLeft="@dimen/marginS"
+          android:layout_marginTop="@dimen/marginS"
+          android:layout_marginBottom="@dimen/marginS">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/textColorContent"
+            android:text="@string/modeDefinition_dontmove"
+            android:id="@+id/modeDefinition_dontMoveTitle" />
+        <!--Description du mode-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/textColorSubTitle"
+            android:gravity="center_vertical"
+            android:layout_marginRight="@dimen/marginS"
+            android:text="@string/modeDefinition_modeDontMoveDescr"
+            android:layout_marginTop="2dp" />
+      </LinearLayout>
+    </LinearLayout>
+    <View
+       style="@style/View" />
+    <!--Mode Zone-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:orientation="horizontal"
+        android:id="@+id/modeDefinition_zone">
+      <!--Image du mode-->
+      <XamSvg.SvgImageView
+          android:layout_width="40dp"
+          android:layout_height="40dp"
+          android:layout_marginLeft="@dimen/marginS"
+          android:layout_gravity="center_vertical"
+          local:colorMapping="62da73=999999"
+          local:svg="@drawable/modezone"
+          android:id="@+id/modeDefinition_zoneImg"
+          android:layout_marginTop="@dimen/marginS"
+          android:layout_marginBottom="@dimen/marginS" />
+      <LinearLayout
+          android:orientation="vertical"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center_vertical"
+          android:layout_marginLeft="@dimen/marginS"
+          android:layout_marginTop="@dimen/marginS"
+          android:layout_marginBottom="@dimen/marginS">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/textColorContent"
+            android:text="@string/modeDefinition_zone"
+            android:id="@+id/modeDefinition_zoneTitle" />
+        <!--Description du mode-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/textColorSubTitle"
+            android:gravity="center_vertical"
+            android:layout_marginRight="@dimen/marginS"
+            android:text="@string/modeDefinition_modeZoneDescr"
+            android:layout_marginTop="2dp" />
+      </LinearLayout>
+    </LinearLayout>
+    <View
+      style="@style/View" />
+    <!-- Delete mode layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/modeDefinition_deleteModeLayout">
+      <XamSvg.SvgImageView
+          android:layout_width="40dp"
+          android:layout_height="40dp"
+          android:layout_marginLeft="@dimen/marginS"
+          android:layout_gravity="center_vertical"
+          local:svg="@drawable/roundeddelete"
+          android:id="@+id/modeDefinition_deleteModeImage"
+          android:layout_marginTop="@dimen/marginS"
+          android:layout_marginBottom="@dimen/marginS" />
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="@string/modeDefinition_delete"
+          android:textColor="@color/textColorContent"
+          android:layout_gravity="center_vertical"
+          android:layout_marginLeft="@dimen/marginS"
+          android:id="@+id/modeDefinition_deleteText"/>
+    </LinearLayout>
+    <View
+        style="@style/View"/>
+  </LinearLayout>
+</RelativeLayout>
